@@ -6,12 +6,16 @@ using UnityEngine.SceneManagement;
 public class LevelController : MonoBehaviour {
 	
 	private MusicManager musicManager;
+	private GameController gameController;
 	
 	public AudioClip gameOverSound;
 	
 	// Use this for initialization
 	void Start () {
 		musicManager = FindObjectOfType<MusicManager>().GetComponent<MusicManager>();
+		if (FindObjectOfType<GameController>()){
+			gameController = FindObjectOfType<GameController>().GetComponent<GameController>();
+		}
 	}
 	
 
@@ -20,13 +24,14 @@ public class LevelController : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
-		if (other.GetComponent<PlayerMovement>()) {
+		if (other.tag == "Player") {
 			musicManager.playSound(gameOverSound);
 			Invoke("GameOver", 4f);
 		}
 	}
 	
 	private void GameOver(){
+		gameController.GameOverCheckHighScore();
 		SceneManager.LoadScene ("scene02-gameOver");
 		
 		

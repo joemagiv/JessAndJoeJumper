@@ -1,5 +1,7 @@
-﻿using UnityEngine;
+﻿namespace InControl{
+using UnityEngine;
 using System.Collections;
+
 
 public class PlayerMovement : MonoBehaviour {
 
@@ -28,9 +30,11 @@ public class PlayerMovement : MonoBehaviour {
 		rigidBody = GetComponent<Rigidbody2D> ();
 		gameController = FindObjectOfType<GameController> ().GetComponent<GameController> ();
 		sfxManager = FindObjectOfType<SFXManager>().GetComponent<SFXManager>();
+		ICadeDeviceManager.Active = true;
+
 	}
 
-	private void moveToRight(){
+	public void moveToRight(){
 		if (canMoveToRight) {
 				Vector3 newScale = new Vector3 (1, 1, 1);
 				transform.localScale = newScale;
@@ -39,7 +43,7 @@ public class PlayerMovement : MonoBehaviour {
 		}
 	}
 
-	private void moveToLeft(){
+	public void moveToLeft(){
 		if (canMoveToLeft) {
 				Vector3 newScale = new Vector3 (-1, 1, 1);
 				transform.localScale = newScale;
@@ -49,7 +53,7 @@ public class PlayerMovement : MonoBehaviour {
 		}
 	}
 
-	private void Jump(){
+	public void Jump(){
 		rigidBody.AddForce (jumpingForce);
 		sfxManager.playSound(jumpSound);
 	}
@@ -65,6 +69,9 @@ public class PlayerMovement : MonoBehaviour {
 	void OnTriggerExit2D(Collider2D other) {
 
 	}
+	
+	public bool movingLeft = false;
+	public bool movingRight = false;
 		
 
 	// Update is called once per frame
@@ -75,6 +82,17 @@ public class PlayerMovement : MonoBehaviour {
 				isJumping = false;
 			} 
 		}
+		
+		if (InputManager.ActiveDevice.DPadLeft.IsPressed) {
+				moveToLeft ();
+
+		}
+
+			if (InputManager.ActiveDevice.DPadRight.IsPressed) {
+				moveToRight ();
+
+			}
+	
 		 
 		if (Input.GetAxis ("Horizontal") > 0) {
 			moveToRight ();
@@ -82,6 +100,44 @@ public class PlayerMovement : MonoBehaviour {
 		if (Input.GetAxis ("Horizontal") < 0) {
 			moveToLeft ();
 		} 
+		
+		if (movingLeft){
+			moveToLeft();
+		}
+		
+		if (movingRight){
+			moveToRight();
+		}
+		
+		
+		
+			if (InputManager.ActiveDevice.Action1.IsPressed){
+			if (!isJumping) {
+				Debug.Log ("Jumping");
+				isJumping = true;
+				Jump ();
+				if (!gameController.gameHasStarted) {
+					gameController.gameHasStarted = true;
+				}
+				
+			}
+		}
+		
+	
+		
+		if (Input.GetKeyDown(KeyCode.Y)){
+			if (!isJumping) {
+				Debug.Log ("Jumping");
+				isJumping = true;
+				Jump ();
+				if (!gameController.gameHasStarted) {
+					gameController.gameHasStarted = true;
+				}
+				
+			}
+		}
+		
+		
 
 		if (Input.GetAxis ("Horizontal") == 0) {
 
@@ -106,4 +162,5 @@ public class PlayerMovement : MonoBehaviour {
 		
 
 
+}
 }

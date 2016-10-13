@@ -1,17 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System;
+using System.IO;
 
 public class GameOverController : MonoBehaviour {
 	
 	public Text text;
+	public Text scoreText;
 	
 	//public float textDelay;
 	public GameObject playAgainButton;
+	private DeviceCamera deviceCamera;
 	
 	// Use this for initialization
 	void Start () {
+		deviceCamera = FindObjectOfType<DeviceCamera>().GetComponent<DeviceCamera>();
 		Debug.Log(Application.persistentDataPath);
+		scoreText.gameObject.SetActive(false);
 		playAgainButton.SetActive(false);
 		Invoke("CountdownReady",1f);
 		
@@ -48,7 +54,10 @@ public class GameOverController : MonoBehaviour {
 	
 	public void TakePicture(){
 		text.text = "";
-		Application.CaptureScreenshot(Application.persistentDataPath + "Screenshot.png");
+		scoreText.gameObject.SetActive(true);
+		scoreText.text = "Score: " + PlayerPrefsManager.GetCurrentScore().ToString() + " " + Application.persistentDataPath.ToString();
+		deviceCamera.Pause();
+		Application.CaptureScreenshot(Application.persistentDataPath + "Screenshot" + System.DateTime.Now.ToString("hhmmss") + ".png");
 		Invoke("PlayAgainActive", 2f);
 	}
 	
