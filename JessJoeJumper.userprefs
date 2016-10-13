@@ -1,6 +1,18 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GameOverController.cs">
+    <Files>
+      <File FileName="Assets/InControl/Readme/README.txt" Line="1" Column="1" />
+      <File FileName="Assets/Editor/InputManagerAssetGenerator.cs" Line="2" Column="20" />
+      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="56" Column="8" />
+      <File FileName="Assets/Scripts/CameraMovement.cs" Line="1" Column="21" />
+      <File FileName="Assets/Scripts/LevelController.cs" Line="23" Column="25" />
+      <File FileName="Assets/WebcamAuth.cs" Line="1" Column="1" />
+      <File FileName="Assets/SplashScreen.cs" Line="9" Column="28" />
+      <File FileName="Assets/DeviceCamera.cs" Line="3" Column="17" />
+      <File FileName="Assets/GameOverController.cs" Line="58" Column="129" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -8,6 +8,8 @@ public class GameOverController : MonoBehaviour {
 	
 	public Text text;
 	public Text scoreText;
+
+	private CaptureAndSave capture;
 	
 	//public float textDelay;
 	public GameObject playAgainButton;
@@ -15,6 +17,7 @@ public class GameOverController : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
+		capture = FindObjectOfType<CaptureAndSave> ().GetComponent<CaptureAndSave> ();
 		deviceCamera = FindObjectOfType<DeviceCamera>().GetComponent<DeviceCamera>();
 		Debug.Log(Application.persistentDataPath);
 		scoreText.gameObject.SetActive(false);
@@ -57,7 +60,8 @@ public class GameOverController : MonoBehaviour {
 		scoreText.gameObject.SetActive(true);
 		scoreText.text = "Score: " + PlayerPrefsManager.GetCurrentScore().ToString() + " " + Application.persistentDataPath.ToString();
 		deviceCamera.Pause();
-		Application.CaptureScreenshot(Application.persistentDataPath + "Screenshot" + System.DateTime.Now.ToString("hhmmss") + ".png");
+		capture.CaptureAndSaveToAlbum (ImageType.JPG);
+		//Application.CaptureScreenshot(Application.persistentDataPath + "Screenshot" + System.DateTime.Now.ToString("hhmmss") + ".png");
 		Invoke("PlayAgainActive", 2f);
 	}
 	

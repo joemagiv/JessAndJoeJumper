@@ -24,6 +24,8 @@ struct RectOffset_t3056157787_marshaled_com;
 #include "codegen/il2cpp-codegen.h"
 #include "UnityEngine_UnityEngine_GUIStyle2990928826.h"
 #include "mscorlib_System_IntPtr4010401971.h"
+#include "UnityEngine_UnityEngine_Rect4241904616.h"
+#include "UnityEngine_UnityEngine_RectOffset3056157787.h"
 
 // System.Void UnityEngine.RectOffset::.ctor()
 extern "C"  void RectOffset__ctor_m2395783478 (RectOffset_t3056157787 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
@@ -53,6 +55,10 @@ extern "C"  void RectOffset_set_bottom_m3840454247 (RectOffset_t3056157787 * __t
 extern "C"  int32_t RectOffset_get_horizontal_m1186440923 (RectOffset_t3056157787 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.RectOffset::get_vertical()
 extern "C"  int32_t RectOffset_get_vertical_m3650431789 (RectOffset_t3056157787 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Rect UnityEngine.RectOffset::Remove(UnityEngine.Rect)
+extern "C"  Rect_t4241904616  RectOffset_Remove_m843726027 (RectOffset_t3056157787 * __this, Rect_t4241904616  ___rect0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.RectOffset::INTERNAL_CALL_Remove(UnityEngine.RectOffset,UnityEngine.Rect&,UnityEngine.Rect&)
+extern "C"  void RectOffset_INTERNAL_CALL_Remove_m1782283077 (Il2CppObject * __this /* static, unused */, RectOffset_t3056157787 * ___self0, Rect_t4241904616 * ___rect1, Rect_t4241904616 * ___value2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.RectOffset::Finalize()
 extern "C"  void RectOffset_Finalize_m3416542060 (RectOffset_t3056157787 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String UnityEngine.RectOffset::ToString()

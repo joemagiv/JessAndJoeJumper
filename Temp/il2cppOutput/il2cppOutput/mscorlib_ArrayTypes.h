@@ -308,6 +308,8 @@ struct List_1_t1317283468;
 #include "mscorlib_System_Collections_Generic_KeyValuePair_24066860316.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_2_775952400.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_23710127902.h"
+#include "mscorlib_System_Collections_Generic_KeyValuePair_21919813716.h"
+#include "mscorlib_System_Collections_Generic_KeyValuePair_21289591971.h"
 #include "mscorlib_System_Attribute2523058482.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen2498711176.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen1244034627.h"
@@ -2389,6 +2391,34 @@ public:
 	inline KeyValuePair_2_t3710127902  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
 	inline KeyValuePair_2_t3710127902 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
 	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t3710127902  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.Collections.Generic.KeyValuePair`2<System.Object,UnityEngine.TextEditor/TextEditOp>[]
+struct KeyValuePair_2U5BU5D_t3614328797  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) KeyValuePair_2_t1919813716  m_Items[1];
+
+public:
+	inline KeyValuePair_2_t1919813716  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline KeyValuePair_2_t1919813716 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t1919813716  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.Collections.Generic.KeyValuePair`2<UnityEngine.Event,UnityEngine.TextEditor/TextEditOp>[]
+struct KeyValuePair_2U5BU5D_t3387041138  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) KeyValuePair_2_t1289591971  m_Items[1];
+
+public:
+	inline KeyValuePair_2_t1289591971  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline KeyValuePair_2_t1289591971 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t1289591971  value)
 	{
 		m_Items[index] = value;
 	}

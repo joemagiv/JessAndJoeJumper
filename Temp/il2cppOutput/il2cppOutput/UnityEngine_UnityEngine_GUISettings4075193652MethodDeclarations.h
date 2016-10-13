@@ -20,6 +20,10 @@ struct GUISettings_t4075193652;
 
 // System.Void UnityEngine.GUISettings::.ctor()
 extern "C"  void GUISettings__ctor_m1563013787 (GUISettings_t4075193652 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.GUISettings::get_doubleClickSelectsWord()
+extern "C"  bool GUISettings_get_doubleClickSelectsWord_m1623472694 (GUISettings_t4075193652 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.GUISettings::get_tripleClickSelectsLine()
+extern "C"  bool GUISettings_get_tripleClickSelectsLine_m1315895277 (GUISettings_t4075193652 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Color UnityEngine.GUISettings::get_cursorColor()
 extern "C"  Color_t4194546905  GUISettings_get_cursorColor_m3617656164 (GUISettings_t4075193652 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.GUISettings::get_cursorFlashSpeed()

@@ -29480,7 +29480,7 @@ IL_004d:
 		NullCheck(L_41);
 		Texture2D_t3884108195 * L_42 = Sprite_get_texture_m1481489947(L_41, /*hidden argument*/NULL);
 		NullCheck(L_42);
-		int32_t L_43 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_height() */, L_42);
+		int32_t L_43 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_42);
 		V_5 = ((float)((float)L_40/(float)(((float)((float)L_43)))));
 	}
 

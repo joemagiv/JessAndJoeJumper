@@ -38093,6 +38093,46 @@ extern "C"  DateTime_t4283661327  DateTime_Subtract_m4130550807_AdjustorThunk (I
 	DateTime_t4283661327 * _thisAdjusted = reinterpret_cast<DateTime_t4283661327 *>(__this + 1);
 	return DateTime_Subtract_m4130550807(_thisAdjusted, ___value0, method);
 }
+// System.Int64 System.DateTime::ToFileTime()
+extern Il2CppClass* ArgumentOutOfRangeException_t3816648464_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral4249251272;
+extern const uint32_t DateTime_ToFileTime_m3189666065_MetadataUsageId;
+extern "C"  int64_t DateTime_ToFileTime_m3189666065 (DateTime_t4283661327 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (DateTime_ToFileTime_m3189666065_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	DateTime_t4283661327  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		DateTime_t4283661327  L_0 = DateTime_ToUniversalTime_m691668206(__this, /*hidden argument*/NULL);
+		V_0 = L_0;
+		int64_t L_1 = DateTime_get_Ticks_m386468226((&V_0), /*hidden argument*/NULL);
+		if ((((int64_t)L_1) >= ((int64_t)((int64_t)504911232000000000LL))))
+		{
+			goto IL_0027;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t3816648464 * L_2 = (ArgumentOutOfRangeException_t3816648464 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t3816648464_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m2026296331(L_2, _stringLiteral4249251272, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
+	}
+
+IL_0027:
+	{
+		int64_t L_3 = DateTime_get_Ticks_m386468226((&V_0), /*hidden argument*/NULL);
+		return ((int64_t)((int64_t)L_3-(int64_t)((int64_t)504911232000000000LL)));
+	}
+}
+extern "C"  int64_t DateTime_ToFileTime_m3189666065_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
+{
+	DateTime_t4283661327 * _thisAdjusted = reinterpret_cast<DateTime_t4283661327 *>(__this + 1);
+	return DateTime_ToFileTime_m3189666065(_thisAdjusted, method);
+}
 // System.String System.DateTime::ToString()
 extern Il2CppCodeGenString* _stringLiteral71;
 extern const uint32_t DateTime_ToString_m3221907059_MetadataUsageId;
@@ -38127,20 +38167,6 @@ extern "C"  String_t* DateTime_ToString_m1268589345_AdjustorThunk (Il2CppObject 
 {
 	DateTime_t4283661327 * _thisAdjusted = reinterpret_cast<DateTime_t4283661327 *>(__this + 1);
 	return DateTime_ToString_m1268589345(_thisAdjusted, ___provider0, method);
-}
-// System.String System.DateTime::ToString(System.String)
-extern "C"  String_t* DateTime_ToString_m3415116655 (DateTime_t4283661327 * __this, String_t* ___format0, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = ___format0;
-		String_t* L_1 = DateTime_ToString_m2141430949(__this, L_0, (Il2CppObject *)NULL, /*hidden argument*/NULL);
-		return L_1;
-	}
-}
-extern "C"  String_t* DateTime_ToString_m3415116655_AdjustorThunk (Il2CppObject * __this, String_t* ___format0, const MethodInfo* method)
-{
-	DateTime_t4283661327 * _thisAdjusted = reinterpret_cast<DateTime_t4283661327 *>(__this + 1);
-	return DateTime_ToString_m3415116655(_thisAdjusted, ___format0, method);
 }
 // System.String System.DateTime::ToString(System.String,System.IFormatProvider)
 extern Il2CppClass* DateTimeFormatInfo_t2490955586_il2cpp_TypeInfo_var;
@@ -56576,6 +56602,29 @@ extern "C"  void FormatException__ctor_m173965690 (FormatException_t3455918062 *
 		SerializationInfo_t2185721892 * L_0 = ___info0;
 		StreamingContext_t2761351129  L_1 = ___context1;
 		SystemException__ctor_m2083527090(__this, L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Int32 System.GC::get_MaxGeneration()
+extern "C"  int32_t GC_get_MaxGeneration_m589573414 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	using namespace il2cpp::icalls;
+	typedef int32_t (*GC_get_MaxGeneration_m589573414_ftn) ();
+	return  ((GC_get_MaxGeneration_m589573414_ftn)mscorlib::System::GC::get_MaxGeneration) ();
+}
+// System.Void System.GC::InternalCollect(System.Int32)
+extern "C"  void GC_InternalCollect_m3176899477 (Il2CppObject * __this /* static, unused */, int32_t ___generation0, const MethodInfo* method)
+{
+	using namespace il2cpp::icalls;
+	typedef void (*GC_InternalCollect_m3176899477_ftn) (int32_t);
+	 ((GC_InternalCollect_m3176899477_ftn)mscorlib::System::GC::InternalCollect) (___generation0);
+}
+// System.Void System.GC::Collect()
+extern "C"  void GC_Collect_m1459080321 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = GC_get_MaxGeneration_m589573414(NULL /*static, unused*/, /*hidden argument*/NULL);
+		GC_InternalCollect_m3176899477(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		return;
 	}
 }

@@ -1,8 +1,12 @@
 <linker>
 <assembly fullname="Assembly-CSharp-firstpass">
+<type fullname="RefreshGalleryWrapper" preserve="all"/>
 <type fullname="InControl.ICadePluginPath" preserve="all"/>
 </assembly>
 <assembly fullname="Assembly-CSharp">
+<type fullname="CaptureAndSaveCamera" preserve="all"/>
+<type fullname="CaptureAndSaveScreen" preserve="all"/>
+<type fullname="PreviewAndSave" preserve="all"/>
 <type fullname="DeviceCamera" preserve="all"/>
 <type fullname="GameOverController" preserve="all"/>
 <type fullname="InControl.TestInputManager" preserve="all"/>
@@ -74,5 +78,8 @@
 <type fullname="UnityEngine.UI.Outline" preserve="all"/>
 <type fullname="UnityEngine.UI.PositionAsUV1" preserve="all"/>
 <type fullname="UnityEngine.UI.Shadow" preserve="all"/>
+</assembly>
+<assembly fullname="CaptureAndSaveLib">
+<type fullname="CaptureAndSave" preserve="all"/>
 </assembly>
 </linker>

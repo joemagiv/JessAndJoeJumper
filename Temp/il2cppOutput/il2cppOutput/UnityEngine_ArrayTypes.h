@@ -47,6 +47,8 @@ struct LayoutCache_t879908455;
 struct GUILayoutEntry_t1336615025;
 // UnityEngine.GUIStyle
 struct GUIStyle_t2990928826;
+// UnityEngine.Event
+struct Event_t4196595728;
 // UnityEngine.Networking.IMultipartFormSection
 struct IMultipartFormSection_t2606995300;
 // UnityEngine.DisallowMultipleComponent
@@ -108,6 +110,8 @@ struct MonoBehaviour_t667441552;
 #include "UnityEngine_UnityEngine_GUILayoutUtility_LayoutCach879908455.h"
 #include "UnityEngine_UnityEngine_GUILayoutEntry1336615025.h"
 #include "UnityEngine_UnityEngine_GUIStyle2990928826.h"
+#include "UnityEngine_UnityEngine_TextEditor_TextEditOp4145961110.h"
+#include "UnityEngine_UnityEngine_Event4196595728.h"
 #include "UnityEngine_UnityEngine_DisallowMultipleComponent62111112.h"
 #include "UnityEngine_UnityEngine_ExecuteInEditMode3132250205.h"
 #include "UnityEngine_UnityEngine_RequireComponent1687166108.h"
@@ -630,6 +634,35 @@ public:
 	inline GUIStyle_t2990928826 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
 	inline GUIStyle_t2990928826 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
 	inline void SetAt(il2cpp_array_size_t index, GUIStyle_t2990928826 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// UnityEngine.TextEditor/TextEditOp[]
+struct TextEditOpU5BU5D_t2239804499  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) int32_t m_Items[1];
+
+public:
+	inline int32_t GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline int32_t* GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, int32_t value)
+	{
+		m_Items[index] = value;
+	}
+};
+// UnityEngine.Event[]
+struct EventU5BU5D_t478434737  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) Event_t4196595728 * m_Items[1];
+
+public:
+	inline Event_t4196595728 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline Event_t4196595728 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, Event_t4196595728 * value)
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);

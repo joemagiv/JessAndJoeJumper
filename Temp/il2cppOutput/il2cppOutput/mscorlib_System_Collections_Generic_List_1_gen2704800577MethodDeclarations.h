@@ -53,7 +53,7 @@
 // System.Void System.Collections.Generic.List`1<UnityEngine.GUILayoutEntry>::System.Collections.IList.set_Item(System.Int32,System.Object)
 #define List_1_System_Collections_IList_set_Item_m3265472324(__this, ___index0, ___value1, method) ((  void (*) (List_1_t2704800577 *, int32_t, Il2CppObject *, const MethodInfo*))List_1_System_Collections_IList_set_Item_m3234554688_gshared)(__this, ___index0, ___value1, method)
 // System.Void System.Collections.Generic.List`1<UnityEngine.GUILayoutEntry>::Add(T)
-#define List_1_Add_m1012579175(__this, ___item0, method) ((  void (*) (List_1_t2704800577 *, GUILayoutEntry_t1336615025 *, const MethodInfo*))List_1_Add_m642669291_gshared)(__this, ___item0, method)
+#define List_1_Add_m2674313526(__this, ___item0, method) ((  void (*) (List_1_t2704800577 *, GUILayoutEntry_t1336615025 *, const MethodInfo*))List_1_Add_m642669291_gshared)(__this, ___item0, method)
 // System.Void System.Collections.Generic.List`1<UnityEngine.GUILayoutEntry>::GrowIfNeeded(System.Int32)
 #define List_1_GrowIfNeeded_m65876002(__this, ___newCount0, method) ((  void (*) (List_1_t2704800577 *, int32_t, const MethodInfo*))List_1_GrowIfNeeded_m4122600870_gshared)(__this, ___newCount0, method)
 // System.Void System.Collections.Generic.List`1<UnityEngine.GUILayoutEntry>::AddCollection(System.Collections.Generic.ICollection`1<T>)

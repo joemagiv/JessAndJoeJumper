@@ -1471,9 +1471,9 @@ extern "C" void DateTime_ParseExact_m4017898168 ();
 extern "C" void DateTime_CheckStyle_m1804676438 ();
 extern "C" void DateTime_ParseExact_m3576065686 ();
 extern "C" void DateTime_Subtract_m4130550807_AdjustorThunk ();
+extern "C" void DateTime_ToFileTime_m3189666065_AdjustorThunk ();
 extern "C" void DateTime_ToString_m3221907059_AdjustorThunk ();
 extern "C" void DateTime_ToString_m1268589345_AdjustorThunk ();
-extern "C" void DateTime_ToString_m3415116655_AdjustorThunk ();
 extern "C" void DateTime_ToString_m2141430949_AdjustorThunk ();
 extern "C" void DateTime_ToLocalTime_m3629183118_AdjustorThunk ();
 extern "C" void DateTime_ToUniversalTime_m691668206_AdjustorThunk ();
@@ -1807,6 +1807,9 @@ extern "C" void FlagsAttribute__ctor_m4285382720 ();
 extern "C" void FormatException__ctor_m2563336121 ();
 extern "C" void FormatException__ctor_m27151337 ();
 extern "C" void FormatException__ctor_m173965690 ();
+extern "C" void GC_get_MaxGeneration_m589573414 ();
+extern "C" void GC_InternalCollect_m3176899477 ();
+extern "C" void GC_Collect_m1459080321 ();
 extern "C" void GC_SuppressFinalize_m1160635446 ();
 extern "C" void Calendar__ctor_m2652724106 ();
 extern "C" void Calendar_Clone_m1933662586 ();
@@ -2215,11 +2218,18 @@ extern "C" void DirectoryNotFoundException__ctor_m1548643788 ();
 extern "C" void DirectoryNotFoundException__ctor_m2829292855 ();
 extern "C" void EndOfStreamException__ctor_m2858794028 ();
 extern "C" void EndOfStreamException__ctor_m1615815533 ();
+extern "C" void File_Copy_m4182716978 ();
+extern "C" void File_Copy_m4125374219 ();
+extern "C" void File_Create_m3497726217 ();
+extern "C" void File_Create_m2847392366 ();
 extern "C" void File_Delete_m760984832 ();
 extern "C" void File_Exists_m1326262381 ();
+extern "C" void File_GetAttributes_m1646191705 ();
+extern "C" void File_Move_m1404293974 ();
 extern "C" void File_Open_m1918038371 ();
 extern "C" void File_OpenRead_m3104031109 ();
 extern "C" void File_OpenText_m396847893 ();
+extern "C" void File_WriteAllBytes_m2419938065 ();
 extern "C" void FileNotFoundException__ctor_m1040614905 ();
 extern "C" void FileNotFoundException__ctor_m2788024869 ();
 extern "C" void FileNotFoundException__ctor_m3117006778 ();
@@ -2229,6 +2239,7 @@ extern "C" void FileNotFoundException_ToString_m1456954068 ();
 extern "C" void FileStream__ctor_m3655381520 ();
 extern "C" void FileStream__ctor_m3377505172 ();
 extern "C" void FileStream__ctor_m3657053030 ();
+extern "C" void FileStream__ctor_m3371310897 ();
 extern "C" void FileStream__ctor_m3446221265 ();
 extern "C" void FileStream__ctor_m1468472351 ();
 extern "C" void FileStream_get_CanRead_m3703756390 ();
@@ -2319,9 +2330,12 @@ extern "C" void MonoIO_GetException_m973090016 ();
 extern "C" void MonoIO_CreateDirectory_m510494529 ();
 extern "C" void MonoIO_GetFileSystemEntries_m809643788 ();
 extern "C" void MonoIO_GetCurrentDirectory_m2958295317 ();
+extern "C" void MonoIO_MoveFile_m1580252875 ();
+extern "C" void MonoIO_CopyFile_m3140188608 ();
 extern "C" void MonoIO_DeleteFile_m991567969 ();
 extern "C" void MonoIO_GetFileAttributes_m3774473836 ();
 extern "C" void MonoIO_GetFileType_m2747902883 ();
+extern "C" void MonoIO_Exists_m2258179510 ();
 extern "C" void MonoIO_ExistsFile_m4276986322 ();
 extern "C" void MonoIO_ExistsDirectory_m2166720481 ();
 extern "C" void MonoIO_GetFileStat_m3422900554 ();
@@ -7432,8 +7446,6 @@ extern "C" void AnimatorTransitionInfo_get_exit_m2568505102_AdjustorThunk ();
 extern "C" void Application_get_isPlaying_m987993960 ();
 extern "C" void Application_get_isEditor_m1279348309 ();
 extern "C" void Application_get_platform_m2918632856 ();
-extern "C" void Application_CaptureScreenshot_m3152082376 ();
-extern "C" void Application_CaptureScreenshot_m1449096047 ();
 extern "C" void Application_get_persistentDataPath_m2554537447 ();
 extern "C" void Application_get_unityVersion_m3443350436 ();
 extern "C" void Application_CallLogCallback_m419361836 ();
@@ -7541,6 +7553,7 @@ extern "C" void Camera_INTERNAL_get_rect_m1804455538 ();
 extern "C" void Camera_get_pixelRect_m936851539 ();
 extern "C" void Camera_INTERNAL_get_pixelRect_m1853722860 ();
 extern "C" void Camera_get_targetTexture_m1468336738 ();
+extern "C" void Camera_set_targetTexture_m671169649 ();
 extern "C" void Camera_get_clearFlags_m192466552 ();
 extern "C" void Camera_ViewportToWorldPoint_m1641213412 ();
 extern "C" void Camera_INTERNAL_CALL_ViewportToWorldPoint_m131026270 ();
@@ -7557,6 +7570,7 @@ extern "C" void Camera_GetAllCameras_m3771867787 ();
 extern "C" void Camera_FireOnPreCull_m4184591338 ();
 extern "C" void Camera_FireOnPreRender_m2754549070 ();
 extern "C" void Camera_FireOnPostRender_m865551979 ();
+extern "C" void Camera_Render_m945002290 ();
 extern "C" void Camera_RaycastTry_m569221064 ();
 extern "C" void Camera_INTERNAL_CALL_RaycastTry_m2819346616 ();
 extern "C" void Camera_RaycastTry2D_m3256311322 ();
@@ -7760,10 +7774,13 @@ extern "C" void Event__ctor_m1609448063 ();
 extern "C" void Event__ctor_m66398544 ();
 extern "C" void Event_Finalize_m2449826179 ();
 extern "C" void Event_get_mousePosition_m3610425949 ();
+extern "C" void Event_get_shift_m643038780 ();
+extern "C" void Event_get_alt_m2196461539 ();
 extern "C" void Event_get_current_m238587645 ();
 extern "C" void Event_Internal_MakeMasterEventCurrent_m213199903 ();
 extern "C" void Event_get_isKey_m645126607 ();
 extern "C" void Event_get_isMouse_m3551276757 ();
+extern "C" void Event_KeyboardEvent_m1236547202 ();
 extern "C" void Event_GetHashCode_m2341647470 ();
 extern "C" void Event_Equals_m2374615830 ();
 extern "C" void Event_ToString_m3661517518 ();
@@ -7771,13 +7788,19 @@ extern "C" void Event_Init_m3525277126 ();
 extern "C" void Event_Cleanup_m3160122945 ();
 extern "C" void Event_get_rawType_m696564524 ();
 extern "C" void Event_get_type_m2209939250 ();
+extern "C" void Event_set_type_m1699027001 ();
 extern "C" void Event_Internal_GetMousePosition_m2054214537 ();
 extern "C" void Event_get_modifiers_m4020990886 ();
+extern "C" void Event_set_modifiers_m755733059 ();
+extern "C" void Event_get_clickCount_m57286197 ();
 extern "C" void Event_get_character_m3663172667 ();
+extern "C" void Event_set_character_m1518464756 ();
 extern "C" void Event_get_commandName_m1197792621 ();
 extern "C" void Event_get_keyCode_m1820698462 ();
+extern "C" void Event_set_keyCode_m1503068465 ();
 extern "C" void Event_Internal_SetNativeEvent_m930902932 ();
 extern "C" void Event_set_displayIndex_m4130090435 ();
+extern "C" void Event_Use_m310777444 ();
 extern "C" void Event_PopEvent_m2790075015 ();
 extern "C" void ArgumentCache__ctor_m4004594141 ();
 extern "C" void ArgumentCache_get_unityObjectArgument_m3221396682 ();
@@ -8005,12 +8028,25 @@ extern "C" void GUI_set_nextScrollStepTime_m3820512796 ();
 extern "C" void GUI_set_skin_m1213959601 ();
 extern "C" void GUI_get_skin_m4001454842 ();
 extern "C" void GUI_DoSetSkin_m800823745 ();
+extern "C" void GUI_Label_m1483857617 ();
+extern "C" void GUI_Label_m1245463549 ();
 extern "C" void GUI_Label_m4283747336 ();
 extern "C" void GUI_Label_m2293702269 ();
+extern "C" void GUI_Button_m885093907 ();
+extern "C" void GUI_Button_m3751403967 ();
+extern "C" void GUI_TextField_m3177770189 ();
+extern "C" void GUI_PasswordFieldGetStrToShow_m1283548296 ();
+extern "C" void GUI_DoTextField_m1314526082 ();
+extern "C" void GUI_DoTextField_m597815358 ();
+extern "C" void GUI_DoTextField_m3194851797 ();
+extern "C" void GUI_HandleTextFieldEventForTouchscreen_m3727225151 ();
+extern "C" void GUI_HandleTextFieldEventForDesktop_m3098489379 ();
 extern "C" void GUI_CallWindowDelegate_m2260338804 ();
 extern "C" void GUI_set_changed_m727947722 ();
 extern "C" void GUI_DoLabel_m2990009013 ();
 extern "C" void GUI_INTERNAL_CALL_DoLabel_m2707679966 ();
+extern "C" void GUI_DoButton_m2194494269 ();
+extern "C" void GUI_INTERNAL_CALL_DoButton_m1954108340 ();
 extern "C" void ScrollViewState__ctor_m739544590 ();
 extern "C" void WindowFunction__ctor_m732638321 ();
 extern "C" void WindowFunction_Invoke_m2798584028 ();
@@ -8018,15 +8054,21 @@ extern "C" void WindowFunction_BeginInvoke_m526788181 ();
 extern "C" void WindowFunction_EndInvoke_m203456257 ();
 extern "C" void GUIContent__ctor_m923375087 ();
 extern "C" void GUIContent__ctor_m174155123 ();
+extern "C" void GUIContent__ctor_m3148225754 ();
 extern "C" void GUIContent__cctor_m2372727710 ();
+extern "C" void GUIContent_get_text_m3944801774 ();
+extern "C" void GUIContent_set_text_m1575840163 ();
 extern "C" void GUIContent_Temp_m2857440895 ();
 extern "C" void GUIContent_Temp_m3826417963 ();
 extern "C" void GUIContent_ClearStaticCache_m2388858588 ();
 extern "C" void GUILayer_HitTest_m3356120918 ();
 extern "C" void GUILayer_INTERNAL_CALL_HitTest_m4210766818 ();
+extern "C" void GUILayout_Label_m925445731 ();
+extern "C" void GUILayout_DoLabel_m3812046522 ();
 extern "C" void GUILayout_Width_m2259621411 ();
 extern "C" void GUILayout_Height_m3774802884 ();
 extern "C" void GUILayoutEntry__ctor_m3586081151 ();
+extern "C" void GUILayoutEntry__ctor_m384419110 ();
 extern "C" void GUILayoutEntry__cctor_m4107715149 ();
 extern "C" void GUILayoutEntry_get_style_m3507897988 ();
 extern "C" void GUILayoutEntry_set_style_m706118245 ();
@@ -8043,6 +8085,8 @@ extern "C" void GUILayoutGroup_get_margin_m1931560361 ();
 extern "C" void GUILayoutGroup_ApplyOptions_m743820812 ();
 extern "C" void GUILayoutGroup_ApplyStyleSettings_m1024249546 ();
 extern "C" void GUILayoutGroup_ResetCursor_m982464342 ();
+extern "C" void GUILayoutGroup_GetNext_m2526772879 ();
+extern "C" void GUILayoutGroup_Add_m4293497486 ();
 extern "C" void GUILayoutGroup_CalcWidth_m1234746178 ();
 extern "C" void GUILayoutGroup_SetHorizontal_m985132857 ();
 extern "C" void GUILayoutGroup_CalcHeight_m126240205 ();
@@ -8057,6 +8101,8 @@ extern "C" void GUILayoutUtility_Layout_m1143185416 ();
 extern "C" void GUILayoutUtility_LayoutFromEditorWindow_m3347777775 ();
 extern "C" void GUILayoutUtility_LayoutFreeGroup_m2250873692 ();
 extern "C" void GUILayoutUtility_LayoutSingleGroup_m1841651392 ();
+extern "C" void GUILayoutUtility_GetRect_m1132310379 ();
+extern "C" void GUILayoutUtility_DoGetRect_m2737509142 ();
 extern "C" void GUILayoutUtility_get_spaceStyle_m3628948340 ();
 extern "C" void GUILayoutUtility_Internal_GetWindowRect_m1168223211 ();
 extern "C" void GUILayoutUtility_INTERNAL_CALL_Internal_GetWindowRect_m1468033111 ();
@@ -8069,6 +8115,8 @@ extern "C" void GUIScrollGroup_SetHorizontal_m3329305078 ();
 extern "C" void GUIScrollGroup_CalcHeight_m3876649290 ();
 extern "C" void GUIScrollGroup_SetVertical_m3472565924 ();
 extern "C" void GUISettings__ctor_m1563013787 ();
+extern "C" void GUISettings_get_doubleClickSelectsWord_m1623472694 ();
+extern "C" void GUISettings_get_tripleClickSelectsLine_m1315895277 ();
 extern "C" void GUISettings_get_cursorColor_m3617656164 ();
 extern "C" void GUISettings_get_cursorFlashSpeed_m3510903059 ();
 extern "C" void GUISettings_get_selectionColor_m3945610946 ();
@@ -8132,6 +8180,8 @@ extern "C" void SkinChangedDelegate__ctor_m1472037998 ();
 extern "C" void SkinChangedDelegate_Invoke_m3141787208 ();
 extern "C" void SkinChangedDelegate_BeginInvoke_m1122457923 ();
 extern "C" void SkinChangedDelegate_EndInvoke_m3094371710 ();
+extern "C" void GUIStateObjects__cctor_m3829072146 ();
+extern "C" void GUIStateObjects_GetStateObject_m3649349772 ();
 extern "C" void GUIStyle__ctor_m478034167 ();
 extern "C" void GUIStyle__ctor_m584655914 ();
 extern "C" void GUIStyle__cctor_m1452061078 ();
@@ -8268,21 +8318,32 @@ extern "C" void GUIStyleState_INTERNAL_set_textColor_m2711899875 ();
 extern "C" void GUITargetAttribute_GetGUITargetAttrValue_m1884776752 ();
 extern "C" void GUIUtility__cctor_m2712534225 ();
 extern "C" void GUIUtility_get_pixelsPerPoint_m2351352349 ();
+extern "C" void GUIUtility_GetControlID_m2753768798 ();
+extern "C" void GUIUtility_GetStateObject_m2379308309 ();
 extern "C" void GUIUtility_set_guiIsExiting_m442089339 ();
 extern "C" void GUIUtility_get_hotControl_m4135893409 ();
+extern "C" void GUIUtility_set_hotControl_m300477798 ();
 extern "C" void GUIUtility_GetDefaultSkin_m3151786562 ();
 extern "C" void GUIUtility_BeginGUI_m1799121707 ();
 extern "C" void GUIUtility_EndGUI_m1069008217 ();
 extern "C" void GUIUtility_EndGUIFromException_m1739426121 ();
 extern "C" void GUIUtility_CheckOnGUI_m640002012 ();
 extern "C" void GUIUtility_Internal_GetPixelsPerPoint_m4247925832 ();
+extern "C" void GUIUtility_Internal_GetNextControlID2_m1006075744 ();
+extern "C" void GUIUtility_INTERNAL_CALL_Internal_GetNextControlID2_m3119525867 ();
 extern "C" void GUIUtility_Internal_GetHotControl_m1758149964 ();
+extern "C" void GUIUtility_Internal_SetHotControl_m2067872041 ();
 extern "C" void GUIUtility_get_keyboardControl_m1277835431 ();
+extern "C" void GUIUtility_set_keyboardControl_m3744930820 ();
 extern "C" void GUIUtility_get_systemCopyBuffer_m1467578008 ();
 extern "C" void GUIUtility_set_systemCopyBuffer_m2088074937 ();
 extern "C" void GUIUtility_Internal_GetDefaultSkin_m1795114979 ();
 extern "C" void GUIUtility_Internal_ExitGUI_m725832131 ();
 extern "C" void GUIUtility_Internal_GetGUIDepth_m2619692036 ();
+extern "C" void GUIUtility_set_textFieldInput_m747124729 ();
+extern "C" void GUIWordWrapSizer__ctor_m3843951930 ();
+extern "C" void GUIWordWrapSizer_CalcWidth_m1064623610 ();
+extern "C" void GUIWordWrapSizer_CalcHeight_m3442375189 ();
 extern "C" void Gyroscope__ctor_m2665436357 ();
 extern "C" void Gyroscope_attitude_Internal_m315730319 ();
 extern "C" void Gyroscope_INTERNAL_CALL_attitude_Internal_m2063094673 ();
@@ -8783,6 +8844,7 @@ extern "C" void PlayerPrefs_GetFloat_m1210224051 ();
 extern "C" void PlayerPrefs_GetFloat_m4179026766 ();
 extern "C" void PlayerPrefsException__ctor_m3661687413 ();
 extern "C" void PropertyAttribute__ctor_m1741701746 ();
+extern "C" void QualitySettings_get_activeColorSpace_m2993616266 ();
 extern "C" void Quaternion__ctor_m1100844011_AdjustorThunk ();
 extern "C" void Quaternion_get_identity_m1743882806 ();
 extern "C" void Quaternion_Dot_m580284 ();
@@ -8860,6 +8922,8 @@ extern "C" void RectOffset_get_bottom_m2106858018 ();
 extern "C" void RectOffset_set_bottom_m3840454247 ();
 extern "C" void RectOffset_get_horizontal_m1186440923 ();
 extern "C" void RectOffset_get_vertical_m3650431789 ();
+extern "C" void RectOffset_Remove_m843726027 ();
+extern "C" void RectOffset_INTERNAL_CALL_Remove_m1782283077 ();
 extern "C" void RectOffset_Finalize_m3416542060 ();
 extern "C" void RectOffset_ToString_m2231965149 ();
 extern "C" void RectTransform_add_reapplyDrivenProperties_m1968705467 ();
@@ -8918,10 +8982,21 @@ extern "C" void Renderer_set_sharedMaterial_m1064371045 ();
 extern "C" void Renderer_get_sortingLayerID_m1954594923 ();
 extern "C" void Renderer_get_sortingOrder_m3623465101 ();
 extern "C" void Renderer_set_sortingOrder_m3971126610 ();
+extern "C" void RenderTexture__ctor_m591418693 ();
+extern "C" void RenderTexture_Internal_CreateRenderTexture_m1444121965 ();
 extern "C" void RenderTexture_Internal_GetWidth_m1030655936 ();
+extern "C" void RenderTexture_Internal_SetWidth_m3535686411 ();
 extern "C" void RenderTexture_Internal_GetHeight_m1940011033 ();
+extern "C" void RenderTexture_Internal_SetHeight_m4218891754 ();
+extern "C" void RenderTexture_Internal_SetSRGBReadWrite_m2486231130 ();
 extern "C" void RenderTexture_get_width_m1498578543 ();
+extern "C" void RenderTexture_set_width_m2449777612 ();
 extern "C" void RenderTexture_get_height_m4010076224 ();
+extern "C" void RenderTexture_set_height_m4249514117 ();
+extern "C" void RenderTexture_set_depth_m68043273 ();
+extern "C" void RenderTexture_set_format_m2539201833 ();
+extern "C" void RenderTexture_get_active_m1725644858 ();
+extern "C" void RenderTexture_set_active_m1002947377 ();
 extern "C" void RequireComponent__ctor_m2023271172 ();
 extern "C" void ResourceRequest__ctor_m2863879896 ();
 extern "C" void ResourceRequest_get_asset_m670320982 ();
@@ -9164,6 +9239,91 @@ extern "C" void SystemInfo_get_operatingSystem_m2538828082 ();
 extern "C" void SystemInfo_get_deviceModel_m3014844565 ();
 extern "C" void TextAreaAttribute__ctor_m2577573455 ();
 extern "C" void TextEditor__ctor_m1029296947 ();
+extern "C" void TextEditor_get_text_m2661970474 ();
+extern "C" void TextEditor_set_text_m2873269991 ();
+extern "C" void TextEditor_get_position_m2783529335 ();
+extern "C" void TextEditor_set_position_m1757326908 ();
+extern "C" void TextEditor_get_cursorIndex_m3258858212 ();
+extern "C" void TextEditor_set_cursorIndex_m3839283393 ();
+extern "C" void TextEditor_get_selectIndex_m847319678 ();
+extern "C" void TextEditor_set_selectIndex_m2271285595 ();
+extern "C" void TextEditor_ClearCursorPos_m3987638978 ();
+extern "C" void TextEditor_OnFocus_m1604527178 ();
+extern "C" void TextEditor_OnLostFocus_m1599980550 ();
+extern "C" void TextEditor_GrabGraphicalCursorPos_m192984232 ();
+extern "C" void TextEditor_HandleKeyEvent_m1630561141 ();
+extern "C" void TextEditor_DeleteLineBack_m4050675933 ();
+extern "C" void TextEditor_DeleteWordBack_m1423005555 ();
+extern "C" void TextEditor_DeleteWordForward_m2247051099 ();
+extern "C" void TextEditor_Delete_m2591383938 ();
+extern "C" void TextEditor_Backspace_m2697740394 ();
+extern "C" void TextEditor_SelectAll_m2943368726 ();
+extern "C" void TextEditor_SelectNone_m1425185029 ();
+extern "C" void TextEditor_get_hasSelection_m1781822098 ();
+extern "C" void TextEditor_DeleteSelection_m1201672204 ();
+extern "C" void TextEditor_ReplaceSelection_m1188267705 ();
+extern "C" void TextEditor_Insert_m1131670643 ();
+extern "C" void TextEditor_MoveRight_m4087700060 ();
+extern "C" void TextEditor_MoveLeft_m2173129001 ();
+extern "C" void TextEditor_MoveUp_m2143317757 ();
+extern "C" void TextEditor_MoveDown_m1953831684 ();
+extern "C" void TextEditor_MoveLineStart_m2661644558 ();
+extern "C" void TextEditor_MoveLineEnd_m2429882887 ();
+extern "C" void TextEditor_MoveGraphicalLineStart_m1209754461 ();
+extern "C" void TextEditor_MoveGraphicalLineEnd_m537871382 ();
+extern "C" void TextEditor_MoveTextStart_m1434665397 ();
+extern "C" void TextEditor_MoveTextEnd_m3188381806 ();
+extern "C" void TextEditor_IndexOfEndOfLine_m1755139103 ();
+extern "C" void TextEditor_MoveParagraphForward_m2816529689 ();
+extern "C" void TextEditor_MoveParagraphBackward_m4210809841 ();
+extern "C" void TextEditor_MoveCursorToPosition_m541380254 ();
+extern "C" void TextEditor_SelectToPosition_m406326665 ();
+extern "C" void TextEditor_SelectLeft_m1358467604 ();
+extern "C" void TextEditor_SelectRight_m308033233 ();
+extern "C" void TextEditor_SelectUp_m2312302248 ();
+extern "C" void TextEditor_SelectDown_m1139170287 ();
+extern "C" void TextEditor_SelectTextEnd_m175926179 ();
+extern "C" void TextEditor_SelectTextStart_m1272765354 ();
+extern "C" void TextEditor_MouseDragSelectsWholeWords_m3387444856 ();
+extern "C" void TextEditor_DblClickSnap_m1086666601 ();
+extern "C" void TextEditor_GetGraphicalLineStart_m2255929555 ();
+extern "C" void TextEditor_GetGraphicalLineEnd_m3638753612 ();
+extern "C" void TextEditor_FindNextSeperator_m2382945623 ();
+extern "C" void TextEditor_isLetterLikeChar_m985832713 ();
+extern "C" void TextEditor_FindPrevSeperator_m1092722199 ();
+extern "C" void TextEditor_MoveWordRight_m1611060338 ();
+extern "C" void TextEditor_MoveToStartOfNextWord_m1275371419 ();
+extern "C" void TextEditor_MoveToEndOfPreviousWord_m4107655576 ();
+extern "C" void TextEditor_SelectToStartOfNextWord_m2771612816 ();
+extern "C" void TextEditor_SelectToEndOfPreviousWord_m3181593933 ();
+extern "C" void TextEditor_ClassifyChar_m3839786120 ();
+extern "C" void TextEditor_FindStartOfNextWord_m4132487039 ();
+extern "C" void TextEditor_FindEndOfPreviousWord_m2038394172 ();
+extern "C" void TextEditor_MoveWordLeft_m4171447379 ();
+extern "C" void TextEditor_SelectWordRight_m1449160295 ();
+extern "C" void TextEditor_SelectWordLeft_m979636158 ();
+extern "C" void TextEditor_ExpandSelectGraphicalLineStart_m4278286146 ();
+extern "C" void TextEditor_ExpandSelectGraphicalLineEnd_m885198139 ();
+extern "C" void TextEditor_SelectGraphicalLineStart_m348597512 ();
+extern "C" void TextEditor_SelectGraphicalLineEnd_m31947905 ();
+extern "C" void TextEditor_SelectParagraphForward_m2310606212 ();
+extern "C" void TextEditor_SelectParagraphBackward_m1412083942 ();
+extern "C" void TextEditor_SelectCurrentWord_m3270822936 ();
+extern "C" void TextEditor_FindEndOfClassification_m3906171638 ();
+extern "C" void TextEditor_SelectCurrentParagraph_m469508226 ();
+extern "C" void TextEditor_UpdateScrollOffsetIfNeeded_m3936207980 ();
+extern "C" void TextEditor_UpdateScrollOffset_m3069173402 ();
+extern "C" void TextEditor_DrawCursor_m4225527287 ();
+extern "C" void TextEditor_PerformOperation_m1276141663 ();
+extern "C" void TextEditor_SaveBackup_m1589758352 ();
+extern "C" void TextEditor_Cut_m3622060269 ();
+extern "C" void TextEditor_Copy_m645385702 ();
+extern "C" void TextEditor_ReplaceNewlinesWithSpaces_m4176827598 ();
+extern "C" void TextEditor_Paste_m4252838526 ();
+extern "C" void TextEditor_MapKey_m368710468 ();
+extern "C" void TextEditor_InitKeyActions_m2904712959 ();
+extern "C" void TextEditor_DetectFocusChange_m993735446 ();
+extern "C" void TextEditor_ClampTextIndex_m707900960 ();
 extern "C" void TextGenerationSettings_CompareColors_m2801108564_AdjustorThunk ();
 extern "C" void TextGenerationSettings_CompareVector2_m332687775_AdjustorThunk ();
 extern "C" void TextGenerationSettings_Equals_m3950599493_AdjustorThunk ();
@@ -9201,14 +9361,24 @@ extern "C" void Texture__ctor_m516856734 ();
 extern "C" void Texture_Internal_GetWidth_m1143336192 ();
 extern "C" void Texture_Internal_GetHeight_m1065663213 ();
 extern "C" void Texture_get_width_m1557399609 ();
+extern "C" void Texture_set_width_m3343740566 ();
 extern "C" void Texture_get_height_m1538561974 ();
+extern "C" void Texture_set_height_m1897594619 ();
 extern "C" void Texture_get_texelSize_m3893699517 ();
 extern "C" void Texture_INTERNAL_get_texelSize_m2038139996 ();
 extern "C" void Texture2D__ctor_m1883511258 ();
+extern "C" void Texture2D__ctor_m3705883154 ();
 extern "C" void Texture2D_Internal_Create_m457592211 ();
 extern "C" void Texture2D_get_whiteTexture_m1214146742 ();
 extern "C" void Texture2D_GetPixelBilinear_m2169326019 ();
 extern "C" void Texture2D_INTERNAL_CALL_GetPixelBilinear_m2056702809 ();
+extern "C" void Texture2D_Apply_m2754532430 ();
+extern "C" void Texture2D_Apply_m1364130776 ();
+extern "C" void Texture2D_ReadPixels_m1334301696 ();
+extern "C" void Texture2D_INTERNAL_CALL_ReadPixels_m388307610 ();
+extern "C" void Texture2D_EncodeToPNG_m2464495756 ();
+extern "C" void Texture2D_EncodeToJPG_m1915683733 ();
+extern "C" void Texture2D_EncodeToJPG_m2459014212 ();
 extern "C" void ThreadAndSerializationSafe__ctor_m4149745981 ();
 extern "C" void Time_get_deltaTime_m2741110510 ();
 extern "C" void Time_get_unscaledTime_m319114521 ();
@@ -9415,6 +9585,76 @@ extern "C" void NetFxCoreExtensions_GetMethodInfo_m1628849205 ();
 extern "C" void TypeInferenceRuleAttribute__ctor_m1168575159 ();
 extern "C" void TypeInferenceRuleAttribute__ctor_m2173394041 ();
 extern "C" void TypeInferenceRuleAttribute_ToString_m318752778 ();
+extern "C" void CallNative__ctor_m2901997103 ();
+extern "C" void CallNative__SaveImage_m1778313423 ();
+extern "C" void CallNative__SaveVideo_m3904904175 ();
+extern "C" void CallNative_CopyImageToCameraRoll_m602584658 ();
+extern "C" void CallNative_MoveImageToCameraRoll_m1212601006 ();
+extern "C" void CallNative_CopyVideoToCameraRoll_m3528152882 ();
+extern "C" void CallNative_MoveVideoToCameraRoll_m4138169230 ();
+extern "C" void CaptureAndSave__ctor_m2839589910 ();
+extern "C" void CaptureAndSave_SetAlbumPath_m1200194850 ();
+extern "C" void CaptureAndSave_CaptureAndSaveToAlbum_m1006194421 ();
+extern "C" void CaptureAndSave_CaptureAndSaveAtPath_m2689293131 ();
+extern "C" void CaptureAndSave_CaptureAndSaveAtPath_m3439077541 ();
+extern "C" void CaptureAndSave_CaptureAndSaveAtPath_m3109496421 ();
+extern "C" void CaptureAndSave_SaveTextureAtPath_m808158949 ();
+extern "C" void CaptureAndSave_SaveTextureToGallery_m1530839788 ();
+extern "C" void CaptureAndSave_CaptureAndSaveToAlbum_m3265519171 ();
+extern "C" void CaptureAndSave_CaptureAndSaveToAlbum_m390648579 ();
+extern "C" void CaptureAndSave_SaveTexture_m2864148541 ();
+extern "C" void CaptureAndSave_SaveToAlbum_m2550512552 ();
+extern "C" void CaptureAndSave_GetFileName_m2566544846 ();
+extern "C" void CaptureAndSave_GetFullPath_m2394925863 ();
+extern "C" void CaptureAndSave_GetPixels_m1882752963 ();
+extern "C" void CaptureAndSave_GetScreenPixels_m175010932 ();
+extern "C" void CaptureAndSave_GetScreenShot_m2602002446 ();
+extern "C" void CaptureAndSave_GetScreenShot_m2957471437 ();
+extern "C" void CaptureAndSave_GetFullScreenShot_m2596668478 ();
+extern "C" void CaptureAndSave_CopyImageToCameraRoll_m1468462539 ();
+extern "C" void CaptureAndSave_CopyVideoToCameraRoll_m99063467 ();
+extern "C" void CaptureAndSave_MoveImageToCameraRoll_m2078478887 ();
+extern "C" void CaptureAndSave_MoveVideoToCameraRoll_m709079815 ();
+extern "C" void CaptureAndSave_AndroidGalleryPath_m2832616556 ();
+extern "C" void CaptureAndSave_OnError_m608607365 ();
+extern "C" void CaptureAndSave_OnComplete_m3721315804 ();
+extern "C" void U3CGetScreenPixelsU3Ec__Iterator1__ctor_m3292122010 ();
+extern "C" void U3CGetScreenPixelsU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1637417282 ();
+extern "C" void U3CGetScreenPixelsU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m153733334 ();
+extern "C" void U3CGetScreenPixelsU3Ec__Iterator1_MoveNext_m676718516 ();
+extern "C" void U3CGetScreenPixelsU3Ec__Iterator1_Dispose_m2531604823 ();
+extern "C" void U3CGetScreenPixelsU3Ec__Iterator1_Reset_m938554951 ();
+extern "C" void U3CSaveToAlbumU3Ec__Iterator0__ctor_m321072963 ();
+extern "C" void U3CSaveToAlbumU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m914667449 ();
+extern "C" void U3CSaveToAlbumU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m1655131469 ();
+extern "C" void U3CSaveToAlbumU3Ec__Iterator0_MoveNext_m135567979 ();
+extern "C" void U3CSaveToAlbumU3Ec__Iterator0_Dispose_m3506722496 ();
+extern "C" void U3CSaveToAlbumU3Ec__Iterator0_Reset_m2262473200 ();
+extern "C" void CaptureAndSaveEventListener__ctor_m3649768002 ();
+extern "C" void CaptureAndSaveEventListener_add_onError_m3586673325 ();
+extern "C" void CaptureAndSaveEventListener_remove_onError_m2299742024 ();
+extern "C" void CaptureAndSaveEventListener_add_onSuccess_m31473463 ();
+extern "C" void CaptureAndSaveEventListener_remove_onSuccess_m3889526354 ();
+extern "C" void CaptureAndSaveEventListener_add_onScreenShot_m407281169 ();
+extern "C" void CaptureAndSaveEventListener_remove_onScreenShot_m4252947692 ();
+extern "C" void CaptureAndSaveEventListener_AddHandler_onError_m928399587 ();
+extern "C" void CaptureAndSaveEventListener_RemoveHandler_onError_m926266408 ();
+extern "C" void CaptureAndSaveEventListener_AddHandler_onSuccess_m1652304493 ();
+extern "C" void CaptureAndSaveEventListener_RemoveHandler_onSuccess_m3006690098 ();
+extern "C" void CaptureAndSaveEventListener_AddHandler_onScreenShot_m3650537671 ();
+extern "C" void CaptureAndSaveEventListener_RemoveHandler_onScreenShot_m2896603596 ();
+extern "C" void OnError__ctor_m3869093594 ();
+extern "C" void OnError_Invoke_m3553004494 ();
+extern "C" void OnError_BeginInvoke_m829483483 ();
+extern "C" void OnError_EndInvoke_m1920900586 ();
+extern "C" void OnScreenShot__ctor_m954799378 ();
+extern "C" void OnScreenShot_Invoke_m3599849904 ();
+extern "C" void OnScreenShot_BeginInvoke_m3553517505 ();
+extern "C" void OnScreenShot_EndInvoke_m3408257058 ();
+extern "C" void OnSuccess__ctor_m1594524309 ();
+extern "C" void OnSuccess_Invoke_m629490739 ();
+extern "C" void OnSuccess_BeginInvoke_m211601472 ();
+extern "C" void OnSuccess_EndInvoke_m1623754533 ();
 extern "C" void U3CPrivateImplementationDetailsU3E__ctor_m2615655811 ();
 extern "C" void AbstractEventData__ctor_m3016870691 ();
 extern "C" void AbstractEventData_Reset_m663303632 ();
@@ -10859,6 +11099,20 @@ extern "C" void VerticalLayoutGroup_CalculateLayoutInputVertical_m920247256 ();
 extern "C" void VerticalLayoutGroup_SetLayoutHorizontal_m244631242 ();
 extern "C" void VerticalLayoutGroup_SetLayoutVertical_m2764536540 ();
 extern "C" void U3CPrivateImplementationDetailsU3E__ctor_m795736486 ();
+extern "C" void CaptureAndSaveCamera__ctor_m3922772296 ();
+extern "C" void CaptureAndSaveCamera_Start_m2869910088 ();
+extern "C" void CaptureAndSaveCamera_OnEnable_m3615891774 ();
+extern "C" void CaptureAndSaveCamera_OnDisable_m864432559 ();
+extern "C" void CaptureAndSaveCamera_OnError_m678970643 ();
+extern "C" void CaptureAndSaveCamera_OnSuccess_m1499302712 ();
+extern "C" void CaptureAndSaveCamera_OnGUI_m3418170946 ();
+extern "C" void CaptureAndSaveScreen__ctor_m3421488097 ();
+extern "C" void CaptureAndSaveScreen_Start_m2368625889 ();
+extern "C" void CaptureAndSaveScreen_OnEnable_m3459607557 ();
+extern "C" void CaptureAndSaveScreen_OnDisable_m314589128 ();
+extern "C" void CaptureAndSaveScreen_OnError_m3630341466 ();
+extern "C" void CaptureAndSaveScreen_OnSuccess_m3088248255 ();
+extern "C" void CaptureAndSaveScreen_OnGUI_m2916886747 ();
 extern "C" void DeviceCamera__ctor_m1843436480 ();
 extern "C" void DeviceCamera_Start_m790574272 ();
 extern "C" void DeviceCamera_Pause_m1897562452 ();
@@ -12292,6 +12546,14 @@ extern "C" void PlayerPrefsManager_CheckSetHighScore_m2723897154 ();
 extern "C" void PlayerPrefsManager_GetCurrentScore_m107229308 ();
 extern "C" void PlayerPrefsManager_SetCurrentScore_m1571524135 ();
 extern "C" void PlayerPrefsManager_GetMasterVolume_m1730672449 ();
+extern "C" void PreviewAndSave__ctor_m4288512751 ();
+extern "C" void PreviewAndSave_Start_m3235650543 ();
+extern "C" void PreviewAndSave_OnEnable_m3057756727 ();
+extern "C" void PreviewAndSave_OnDisable_m742115286 ();
+extern "C" void PreviewAndSave_OnError_m1603870860 ();
+extern "C" void PreviewAndSave_OnSuccess_m1270180977 ();
+extern "C" void PreviewAndSave_OnScreenShot_m3633310306 ();
+extern "C" void PreviewAndSave_OnGUI_m3783911401 ();
 extern "C" void SFXManager__ctor_m3048142355 ();
 extern "C" void SFXManager_Start_m1995280147 ();
 extern "C" void SFXManager_playSound_m2806337111 ();
@@ -12317,7 +12579,8 @@ extern "C" void U3CStartU3Ec__Iterator1_MoveNext_m2079244141 ();
 extern "C" void U3CStartU3Ec__Iterator1_Dispose_m1704581516 ();
 extern "C" void U3CStartU3Ec__Iterator1_Reset_m3091881916 ();
 extern "C" void ICadePluginPath__ctor_m1869789357 ();
-extern const Il2CppMethodPointer g_MethodPointers[12306] = 
+extern "C" void RefreshGalleryWrapper__ctor_m248395323 ();
+extern const Il2CppMethodPointer g_MethodPointers[12569] = 
 {
 	Locale_GetText_m2389348044,
 	Locale_GetText_m2218462520,
@@ -13779,9 +14042,9 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	DateTime_CheckStyle_m1804676438,
 	DateTime_ParseExact_m3576065686,
 	DateTime_Subtract_m4130550807_AdjustorThunk,
+	DateTime_ToFileTime_m3189666065_AdjustorThunk,
 	DateTime_ToString_m3221907059_AdjustorThunk,
 	DateTime_ToString_m1268589345_AdjustorThunk,
-	DateTime_ToString_m3415116655_AdjustorThunk,
 	DateTime_ToString_m2141430949_AdjustorThunk,
 	DateTime_ToLocalTime_m3629183118_AdjustorThunk,
 	DateTime_ToUniversalTime_m691668206_AdjustorThunk,
@@ -14115,6 +14378,9 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	FormatException__ctor_m2563336121,
 	FormatException__ctor_m27151337,
 	FormatException__ctor_m173965690,
+	GC_get_MaxGeneration_m589573414,
+	GC_InternalCollect_m3176899477,
+	GC_Collect_m1459080321,
 	GC_SuppressFinalize_m1160635446,
 	Calendar__ctor_m2652724106,
 	Calendar_Clone_m1933662586,
@@ -14523,11 +14789,18 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	DirectoryNotFoundException__ctor_m2829292855,
 	EndOfStreamException__ctor_m2858794028,
 	EndOfStreamException__ctor_m1615815533,
+	File_Copy_m4182716978,
+	File_Copy_m4125374219,
+	File_Create_m3497726217,
+	File_Create_m2847392366,
 	File_Delete_m760984832,
 	File_Exists_m1326262381,
+	File_GetAttributes_m1646191705,
+	File_Move_m1404293974,
 	File_Open_m1918038371,
 	File_OpenRead_m3104031109,
 	File_OpenText_m396847893,
+	File_WriteAllBytes_m2419938065,
 	FileNotFoundException__ctor_m1040614905,
 	FileNotFoundException__ctor_m2788024869,
 	FileNotFoundException__ctor_m3117006778,
@@ -14537,6 +14810,7 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	FileStream__ctor_m3655381520,
 	FileStream__ctor_m3377505172,
 	FileStream__ctor_m3657053030,
+	FileStream__ctor_m3371310897,
 	FileStream__ctor_m3446221265,
 	FileStream__ctor_m1468472351,
 	FileStream_get_CanRead_m3703756390,
@@ -14627,9 +14901,12 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	MonoIO_CreateDirectory_m510494529,
 	MonoIO_GetFileSystemEntries_m809643788,
 	MonoIO_GetCurrentDirectory_m2958295317,
+	MonoIO_MoveFile_m1580252875,
+	MonoIO_CopyFile_m3140188608,
 	MonoIO_DeleteFile_m991567969,
 	MonoIO_GetFileAttributes_m3774473836,
 	MonoIO_GetFileType_m2747902883,
+	MonoIO_Exists_m2258179510,
 	MonoIO_ExistsFile_m4276986322,
 	MonoIO_ExistsDirectory_m2166720481,
 	MonoIO_GetFileStat_m3422900554,
@@ -19740,8 +20017,6 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	Application_get_isPlaying_m987993960,
 	Application_get_isEditor_m1279348309,
 	Application_get_platform_m2918632856,
-	Application_CaptureScreenshot_m3152082376,
-	Application_CaptureScreenshot_m1449096047,
 	Application_get_persistentDataPath_m2554537447,
 	Application_get_unityVersion_m3443350436,
 	Application_CallLogCallback_m419361836,
@@ -19849,6 +20124,7 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	Camera_get_pixelRect_m936851539,
 	Camera_INTERNAL_get_pixelRect_m1853722860,
 	Camera_get_targetTexture_m1468336738,
+	Camera_set_targetTexture_m671169649,
 	Camera_get_clearFlags_m192466552,
 	Camera_ViewportToWorldPoint_m1641213412,
 	Camera_INTERNAL_CALL_ViewportToWorldPoint_m131026270,
@@ -19865,6 +20141,7 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	Camera_FireOnPreCull_m4184591338,
 	Camera_FireOnPreRender_m2754549070,
 	Camera_FireOnPostRender_m865551979,
+	Camera_Render_m945002290,
 	Camera_RaycastTry_m569221064,
 	Camera_INTERNAL_CALL_RaycastTry_m2819346616,
 	Camera_RaycastTry2D_m3256311322,
@@ -20068,10 +20345,13 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	Event__ctor_m66398544,
 	Event_Finalize_m2449826179,
 	Event_get_mousePosition_m3610425949,
+	Event_get_shift_m643038780,
+	Event_get_alt_m2196461539,
 	Event_get_current_m238587645,
 	Event_Internal_MakeMasterEventCurrent_m213199903,
 	Event_get_isKey_m645126607,
 	Event_get_isMouse_m3551276757,
+	Event_KeyboardEvent_m1236547202,
 	Event_GetHashCode_m2341647470,
 	Event_Equals_m2374615830,
 	Event_ToString_m3661517518,
@@ -20079,13 +20359,19 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	Event_Cleanup_m3160122945,
 	Event_get_rawType_m696564524,
 	Event_get_type_m2209939250,
+	Event_set_type_m1699027001,
 	Event_Internal_GetMousePosition_m2054214537,
 	Event_get_modifiers_m4020990886,
+	Event_set_modifiers_m755733059,
+	Event_get_clickCount_m57286197,
 	Event_get_character_m3663172667,
+	Event_set_character_m1518464756,
 	Event_get_commandName_m1197792621,
 	Event_get_keyCode_m1820698462,
+	Event_set_keyCode_m1503068465,
 	Event_Internal_SetNativeEvent_m930902932,
 	Event_set_displayIndex_m4130090435,
+	Event_Use_m310777444,
 	Event_PopEvent_m2790075015,
 	ArgumentCache__ctor_m4004594141,
 	ArgumentCache_get_unityObjectArgument_m3221396682,
@@ -20313,12 +20599,25 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	GUI_set_skin_m1213959601,
 	GUI_get_skin_m4001454842,
 	GUI_DoSetSkin_m800823745,
+	GUI_Label_m1483857617,
+	GUI_Label_m1245463549,
 	GUI_Label_m4283747336,
 	GUI_Label_m2293702269,
+	GUI_Button_m885093907,
+	GUI_Button_m3751403967,
+	GUI_TextField_m3177770189,
+	GUI_PasswordFieldGetStrToShow_m1283548296,
+	GUI_DoTextField_m1314526082,
+	GUI_DoTextField_m597815358,
+	GUI_DoTextField_m3194851797,
+	GUI_HandleTextFieldEventForTouchscreen_m3727225151,
+	GUI_HandleTextFieldEventForDesktop_m3098489379,
 	GUI_CallWindowDelegate_m2260338804,
 	GUI_set_changed_m727947722,
 	GUI_DoLabel_m2990009013,
 	GUI_INTERNAL_CALL_DoLabel_m2707679966,
+	GUI_DoButton_m2194494269,
+	GUI_INTERNAL_CALL_DoButton_m1954108340,
 	ScrollViewState__ctor_m739544590,
 	WindowFunction__ctor_m732638321,
 	WindowFunction_Invoke_m2798584028,
@@ -20326,15 +20625,21 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	WindowFunction_EndInvoke_m203456257,
 	GUIContent__ctor_m923375087,
 	GUIContent__ctor_m174155123,
+	GUIContent__ctor_m3148225754,
 	GUIContent__cctor_m2372727710,
+	GUIContent_get_text_m3944801774,
+	GUIContent_set_text_m1575840163,
 	GUIContent_Temp_m2857440895,
 	GUIContent_Temp_m3826417963,
 	GUIContent_ClearStaticCache_m2388858588,
 	GUILayer_HitTest_m3356120918,
 	GUILayer_INTERNAL_CALL_HitTest_m4210766818,
+	GUILayout_Label_m925445731,
+	GUILayout_DoLabel_m3812046522,
 	GUILayout_Width_m2259621411,
 	GUILayout_Height_m3774802884,
 	GUILayoutEntry__ctor_m3586081151,
+	GUILayoutEntry__ctor_m384419110,
 	GUILayoutEntry__cctor_m4107715149,
 	GUILayoutEntry_get_style_m3507897988,
 	GUILayoutEntry_set_style_m706118245,
@@ -20351,6 +20656,8 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	GUILayoutGroup_ApplyOptions_m743820812,
 	GUILayoutGroup_ApplyStyleSettings_m1024249546,
 	GUILayoutGroup_ResetCursor_m982464342,
+	GUILayoutGroup_GetNext_m2526772879,
+	GUILayoutGroup_Add_m4293497486,
 	GUILayoutGroup_CalcWidth_m1234746178,
 	GUILayoutGroup_SetHorizontal_m985132857,
 	GUILayoutGroup_CalcHeight_m126240205,
@@ -20365,6 +20672,8 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	GUILayoutUtility_LayoutFromEditorWindow_m3347777775,
 	GUILayoutUtility_LayoutFreeGroup_m2250873692,
 	GUILayoutUtility_LayoutSingleGroup_m1841651392,
+	GUILayoutUtility_GetRect_m1132310379,
+	GUILayoutUtility_DoGetRect_m2737509142,
 	GUILayoutUtility_get_spaceStyle_m3628948340,
 	GUILayoutUtility_Internal_GetWindowRect_m1168223211,
 	GUILayoutUtility_INTERNAL_CALL_Internal_GetWindowRect_m1468033111,
@@ -20377,6 +20686,8 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	GUIScrollGroup_CalcHeight_m3876649290,
 	GUIScrollGroup_SetVertical_m3472565924,
 	GUISettings__ctor_m1563013787,
+	GUISettings_get_doubleClickSelectsWord_m1623472694,
+	GUISettings_get_tripleClickSelectsLine_m1315895277,
 	GUISettings_get_cursorColor_m3617656164,
 	GUISettings_get_cursorFlashSpeed_m3510903059,
 	GUISettings_get_selectionColor_m3945610946,
@@ -20440,6 +20751,8 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	SkinChangedDelegate_Invoke_m3141787208,
 	SkinChangedDelegate_BeginInvoke_m1122457923,
 	SkinChangedDelegate_EndInvoke_m3094371710,
+	GUIStateObjects__cctor_m3829072146,
+	GUIStateObjects_GetStateObject_m3649349772,
 	GUIStyle__ctor_m478034167,
 	GUIStyle__ctor_m584655914,
 	GUIStyle__cctor_m1452061078,
@@ -20576,21 +20889,32 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	GUITargetAttribute_GetGUITargetAttrValue_m1884776752,
 	GUIUtility__cctor_m2712534225,
 	GUIUtility_get_pixelsPerPoint_m2351352349,
+	GUIUtility_GetControlID_m2753768798,
+	GUIUtility_GetStateObject_m2379308309,
 	GUIUtility_set_guiIsExiting_m442089339,
 	GUIUtility_get_hotControl_m4135893409,
+	GUIUtility_set_hotControl_m300477798,
 	GUIUtility_GetDefaultSkin_m3151786562,
 	GUIUtility_BeginGUI_m1799121707,
 	GUIUtility_EndGUI_m1069008217,
 	GUIUtility_EndGUIFromException_m1739426121,
 	GUIUtility_CheckOnGUI_m640002012,
 	GUIUtility_Internal_GetPixelsPerPoint_m4247925832,
+	GUIUtility_Internal_GetNextControlID2_m1006075744,
+	GUIUtility_INTERNAL_CALL_Internal_GetNextControlID2_m3119525867,
 	GUIUtility_Internal_GetHotControl_m1758149964,
+	GUIUtility_Internal_SetHotControl_m2067872041,
 	GUIUtility_get_keyboardControl_m1277835431,
+	GUIUtility_set_keyboardControl_m3744930820,
 	GUIUtility_get_systemCopyBuffer_m1467578008,
 	GUIUtility_set_systemCopyBuffer_m2088074937,
 	GUIUtility_Internal_GetDefaultSkin_m1795114979,
 	GUIUtility_Internal_ExitGUI_m725832131,
 	GUIUtility_Internal_GetGUIDepth_m2619692036,
+	GUIUtility_set_textFieldInput_m747124729,
+	GUIWordWrapSizer__ctor_m3843951930,
+	GUIWordWrapSizer_CalcWidth_m1064623610,
+	GUIWordWrapSizer_CalcHeight_m3442375189,
 	Gyroscope__ctor_m2665436357,
 	Gyroscope_attitude_Internal_m315730319,
 	Gyroscope_INTERNAL_CALL_attitude_Internal_m2063094673,
@@ -21091,6 +21415,7 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	PlayerPrefs_GetFloat_m4179026766,
 	PlayerPrefsException__ctor_m3661687413,
 	PropertyAttribute__ctor_m1741701746,
+	QualitySettings_get_activeColorSpace_m2993616266,
 	Quaternion__ctor_m1100844011_AdjustorThunk,
 	Quaternion_get_identity_m1743882806,
 	Quaternion_Dot_m580284,
@@ -21168,6 +21493,8 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	RectOffset_set_bottom_m3840454247,
 	RectOffset_get_horizontal_m1186440923,
 	RectOffset_get_vertical_m3650431789,
+	RectOffset_Remove_m843726027,
+	RectOffset_INTERNAL_CALL_Remove_m1782283077,
 	RectOffset_Finalize_m3416542060,
 	RectOffset_ToString_m2231965149,
 	RectTransform_add_reapplyDrivenProperties_m1968705467,
@@ -21226,10 +21553,21 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	Renderer_get_sortingLayerID_m1954594923,
 	Renderer_get_sortingOrder_m3623465101,
 	Renderer_set_sortingOrder_m3971126610,
+	RenderTexture__ctor_m591418693,
+	RenderTexture_Internal_CreateRenderTexture_m1444121965,
 	RenderTexture_Internal_GetWidth_m1030655936,
+	RenderTexture_Internal_SetWidth_m3535686411,
 	RenderTexture_Internal_GetHeight_m1940011033,
+	RenderTexture_Internal_SetHeight_m4218891754,
+	RenderTexture_Internal_SetSRGBReadWrite_m2486231130,
 	RenderTexture_get_width_m1498578543,
+	RenderTexture_set_width_m2449777612,
 	RenderTexture_get_height_m4010076224,
+	RenderTexture_set_height_m4249514117,
+	RenderTexture_set_depth_m68043273,
+	RenderTexture_set_format_m2539201833,
+	RenderTexture_get_active_m1725644858,
+	RenderTexture_set_active_m1002947377,
 	RequireComponent__ctor_m2023271172,
 	ResourceRequest__ctor_m2863879896,
 	ResourceRequest_get_asset_m670320982,
@@ -21472,6 +21810,91 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	SystemInfo_get_deviceModel_m3014844565,
 	TextAreaAttribute__ctor_m2577573455,
 	TextEditor__ctor_m1029296947,
+	TextEditor_get_text_m2661970474,
+	TextEditor_set_text_m2873269991,
+	TextEditor_get_position_m2783529335,
+	TextEditor_set_position_m1757326908,
+	TextEditor_get_cursorIndex_m3258858212,
+	TextEditor_set_cursorIndex_m3839283393,
+	TextEditor_get_selectIndex_m847319678,
+	TextEditor_set_selectIndex_m2271285595,
+	TextEditor_ClearCursorPos_m3987638978,
+	TextEditor_OnFocus_m1604527178,
+	TextEditor_OnLostFocus_m1599980550,
+	TextEditor_GrabGraphicalCursorPos_m192984232,
+	TextEditor_HandleKeyEvent_m1630561141,
+	TextEditor_DeleteLineBack_m4050675933,
+	TextEditor_DeleteWordBack_m1423005555,
+	TextEditor_DeleteWordForward_m2247051099,
+	TextEditor_Delete_m2591383938,
+	TextEditor_Backspace_m2697740394,
+	TextEditor_SelectAll_m2943368726,
+	TextEditor_SelectNone_m1425185029,
+	TextEditor_get_hasSelection_m1781822098,
+	TextEditor_DeleteSelection_m1201672204,
+	TextEditor_ReplaceSelection_m1188267705,
+	TextEditor_Insert_m1131670643,
+	TextEditor_MoveRight_m4087700060,
+	TextEditor_MoveLeft_m2173129001,
+	TextEditor_MoveUp_m2143317757,
+	TextEditor_MoveDown_m1953831684,
+	TextEditor_MoveLineStart_m2661644558,
+	TextEditor_MoveLineEnd_m2429882887,
+	TextEditor_MoveGraphicalLineStart_m1209754461,
+	TextEditor_MoveGraphicalLineEnd_m537871382,
+	TextEditor_MoveTextStart_m1434665397,
+	TextEditor_MoveTextEnd_m3188381806,
+	TextEditor_IndexOfEndOfLine_m1755139103,
+	TextEditor_MoveParagraphForward_m2816529689,
+	TextEditor_MoveParagraphBackward_m4210809841,
+	TextEditor_MoveCursorToPosition_m541380254,
+	TextEditor_SelectToPosition_m406326665,
+	TextEditor_SelectLeft_m1358467604,
+	TextEditor_SelectRight_m308033233,
+	TextEditor_SelectUp_m2312302248,
+	TextEditor_SelectDown_m1139170287,
+	TextEditor_SelectTextEnd_m175926179,
+	TextEditor_SelectTextStart_m1272765354,
+	TextEditor_MouseDragSelectsWholeWords_m3387444856,
+	TextEditor_DblClickSnap_m1086666601,
+	TextEditor_GetGraphicalLineStart_m2255929555,
+	TextEditor_GetGraphicalLineEnd_m3638753612,
+	TextEditor_FindNextSeperator_m2382945623,
+	TextEditor_isLetterLikeChar_m985832713,
+	TextEditor_FindPrevSeperator_m1092722199,
+	TextEditor_MoveWordRight_m1611060338,
+	TextEditor_MoveToStartOfNextWord_m1275371419,
+	TextEditor_MoveToEndOfPreviousWord_m4107655576,
+	TextEditor_SelectToStartOfNextWord_m2771612816,
+	TextEditor_SelectToEndOfPreviousWord_m3181593933,
+	TextEditor_ClassifyChar_m3839786120,
+	TextEditor_FindStartOfNextWord_m4132487039,
+	TextEditor_FindEndOfPreviousWord_m2038394172,
+	TextEditor_MoveWordLeft_m4171447379,
+	TextEditor_SelectWordRight_m1449160295,
+	TextEditor_SelectWordLeft_m979636158,
+	TextEditor_ExpandSelectGraphicalLineStart_m4278286146,
+	TextEditor_ExpandSelectGraphicalLineEnd_m885198139,
+	TextEditor_SelectGraphicalLineStart_m348597512,
+	TextEditor_SelectGraphicalLineEnd_m31947905,
+	TextEditor_SelectParagraphForward_m2310606212,
+	TextEditor_SelectParagraphBackward_m1412083942,
+	TextEditor_SelectCurrentWord_m3270822936,
+	TextEditor_FindEndOfClassification_m3906171638,
+	TextEditor_SelectCurrentParagraph_m469508226,
+	TextEditor_UpdateScrollOffsetIfNeeded_m3936207980,
+	TextEditor_UpdateScrollOffset_m3069173402,
+	TextEditor_DrawCursor_m4225527287,
+	TextEditor_PerformOperation_m1276141663,
+	TextEditor_SaveBackup_m1589758352,
+	TextEditor_Cut_m3622060269,
+	TextEditor_Copy_m645385702,
+	TextEditor_ReplaceNewlinesWithSpaces_m4176827598,
+	TextEditor_Paste_m4252838526,
+	TextEditor_MapKey_m368710468,
+	TextEditor_InitKeyActions_m2904712959,
+	TextEditor_DetectFocusChange_m993735446,
+	TextEditor_ClampTextIndex_m707900960,
 	TextGenerationSettings_CompareColors_m2801108564_AdjustorThunk,
 	TextGenerationSettings_CompareVector2_m332687775_AdjustorThunk,
 	TextGenerationSettings_Equals_m3950599493_AdjustorThunk,
@@ -21509,14 +21932,24 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	Texture_Internal_GetWidth_m1143336192,
 	Texture_Internal_GetHeight_m1065663213,
 	Texture_get_width_m1557399609,
+	Texture_set_width_m3343740566,
 	Texture_get_height_m1538561974,
+	Texture_set_height_m1897594619,
 	Texture_get_texelSize_m3893699517,
 	Texture_INTERNAL_get_texelSize_m2038139996,
 	Texture2D__ctor_m1883511258,
+	Texture2D__ctor_m3705883154,
 	Texture2D_Internal_Create_m457592211,
 	Texture2D_get_whiteTexture_m1214146742,
 	Texture2D_GetPixelBilinear_m2169326019,
 	Texture2D_INTERNAL_CALL_GetPixelBilinear_m2056702809,
+	Texture2D_Apply_m2754532430,
+	Texture2D_Apply_m1364130776,
+	Texture2D_ReadPixels_m1334301696,
+	Texture2D_INTERNAL_CALL_ReadPixels_m388307610,
+	Texture2D_EncodeToPNG_m2464495756,
+	Texture2D_EncodeToJPG_m1915683733,
+	Texture2D_EncodeToJPG_m2459014212,
 	ThreadAndSerializationSafe__ctor_m4149745981,
 	Time_get_deltaTime_m2741110510,
 	Time_get_unscaledTime_m319114521,
@@ -21723,6 +22156,76 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	TypeInferenceRuleAttribute__ctor_m1168575159,
 	TypeInferenceRuleAttribute__ctor_m2173394041,
 	TypeInferenceRuleAttribute_ToString_m318752778,
+	CallNative__ctor_m2901997103,
+	CallNative__SaveImage_m1778313423,
+	CallNative__SaveVideo_m3904904175,
+	CallNative_CopyImageToCameraRoll_m602584658,
+	CallNative_MoveImageToCameraRoll_m1212601006,
+	CallNative_CopyVideoToCameraRoll_m3528152882,
+	CallNative_MoveVideoToCameraRoll_m4138169230,
+	CaptureAndSave__ctor_m2839589910,
+	CaptureAndSave_SetAlbumPath_m1200194850,
+	CaptureAndSave_CaptureAndSaveToAlbum_m1006194421,
+	CaptureAndSave_CaptureAndSaveAtPath_m2689293131,
+	CaptureAndSave_CaptureAndSaveAtPath_m3439077541,
+	CaptureAndSave_CaptureAndSaveAtPath_m3109496421,
+	CaptureAndSave_SaveTextureAtPath_m808158949,
+	CaptureAndSave_SaveTextureToGallery_m1530839788,
+	CaptureAndSave_CaptureAndSaveToAlbum_m3265519171,
+	CaptureAndSave_CaptureAndSaveToAlbum_m390648579,
+	CaptureAndSave_SaveTexture_m2864148541,
+	CaptureAndSave_SaveToAlbum_m2550512552,
+	CaptureAndSave_GetFileName_m2566544846,
+	CaptureAndSave_GetFullPath_m2394925863,
+	CaptureAndSave_GetPixels_m1882752963,
+	CaptureAndSave_GetScreenPixels_m175010932,
+	CaptureAndSave_GetScreenShot_m2602002446,
+	CaptureAndSave_GetScreenShot_m2957471437,
+	CaptureAndSave_GetFullScreenShot_m2596668478,
+	CaptureAndSave_CopyImageToCameraRoll_m1468462539,
+	CaptureAndSave_CopyVideoToCameraRoll_m99063467,
+	CaptureAndSave_MoveImageToCameraRoll_m2078478887,
+	CaptureAndSave_MoveVideoToCameraRoll_m709079815,
+	CaptureAndSave_AndroidGalleryPath_m2832616556,
+	CaptureAndSave_OnError_m608607365,
+	CaptureAndSave_OnComplete_m3721315804,
+	U3CGetScreenPixelsU3Ec__Iterator1__ctor_m3292122010,
+	U3CGetScreenPixelsU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1637417282,
+	U3CGetScreenPixelsU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m153733334,
+	U3CGetScreenPixelsU3Ec__Iterator1_MoveNext_m676718516,
+	U3CGetScreenPixelsU3Ec__Iterator1_Dispose_m2531604823,
+	U3CGetScreenPixelsU3Ec__Iterator1_Reset_m938554951,
+	U3CSaveToAlbumU3Ec__Iterator0__ctor_m321072963,
+	U3CSaveToAlbumU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m914667449,
+	U3CSaveToAlbumU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m1655131469,
+	U3CSaveToAlbumU3Ec__Iterator0_MoveNext_m135567979,
+	U3CSaveToAlbumU3Ec__Iterator0_Dispose_m3506722496,
+	U3CSaveToAlbumU3Ec__Iterator0_Reset_m2262473200,
+	CaptureAndSaveEventListener__ctor_m3649768002,
+	CaptureAndSaveEventListener_add_onError_m3586673325,
+	CaptureAndSaveEventListener_remove_onError_m2299742024,
+	CaptureAndSaveEventListener_add_onSuccess_m31473463,
+	CaptureAndSaveEventListener_remove_onSuccess_m3889526354,
+	CaptureAndSaveEventListener_add_onScreenShot_m407281169,
+	CaptureAndSaveEventListener_remove_onScreenShot_m4252947692,
+	CaptureAndSaveEventListener_AddHandler_onError_m928399587,
+	CaptureAndSaveEventListener_RemoveHandler_onError_m926266408,
+	CaptureAndSaveEventListener_AddHandler_onSuccess_m1652304493,
+	CaptureAndSaveEventListener_RemoveHandler_onSuccess_m3006690098,
+	CaptureAndSaveEventListener_AddHandler_onScreenShot_m3650537671,
+	CaptureAndSaveEventListener_RemoveHandler_onScreenShot_m2896603596,
+	OnError__ctor_m3869093594,
+	OnError_Invoke_m3553004494,
+	OnError_BeginInvoke_m829483483,
+	OnError_EndInvoke_m1920900586,
+	OnScreenShot__ctor_m954799378,
+	OnScreenShot_Invoke_m3599849904,
+	OnScreenShot_BeginInvoke_m3553517505,
+	OnScreenShot_EndInvoke_m3408257058,
+	OnSuccess__ctor_m1594524309,
+	OnSuccess_Invoke_m629490739,
+	OnSuccess_BeginInvoke_m211601472,
+	OnSuccess_EndInvoke_m1623754533,
 	U3CPrivateImplementationDetailsU3E__ctor_m2615655811,
 	AbstractEventData__ctor_m3016870691,
 	AbstractEventData_Reset_m663303632,
@@ -23167,6 +23670,20 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	VerticalLayoutGroup_SetLayoutHorizontal_m244631242,
 	VerticalLayoutGroup_SetLayoutVertical_m2764536540,
 	U3CPrivateImplementationDetailsU3E__ctor_m795736486,
+	CaptureAndSaveCamera__ctor_m3922772296,
+	CaptureAndSaveCamera_Start_m2869910088,
+	CaptureAndSaveCamera_OnEnable_m3615891774,
+	CaptureAndSaveCamera_OnDisable_m864432559,
+	CaptureAndSaveCamera_OnError_m678970643,
+	CaptureAndSaveCamera_OnSuccess_m1499302712,
+	CaptureAndSaveCamera_OnGUI_m3418170946,
+	CaptureAndSaveScreen__ctor_m3421488097,
+	CaptureAndSaveScreen_Start_m2368625889,
+	CaptureAndSaveScreen_OnEnable_m3459607557,
+	CaptureAndSaveScreen_OnDisable_m314589128,
+	CaptureAndSaveScreen_OnError_m3630341466,
+	CaptureAndSaveScreen_OnSuccess_m3088248255,
+	CaptureAndSaveScreen_OnGUI_m2916886747,
 	DeviceCamera__ctor_m1843436480,
 	DeviceCamera_Start_m790574272,
 	DeviceCamera_Pause_m1897562452,
@@ -24600,6 +25117,14 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	PlayerPrefsManager_GetCurrentScore_m107229308,
 	PlayerPrefsManager_SetCurrentScore_m1571524135,
 	PlayerPrefsManager_GetMasterVolume_m1730672449,
+	PreviewAndSave__ctor_m4288512751,
+	PreviewAndSave_Start_m3235650543,
+	PreviewAndSave_OnEnable_m3057756727,
+	PreviewAndSave_OnDisable_m742115286,
+	PreviewAndSave_OnError_m1603870860,
+	PreviewAndSave_OnSuccess_m1270180977,
+	PreviewAndSave_OnScreenShot_m3633310306,
+	PreviewAndSave_OnGUI_m3783911401,
 	SFXManager__ctor_m3048142355,
 	SFXManager_Start_m1995280147,
 	SFXManager_playSound_m2806337111,
@@ -24625,4 +25150,5 @@ extern const Il2CppMethodPointer g_MethodPointers[12306] =
 	U3CStartU3Ec__Iterator1_Dispose_m1704581516,
 	U3CStartU3Ec__Iterator1_Reset_m3091881916,
 	ICadePluginPath__ctor_m1869789357,
+	RefreshGalleryWrapper__ctor_m248395323,
 };

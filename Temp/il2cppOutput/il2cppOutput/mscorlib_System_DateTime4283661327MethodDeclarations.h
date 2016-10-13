@@ -184,12 +184,12 @@ extern "C"  void DateTime_CheckStyle_m1804676438 (Il2CppObject * __this /* stati
 extern "C"  bool DateTime_ParseExact_m3576065686 (Il2CppObject * __this /* static, unused */, String_t* ___s0, StringU5BU5D_t4054002952* ___formats1, DateTimeFormatInfo_t2490955586 * ___dfi2, int32_t ___style3, DateTime_t4283661327 * ___ret4, bool ___exact5, bool* ___longYear6, bool ___setExceptionOnError7, Exception_t3991598821 ** ___exception8, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.DateTime System.DateTime::Subtract(System.TimeSpan)
 extern "C"  DateTime_t4283661327  DateTime_Subtract_m4130550807 (DateTime_t4283661327 * __this, TimeSpan_t413522987  ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int64 System.DateTime::ToFileTime()
+extern "C"  int64_t DateTime_ToFileTime_m3189666065 (DateTime_t4283661327 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.DateTime::ToString()
 extern "C"  String_t* DateTime_ToString_m3221907059 (DateTime_t4283661327 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.DateTime::ToString(System.IFormatProvider)
 extern "C"  String_t* DateTime_ToString_m1268589345 (DateTime_t4283661327 * __this, Il2CppObject * ___provider0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.String System.DateTime::ToString(System.String)
-extern "C"  String_t* DateTime_ToString_m3415116655 (DateTime_t4283661327 * __this, String_t* ___format0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.DateTime::ToString(System.String,System.IFormatProvider)
 extern "C"  String_t* DateTime_ToString_m2141430949 (DateTime_t4283661327 * __this, String_t* ___format0, Il2CppObject * ___provider1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.DateTime System.DateTime::ToLocalTime()

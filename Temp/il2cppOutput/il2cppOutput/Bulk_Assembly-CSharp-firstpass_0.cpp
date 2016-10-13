@@ -15,6 +15,8 @@
 
 // InControl.ICadePluginPath
 struct ICadePluginPath_t1876751122;
+// RefreshGalleryWrapper
+struct RefreshGalleryWrapper_t3861461116;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -25,6 +27,9 @@ struct ICadePluginPath_t1876751122;
 #include "AssemblyU2DCSharpU2Dfirstpass_InControl_ICadePlugi1876751122MethodDeclarations.h"
 #include "mscorlib_System_Void2863195528.h"
 #include "UnityEngine_UnityEngine_ScriptableObject2970544072MethodDeclarations.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_RefreshGalleryWrappe3861461116.h"
+#include "AssemblyU2DCSharpU2Dfirstpass_RefreshGalleryWrappe3861461116MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_MonoBehaviour667441552MethodDeclarations.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -36,6 +41,14 @@ extern "C"  void ICadePluginPath__ctor_m1869789357 (ICadePluginPath_t1876751122 
 {
 	{
 		ScriptableObject__ctor_m1827087273(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void RefreshGalleryWrapper::.ctor()
+extern "C"  void RefreshGalleryWrapper__ctor_m248395323 (RefreshGalleryWrapper_t3861461116 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
 		return;
 	}
 }

@@ -29,10 +29,6 @@ extern "C"  bool Application_get_isPlaying_m987993960 (Il2CppObject * __this /* 
 extern "C"  bool Application_get_isEditor_m1279348309 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.RuntimePlatform UnityEngine.Application::get_platform()
 extern "C"  int32_t Application_get_platform_m2918632856 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.Application::CaptureScreenshot(System.String,System.Int32)
-extern "C"  void Application_CaptureScreenshot_m3152082376 (Il2CppObject * __this /* static, unused */, String_t* ___filename0, int32_t ___superSize1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.Application::CaptureScreenshot(System.String)
-extern "C"  void Application_CaptureScreenshot_m1449096047 (Il2CppObject * __this /* static, unused */, String_t* ___filename0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String UnityEngine.Application::get_persistentDataPath()
 extern "C"  String_t* Application_get_persistentDataPath_m2554537447 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String UnityEngine.Application::get_unityVersion()

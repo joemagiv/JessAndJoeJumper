@@ -2951,7 +2951,7 @@ extern "C"  void RawImage_SetNativeSize_m131446896 (RawImage_t821930207 * __this
 		V_1 = L_7;
 		Texture_t2526458961 * L_8 = V_0;
 		NullCheck(L_8);
-		int32_t L_9 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_height() */, L_8);
+		int32_t L_9 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_8);
 		Rect_t4241904616  L_10 = RawImage_get_uvRect_m605244702(__this, /*hidden argument*/NULL);
 		V_4 = L_10;
 		float L_11 = Rect_get_height_m2154960823((&V_4), /*hidden argument*/NULL);
@@ -3037,7 +3037,7 @@ extern "C"  void RawImage_OnPopulateMesh_m1483685179 (RawImage_t821930207 * __th
 		V_3 = ((float)((float)(((float)((float)L_12)))*(float)L_15));
 		Texture_t2526458961 * L_16 = V_0;
 		NullCheck(L_16);
-		int32_t L_17 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_height() */, L_16);
+		int32_t L_17 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_16);
 		Texture_t2526458961 * L_18 = V_0;
 		NullCheck(L_18);
 		Vector2_t4282066565  L_19 = Texture_get_texelSize_m3893699517(L_18, /*hidden argument*/NULL);

@@ -16,10 +16,10 @@
 struct GUILayoutEntry_t1336615025;
 // UnityEngine.GUIStyle
 struct GUIStyle_t2990928826;
-// UnityEngine.RectOffset
-struct RectOffset_t3056157787;
 // UnityEngine.GUILayoutOption[]
 struct GUILayoutOptionU5BU5D_t2977405297;
+// UnityEngine.RectOffset
+struct RectOffset_t3056157787;
 // System.String
 struct String_t;
 
@@ -28,6 +28,8 @@ struct String_t;
 
 // System.Void UnityEngine.GUILayoutEntry::.ctor(System.Single,System.Single,System.Single,System.Single,UnityEngine.GUIStyle)
 extern "C"  void GUILayoutEntry__ctor_m3586081151 (GUILayoutEntry_t1336615025 * __this, float ____minWidth0, float ____maxWidth1, float ____minHeight2, float ____maxHeight3, GUIStyle_t2990928826 * ____style4, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.GUILayoutEntry::.ctor(System.Single,System.Single,System.Single,System.Single,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])
+extern "C"  void GUILayoutEntry__ctor_m384419110 (GUILayoutEntry_t1336615025 * __this, float ____minWidth0, float ____maxWidth1, float ____minHeight2, float ____maxHeight3, GUIStyle_t2990928826 * ____style4, GUILayoutOptionU5BU5D_t2977405297* ___options5, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.GUILayoutEntry::.cctor()
 extern "C"  void GUILayoutEntry__cctor_m4107715149 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.GUIStyle UnityEngine.GUILayoutEntry::get_style()

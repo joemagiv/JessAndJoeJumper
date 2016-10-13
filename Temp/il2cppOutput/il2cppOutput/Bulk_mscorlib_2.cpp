@@ -383,20 +383,20 @@ struct ParamArrayAttribute_t1495691142;
 #include "mscorlib_System_IO_MonoIOStat1960471149.h"
 #include "mscorlib_System_IO_MonoIO1385261305.h"
 #include "mscorlib_System_IO_File667612524.h"
-#include "mscorlib_System_UnauthorizedAccessException2285874189MethodDeclarations.h"
-#include "mscorlib_System_UnauthorizedAccessException2285874189.h"
-#include "mscorlib_System_IO_FileMode3233790127.h"
+#include "mscorlib_System_IO_FileNotFoundException451627778MethodDeclarations.h"
+#include "mscorlib_System_IO_FileNotFoundException451627778.h"
 #include "mscorlib_System_IO_FileStream2141505868.h"
 #include "mscorlib_System_IO_FileStream2141505868MethodDeclarations.h"
+#include "mscorlib_System_IO_FileMode3233790127.h"
 #include "mscorlib_System_IO_FileAccess1610034992.h"
 #include "mscorlib_System_IO_FileShare783541953.h"
+#include "mscorlib_System_UnauthorizedAccessException2285874189MethodDeclarations.h"
+#include "mscorlib_System_UnauthorizedAccessException2285874189.h"
 #include "mscorlib_System_IO_StreamReader2549717843.h"
 #include "mscorlib_System_IO_StreamReader2549717843MethodDeclarations.h"
 #include "mscorlib_System_IO_FileAccess1610034992MethodDeclarations.h"
 #include "mscorlib_System_IO_FileAttributes2368997539MethodDeclarations.h"
 #include "mscorlib_System_IO_FileMode3233790127MethodDeclarations.h"
-#include "mscorlib_System_IO_FileNotFoundException451627778.h"
-#include "mscorlib_System_IO_FileNotFoundException451627778MethodDeclarations.h"
 #include "mscorlib_System_IO_FileOptions1909553856.h"
 #include "mscorlib_System_IO_FileOptions1909553856MethodDeclarations.h"
 #include "mscorlib_System_IO_FileShare783541953MethodDeclarations.h"
@@ -14719,6 +14719,369 @@ extern "C"  void EndOfStreamException__ctor_m1615815533 (EndOfStreamException_t3
 		return;
 	}
 }
+// System.Void System.IO.File::Copy(System.String,System.String)
+extern "C"  void File_Copy_m4182716978 (Il2CppObject * __this /* static, unused */, String_t* ___sourceFileName0, String_t* ___destFileName1, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___sourceFileName0;
+		String_t* L_1 = ___destFileName1;
+		File_Copy_m4125374219(NULL /*static, unused*/, L_0, L_1, (bool)0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.IO.File::Copy(System.String,System.String,System.Boolean)
+extern Il2CppClass* ArgumentNullException_t3573189601_il2cpp_TypeInfo_var;
+extern Il2CppClass* ArgumentException_t928607144_il2cpp_TypeInfo_var;
+extern Il2CppClass* Path_t667902997_il2cpp_TypeInfo_var;
+extern Il2CppClass* MonoIO_t1385261305_il2cpp_TypeInfo_var;
+extern Il2CppClass* ObjectU5BU5D_t1108656482_il2cpp_TypeInfo_var;
+extern Il2CppClass* FileNotFoundException_t451627778_il2cpp_TypeInfo_var;
+extern Il2CppClass* IOException_t2404867879_il2cpp_TypeInfo_var;
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* DirectoryNotFoundException_t1164955875_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2195736418;
+extern Il2CppCodeGenString* _stringLiteral2208261865;
+extern Il2CppCodeGenString* _stringLiteral3945091134;
+extern Il2CppCodeGenString* _stringLiteral3236990933;
+extern Il2CppCodeGenString* _stringLiteral13280667;
+extern Il2CppCodeGenString* _stringLiteral1796614800;
+extern Il2CppCodeGenString* _stringLiteral891878460;
+extern Il2CppCodeGenString* _stringLiteral1222276690;
+extern Il2CppCodeGenString* _stringLiteral1183117276;
+extern const uint32_t File_Copy_m4125374219_MetadataUsageId;
+extern "C"  void File_Copy_m4125374219 (Il2CppObject * __this /* static, unused */, String_t* ___sourceFileName0, String_t* ___destFileName1, bool ___overwrite2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (File_Copy_m4125374219_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	int32_t V_0 = 0;
+	String_t* V_1 = NULL;
+	String_t* V_2 = NULL;
+	{
+		String_t* L_0 = ___sourceFileName0;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t3573189601 * L_1 = (ArgumentNullException_t3573189601 *)il2cpp_codegen_object_new(ArgumentNullException_t3573189601_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m135444188(L_1, _stringLiteral2195736418, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0011:
+	{
+		String_t* L_2 = ___destFileName1;
+		if (L_2)
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		ArgumentNullException_t3573189601 * L_3 = (ArgumentNullException_t3573189601 *)il2cpp_codegen_object_new(ArgumentNullException_t3573189601_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m135444188(L_3, _stringLiteral2208261865, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3);
+	}
+
+IL_0022:
+	{
+		String_t* L_4 = ___sourceFileName0;
+		NullCheck(L_4);
+		int32_t L_5 = String_get_Length_m2979997331(L_4, /*hidden argument*/NULL);
+		if (L_5)
+		{
+			goto IL_003d;
+		}
+	}
+	{
+		ArgumentException_t928607144 * L_6 = (ArgumentException_t928607144 *)il2cpp_codegen_object_new(ArgumentException_t928607144_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m732321503(L_6, _stringLiteral3945091134, _stringLiteral2195736418, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_6);
+	}
+
+IL_003d:
+	{
+		String_t* L_7 = ___sourceFileName0;
+		NullCheck(L_7);
+		String_t* L_8 = String_Trim_m1030489823(L_7, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		int32_t L_9 = String_get_Length_m2979997331(L_8, /*hidden argument*/NULL);
+		if (!L_9)
+		{
+			goto IL_005e;
+		}
+	}
+	{
+		String_t* L_10 = ___sourceFileName0;
+		IL2CPP_RUNTIME_CLASS_INIT(Path_t667902997_il2cpp_TypeInfo_var);
+		CharU5BU5D_t3324145743* L_11 = ((Path_t667902997_StaticFields*)Path_t667902997_il2cpp_TypeInfo_var->static_fields)->get_InvalidPathChars_0();
+		NullCheck(L_10);
+		int32_t L_12 = String_IndexOfAny_m3660242324(L_10, L_11, /*hidden argument*/NULL);
+		if ((((int32_t)L_12) == ((int32_t)(-1))))
+		{
+			goto IL_0069;
+		}
+	}
+
+IL_005e:
+	{
+		ArgumentException_t928607144 * L_13 = (ArgumentException_t928607144 *)il2cpp_codegen_object_new(ArgumentException_t928607144_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m3544856547(L_13, _stringLiteral3236990933, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_13);
+	}
+
+IL_0069:
+	{
+		String_t* L_14 = ___destFileName1;
+		NullCheck(L_14);
+		int32_t L_15 = String_get_Length_m2979997331(L_14, /*hidden argument*/NULL);
+		if (L_15)
+		{
+			goto IL_0084;
+		}
+	}
+	{
+		ArgumentException_t928607144 * L_16 = (ArgumentException_t928607144 *)il2cpp_codegen_object_new(ArgumentException_t928607144_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m732321503(L_16, _stringLiteral3945091134, _stringLiteral2208261865, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_16);
+	}
+
+IL_0084:
+	{
+		String_t* L_17 = ___destFileName1;
+		NullCheck(L_17);
+		String_t* L_18 = String_Trim_m1030489823(L_17, /*hidden argument*/NULL);
+		NullCheck(L_18);
+		int32_t L_19 = String_get_Length_m2979997331(L_18, /*hidden argument*/NULL);
+		if (!L_19)
+		{
+			goto IL_00a5;
+		}
+	}
+	{
+		String_t* L_20 = ___destFileName1;
+		IL2CPP_RUNTIME_CLASS_INIT(Path_t667902997_il2cpp_TypeInfo_var);
+		CharU5BU5D_t3324145743* L_21 = ((Path_t667902997_StaticFields*)Path_t667902997_il2cpp_TypeInfo_var->static_fields)->get_InvalidPathChars_0();
+		NullCheck(L_20);
+		int32_t L_22 = String_IndexOfAny_m3660242324(L_20, L_21, /*hidden argument*/NULL);
+		if ((((int32_t)L_22) == ((int32_t)(-1))))
+		{
+			goto IL_00b0;
+		}
+	}
+
+IL_00a5:
+	{
+		ArgumentException_t928607144 * L_23 = (ArgumentException_t928607144 *)il2cpp_codegen_object_new(ArgumentException_t928607144_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m3544856547(L_23, _stringLiteral3236990933, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_23);
+	}
+
+IL_00b0:
+	{
+		String_t* L_24 = ___sourceFileName0;
+		IL2CPP_RUNTIME_CLASS_INIT(MonoIO_t1385261305_il2cpp_TypeInfo_var);
+		bool L_25 = MonoIO_Exists_m2258179510(NULL /*static, unused*/, L_24, (&V_0), /*hidden argument*/NULL);
+		if (L_25)
+		{
+			goto IL_00d8;
+		}
+	}
+	{
+		ObjectU5BU5D_t1108656482* L_26 = ((ObjectU5BU5D_t1108656482*)SZArrayNew(ObjectU5BU5D_t1108656482_il2cpp_TypeInfo_var, (uint32_t)1));
+		String_t* L_27 = ___sourceFileName0;
+		NullCheck(L_26);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_26, 0);
+		ArrayElementTypeCheck (L_26, L_27);
+		(L_26)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_27);
+		String_t* L_28 = Locale_GetText_m2218462520(NULL /*static, unused*/, _stringLiteral13280667, L_26, /*hidden argument*/NULL);
+		String_t* L_29 = ___sourceFileName0;
+		FileNotFoundException_t451627778 * L_30 = (FileNotFoundException_t451627778 *)il2cpp_codegen_object_new(FileNotFoundException_t451627778_il2cpp_TypeInfo_var);
+		FileNotFoundException__ctor_m2788024869(L_30, L_28, L_29, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_30);
+	}
+
+IL_00d8:
+	{
+		String_t* L_31 = ___sourceFileName0;
+		int32_t L_32 = File_GetAttributes_m1646191705(NULL /*static, unused*/, L_31, /*hidden argument*/NULL);
+		if ((!(((uint32_t)((int32_t)((int32_t)L_32&(int32_t)((int32_t)16)))) == ((uint32_t)((int32_t)16)))))
+		{
+			goto IL_0102;
+		}
+	}
+	{
+		ObjectU5BU5D_t1108656482* L_33 = ((ObjectU5BU5D_t1108656482*)SZArrayNew(ObjectU5BU5D_t1108656482_il2cpp_TypeInfo_var, (uint32_t)1));
+		String_t* L_34 = ___sourceFileName0;
+		NullCheck(L_33);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_33, 0);
+		ArrayElementTypeCheck (L_33, L_34);
+		(L_33)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_34);
+		String_t* L_35 = Locale_GetText_m2218462520(NULL /*static, unused*/, _stringLiteral1796614800, L_33, /*hidden argument*/NULL);
+		ArgumentException_t928607144 * L_36 = (ArgumentException_t928607144 *)il2cpp_codegen_object_new(ArgumentException_t928607144_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m3544856547(L_36, L_35, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_36);
+	}
+
+IL_0102:
+	{
+		String_t* L_37 = ___destFileName1;
+		IL2CPP_RUNTIME_CLASS_INIT(MonoIO_t1385261305_il2cpp_TypeInfo_var);
+		bool L_38 = MonoIO_Exists_m2258179510(NULL /*static, unused*/, L_37, (&V_0), /*hidden argument*/NULL);
+		if (!L_38)
+		{
+			goto IL_0159;
+		}
+	}
+	{
+		String_t* L_39 = ___destFileName1;
+		int32_t L_40 = File_GetAttributes_m1646191705(NULL /*static, unused*/, L_39, /*hidden argument*/NULL);
+		if ((!(((uint32_t)((int32_t)((int32_t)L_40&(int32_t)((int32_t)16)))) == ((uint32_t)((int32_t)16)))))
+		{
+			goto IL_0139;
+		}
+	}
+	{
+		ObjectU5BU5D_t1108656482* L_41 = ((ObjectU5BU5D_t1108656482*)SZArrayNew(ObjectU5BU5D_t1108656482_il2cpp_TypeInfo_var, (uint32_t)1));
+		String_t* L_42 = ___destFileName1;
+		NullCheck(L_41);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_41, 0);
+		ArrayElementTypeCheck (L_41, L_42);
+		(L_41)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_42);
+		String_t* L_43 = Locale_GetText_m2218462520(NULL /*static, unused*/, _stringLiteral1796614800, L_41, /*hidden argument*/NULL);
+		ArgumentException_t928607144 * L_44 = (ArgumentException_t928607144 *)il2cpp_codegen_object_new(ArgumentException_t928607144_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m3544856547(L_44, L_43, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_44);
+	}
+
+IL_0139:
+	{
+		bool L_45 = ___overwrite2;
+		if (L_45)
+		{
+			goto IL_0159;
+		}
+	}
+	{
+		ObjectU5BU5D_t1108656482* L_46 = ((ObjectU5BU5D_t1108656482*)SZArrayNew(ObjectU5BU5D_t1108656482_il2cpp_TypeInfo_var, (uint32_t)1));
+		String_t* L_47 = ___destFileName1;
+		NullCheck(L_46);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_46, 0);
+		ArrayElementTypeCheck (L_46, L_47);
+		(L_46)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_47);
+		String_t* L_48 = Locale_GetText_m2218462520(NULL /*static, unused*/, _stringLiteral891878460, L_46, /*hidden argument*/NULL);
+		IOException_t2404867879 * L_49 = (IOException_t2404867879 *)il2cpp_codegen_object_new(IOException_t2404867879_il2cpp_TypeInfo_var);
+		IOException__ctor_m249933518(L_49, L_48, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_49);
+	}
+
+IL_0159:
+	{
+		String_t* L_50 = ___destFileName1;
+		IL2CPP_RUNTIME_CLASS_INIT(Path_t667902997_il2cpp_TypeInfo_var);
+		String_t* L_51 = Path_GetDirectoryName_m1772680861(NULL /*static, unused*/, L_50, /*hidden argument*/NULL);
+		V_1 = L_51;
+		String_t* L_52 = V_1;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_53 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		bool L_54 = String_op_Inequality_m2125462205(NULL /*static, unused*/, L_52, L_53, /*hidden argument*/NULL);
+		if (!L_54)
+		{
+			goto IL_0195;
+		}
+	}
+	{
+		String_t* L_55 = V_1;
+		bool L_56 = Directory_Exists_m4117375188(NULL /*static, unused*/, L_55, /*hidden argument*/NULL);
+		if (L_56)
+		{
+			goto IL_0195;
+		}
+	}
+	{
+		ObjectU5BU5D_t1108656482* L_57 = ((ObjectU5BU5D_t1108656482*)SZArrayNew(ObjectU5BU5D_t1108656482_il2cpp_TypeInfo_var, (uint32_t)1));
+		String_t* L_58 = V_1;
+		NullCheck(L_57);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_57, 0);
+		ArrayElementTypeCheck (L_57, L_58);
+		(L_57)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_58);
+		String_t* L_59 = Locale_GetText_m2218462520(NULL /*static, unused*/, _stringLiteral1222276690, L_57, /*hidden argument*/NULL);
+		DirectoryNotFoundException_t1164955875 * L_60 = (DirectoryNotFoundException_t1164955875 *)il2cpp_codegen_object_new(DirectoryNotFoundException_t1164955875_il2cpp_TypeInfo_var);
+		DirectoryNotFoundException__ctor_m1548643788(L_60, L_59, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_60);
+	}
+
+IL_0195:
+	{
+		String_t* L_61 = ___sourceFileName0;
+		String_t* L_62 = ___destFileName1;
+		bool L_63 = ___overwrite2;
+		IL2CPP_RUNTIME_CLASS_INIT(MonoIO_t1385261305_il2cpp_TypeInfo_var);
+		bool L_64 = MonoIO_CopyFile_m3140188608(NULL /*static, unused*/, L_61, L_62, L_63, (&V_0), /*hidden argument*/NULL);
+		if (L_64)
+		{
+			goto IL_01c5;
+		}
+	}
+	{
+		ObjectU5BU5D_t1108656482* L_65 = ((ObjectU5BU5D_t1108656482*)SZArrayNew(ObjectU5BU5D_t1108656482_il2cpp_TypeInfo_var, (uint32_t)2));
+		String_t* L_66 = ___sourceFileName0;
+		NullCheck(L_65);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_65, 0);
+		ArrayElementTypeCheck (L_65, L_66);
+		(L_65)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_66);
+		ObjectU5BU5D_t1108656482* L_67 = L_65;
+		String_t* L_68 = ___destFileName1;
+		NullCheck(L_67);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_67, 1);
+		ArrayElementTypeCheck (L_67, L_68);
+		(L_67)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_68);
+		String_t* L_69 = Locale_GetText_m2218462520(NULL /*static, unused*/, _stringLiteral1183117276, L_67, /*hidden argument*/NULL);
+		V_2 = L_69;
+		String_t* L_70 = V_2;
+		int32_t L_71 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(MonoIO_t1385261305_il2cpp_TypeInfo_var);
+		Exception_t3991598821 * L_72 = MonoIO_GetException_m973090016(NULL /*static, unused*/, L_70, L_71, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_72);
+	}
+
+IL_01c5:
+	{
+		return;
+	}
+}
+// System.IO.FileStream System.IO.File::Create(System.String)
+extern "C"  FileStream_t2141505868 * File_Create_m3497726217 (Il2CppObject * __this /* static, unused */, String_t* ___path0, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___path0;
+		FileStream_t2141505868 * L_1 = File_Create_m2847392366(NULL /*static, unused*/, L_0, ((int32_t)8192), /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+// System.IO.FileStream System.IO.File::Create(System.String,System.Int32)
+extern Il2CppClass* FileStream_t2141505868_il2cpp_TypeInfo_var;
+extern const uint32_t File_Create_m2847392366_MetadataUsageId;
+extern "C"  FileStream_t2141505868 * File_Create_m2847392366 (Il2CppObject * __this /* static, unused */, String_t* ___path0, int32_t ___bufferSize1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (File_Create_m2847392366_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___path0;
+		int32_t L_1 = ___bufferSize1;
+		FileStream_t2141505868 * L_2 = (FileStream_t2141505868 *)il2cpp_codegen_object_new(FileStream_t2141505868_il2cpp_TypeInfo_var);
+		FileStream__ctor_m3371310897(L_2, L_0, 2, 3, 0, L_1, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
 // System.Void System.IO.File::Delete(System.String)
 extern Il2CppClass* ArgumentNullException_t3573189601_il2cpp_TypeInfo_var;
 extern Il2CppClass* Path_t667902997_il2cpp_TypeInfo_var;
@@ -14930,6 +15293,357 @@ IL_0029:
 		return L_8;
 	}
 }
+// System.IO.FileAttributes System.IO.File::GetAttributes(System.String)
+extern Il2CppClass* ArgumentNullException_t3573189601_il2cpp_TypeInfo_var;
+extern Il2CppClass* ArgumentException_t928607144_il2cpp_TypeInfo_var;
+extern Il2CppClass* Path_t667902997_il2cpp_TypeInfo_var;
+extern Il2CppClass* MonoIO_t1385261305_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3433509;
+extern Il2CppCodeGenString* _stringLiteral1282155602;
+extern Il2CppCodeGenString* _stringLiteral3604030062;
+extern const uint32_t File_GetAttributes_m1646191705_MetadataUsageId;
+extern "C"  int32_t File_GetAttributes_m1646191705 (Il2CppObject * __this /* static, unused */, String_t* ___path0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (File_GetAttributes_m1646191705_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	{
+		String_t* L_0 = ___path0;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t3573189601 * L_1 = (ArgumentNullException_t3573189601 *)il2cpp_codegen_object_new(ArgumentNullException_t3573189601_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m135444188(L_1, _stringLiteral3433509, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0011:
+	{
+		String_t* L_2 = ___path0;
+		NullCheck(L_2);
+		String_t* L_3 = String_Trim_m1030489823(L_2, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		int32_t L_4 = String_get_Length_m2979997331(L_3, /*hidden argument*/NULL);
+		if (L_4)
+		{
+			goto IL_0031;
+		}
+	}
+	{
+		String_t* L_5 = Locale_GetText_m2389348044(NULL /*static, unused*/, _stringLiteral1282155602, /*hidden argument*/NULL);
+		ArgumentException_t928607144 * L_6 = (ArgumentException_t928607144 *)il2cpp_codegen_object_new(ArgumentException_t928607144_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m3544856547(L_6, L_5, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_6);
+	}
+
+IL_0031:
+	{
+		String_t* L_7 = ___path0;
+		IL2CPP_RUNTIME_CLASS_INIT(Path_t667902997_il2cpp_TypeInfo_var);
+		CharU5BU5D_t3324145743* L_8 = ((Path_t667902997_StaticFields*)Path_t667902997_il2cpp_TypeInfo_var->static_fields)->get_InvalidPathChars_0();
+		NullCheck(L_7);
+		int32_t L_9 = String_IndexOfAny_m3660242324(L_7, L_8, /*hidden argument*/NULL);
+		if ((((int32_t)L_9) < ((int32_t)0)))
+		{
+			goto IL_0052;
+		}
+	}
+	{
+		String_t* L_10 = Locale_GetText_m2389348044(NULL /*static, unused*/, _stringLiteral3604030062, /*hidden argument*/NULL);
+		ArgumentException_t928607144 * L_11 = (ArgumentException_t928607144 *)il2cpp_codegen_object_new(ArgumentException_t928607144_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m3544856547(L_11, L_10, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_11);
+	}
+
+IL_0052:
+	{
+		String_t* L_12 = ___path0;
+		IL2CPP_RUNTIME_CLASS_INIT(MonoIO_t1385261305_il2cpp_TypeInfo_var);
+		int32_t L_13 = MonoIO_GetFileAttributes_m3774473836(NULL /*static, unused*/, L_12, (&V_0), /*hidden argument*/NULL);
+		V_1 = L_13;
+		int32_t L_14 = V_0;
+		if (!L_14)
+		{
+			goto IL_0069;
+		}
+	}
+	{
+		String_t* L_15 = ___path0;
+		int32_t L_16 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(MonoIO_t1385261305_il2cpp_TypeInfo_var);
+		Exception_t3991598821 * L_17 = MonoIO_GetException_m973090016(NULL /*static, unused*/, L_15, L_16, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_17);
+	}
+
+IL_0069:
+	{
+		int32_t L_18 = V_1;
+		return L_18;
+	}
+}
+// System.Void System.IO.File::Move(System.String,System.String)
+extern Il2CppClass* ArgumentNullException_t3573189601_il2cpp_TypeInfo_var;
+extern Il2CppClass* ArgumentException_t928607144_il2cpp_TypeInfo_var;
+extern Il2CppClass* Path_t667902997_il2cpp_TypeInfo_var;
+extern Il2CppClass* MonoIO_t1385261305_il2cpp_TypeInfo_var;
+extern Il2CppClass* ObjectU5BU5D_t1108656482_il2cpp_TypeInfo_var;
+extern Il2CppClass* FileNotFoundException_t451627778_il2cpp_TypeInfo_var;
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* DirectoryNotFoundException_t1164955875_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2195736418;
+extern Il2CppCodeGenString* _stringLiteral2208261865;
+extern Il2CppCodeGenString* _stringLiteral3945091134;
+extern Il2CppCodeGenString* _stringLiteral3236990933;
+extern Il2CppCodeGenString* _stringLiteral13280667;
+extern Il2CppCodeGenString* _stringLiteral1644080420;
+extern const uint32_t File_Move_m1404293974_MetadataUsageId;
+extern "C"  void File_Move_m1404293974 (Il2CppObject * __this /* static, unused */, String_t* ___sourceFileName0, String_t* ___destFileName1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (File_Move_m1404293974_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	int32_t V_0 = 0;
+	String_t* V_1 = NULL;
+	{
+		String_t* L_0 = ___sourceFileName0;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t3573189601 * L_1 = (ArgumentNullException_t3573189601 *)il2cpp_codegen_object_new(ArgumentNullException_t3573189601_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m135444188(L_1, _stringLiteral2195736418, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0011:
+	{
+		String_t* L_2 = ___destFileName1;
+		if (L_2)
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		ArgumentNullException_t3573189601 * L_3 = (ArgumentNullException_t3573189601 *)il2cpp_codegen_object_new(ArgumentNullException_t3573189601_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m135444188(L_3, _stringLiteral2208261865, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3);
+	}
+
+IL_0022:
+	{
+		String_t* L_4 = ___sourceFileName0;
+		NullCheck(L_4);
+		int32_t L_5 = String_get_Length_m2979997331(L_4, /*hidden argument*/NULL);
+		if (L_5)
+		{
+			goto IL_003d;
+		}
+	}
+	{
+		ArgumentException_t928607144 * L_6 = (ArgumentException_t928607144 *)il2cpp_codegen_object_new(ArgumentException_t928607144_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m732321503(L_6, _stringLiteral3945091134, _stringLiteral2195736418, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_6);
+	}
+
+IL_003d:
+	{
+		String_t* L_7 = ___sourceFileName0;
+		NullCheck(L_7);
+		String_t* L_8 = String_Trim_m1030489823(L_7, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		int32_t L_9 = String_get_Length_m2979997331(L_8, /*hidden argument*/NULL);
+		if (!L_9)
+		{
+			goto IL_005e;
+		}
+	}
+	{
+		String_t* L_10 = ___sourceFileName0;
+		IL2CPP_RUNTIME_CLASS_INIT(Path_t667902997_il2cpp_TypeInfo_var);
+		CharU5BU5D_t3324145743* L_11 = ((Path_t667902997_StaticFields*)Path_t667902997_il2cpp_TypeInfo_var->static_fields)->get_InvalidPathChars_0();
+		NullCheck(L_10);
+		int32_t L_12 = String_IndexOfAny_m3660242324(L_10, L_11, /*hidden argument*/NULL);
+		if ((((int32_t)L_12) == ((int32_t)(-1))))
+		{
+			goto IL_0069;
+		}
+	}
+
+IL_005e:
+	{
+		ArgumentException_t928607144 * L_13 = (ArgumentException_t928607144 *)il2cpp_codegen_object_new(ArgumentException_t928607144_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m3544856547(L_13, _stringLiteral3236990933, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_13);
+	}
+
+IL_0069:
+	{
+		String_t* L_14 = ___destFileName1;
+		NullCheck(L_14);
+		int32_t L_15 = String_get_Length_m2979997331(L_14, /*hidden argument*/NULL);
+		if (L_15)
+		{
+			goto IL_0084;
+		}
+	}
+	{
+		ArgumentException_t928607144 * L_16 = (ArgumentException_t928607144 *)il2cpp_codegen_object_new(ArgumentException_t928607144_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m732321503(L_16, _stringLiteral3945091134, _stringLiteral2208261865, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_16);
+	}
+
+IL_0084:
+	{
+		String_t* L_17 = ___destFileName1;
+		NullCheck(L_17);
+		String_t* L_18 = String_Trim_m1030489823(L_17, /*hidden argument*/NULL);
+		NullCheck(L_18);
+		int32_t L_19 = String_get_Length_m2979997331(L_18, /*hidden argument*/NULL);
+		if (!L_19)
+		{
+			goto IL_00a5;
+		}
+	}
+	{
+		String_t* L_20 = ___destFileName1;
+		IL2CPP_RUNTIME_CLASS_INIT(Path_t667902997_il2cpp_TypeInfo_var);
+		CharU5BU5D_t3324145743* L_21 = ((Path_t667902997_StaticFields*)Path_t667902997_il2cpp_TypeInfo_var->static_fields)->get_InvalidPathChars_0();
+		NullCheck(L_20);
+		int32_t L_22 = String_IndexOfAny_m3660242324(L_20, L_21, /*hidden argument*/NULL);
+		if ((((int32_t)L_22) == ((int32_t)(-1))))
+		{
+			goto IL_00b0;
+		}
+	}
+
+IL_00a5:
+	{
+		ArgumentException_t928607144 * L_23 = (ArgumentException_t928607144 *)il2cpp_codegen_object_new(ArgumentException_t928607144_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m3544856547(L_23, _stringLiteral3236990933, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_23);
+	}
+
+IL_00b0:
+	{
+		String_t* L_24 = ___sourceFileName0;
+		IL2CPP_RUNTIME_CLASS_INIT(MonoIO_t1385261305_il2cpp_TypeInfo_var);
+		bool L_25 = MonoIO_Exists_m2258179510(NULL /*static, unused*/, L_24, (&V_0), /*hidden argument*/NULL);
+		if (L_25)
+		{
+			goto IL_00d8;
+		}
+	}
+	{
+		ObjectU5BU5D_t1108656482* L_26 = ((ObjectU5BU5D_t1108656482*)SZArrayNew(ObjectU5BU5D_t1108656482_il2cpp_TypeInfo_var, (uint32_t)1));
+		String_t* L_27 = ___sourceFileName0;
+		NullCheck(L_26);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_26, 0);
+		ArrayElementTypeCheck (L_26, L_27);
+		(L_26)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_27);
+		String_t* L_28 = Locale_GetText_m2218462520(NULL /*static, unused*/, _stringLiteral13280667, L_26, /*hidden argument*/NULL);
+		String_t* L_29 = ___sourceFileName0;
+		FileNotFoundException_t451627778 * L_30 = (FileNotFoundException_t451627778 *)il2cpp_codegen_object_new(FileNotFoundException_t451627778_il2cpp_TypeInfo_var);
+		FileNotFoundException__ctor_m2788024869(L_30, L_28, L_29, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_30);
+	}
+
+IL_00d8:
+	{
+		String_t* L_31 = ___destFileName1;
+		IL2CPP_RUNTIME_CLASS_INIT(Path_t667902997_il2cpp_TypeInfo_var);
+		String_t* L_32 = Path_GetDirectoryName_m1772680861(NULL /*static, unused*/, L_31, /*hidden argument*/NULL);
+		V_1 = L_32;
+		String_t* L_33 = V_1;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_34 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		bool L_35 = String_op_Inequality_m2125462205(NULL /*static, unused*/, L_33, L_34, /*hidden argument*/NULL);
+		if (!L_35)
+		{
+			goto IL_010a;
+		}
+	}
+	{
+		String_t* L_36 = V_1;
+		bool L_37 = Directory_Exists_m4117375188(NULL /*static, unused*/, L_36, /*hidden argument*/NULL);
+		if (L_37)
+		{
+			goto IL_010a;
+		}
+	}
+	{
+		String_t* L_38 = Locale_GetText_m2389348044(NULL /*static, unused*/, _stringLiteral1644080420, /*hidden argument*/NULL);
+		DirectoryNotFoundException_t1164955875 * L_39 = (DirectoryNotFoundException_t1164955875 *)il2cpp_codegen_object_new(DirectoryNotFoundException_t1164955875_il2cpp_TypeInfo_var);
+		DirectoryNotFoundException__ctor_m1548643788(L_39, L_38, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_39);
+	}
+
+IL_010a:
+	{
+		String_t* L_40 = ___sourceFileName0;
+		String_t* L_41 = ___destFileName1;
+		IL2CPP_RUNTIME_CLASS_INIT(MonoIO_t1385261305_il2cpp_TypeInfo_var);
+		bool L_42 = MonoIO_MoveFile_m1580252875(NULL /*static, unused*/, L_40, L_41, (&V_0), /*hidden argument*/NULL);
+		if (L_42)
+		{
+			goto IL_0141;
+		}
+	}
+	{
+		int32_t L_43 = V_0;
+		if ((!(((uint32_t)L_43) == ((uint32_t)((int32_t)183)))))
+		{
+			goto IL_012a;
+		}
+	}
+	{
+		int32_t L_44 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(MonoIO_t1385261305_il2cpp_TypeInfo_var);
+		Exception_t3991598821 * L_45 = MonoIO_GetException_m1380825636(NULL /*static, unused*/, L_44, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_45);
+	}
+
+IL_012a:
+	{
+		int32_t L_46 = V_0;
+		if ((!(((uint32_t)L_46) == ((uint32_t)((int32_t)32)))))
+		{
+			goto IL_013a;
+		}
+	}
+	{
+		String_t* L_47 = ___sourceFileName0;
+		int32_t L_48 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(MonoIO_t1385261305_il2cpp_TypeInfo_var);
+		Exception_t3991598821 * L_49 = MonoIO_GetException_m973090016(NULL /*static, unused*/, L_47, L_48, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_49);
+	}
+
+IL_013a:
+	{
+		int32_t L_50 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(MonoIO_t1385261305_il2cpp_TypeInfo_var);
+		Exception_t3991598821 * L_51 = MonoIO_GetException_m1380825636(NULL /*static, unused*/, L_50, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_51);
+	}
+
+IL_0141:
+	{
+		return;
+	}
+}
 // System.IO.FileStream System.IO.File::Open(System.String,System.IO.FileMode)
 extern Il2CppClass* FileStream_t2141505868_il2cpp_TypeInfo_var;
 extern const uint32_t File_Open_m1918038371_MetadataUsageId;
@@ -15016,6 +15730,80 @@ extern "C"  StreamReader_t2549717843 * File_OpenText_m396847893 (Il2CppObject * 
 		StreamReader_t2549717843 * L_1 = (StreamReader_t2549717843 *)il2cpp_codegen_object_new(StreamReader_t2549717843_il2cpp_TypeInfo_var);
 		StreamReader__ctor_m3789405692(L_1, L_0, /*hidden argument*/NULL);
 		return L_1;
+	}
+}
+// System.Void System.IO.File::WriteAllBytes(System.String,System.Byte[])
+extern Il2CppClass* IDisposable_t1423340799_il2cpp_TypeInfo_var;
+extern const uint32_t File_WriteAllBytes_m2419938065_MetadataUsageId;
+extern "C"  void File_WriteAllBytes_m2419938065 (Il2CppObject * __this /* static, unused */, String_t* ___path0, ByteU5BU5D_t4260760469* ___bytes1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (File_WriteAllBytes_m2419938065_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Stream_t1561764144 * V_0 = NULL;
+	Exception_t3991598821 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t3991598821 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		String_t* L_0 = ___path0;
+		FileStream_t2141505868 * L_1 = File_Create_m3497726217(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+	}
+
+IL_0007:
+	try
+	{ // begin try (depth: 1)
+		Stream_t1561764144 * L_2 = V_0;
+		ByteU5BU5D_t4260760469* L_3 = ___bytes1;
+		ByteU5BU5D_t4260760469* L_4 = ___bytes1;
+		NullCheck(L_4);
+		NullCheck(L_2);
+		VirtActionInvoker3< ByteU5BU5D_t4260760469*, int32_t, int32_t >::Invoke(18 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_2, L_3, 0, (((int32_t)((int32_t)(((Il2CppArray *)L_4)->max_length)))));
+		IL2CPP_LEAVE(0x24, FINALLY_0017);
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t3991598821 *)e.ex;
+		goto FINALLY_0017;
+	}
+
+FINALLY_0017:
+	{ // begin finally (depth: 1)
+		{
+			Stream_t1561764144 * L_5 = V_0;
+			if (!L_5)
+			{
+				goto IL_0023;
+			}
+		}
+
+IL_001d:
+		{
+			Stream_t1561764144 * L_6 = V_0;
+			NullCheck(L_6);
+			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t1423340799_il2cpp_TypeInfo_var, L_6);
+		}
+
+IL_0023:
+		{
+			IL2CPP_END_FINALLY(23)
+		}
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(23)
+	{
+		IL2CPP_JUMP_TBL(0x24, IL_0024)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t3991598821 *)
+	}
+
+IL_0024:
+	{
+		return;
 	}
 }
 // System.Void System.IO.FileNotFoundException::.ctor()
@@ -15479,6 +16267,19 @@ extern "C"  void FileStream__ctor_m3657053030 (FileStream_t2141505868 * __this, 
 		int32_t L_2 = ___access2;
 		int32_t L_3 = ___share3;
 		FileStream__ctor_m1468472351(__this, L_0, L_1, L_2, L_3, ((int32_t)8192), (bool)0, 0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.IO.FileStream::.ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.Int32)
+extern "C"  void FileStream__ctor_m3371310897 (FileStream_t2141505868 * __this, String_t* ___path0, int32_t ___mode1, int32_t ___access2, int32_t ___share3, int32_t ___bufferSize4, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___path0;
+		int32_t L_1 = ___mode1;
+		int32_t L_2 = ___access2;
+		int32_t L_3 = ___share3;
+		int32_t L_4 = ___bufferSize4;
+		FileStream__ctor_m1468472351(__this, L_0, L_1, L_2, L_3, L_4, (bool)0, 0, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -20837,6 +21638,20 @@ extern "C"  String_t* MonoIO_GetCurrentDirectory_m2958295317 (Il2CppObject * __t
 	typedef String_t* (*MonoIO_GetCurrentDirectory_m2958295317_ftn) (int32_t*);
 	return  ((MonoIO_GetCurrentDirectory_m2958295317_ftn)mscorlib::System::IO::MonoIO::GetCurrentDirectory) (___error0);
 }
+// System.Boolean System.IO.MonoIO::MoveFile(System.String,System.String,System.IO.MonoIOError&)
+extern "C"  bool MonoIO_MoveFile_m1580252875 (Il2CppObject * __this /* static, unused */, String_t* ___path0, String_t* ___dest1, int32_t* ___error2, const MethodInfo* method)
+{
+	using namespace il2cpp::icalls;
+	typedef bool (*MonoIO_MoveFile_m1580252875_ftn) (String_t*, String_t*, int32_t*);
+	return  ((MonoIO_MoveFile_m1580252875_ftn)mscorlib::System::IO::MonoIO::MoveFile) (___path0, ___dest1, ___error2);
+}
+// System.Boolean System.IO.MonoIO::CopyFile(System.String,System.String,System.Boolean,System.IO.MonoIOError&)
+extern "C"  bool MonoIO_CopyFile_m3140188608 (Il2CppObject * __this /* static, unused */, String_t* ___path0, String_t* ___dest1, bool ___overwrite2, int32_t* ___error3, const MethodInfo* method)
+{
+	using namespace il2cpp::icalls;
+	typedef bool (*MonoIO_CopyFile_m3140188608_ftn) (String_t*, String_t*, bool, int32_t*);
+	return  ((MonoIO_CopyFile_m3140188608_ftn)mscorlib::System::IO::MonoIO::CopyFile) (___path0, ___dest1, ___overwrite2, ___error3);
+}
 // System.Boolean System.IO.MonoIO::DeleteFile(System.String,System.IO.MonoIOError&)
 extern "C"  bool MonoIO_DeleteFile_m991567969 (Il2CppObject * __this /* static, unused */, String_t* ___path0, int32_t* ___error1, const MethodInfo* method)
 {
@@ -20857,6 +21672,40 @@ extern "C"  int32_t MonoIO_GetFileType_m2747902883 (Il2CppObject * __this /* sta
 	using namespace il2cpp::icalls;
 	typedef int32_t (*MonoIO_GetFileType_m2747902883_ftn) (IntPtr_t, int32_t*);
 	return  ((MonoIO_GetFileType_m2747902883_ftn)mscorlib::System::IO::MonoIO::GetFileType) (___handle0, ___error1);
+}
+// System.Boolean System.IO.MonoIO::Exists(System.String,System.IO.MonoIOError&)
+extern Il2CppClass* MonoIO_t1385261305_il2cpp_TypeInfo_var;
+extern const uint32_t MonoIO_Exists_m2258179510_MetadataUsageId;
+extern "C"  bool MonoIO_Exists_m2258179510 (Il2CppObject * __this /* static, unused */, String_t* ___path0, int32_t* ___error1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (MonoIO_Exists_m2258179510_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		String_t* L_0 = ___path0;
+		int32_t* L_1 = ___error1;
+		IL2CPP_RUNTIME_CLASS_INIT(MonoIO_t1385261305_il2cpp_TypeInfo_var);
+		int32_t L_2 = MonoIO_GetFileAttributes_m3774473836(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		int32_t L_3 = V_0;
+		int32_t L_4 = ((MonoIO_t1385261305_StaticFields*)MonoIO_t1385261305_il2cpp_TypeInfo_var->static_fields)->get_InvalidFileAttributes_0();
+		if ((!(((uint32_t)L_3) == ((uint32_t)L_4))))
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0015:
+	{
+		return (bool)1;
+	}
 }
 // System.Boolean System.IO.MonoIO::ExistsFile(System.String,System.IO.MonoIOError&)
 extern Il2CppClass* MonoIO_t1385261305_il2cpp_TypeInfo_var;

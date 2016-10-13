@@ -17,7 +17,7 @@
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g4168079610MethodDeclarations.h"
 
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.EventSystems.PointerEventData>::.ctor()
-#define Dictionary_2__ctor_m2150136428(__this, method) ((  void (*) (Dictionary_2_t1846014262 *, const MethodInfo*))Dictionary_2__ctor_m1859298524_gshared)(__this, method)
+#define Dictionary_2__ctor_m2150136428(__this, method) ((  void (*) (Dictionary_2_t1846014262 *, const MethodInfo*))Dictionary_2__ctor_m1050910858_gshared)(__this, method)
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.EventSystems.PointerEventData>::.ctor(System.Collections.Generic.IEqualityComparer`1<TKey>)
 #define Dictionary_2__ctor_m2671170217(__this, ___comparer0, method) ((  void (*) (Dictionary_2_t1846014262 *, Il2CppObject*, const MethodInfo*))Dictionary_2__ctor_m3610002771_gshared)(__this, ___comparer0, method)
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.EventSystems.PointerEventData>::.ctor(System.Int32)
@@ -61,7 +61,7 @@
 // TValue System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.EventSystems.PointerEventData>::get_Item(TKey)
 #define Dictionary_2_get_Item_m547963125(__this, ___key0, method) ((  PointerEventData_t1848751023 * (*) (Dictionary_2_t1846014262 *, int32_t, const MethodInfo*))Dictionary_2_get_Item_m542157067_gshared)(__this, ___key0, method)
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.EventSystems.PointerEventData>::set_Item(TKey,TValue)
-#define Dictionary_2_set_Item_m4097886066(__this, ___key0, ___value1, method) ((  void (*) (Dictionary_2_t1846014262 *, int32_t, PointerEventData_t1848751023 *, const MethodInfo*))Dictionary_2_set_Item_m3219597724_gshared)(__this, ___key0, ___value1, method)
+#define Dictionary_2_set_Item_m4097886066(__this, ___key0, ___value1, method) ((  void (*) (Dictionary_2_t1846014262 *, int32_t, PointerEventData_t1848751023 *, const MethodInfo*))Dictionary_2_set_Item_m1170572283_gshared)(__this, ___key0, ___value1, method)
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.EventSystems.PointerEventData>::Init(System.Int32,System.Collections.Generic.IEqualityComparer`1<TKey>)
 #define Dictionary_2_Init_m269867178(__this, ___capacity0, ___hcp1, method) ((  void (*) (Dictionary_2_t1846014262 *, int32_t, Il2CppObject*, const MethodInfo*))Dictionary_2_Init_m3161627732_gshared)(__this, ___capacity0, ___hcp1, method)
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.EventSystems.PointerEventData>::InitArrays(System.Int32)
@@ -91,7 +91,7 @@
 // System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.EventSystems.PointerEventData>::Remove(TKey)
 #define Dictionary_2_Remove_m1770969343(__this, ___key0, method) ((  bool (*) (Dictionary_2_t1846014262 *, int32_t, const MethodInfo*))Dictionary_2_Remove_m183515743_gshared)(__this, ___key0, method)
 // System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.EventSystems.PointerEventData>::TryGetValue(TKey,TValue&)
-#define Dictionary_2_TryGetValue_m985557013(__this, ___key0, ___value1, method) ((  bool (*) (Dictionary_2_t1846014262 *, int32_t, PointerEventData_t1848751023 **, const MethodInfo*))Dictionary_2_TryGetValue_m2515559242_gshared)(__this, ___key0, ___value1, method)
+#define Dictionary_2_TryGetValue_m985557013(__this, ___key0, ___value1, method) ((  bool (*) (Dictionary_2_t1846014262 *, int32_t, PointerEventData_t1848751023 **, const MethodInfo*))Dictionary_2_TryGetValue_m2256091851_gshared)(__this, ___key0, ___value1, method)
 // System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.EventSystems.PointerEventData>::get_Values()
 #define Dictionary_2_get_Values_m2322114306(__this, method) ((  ValueCollection_t546619975 * (*) (Dictionary_2_t1846014262 *, const MethodInfo*))Dictionary_2_get_Values_m1815086189_gshared)(__this, method)
 // TKey System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.EventSystems.PointerEventData>::ToTKey(System.Object)

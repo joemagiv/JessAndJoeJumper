@@ -36,8 +36,10 @@ extern "C" void DelegatePInvokeWrapper_BannerWasClickedDelegate_t3510840818 ();
 extern "C" void DelegatePInvokeWrapper_BannerWasLoadedDelegate_t3604098244 ();
 extern "C" void DelegatePInvokeWrapper_InterstitialWasLoadedDelegate_t3068494210 ();
 extern "C" void DelegatePInvokeWrapper_InterstitialWasViewedDelegate_t507319425 ();
+extern "C" void DelegatePInvokeWrapper_OnError_t1516540506 ();
+extern "C" void DelegatePInvokeWrapper_OnSuccess_t1013330901 ();
 extern "C" void DelegatePInvokeWrapper_OnValidateInput_t3952708057 ();
-extern const Il2CppMethodPointer g_DelegateWrappersManagedToNative[26] = 
+extern const Il2CppMethodPointer g_DelegateWrappersManagedToNative[28] = 
 {
 	DelegatePInvokeWrapper_AppDomainInitializer_t691583313,
 	DelegatePInvokeWrapper_Swapper_t4166107989,
@@ -64,5 +66,7 @@ extern const Il2CppMethodPointer g_DelegateWrappersManagedToNative[26] =
 	DelegatePInvokeWrapper_BannerWasLoadedDelegate_t3604098244,
 	DelegatePInvokeWrapper_InterstitialWasLoadedDelegate_t3068494210,
 	DelegatePInvokeWrapper_InterstitialWasViewedDelegate_t507319425,
+	DelegatePInvokeWrapper_OnError_t1516540506,
+	DelegatePInvokeWrapper_OnSuccess_t1013330901,
 	DelegatePInvokeWrapper_OnValidateInput_t3952708057,
 };

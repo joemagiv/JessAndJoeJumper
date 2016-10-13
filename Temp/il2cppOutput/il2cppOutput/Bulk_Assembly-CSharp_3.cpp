@@ -13,10 +13,14 @@
 #include <limits>
 #include <assert.h>
 
-// InControl.TouchTrackControl
-struct TouchTrackControl_t161326467;
+// InControl.TouchStickControl
+struct TouchStickControl_t3456167582;
 // InControl.Touch
 struct Touch_t2333148497;
+// InControl.TouchSwipeControl
+struct TouchSwipeControl_t2766249140;
+// InControl.TouchTrackControl
+struct TouchTrackControl_t161326467;
 // InControl.TwoAxisInputControl
 struct TwoAxisInputControl_t2505665394;
 // InControl.OneAxisInputControl
@@ -131,6 +135,12 @@ struct Platform_t1939328147;
 struct PlatformSpawner_t2783583573;
 // PlayerPrefsManager
 struct PlayerPrefsManager_t567672958;
+// PreviewAndSave
+struct PreviewAndSave_t2697337644;
+// CaptureAndSave
+struct CaptureAndSave_t700313070;
+// UnityEngine.Texture2D
+struct Texture2D_t3884108195;
 // SFXManager
 struct SFXManager_t149887880;
 // Shredder
@@ -151,35 +161,51 @@ struct U3CStartU3Ec__Iterator1_t1387304204;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array1146569071.h"
-#include "AssemblyU2DCSharp_InControl_TouchTrackControl161326467.h"
-#include "AssemblyU2DCSharp_InControl_TouchTrackControl161326467MethodDeclarations.h"
+#include "AssemblyU2DCSharp_InControl_TouchStickControl3456167582.h"
+#include "AssemblyU2DCSharp_InControl_TouchStickControl3456167582MethodDeclarations.h"
 #include "mscorlib_System_Void2863195528.h"
+#include "UnityEngine_UnityEngine_AnimationCurve3667593487MethodDeclarations.h"
+#include "AssemblyU2DCSharp_InControl_TouchSprite2209778038MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InControl_TouchControl3214838364MethodDeclarations.h"
+#include "AssemblyU2DCSharp_InControl_TouchControlAnchor508992049.h"
+#include "UnityEngine_UnityEngine_Vector24282066565.h"
+#include "UnityEngine_UnityEngine_Vector24282066565MethodDeclarations.h"
+#include "mscorlib_System_Single4291918972.h"
 #include "UnityEngine_UnityEngine_Rect4241904616.h"
 #include "UnityEngine_UnityEngine_Rect4241904616MethodDeclarations.h"
-#include "mscorlib_System_Single4291918972.h"
 #include "AssemblyU2DCSharp_InControl_TouchControl_AnalogTarg577850844.h"
+#include "UnityEngine_UnityEngine_AnimationCurve3667593487.h"
+#include "mscorlib_System_Boolean476798718.h"
+#include "AssemblyU2DCSharp_InControl_TouchSprite2209778038.h"
+#include "UnityEngine_UnityEngine_Component3501516275MethodDeclarations.h"
+#include "mscorlib_System_String7231557.h"
+#include "UnityEngine_UnityEngine_Transform1659122786.h"
+#include "mscorlib_System_Int321153838500.h"
 #include "AssemblyU2DCSharp_InControl_Touch2333148497.h"
+#include "UnityEngine_UnityEngine_Transform1659122786MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InControl_TouchManager3098555564MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InControl_TouchUnitType1633405775.h"
+#include "UnityEngine_UnityEngine_Vector34282066566.h"
 #include "UnityEngine_UnityEngine_Color4194546905MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InControl_Utility3785960702MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Color4194546905.h"
-#include "mscorlib_System_Boolean476798718.h"
-#include "mscorlib_System_UInt6424668076.h"
 #include "UnityEngine_UnityEngine_Vector34282066566MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Vector24282066565MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Vector34282066566.h"
-#include "UnityEngine_UnityEngine_Vector24282066565.h"
-#include "AssemblyU2DCSharp_InControl_TouchControl_ButtonTar1917211294.h"
 #include "UnityEngine_UnityEngine_Time4241968337MethodDeclarations.h"
+#include "mscorlib_System_UInt6424668076.h"
+#include "UnityEngine_UnityEngine_Mathf4203372500MethodDeclarations.h"
+#include "AssemblyU2DCSharp_InControl_LockAxis3062185898.h"
+#include "AssemblyU2DCSharp_InControl_DragAxis311196467.h"
+#include "AssemblyU2DCSharp_InControl_TouchControl_SnapAngle2095647845.h"
+#include "AssemblyU2DCSharp_InControl_TouchSwipeControl2766249140.h"
+#include "AssemblyU2DCSharp_InControl_TouchSwipeControl2766249140MethodDeclarations.h"
+#include "AssemblyU2DCSharp_InControl_TouchControl_ButtonTar1917211294.h"
+#include "AssemblyU2DCSharp_InControl_TouchTrackControl161326467.h"
+#include "AssemblyU2DCSharp_InControl_TouchTrackControl161326467MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InControl_TouchType2243222571.h"
 #include "AssemblyU2DCSharp_InControl_TouchType2243222571MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InControl_TouchUnitType1633405775MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InControl_TouchUtility2148316779.h"
 #include "AssemblyU2DCSharp_InControl_TouchUtility2148316779MethodDeclarations.h"
-#include "AssemblyU2DCSharp_InControl_TouchControlAnchor508992049.h"
-#include "UnityEngine_UnityEngine_Mathf4203372500MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InControl_TwoAxisInputControl2505665394.h"
 #include "AssemblyU2DCSharp_InControl_TwoAxisInputControl2505665394MethodDeclarations.h"
 #include "mscorlib_System_Object4170816371MethodDeclarations.h"
@@ -188,7 +214,6 @@ struct U3CStartU3Ec__Iterator1_t1387304204;
 #include "AssemblyU2DCSharp_InControl_InputManager1427642817MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InControl_UnityAnalogSource1236022354.h"
 #include "AssemblyU2DCSharp_InControl_UnityAnalogSource1236022354MethodDeclarations.h"
-#include "mscorlib_System_Int321153838500.h"
 #include "AssemblyU2DCSharp_InControl_InputDevice4071704914.h"
 #include "AssemblyU2DCSharp_InControl_UnityInputDevice2197339721.h"
 #include "AssemblyU2DCSharp_InControl_UnityInputDevice2197339721MethodDeclarations.h"
@@ -204,7 +229,6 @@ struct U3CStartU3Ec__Iterator1_t1387304204;
 #include "UnityEngine_UnityEngine_Gyroscope932197883.h"
 #include "AssemblyU2DCSharp_InControl_UnityGyroAxisSource_Gy2308925493MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InControl_UnityInputDeviceProfil1946940833.h"
-#include "mscorlib_System_String7231557.h"
 #include "mscorlib_System_String7231557MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InControl_InputDevice4071704914MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InControl_InputDeviceProfile1889671047MethodDeclarations.h"
@@ -352,7 +376,6 @@ struct U3CStartU3Ec__Iterator1_t1387304204;
 #include "AssemblyU2DCSharp_LevelController812318240MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_MonoBehaviour667441552MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Object3071478659MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Component3501516275MethodDeclarations.h"
 #include "AssemblyU2DCSharp_MusicManager2870594024.h"
 #include "UnityEngine_UnityEngine_Object3071478659.h"
 #include "UnityEngine_UnityEngine_Component3501516275.h"
@@ -365,14 +388,31 @@ struct U3CStartU3Ec__Iterator1_t1387304204;
 #include "UnityEngine_UnityEngine_AudioSource1740077639MethodDeclarations.h"
 #include "AssemblyU2DCSharp_Platform1939328147.h"
 #include "AssemblyU2DCSharp_Platform1939328147MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Transform1659122786MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Transform1659122786.h"
 #include "AssemblyU2DCSharp_PlatformSpawner2783583573.h"
 #include "AssemblyU2DCSharp_PlatformSpawner2783583573MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Random3156561159MethodDeclarations.h"
 #include "AssemblyU2DCSharp_PlayerPrefsManager567672958.h"
 #include "AssemblyU2DCSharp_PlayerPrefsManager567672958MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_PlayerPrefs1845493509MethodDeclarations.h"
+#include "AssemblyU2DCSharp_PreviewAndSave2697337644.h"
+#include "AssemblyU2DCSharp_PreviewAndSave2697337644MethodDeclarations.h"
+#include "CaptureAndSaveLib_CaptureAndSave700313070.h"
+#include "CaptureAndSaveLib_CaptureAndSaveEventListener_OnEr1516540506MethodDeclarations.h"
+#include "CaptureAndSaveLib_CaptureAndSaveEventListener2941400608MethodDeclarations.h"
+#include "CaptureAndSaveLib_CaptureAndSaveEventListener_OnSu1013330901MethodDeclarations.h"
+#include "CaptureAndSaveLib_CaptureAndSaveEventListener_OnSc3427048564MethodDeclarations.h"
+#include "mscorlib_System_Delegate3310234105MethodDeclarations.h"
+#include "CaptureAndSaveLib_CaptureAndSaveEventListener_OnEr1516540506.h"
+#include "CaptureAndSaveLib_CaptureAndSaveEventListener_OnSu1013330901.h"
+#include "CaptureAndSaveLib_CaptureAndSaveEventListener2941400608.h"
+#include "CaptureAndSaveLib_CaptureAndSaveEventListener_OnSc3427048564.h"
+#include "UnityEngine_UnityEngine_Texture2D3884108195.h"
+#include "mscorlib_System_Delegate3310234105.h"
+#include "UnityEngine_UnityEngine_GUI3134605553MethodDeclarations.h"
+#include "CaptureAndSaveLib_CaptureAndSave700313070MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Screen3187157168MethodDeclarations.h"
+#include "CaptureAndSaveLib_ImageType1125820181.h"
+#include "UnityEngine_UnityEngine_Texture2526458961.h"
 #include "AssemblyU2DCSharp_SFXManager149887880.h"
 #include "AssemblyU2DCSharp_SFXManager149887880MethodDeclarations.h"
 #include "AssemblyU2DCSharp_Shredder4090516629.h"
@@ -417,6 +457,8 @@ extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m267839954_gsh
 #define Component_GetComponent_TisGameController_t2782302542_m2702177783(__this, method) ((  GameController_t2782302542 * (*) (Component_t3501516275 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.AudioSource>()
 #define Component_GetComponent_TisAudioSource_t1740077639_m3821406207(__this, method) ((  AudioSource_t1740077639 * (*) (Component_t3501516275 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
+// !!0 UnityEngine.Object::FindObjectOfType<CaptureAndSave>()
+#define Object_FindObjectOfType_TisCaptureAndSave_t700313070_m449003263(__this /* static, unused */, method) ((  CaptureAndSave_t700313070 * (*) (Il2CppObject * /* static, unused */, const MethodInfo*))Object_FindObjectOfType_TisIl2CppObject_m2892359027_gshared)(__this /* static, unused */, method)
 // !!0 UnityEngine.Object::FindObjectOfType<PlatformSpawner>()
 #define Object_FindObjectOfType_TisPlatformSpawner_t2783583573_m3365594140(__this /* static, unused */, method) ((  PlatformSpawner_t2783583573 * (*) (Il2CppObject * /* static, unused */, const MethodInfo*))Object_FindObjectOfType_TisIl2CppObject_m2892359027_gshared)(__this /* static, unused */, method)
 // !!0 UnityEngine.Component::GetComponent<PlatformSpawner>()
@@ -428,6 +470,1707 @@ extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m267839954_gsh
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void InControl.TouchStickControl::.ctor()
+extern Il2CppClass* TouchSprite_t2209778038_il2cpp_TypeInfo_var;
+extern const uint32_t TouchStickControl__ctor_m1047166165_MetadataUsageId;
+extern "C"  void TouchStickControl__ctor_m1047166165 (TouchStickControl_t3456167582 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (TouchStickControl__ctor_m1047166165_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		__this->set_anchor_2(2);
+		Vector2_t4282066565  L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		Vector2__ctor_m1517109030(&L_0, (20.0f), (20.0f), /*hidden argument*/NULL);
+		__this->set_offset_4(L_0);
+		Rect_t4241904616  L_1;
+		memset(&L_1, 0, sizeof(L_1));
+		Rect__ctor_m3291325233(&L_1, (0.0f), (0.0f), (50.0f), (100.0f), /*hidden argument*/NULL);
+		__this->set_activeArea_6(L_1);
+		__this->set_target_7(1);
+		__this->set_lowerDeadZone_10((0.1f));
+		__this->set_upperDeadZone_11((0.9f));
+		AnimationCurve_t3667593487 * L_2 = AnimationCurve_Linear_m3091030662(NULL /*static, unused*/, (0.0f), (0.0f), (1.0f), (1.0f), /*hidden argument*/NULL);
+		__this->set_inputCurve_12(L_2);
+		__this->set_snapToInitialTouch_15((bool)1);
+		__this->set_resetWhenDone_16((bool)1);
+		__this->set_resetDuration_17((0.1f));
+		TouchSprite_t2209778038 * L_3 = (TouchSprite_t2209778038 *)il2cpp_codegen_object_new(TouchSprite_t2209778038_il2cpp_TypeInfo_var);
+		TouchSprite__ctor_m2418713038(L_3, (20.0f), /*hidden argument*/NULL);
+		__this->set_ring_18(L_3);
+		TouchSprite_t2209778038 * L_4 = (TouchSprite_t2209778038 *)il2cpp_codegen_object_new(TouchSprite_t2209778038_il2cpp_TypeInfo_var);
+		TouchSprite__ctor_m2418713038(L_4, (10.0f), /*hidden argument*/NULL);
+		__this->set_knob_19(L_4);
+		__this->set_knobRange_20((7.5f));
+		TouchControl__ctor_m2976956423(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void InControl.TouchStickControl::CreateControl()
+extern Il2CppCodeGenString* _stringLiteral2547280;
+extern Il2CppCodeGenString* _stringLiteral2343574;
+extern const uint32_t TouchStickControl_CreateControl_m3975294068_MetadataUsageId;
+extern "C"  void TouchStickControl_CreateControl_m3975294068 (TouchStickControl_t3456167582 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (TouchStickControl_CreateControl_m3975294068_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		TouchSprite_t2209778038 * L_0 = __this->get_ring_18();
+		Transform_t1659122786 * L_1 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		TouchSprite_Create_m151883425(L_0, _stringLiteral2547280, L_1, ((int32_t)1000), /*hidden argument*/NULL);
+		TouchSprite_t2209778038 * L_2 = __this->get_knob_19();
+		Transform_t1659122786 * L_3 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		TouchSprite_Create_m151883425(L_2, _stringLiteral2343574, L_3, ((int32_t)1001), /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void InControl.TouchStickControl::DestroyControl()
+extern "C"  void TouchStickControl_DestroyControl_m200536978 (TouchStickControl_t3456167582 * __this, const MethodInfo* method)
+{
+	{
+		TouchSprite_t2209778038 * L_0 = __this->get_ring_18();
+		NullCheck(L_0);
+		TouchSprite_Delete_m1864952850(L_0, /*hidden argument*/NULL);
+		TouchSprite_t2209778038 * L_1 = __this->get_knob_19();
+		NullCheck(L_1);
+		TouchSprite_Delete_m1864952850(L_1, /*hidden argument*/NULL);
+		Touch_t2333148497 * L_2 = __this->get_currentTouch_29();
+		if (!L_2)
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		Touch_t2333148497 * L_3 = __this->get_currentTouch_29();
+		VirtActionInvoker1< Touch_t2333148497 * >::Invoke(11 /* System.Void InControl.TouchStickControl::TouchEnded(InControl.Touch) */, __this, L_3);
+		__this->set_currentTouch_29((Touch_t2333148497 *)NULL);
+	}
+
+IL_0034:
+	{
+		return;
+	}
+}
+// System.Void InControl.TouchStickControl::ConfigureControl()
+extern "C"  void TouchStickControl_ConfigureControl_m2096176806 (TouchStickControl_t3456167582 * __this, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = __this->get_anchor_2();
+		Vector2_t4282066565  L_1 = __this->get_offset_4();
+		int32_t L_2 = __this->get_offsetUnitType_3();
+		Vector3_t4282066566  L_3 = TouchControl_OffsetToWorldPosition_m3781281173(__this, L_0, L_1, L_2, (bool)1, /*hidden argument*/NULL);
+		__this->set_resetPosition_21(L_3);
+		Transform_t1659122786 * L_4 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_5 = __this->get_resetPosition_21();
+		NullCheck(L_4);
+		Transform_set_position_m3111394108(L_4, L_5, /*hidden argument*/NULL);
+		TouchSprite_t2209778038 * L_6 = __this->get_ring_18();
+		NullCheck(L_6);
+		TouchSprite_Update_m1756090663(L_6, (bool)1, /*hidden argument*/NULL);
+		TouchSprite_t2209778038 * L_7 = __this->get_knob_19();
+		NullCheck(L_7);
+		TouchSprite_Update_m1756090663(L_7, (bool)1, /*hidden argument*/NULL);
+		Rect_t4241904616  L_8 = __this->get_activeArea_6();
+		int32_t L_9 = __this->get_areaUnitType_5();
+		Rect_t4241904616  L_10 = TouchManager_ConvertToWorld_m339209373(NULL /*static, unused*/, L_8, L_9, /*hidden argument*/NULL);
+		__this->set_worldActiveArea_26(L_10);
+		float L_11 = __this->get_knobRange_20();
+		TouchSprite_t2209778038 * L_12 = __this->get_knob_19();
+		NullCheck(L_12);
+		int32_t L_13 = TouchSprite_get_SizeUnitType_m1452796291(L_12, /*hidden argument*/NULL);
+		float L_14 = TouchManager_ConvertToWorld_m1972187827(NULL /*static, unused*/, L_11, L_13, /*hidden argument*/NULL);
+		__this->set_worldKnobRange_27(L_14);
+		return;
+	}
+}
+// System.Void InControl.TouchStickControl::DrawGizmos()
+extern Il2CppClass* Utility_t3785960702_il2cpp_TypeInfo_var;
+extern const uint32_t TouchStickControl_DrawGizmos_m2812623532_MetadataUsageId;
+extern "C"  void TouchStickControl_DrawGizmos_m2812623532 (TouchStickControl_t3456167582 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (TouchStickControl_DrawGizmos_m2812623532_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		TouchSprite_t2209778038 * L_0 = __this->get_ring_18();
+		Vector3_t4282066566  L_1 = TouchStickControl_get_RingPosition_m29450583(__this, /*hidden argument*/NULL);
+		Color_t4194546905  L_2 = Color_get_yellow_m599454500(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		TouchSprite_DrawGizmos_m4084246261(L_0, L_1, L_2, /*hidden argument*/NULL);
+		TouchSprite_t2209778038 * L_3 = __this->get_knob_19();
+		Vector3_t4282066566  L_4 = TouchStickControl_get_KnobPosition_m2625250845(__this, /*hidden argument*/NULL);
+		Color_t4194546905  L_5 = Color_get_yellow_m599454500(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		TouchSprite_DrawGizmos_m4084246261(L_3, L_4, L_5, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_6 = TouchStickControl_get_RingPosition_m29450583(__this, /*hidden argument*/NULL);
+		Vector2_t4282066565  L_7 = Vector2_op_Implicit_m4083860659(NULL /*static, unused*/, L_6, /*hidden argument*/NULL);
+		float L_8 = __this->get_worldKnobRange_27();
+		Color_t4194546905  L_9 = Color_get_red_m4288945411(NULL /*static, unused*/, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Utility_t3785960702_il2cpp_TypeInfo_var);
+		Utility_DrawCircleGizmo_m821588710(NULL /*static, unused*/, L_7, L_8, L_9, /*hidden argument*/NULL);
+		Rect_t4241904616  L_10 = __this->get_worldActiveArea_26();
+		Color_t4194546905  L_11 = Color_get_green_m2005284533(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Utility_DrawRectGizmo_m3692566986(NULL /*static, unused*/, L_10, L_11, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void InControl.TouchStickControl::Update()
+extern "C"  void TouchStickControl_Update_m4124242136 (TouchStickControl_t3456167582 * __this, const MethodInfo* method)
+{
+	Vector3_t4282066566  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		bool L_0 = __this->get_dirty_30();
+		if (!L_0)
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		VirtActionInvoker0::Invoke(6 /* System.Void InControl.TouchStickControl::ConfigureControl() */, __this);
+		__this->set_dirty_30((bool)0);
+		goto IL_0033;
+	}
+
+IL_001d:
+	{
+		TouchSprite_t2209778038 * L_1 = __this->get_ring_18();
+		NullCheck(L_1);
+		TouchSprite_Update_m2367836080(L_1, /*hidden argument*/NULL);
+		TouchSprite_t2209778038 * L_2 = __this->get_knob_19();
+		NullCheck(L_2);
+		TouchSprite_Update_m2367836080(L_2, /*hidden argument*/NULL);
+	}
+
+IL_0033:
+	{
+		bool L_3 = TouchStickControl_get_IsNotActive_m1013182445(__this, /*hidden argument*/NULL);
+		if (!L_3)
+		{
+			goto IL_00df;
+		}
+	}
+	{
+		bool L_4 = __this->get_resetWhenDone_16();
+		if (!L_4)
+		{
+			goto IL_00a6;
+		}
+	}
+	{
+		Vector3_t4282066566  L_5 = TouchStickControl_get_KnobPosition_m2625250845(__this, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_6 = __this->get_resetPosition_21();
+		bool L_7 = Vector3_op_Inequality_m231387234(NULL /*static, unused*/, L_5, L_6, /*hidden argument*/NULL);
+		if (!L_7)
+		{
+			goto IL_00a6;
+		}
+	}
+	{
+		Vector3_t4282066566  L_8 = TouchStickControl_get_KnobPosition_m2625250845(__this, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_9 = TouchStickControl_get_RingPosition_m29450583(__this, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_10 = Vector3_op_Subtraction_m2842958165(NULL /*static, unused*/, L_8, L_9, /*hidden argument*/NULL);
+		V_0 = L_10;
+		Vector3_t4282066566  L_11 = TouchStickControl_get_RingPosition_m29450583(__this, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_12 = __this->get_resetPosition_21();
+		float L_13 = __this->get_ringResetSpeed_24();
+		float L_14 = Time_get_deltaTime_m2741110510(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_15 = Vector3_MoveTowards_m2405650085(NULL /*static, unused*/, L_11, L_12, ((float)((float)L_13*(float)L_14)), /*hidden argument*/NULL);
+		TouchStickControl_set_RingPosition_m3869525044(__this, L_15, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_16 = TouchStickControl_get_RingPosition_m29450583(__this, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_17 = V_0;
+		Vector3_t4282066566  L_18 = Vector3_op_Addition_m695438225(NULL /*static, unused*/, L_16, L_17, /*hidden argument*/NULL);
+		TouchStickControl_set_KnobPosition_m809029038(__this, L_18, /*hidden argument*/NULL);
+	}
+
+IL_00a6:
+	{
+		Vector3_t4282066566  L_19 = TouchStickControl_get_KnobPosition_m2625250845(__this, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_20 = TouchStickControl_get_RingPosition_m29450583(__this, /*hidden argument*/NULL);
+		bool L_21 = Vector3_op_Inequality_m231387234(NULL /*static, unused*/, L_19, L_20, /*hidden argument*/NULL);
+		if (!L_21)
+		{
+			goto IL_00df;
+		}
+	}
+	{
+		Vector3_t4282066566  L_22 = TouchStickControl_get_KnobPosition_m2625250845(__this, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_23 = TouchStickControl_get_RingPosition_m29450583(__this, /*hidden argument*/NULL);
+		float L_24 = __this->get_knobResetSpeed_25();
+		float L_25 = Time_get_deltaTime_m2741110510(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_26 = Vector3_MoveTowards_m2405650085(NULL /*static, unused*/, L_22, L_23, ((float)((float)L_24*(float)L_25)), /*hidden argument*/NULL);
+		TouchStickControl_set_KnobPosition_m809029038(__this, L_26, /*hidden argument*/NULL);
+	}
+
+IL_00df:
+	{
+		return;
+	}
+}
+// System.Void InControl.TouchStickControl::SubmitControlState(System.UInt64,System.Single)
+extern "C"  void TouchStickControl_SubmitControlState_m334958469 (TouchStickControl_t3456167582 * __this, uint64_t ___updateTick0, float ___deltaTime1, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = __this->get_target_7();
+		Vector3_t4282066566  L_1 = __this->get_value_28();
+		Vector2_t4282066565  L_2 = Vector2_op_Implicit_m4083860659(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		float L_3 = __this->get_lowerDeadZone_10();
+		float L_4 = __this->get_upperDeadZone_11();
+		uint64_t L_5 = ___updateTick0;
+		float L_6 = ___deltaTime1;
+		TouchControl_SubmitAnalogValue_m722970400(__this, L_0, L_2, L_3, L_4, L_5, L_6, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void InControl.TouchStickControl::CommitControlState(System.UInt64,System.Single)
+extern "C"  void TouchStickControl_CommitControlState_m141538630 (TouchStickControl_t3456167582 * __this, uint64_t ___updateTick0, float ___deltaTime1, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = __this->get_target_7();
+		TouchControl_CommitAnalog_m4041284722(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void InControl.TouchStickControl::TouchBegan(InControl.Touch)
+extern "C"  void TouchStickControl_TouchBegan_m3849125352 (TouchStickControl_t3456167582 * __this, Touch_t2333148497 * ___touch0, const MethodInfo* method)
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	{
+		bool L_0 = TouchStickControl_get_IsActive_m2244476404(__this, /*hidden argument*/NULL);
+		if (!L_0)
+		{
+			goto IL_000c;
+		}
+	}
+	{
+		return;
+	}
+
+IL_000c:
+	{
+		Touch_t2333148497 * L_1 = ___touch0;
+		NullCheck(L_1);
+		Vector2_t4282066565  L_2 = L_1->get_position_5();
+		Vector3_t4282066566  L_3 = TouchManager_ScreenToWorldPoint_m3854730446(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		__this->set_beganPosition_22(L_3);
+		Rect_t4241904616 * L_4 = __this->get_address_of_worldActiveArea_26();
+		Vector3_t4282066566  L_5 = __this->get_beganPosition_22();
+		bool L_6 = Rect_Contains_m3556594041(L_4, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		TouchSprite_t2209778038 * L_7 = __this->get_ring_18();
+		Vector3_t4282066566  L_8 = __this->get_beganPosition_22();
+		Vector2_t4282066565  L_9 = Vector2_op_Implicit_m4083860659(NULL /*static, unused*/, L_8, /*hidden argument*/NULL);
+		NullCheck(L_7);
+		bool L_10 = TouchSprite_Contains_m1993282728(L_7, L_9, /*hidden argument*/NULL);
+		V_1 = L_10;
+		bool L_11 = __this->get_snapToInitialTouch_15();
+		if (!L_11)
+		{
+			goto IL_0081;
+		}
+	}
+	{
+		bool L_12 = V_0;
+		if (L_12)
+		{
+			goto IL_005d;
+		}
+	}
+	{
+		bool L_13 = V_1;
+		if (!L_13)
+		{
+			goto IL_0081;
+		}
+	}
+
+IL_005d:
+	{
+		Vector3_t4282066566  L_14 = __this->get_beganPosition_22();
+		TouchStickControl_set_RingPosition_m3869525044(__this, L_14, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_15 = __this->get_beganPosition_22();
+		TouchStickControl_set_KnobPosition_m809029038(__this, L_15, /*hidden argument*/NULL);
+		Touch_t2333148497 * L_16 = ___touch0;
+		__this->set_currentTouch_29(L_16);
+		goto IL_00a6;
+	}
+
+IL_0081:
+	{
+		bool L_17 = V_1;
+		if (!L_17)
+		{
+			goto IL_00a6;
+		}
+	}
+	{
+		Vector3_t4282066566  L_18 = __this->get_beganPosition_22();
+		TouchStickControl_set_KnobPosition_m809029038(__this, L_18, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_19 = TouchStickControl_get_RingPosition_m29450583(__this, /*hidden argument*/NULL);
+		__this->set_beganPosition_22(L_19);
+		Touch_t2333148497 * L_20 = ___touch0;
+		__this->set_currentTouch_29(L_20);
+	}
+
+IL_00a6:
+	{
+		bool L_21 = TouchStickControl_get_IsActive_m2244476404(__this, /*hidden argument*/NULL);
+		if (!L_21)
+		{
+			goto IL_00d0;
+		}
+	}
+	{
+		Touch_t2333148497 * L_22 = ___touch0;
+		VirtActionInvoker1< Touch_t2333148497 * >::Invoke(10 /* System.Void InControl.TouchStickControl::TouchMoved(InControl.Touch) */, __this, L_22);
+		TouchSprite_t2209778038 * L_23 = __this->get_ring_18();
+		NullCheck(L_23);
+		TouchSprite_set_State_m1352789958(L_23, (bool)1, /*hidden argument*/NULL);
+		TouchSprite_t2209778038 * L_24 = __this->get_knob_19();
+		NullCheck(L_24);
+		TouchSprite_set_State_m1352789958(L_24, (bool)1, /*hidden argument*/NULL);
+	}
+
+IL_00d0:
+	{
+		return;
+	}
+}
+// System.Void InControl.TouchStickControl::TouchMoved(InControl.Touch)
+extern Il2CppClass* Mathf_t4203372500_il2cpp_TypeInfo_var;
+extern Il2CppClass* Utility_t3785960702_il2cpp_TypeInfo_var;
+extern const uint32_t TouchStickControl_TouchMoved_m1184357158_MetadataUsageId;
+extern "C"  void TouchStickControl_TouchMoved_m1184357158 (TouchStickControl_t3456167582 * __this, Touch_t2333148497 * ___touch0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (TouchStickControl_TouchMoved_m1184357158_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Vector3_t4282066566  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector3_t4282066566  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	float V_2 = 0.0f;
+	float V_3 = 0.0f;
+	Vector3_t4282066566  V_4;
+	memset(&V_4, 0, sizeof(V_4));
+	{
+		Touch_t2333148497 * L_0 = __this->get_currentTouch_29();
+		Touch_t2333148497 * L_1 = ___touch0;
+		if ((((Il2CppObject*)(Touch_t2333148497 *)L_0) == ((Il2CppObject*)(Touch_t2333148497 *)L_1)))
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		return;
+	}
+
+IL_000d:
+	{
+		Touch_t2333148497 * L_2 = ___touch0;
+		NullCheck(L_2);
+		Vector2_t4282066565  L_3 = L_2->get_position_5();
+		Vector3_t4282066566  L_4 = TouchManager_ScreenToWorldPoint_m3854730446(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+		__this->set_movedPosition_23(L_4);
+		int32_t L_5 = __this->get_lockToAxis_9();
+		if ((!(((uint32_t)L_5) == ((uint32_t)1))))
+		{
+			goto IL_0051;
+		}
+	}
+	{
+		int32_t L_6 = __this->get_allowDraggingAxis_14();
+		if ((!(((uint32_t)L_6) == ((uint32_t)1))))
+		{
+			goto IL_0051;
+		}
+	}
+	{
+		Vector3_t4282066566 * L_7 = __this->get_address_of_movedPosition_23();
+		Vector3_t4282066566 * L_8 = __this->get_address_of_beganPosition_22();
+		float L_9 = L_8->get_y_2();
+		L_7->set_y_2(L_9);
+		goto IL_007f;
+	}
+
+IL_0051:
+	{
+		int32_t L_10 = __this->get_lockToAxis_9();
+		if ((!(((uint32_t)L_10) == ((uint32_t)2))))
+		{
+			goto IL_007f;
+		}
+	}
+	{
+		int32_t L_11 = __this->get_allowDraggingAxis_14();
+		if ((!(((uint32_t)L_11) == ((uint32_t)2))))
+		{
+			goto IL_007f;
+		}
+	}
+	{
+		Vector3_t4282066566 * L_12 = __this->get_address_of_movedPosition_23();
+		Vector3_t4282066566 * L_13 = __this->get_address_of_beganPosition_22();
+		float L_14 = L_13->get_x_1();
+		L_12->set_x_1(L_14);
+	}
+
+IL_007f:
+	{
+		Vector3_t4282066566  L_15 = __this->get_movedPosition_23();
+		Vector3_t4282066566  L_16 = __this->get_beganPosition_22();
+		Vector3_t4282066566  L_17 = Vector3_op_Subtraction_m2842958165(NULL /*static, unused*/, L_15, L_16, /*hidden argument*/NULL);
+		V_0 = L_17;
+		Vector3_t4282066566  L_18 = Vector3_get_normalized_m2650940353((&V_0), /*hidden argument*/NULL);
+		V_1 = L_18;
+		float L_19 = Vector3_get_magnitude_m989985786((&V_0), /*hidden argument*/NULL);
+		V_2 = L_19;
+		bool L_20 = __this->get_allowDragging_13();
+		if (!L_20)
+		{
+			goto IL_0123;
+		}
+	}
+	{
+		float L_21 = V_2;
+		float L_22 = __this->get_worldKnobRange_27();
+		V_3 = ((float)((float)L_21-(float)L_22));
+		float L_23 = V_3;
+		if ((!(((float)L_23) < ((float)(0.0f)))))
+		{
+			goto IL_00c6;
+		}
+	}
+	{
+		V_3 = (0.0f);
+	}
+
+IL_00c6:
+	{
+		float L_24 = V_3;
+		Vector3_t4282066566  L_25 = V_1;
+		Vector3_t4282066566  L_26 = Vector3_op_Multiply_m3809076219(NULL /*static, unused*/, L_24, L_25, /*hidden argument*/NULL);
+		V_4 = L_26;
+		int32_t L_27 = __this->get_allowDraggingAxis_14();
+		if ((!(((uint32_t)L_27) == ((uint32_t)1))))
+		{
+			goto IL_00ec;
+		}
+	}
+	{
+		(&V_4)->set_y_2((0.0f));
+		goto IL_0104;
+	}
+
+IL_00ec:
+	{
+		int32_t L_28 = __this->get_allowDraggingAxis_14();
+		if ((!(((uint32_t)L_28) == ((uint32_t)2))))
+		{
+			goto IL_0104;
+		}
+	}
+	{
+		(&V_4)->set_x_1((0.0f));
+	}
+
+IL_0104:
+	{
+		Vector3_t4282066566  L_29 = __this->get_beganPosition_22();
+		Vector3_t4282066566  L_30 = V_4;
+		Vector3_t4282066566  L_31 = Vector3_op_Addition_m695438225(NULL /*static, unused*/, L_29, L_30, /*hidden argument*/NULL);
+		__this->set_beganPosition_22(L_31);
+		Vector3_t4282066566  L_32 = __this->get_beganPosition_22();
+		TouchStickControl_set_RingPosition_m3869525044(__this, L_32, /*hidden argument*/NULL);
+	}
+
+IL_0123:
+	{
+		Vector3_t4282066566  L_33 = __this->get_beganPosition_22();
+		float L_34 = V_2;
+		float L_35 = __this->get_worldKnobRange_27();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t4203372500_il2cpp_TypeInfo_var);
+		float L_36 = Mathf_Clamp_m3872743893(NULL /*static, unused*/, L_34, (0.0f), L_35, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_37 = V_1;
+		Vector3_t4282066566  L_38 = Vector3_op_Multiply_m3809076219(NULL /*static, unused*/, L_36, L_37, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_39 = Vector3_op_Addition_m695438225(NULL /*static, unused*/, L_33, L_38, /*hidden argument*/NULL);
+		__this->set_movedPosition_23(L_39);
+		int32_t L_40 = __this->get_lockToAxis_9();
+		if ((!(((uint32_t)L_40) == ((uint32_t)1))))
+		{
+			goto IL_0172;
+		}
+	}
+	{
+		Vector3_t4282066566 * L_41 = __this->get_address_of_movedPosition_23();
+		Vector3_t4282066566 * L_42 = __this->get_address_of_beganPosition_22();
+		float L_43 = L_42->get_y_2();
+		L_41->set_y_2(L_43);
+		goto IL_0194;
+	}
+
+IL_0172:
+	{
+		int32_t L_44 = __this->get_lockToAxis_9();
+		if ((!(((uint32_t)L_44) == ((uint32_t)2))))
+		{
+			goto IL_0194;
+		}
+	}
+	{
+		Vector3_t4282066566 * L_45 = __this->get_address_of_movedPosition_23();
+		Vector3_t4282066566 * L_46 = __this->get_address_of_beganPosition_22();
+		float L_47 = L_46->get_x_1();
+		L_45->set_x_1(L_47);
+	}
+
+IL_0194:
+	{
+		int32_t L_48 = __this->get_snapAngles_8();
+		if (!L_48)
+		{
+			goto IL_01d1;
+		}
+	}
+	{
+		Vector3_t4282066566  L_49 = __this->get_movedPosition_23();
+		Vector3_t4282066566  L_50 = __this->get_beganPosition_22();
+		Vector3_t4282066566  L_51 = Vector3_op_Subtraction_m2842958165(NULL /*static, unused*/, L_49, L_50, /*hidden argument*/NULL);
+		Vector2_t4282066565  L_52 = Vector2_op_Implicit_m4083860659(NULL /*static, unused*/, L_51, /*hidden argument*/NULL);
+		int32_t L_53 = __this->get_snapAngles_8();
+		Vector3_t4282066566  L_54 = TouchControl_SnapTo_m3486725349(NULL /*static, unused*/, L_52, L_53, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_55 = __this->get_beganPosition_22();
+		Vector3_t4282066566  L_56 = Vector3_op_Addition_m695438225(NULL /*static, unused*/, L_54, L_55, /*hidden argument*/NULL);
+		__this->set_movedPosition_23(L_56);
+	}
+
+IL_01d1:
+	{
+		Vector3_t4282066566  L_57 = __this->get_beganPosition_22();
+		TouchStickControl_set_RingPosition_m3869525044(__this, L_57, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_58 = __this->get_movedPosition_23();
+		TouchStickControl_set_KnobPosition_m809029038(__this, L_58, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_59 = __this->get_movedPosition_23();
+		Vector3_t4282066566  L_60 = __this->get_beganPosition_22();
+		Vector3_t4282066566  L_61 = Vector3_op_Subtraction_m2842958165(NULL /*static, unused*/, L_59, L_60, /*hidden argument*/NULL);
+		float L_62 = __this->get_worldKnobRange_27();
+		Vector3_t4282066566  L_63 = Vector3_op_Division_m4277988370(NULL /*static, unused*/, L_61, L_62, /*hidden argument*/NULL);
+		__this->set_value_28(L_63);
+		Vector3_t4282066566 * L_64 = __this->get_address_of_value_28();
+		AnimationCurve_t3667593487 * L_65 = __this->get_inputCurve_12();
+		Vector3_t4282066566 * L_66 = __this->get_address_of_value_28();
+		float L_67 = L_66->get_x_1();
+		IL2CPP_RUNTIME_CLASS_INIT(Utility_t3785960702_il2cpp_TypeInfo_var);
+		float L_68 = Utility_Abs_m2126279290(NULL /*static, unused*/, L_67, /*hidden argument*/NULL);
+		NullCheck(L_65);
+		float L_69 = AnimationCurve_Evaluate_m547727012(L_65, L_68, /*hidden argument*/NULL);
+		Vector3_t4282066566 * L_70 = __this->get_address_of_value_28();
+		float L_71 = L_70->get_x_1();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t4203372500_il2cpp_TypeInfo_var);
+		float L_72 = Mathf_Sign_m4040614993(NULL /*static, unused*/, L_71, /*hidden argument*/NULL);
+		L_64->set_x_1(((float)((float)L_69*(float)L_72)));
+		Vector3_t4282066566 * L_73 = __this->get_address_of_value_28();
+		AnimationCurve_t3667593487 * L_74 = __this->get_inputCurve_12();
+		Vector3_t4282066566 * L_75 = __this->get_address_of_value_28();
+		float L_76 = L_75->get_y_2();
+		float L_77 = Utility_Abs_m2126279290(NULL /*static, unused*/, L_76, /*hidden argument*/NULL);
+		NullCheck(L_74);
+		float L_78 = AnimationCurve_Evaluate_m547727012(L_74, L_77, /*hidden argument*/NULL);
+		Vector3_t4282066566 * L_79 = __this->get_address_of_value_28();
+		float L_80 = L_79->get_y_2();
+		float L_81 = Mathf_Sign_m4040614993(NULL /*static, unused*/, L_80, /*hidden argument*/NULL);
+		L_73->set_y_2(((float)((float)L_78*(float)L_81)));
+		return;
+	}
+}
+// System.Void InControl.TouchStickControl::TouchEnded(InControl.Touch)
+extern Il2CppClass* Utility_t3785960702_il2cpp_TypeInfo_var;
+extern const uint32_t TouchStickControl_TouchEnded_m3161456127_MetadataUsageId;
+extern "C"  void TouchStickControl_TouchEnded_m3161456127 (TouchStickControl_t3456167582 * __this, Touch_t2333148497 * ___touch0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (TouchStickControl_TouchEnded_m3161456127_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	Vector3_t4282066566  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	Vector3_t4282066566  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	TouchStickControl_t3456167582 * G_B4_0 = NULL;
+	TouchStickControl_t3456167582 * G_B3_0 = NULL;
+	float G_B5_0 = 0.0f;
+	TouchStickControl_t3456167582 * G_B5_1 = NULL;
+	TouchStickControl_t3456167582 * G_B7_0 = NULL;
+	TouchStickControl_t3456167582 * G_B6_0 = NULL;
+	float G_B8_0 = 0.0f;
+	TouchStickControl_t3456167582 * G_B8_1 = NULL;
+	{
+		Touch_t2333148497 * L_0 = __this->get_currentTouch_29();
+		Touch_t2333148497 * L_1 = ___touch0;
+		if ((((Il2CppObject*)(Touch_t2333148497 *)L_0) == ((Il2CppObject*)(Touch_t2333148497 *)L_1)))
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		return;
+	}
+
+IL_000d:
+	{
+		Vector3_t4282066566  L_2 = Vector3_get_zero_m2017759730(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_value_28(L_2);
+		Vector3_t4282066566  L_3 = __this->get_resetPosition_21();
+		Vector3_t4282066566  L_4 = TouchStickControl_get_RingPosition_m29450583(__this, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_5 = Vector3_op_Subtraction_m2842958165(NULL /*static, unused*/, L_3, L_4, /*hidden argument*/NULL);
+		V_2 = L_5;
+		float L_6 = Vector3_get_magnitude_m989985786((&V_2), /*hidden argument*/NULL);
+		V_0 = L_6;
+		float L_7 = __this->get_resetDuration_17();
+		IL2CPP_RUNTIME_CLASS_INIT(Utility_t3785960702_il2cpp_TypeInfo_var);
+		bool L_8 = Utility_IsZero_m2633111774(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
+		G_B3_0 = __this;
+		if (!L_8)
+		{
+			G_B4_0 = __this;
+			goto IL_0049;
+		}
+	}
+	{
+		float L_9 = V_0;
+		G_B5_0 = L_9;
+		G_B5_1 = G_B3_0;
+		goto IL_0051;
+	}
+
+IL_0049:
+	{
+		float L_10 = V_0;
+		float L_11 = __this->get_resetDuration_17();
+		G_B5_0 = ((float)((float)L_10/(float)L_11));
+		G_B5_1 = G_B4_0;
+	}
+
+IL_0051:
+	{
+		NullCheck(G_B5_1);
+		G_B5_1->set_ringResetSpeed_24(G_B5_0);
+		Vector3_t4282066566  L_12 = TouchStickControl_get_RingPosition_m29450583(__this, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_13 = TouchStickControl_get_KnobPosition_m2625250845(__this, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_14 = Vector3_op_Subtraction_m2842958165(NULL /*static, unused*/, L_12, L_13, /*hidden argument*/NULL);
+		V_3 = L_14;
+		float L_15 = Vector3_get_magnitude_m989985786((&V_3), /*hidden argument*/NULL);
+		V_1 = L_15;
+		float L_16 = __this->get_resetDuration_17();
+		IL2CPP_RUNTIME_CLASS_INIT(Utility_t3785960702_il2cpp_TypeInfo_var);
+		bool L_17 = Utility_IsZero_m2633111774(NULL /*static, unused*/, L_16, /*hidden argument*/NULL);
+		G_B6_0 = __this;
+		if (!L_17)
+		{
+			G_B7_0 = __this;
+			goto IL_008c;
+		}
+	}
+	{
+		float L_18 = __this->get_knobRange_20();
+		G_B8_0 = L_18;
+		G_B8_1 = G_B6_0;
+		goto IL_0094;
+	}
+
+IL_008c:
+	{
+		float L_19 = V_1;
+		float L_20 = __this->get_resetDuration_17();
+		G_B8_0 = ((float)((float)L_19/(float)L_20));
+		G_B8_1 = G_B7_0;
+	}
+
+IL_0094:
+	{
+		NullCheck(G_B8_1);
+		G_B8_1->set_knobResetSpeed_25(G_B8_0);
+		__this->set_currentTouch_29((Touch_t2333148497 *)NULL);
+		TouchSprite_t2209778038 * L_21 = __this->get_ring_18();
+		NullCheck(L_21);
+		TouchSprite_set_State_m1352789958(L_21, (bool)0, /*hidden argument*/NULL);
+		TouchSprite_t2209778038 * L_22 = __this->get_knob_19();
+		NullCheck(L_22);
+		TouchSprite_set_State_m1352789958(L_22, (bool)0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Boolean InControl.TouchStickControl::get_IsActive()
+extern "C"  bool TouchStickControl_get_IsActive_m2244476404 (TouchStickControl_t3456167582 * __this, const MethodInfo* method)
+{
+	{
+		Touch_t2333148497 * L_0 = __this->get_currentTouch_29();
+		return (bool)((((int32_t)((((Il2CppObject*)(Touch_t2333148497 *)L_0) == ((Il2CppObject*)(Il2CppObject *)NULL))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+	}
+}
+// System.Boolean InControl.TouchStickControl::get_IsNotActive()
+extern "C"  bool TouchStickControl_get_IsNotActive_m1013182445 (TouchStickControl_t3456167582 * __this, const MethodInfo* method)
+{
+	{
+		Touch_t2333148497 * L_0 = __this->get_currentTouch_29();
+		return (bool)((((Il2CppObject*)(Touch_t2333148497 *)L_0) == ((Il2CppObject*)(Il2CppObject *)NULL))? 1 : 0);
+	}
+}
+// UnityEngine.Vector3 InControl.TouchStickControl::get_RingPosition()
+extern "C"  Vector3_t4282066566  TouchStickControl_get_RingPosition_m29450583 (TouchStickControl_t3456167582 * __this, const MethodInfo* method)
+{
+	Vector3_t4282066566  G_B3_0;
+	memset(&G_B3_0, 0, sizeof(G_B3_0));
+	{
+		TouchSprite_t2209778038 * L_0 = __this->get_ring_18();
+		NullCheck(L_0);
+		bool L_1 = TouchSprite_get_Ready_m2282871241(L_0, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		TouchSprite_t2209778038 * L_2 = __this->get_ring_18();
+		NullCheck(L_2);
+		Vector3_t4282066566  L_3 = TouchSprite_get_Position_m3248928479(L_2, /*hidden argument*/NULL);
+		G_B3_0 = L_3;
+		goto IL_002b;
+	}
+
+IL_0020:
+	{
+		Transform_t1659122786 * L_4 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		Vector3_t4282066566  L_5 = Transform_get_position_m2211398607(L_4, /*hidden argument*/NULL);
+		G_B3_0 = L_5;
+	}
+
+IL_002b:
+	{
+		return G_B3_0;
+	}
+}
+// System.Void InControl.TouchStickControl::set_RingPosition(UnityEngine.Vector3)
+extern "C"  void TouchStickControl_set_RingPosition_m3869525044 (TouchStickControl_t3456167582 * __this, Vector3_t4282066566  ___value0, const MethodInfo* method)
+{
+	{
+		TouchSprite_t2209778038 * L_0 = __this->get_ring_18();
+		NullCheck(L_0);
+		bool L_1 = TouchSprite_get_Ready_m2282871241(L_0, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		TouchSprite_t2209778038 * L_2 = __this->get_ring_18();
+		Vector3_t4282066566  L_3 = ___value0;
+		NullCheck(L_2);
+		TouchSprite_set_Position_m2638219052(L_2, L_3, /*hidden argument*/NULL);
+	}
+
+IL_001c:
+	{
+		return;
+	}
+}
+// UnityEngine.Vector3 InControl.TouchStickControl::get_KnobPosition()
+extern "C"  Vector3_t4282066566  TouchStickControl_get_KnobPosition_m2625250845 (TouchStickControl_t3456167582 * __this, const MethodInfo* method)
+{
+	Vector3_t4282066566  G_B3_0;
+	memset(&G_B3_0, 0, sizeof(G_B3_0));
+	{
+		TouchSprite_t2209778038 * L_0 = __this->get_knob_19();
+		NullCheck(L_0);
+		bool L_1 = TouchSprite_get_Ready_m2282871241(L_0, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		TouchSprite_t2209778038 * L_2 = __this->get_knob_19();
+		NullCheck(L_2);
+		Vector3_t4282066566  L_3 = TouchSprite_get_Position_m3248928479(L_2, /*hidden argument*/NULL);
+		G_B3_0 = L_3;
+		goto IL_002b;
+	}
+
+IL_0020:
+	{
+		Transform_t1659122786 * L_4 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		Vector3_t4282066566  L_5 = Transform_get_position_m2211398607(L_4, /*hidden argument*/NULL);
+		G_B3_0 = L_5;
+	}
+
+IL_002b:
+	{
+		return G_B3_0;
+	}
+}
+// System.Void InControl.TouchStickControl::set_KnobPosition(UnityEngine.Vector3)
+extern "C"  void TouchStickControl_set_KnobPosition_m809029038 (TouchStickControl_t3456167582 * __this, Vector3_t4282066566  ___value0, const MethodInfo* method)
+{
+	{
+		TouchSprite_t2209778038 * L_0 = __this->get_knob_19();
+		NullCheck(L_0);
+		bool L_1 = TouchSprite_get_Ready_m2282871241(L_0, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		TouchSprite_t2209778038 * L_2 = __this->get_knob_19();
+		Vector3_t4282066566  L_3 = ___value0;
+		NullCheck(L_2);
+		TouchSprite_set_Position_m2638219052(L_2, L_3, /*hidden argument*/NULL);
+	}
+
+IL_001c:
+	{
+		return;
+	}
+}
+// InControl.TouchControlAnchor InControl.TouchStickControl::get_Anchor()
+extern "C"  int32_t TouchStickControl_get_Anchor_m2851529625 (TouchStickControl_t3456167582 * __this, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = __this->get_anchor_2();
+		return L_0;
+	}
+}
+// System.Void InControl.TouchStickControl::set_Anchor(InControl.TouchControlAnchor)
+extern "C"  void TouchStickControl_set_Anchor_m636590648 (TouchStickControl_t3456167582 * __this, int32_t ___value0, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = __this->get_anchor_2();
+		int32_t L_1 = ___value0;
+		if ((((int32_t)L_0) == ((int32_t)L_1)))
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		int32_t L_2 = ___value0;
+		__this->set_anchor_2(L_2);
+		__this->set_dirty_30((bool)1);
+	}
+
+IL_001a:
+	{
+		return;
+	}
+}
+// UnityEngine.Vector2 InControl.TouchStickControl::get_Offset()
+extern "C"  Vector2_t4282066565  TouchStickControl_get_Offset_m944511728 (TouchStickControl_t3456167582 * __this, const MethodInfo* method)
+{
+	{
+		Vector2_t4282066565  L_0 = __this->get_offset_4();
+		return L_0;
+	}
+}
+// System.Void InControl.TouchStickControl::set_Offset(UnityEngine.Vector2)
+extern "C"  void TouchStickControl_set_Offset_m2248322811 (TouchStickControl_t3456167582 * __this, Vector2_t4282066565  ___value0, const MethodInfo* method)
+{
+	{
+		Vector2_t4282066565  L_0 = __this->get_offset_4();
+		Vector2_t4282066565  L_1 = ___value0;
+		bool L_2 = Vector2_op_Inequality_m1638984867(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_001f;
+		}
+	}
+	{
+		Vector2_t4282066565  L_3 = ___value0;
+		__this->set_offset_4(L_3);
+		__this->set_dirty_30((bool)1);
+	}
+
+IL_001f:
+	{
+		return;
+	}
+}
+// InControl.TouchUnitType InControl.TouchStickControl::get_OffsetUnitType()
+extern "C"  int32_t TouchStickControl_get_OffsetUnitType_m2838249725 (TouchStickControl_t3456167582 * __this, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = __this->get_offsetUnitType_3();
+		return L_0;
+	}
+}
+// System.Void InControl.TouchStickControl::set_OffsetUnitType(InControl.TouchUnitType)
+extern "C"  void TouchStickControl_set_OffsetUnitType_m1413153486 (TouchStickControl_t3456167582 * __this, int32_t ___value0, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = __this->get_offsetUnitType_3();
+		int32_t L_1 = ___value0;
+		if ((((int32_t)L_0) == ((int32_t)L_1)))
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		int32_t L_2 = ___value0;
+		__this->set_offsetUnitType_3(L_2);
+		__this->set_dirty_30((bool)1);
+	}
+
+IL_001a:
+	{
+		return;
+	}
+}
+// UnityEngine.Rect InControl.TouchStickControl::get_ActiveArea()
+extern "C"  Rect_t4241904616  TouchStickControl_get_ActiveArea_m2589818441 (TouchStickControl_t3456167582 * __this, const MethodInfo* method)
+{
+	{
+		Rect_t4241904616  L_0 = __this->get_activeArea_6();
+		return L_0;
+	}
+}
+// System.Void InControl.TouchStickControl::set_ActiveArea(UnityEngine.Rect)
+extern "C"  void TouchStickControl_set_ActiveArea_m3196259524 (TouchStickControl_t3456167582 * __this, Rect_t4241904616  ___value0, const MethodInfo* method)
+{
+	{
+		Rect_t4241904616  L_0 = __this->get_activeArea_6();
+		Rect_t4241904616  L_1 = ___value0;
+		bool L_2 = Rect_op_Inequality_m2236552616(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_001f;
+		}
+	}
+	{
+		Rect_t4241904616  L_3 = ___value0;
+		__this->set_activeArea_6(L_3);
+		__this->set_dirty_30((bool)1);
+	}
+
+IL_001f:
+	{
+		return;
+	}
+}
+// InControl.TouchUnitType InControl.TouchStickControl::get_AreaUnitType()
+extern "C"  int32_t TouchStickControl_get_AreaUnitType_m3678956343 (TouchStickControl_t3456167582 * __this, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = __this->get_areaUnitType_5();
+		return L_0;
+	}
+}
+// System.Void InControl.TouchStickControl::set_AreaUnitType(InControl.TouchUnitType)
+extern "C"  void TouchStickControl_set_AreaUnitType_m2153693012 (TouchStickControl_t3456167582 * __this, int32_t ___value0, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = __this->get_areaUnitType_5();
+		int32_t L_1 = ___value0;
+		if ((((int32_t)L_0) == ((int32_t)L_1)))
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		int32_t L_2 = ___value0;
+		__this->set_areaUnitType_5(L_2);
+		__this->set_dirty_30((bool)1);
+	}
+
+IL_001a:
+	{
+		return;
+	}
+}
+// System.Void InControl.TouchSwipeControl::.ctor()
+extern "C"  void TouchSwipeControl__ctor_m213731199 (TouchSwipeControl_t2766249140 * __this, const MethodInfo* method)
+{
+	{
+		Rect_t4241904616  L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		Rect__ctor_m3291325233(&L_0, (25.0f), (25.0f), (50.0f), (50.0f), /*hidden argument*/NULL);
+		__this->set_activeArea_3(L_0);
+		__this->set_sensitivity_4((0.1f));
+		TouchControl__ctor_m2976956423(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void InControl.TouchSwipeControl::CreateControl()
+extern "C"  void TouchSwipeControl_CreateControl_m3192696094 (TouchSwipeControl_t2766249140 * __this, const MethodInfo* method)
+{
+	{
+		return;
+	}
+}
+// System.Void InControl.TouchSwipeControl::DestroyControl()
+extern "C"  void TouchSwipeControl_DestroyControl_m1709803560 (TouchSwipeControl_t2766249140 * __this, const MethodInfo* method)
+{
+	{
+		Touch_t2333148497 * L_0 = __this->get_currentTouch_17();
+		if (!L_0)
+		{
+			goto IL_001e;
+		}
+	}
+	{
+		Touch_t2333148497 * L_1 = __this->get_currentTouch_17();
+		VirtActionInvoker1< Touch_t2333148497 * >::Invoke(11 /* System.Void InControl.TouchSwipeControl::TouchEnded(InControl.Touch) */, __this, L_1);
+		__this->set_currentTouch_17((Touch_t2333148497 *)NULL);
+	}
+
+IL_001e:
+	{
+		return;
+	}
+}
+// System.Void InControl.TouchSwipeControl::ConfigureControl()
+extern "C"  void TouchSwipeControl_ConfigureControl_m802416060 (TouchSwipeControl_t2766249140 * __this, const MethodInfo* method)
+{
+	{
+		Rect_t4241904616  L_0 = __this->get_activeArea_3();
+		int32_t L_1 = __this->get_areaUnitType_2();
+		Rect_t4241904616  L_2 = TouchManager_ConvertToWorld_m339209373(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		__this->set_worldActiveArea_13(L_2);
+		return;
+	}
+}
+// System.Void InControl.TouchSwipeControl::DrawGizmos()
+extern Il2CppClass* Utility_t3785960702_il2cpp_TypeInfo_var;
+extern const uint32_t TouchSwipeControl_DrawGizmos_m3516435010_MetadataUsageId;
+extern "C"  void TouchSwipeControl_DrawGizmos_m3516435010 (TouchSwipeControl_t2766249140 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (TouchSwipeControl_DrawGizmos_m3516435010_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		Rect_t4241904616  L_0 = __this->get_worldActiveArea_13();
+		Color_t4194546905  L_1 = Color_get_yellow_m599454500(NULL /*static, unused*/, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Utility_t3785960702_il2cpp_TypeInfo_var);
+		Utility_DrawRectGizmo_m3692566986(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void InControl.TouchSwipeControl::Update()
+extern "C"  void TouchSwipeControl_Update_m4057561966 (TouchSwipeControl_t2766249140 * __this, const MethodInfo* method)
+{
+	{
+		bool L_0 = __this->get_dirty_21();
+		if (!L_0)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		VirtActionInvoker0::Invoke(6 /* System.Void InControl.TouchSwipeControl::ConfigureControl() */, __this);
+		__this->set_dirty_21((bool)0);
+	}
+
+IL_0018:
+	{
+		return;
+	}
+}
+// System.Void InControl.TouchSwipeControl::SubmitControlState(System.UInt64,System.Single)
+extern "C"  void TouchSwipeControl_SubmitControlState_m1821665327 (TouchSwipeControl_t2766249140 * __this, uint64_t ___updateTick0, float ___deltaTime1, const MethodInfo* method)
+{
+	Vector3_t4282066566  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	int32_t G_B2_0 = 0;
+	TouchSwipeControl_t2766249140 * G_B2_1 = NULL;
+	int32_t G_B1_0 = 0;
+	TouchSwipeControl_t2766249140 * G_B1_1 = NULL;
+	int32_t G_B3_0 = 0;
+	int32_t G_B3_1 = 0;
+	TouchSwipeControl_t2766249140 * G_B3_2 = NULL;
+	int32_t G_B5_0 = 0;
+	TouchSwipeControl_t2766249140 * G_B5_1 = NULL;
+	int32_t G_B4_0 = 0;
+	TouchSwipeControl_t2766249140 * G_B4_1 = NULL;
+	int32_t G_B6_0 = 0;
+	int32_t G_B6_1 = 0;
+	TouchSwipeControl_t2766249140 * G_B6_2 = NULL;
+	int32_t G_B8_0 = 0;
+	TouchSwipeControl_t2766249140 * G_B8_1 = NULL;
+	int32_t G_B7_0 = 0;
+	TouchSwipeControl_t2766249140 * G_B7_1 = NULL;
+	int32_t G_B9_0 = 0;
+	int32_t G_B9_1 = 0;
+	TouchSwipeControl_t2766249140 * G_B9_2 = NULL;
+	int32_t G_B11_0 = 0;
+	TouchSwipeControl_t2766249140 * G_B11_1 = NULL;
+	int32_t G_B10_0 = 0;
+	TouchSwipeControl_t2766249140 * G_B10_1 = NULL;
+	int32_t G_B12_0 = 0;
+	int32_t G_B12_1 = 0;
+	TouchSwipeControl_t2766249140 * G_B12_2 = NULL;
+	int32_t G_B14_0 = 0;
+	TouchSwipeControl_t2766249140 * G_B14_1 = NULL;
+	int32_t G_B13_0 = 0;
+	TouchSwipeControl_t2766249140 * G_B13_1 = NULL;
+	int32_t G_B15_0 = 0;
+	int32_t G_B15_1 = 0;
+	TouchSwipeControl_t2766249140 * G_B15_2 = NULL;
+	{
+		Vector3_t4282066566  L_0 = __this->get_currentVector_14();
+		Vector2_t4282066565  L_1 = Vector2_op_Implicit_m4083860659(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		int32_t L_2 = __this->get_snapAngles_6();
+		Vector3_t4282066566  L_3 = TouchControl_SnapTo_m3486725349(NULL /*static, unused*/, L_1, L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		int32_t L_4 = __this->get_target_5();
+		Vector3_t4282066566  L_5 = V_0;
+		Vector2_t4282066565  L_6 = Vector2_op_Implicit_m4083860659(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
+		uint64_t L_7 = ___updateTick0;
+		float L_8 = ___deltaTime1;
+		TouchControl_SubmitAnalogValue_m722970400(__this, L_4, L_6, (0.0f), (1.0f), L_7, L_8, /*hidden argument*/NULL);
+		int32_t L_9 = __this->get_upTarget_7();
+		bool L_10 = __this->get_fireButtonTarget_18();
+		G_B1_0 = L_9;
+		G_B1_1 = __this;
+		if (!L_10)
+		{
+			G_B2_0 = L_9;
+			G_B2_1 = __this;
+			goto IL_0057;
+		}
+	}
+	{
+		int32_t L_11 = __this->get_nextButtonTarget_19();
+		int32_t L_12 = __this->get_upTarget_7();
+		G_B3_0 = ((((int32_t)L_11) == ((int32_t)L_12))? 1 : 0);
+		G_B3_1 = G_B1_0;
+		G_B3_2 = G_B1_1;
+		goto IL_0058;
+	}
+
+IL_0057:
+	{
+		G_B3_0 = 0;
+		G_B3_1 = G_B2_0;
+		G_B3_2 = G_B2_1;
+	}
+
+IL_0058:
+	{
+		uint64_t L_13 = ___updateTick0;
+		float L_14 = ___deltaTime1;
+		NullCheck(G_B3_2);
+		TouchControl_SubmitButtonState_m2178611439(G_B3_2, G_B3_1, (bool)G_B3_0, L_13, L_14, /*hidden argument*/NULL);
+		int32_t L_15 = __this->get_downTarget_8();
+		bool L_16 = __this->get_fireButtonTarget_18();
+		G_B4_0 = L_15;
+		G_B4_1 = __this;
+		if (!L_16)
+		{
+			G_B5_0 = L_15;
+			G_B5_1 = __this;
+			goto IL_0081;
+		}
+	}
+	{
+		int32_t L_17 = __this->get_nextButtonTarget_19();
+		int32_t L_18 = __this->get_downTarget_8();
+		G_B6_0 = ((((int32_t)L_17) == ((int32_t)L_18))? 1 : 0);
+		G_B6_1 = G_B4_0;
+		G_B6_2 = G_B4_1;
+		goto IL_0082;
+	}
+
+IL_0081:
+	{
+		G_B6_0 = 0;
+		G_B6_1 = G_B5_0;
+		G_B6_2 = G_B5_1;
+	}
+
+IL_0082:
+	{
+		uint64_t L_19 = ___updateTick0;
+		float L_20 = ___deltaTime1;
+		NullCheck(G_B6_2);
+		TouchControl_SubmitButtonState_m2178611439(G_B6_2, G_B6_1, (bool)G_B6_0, L_19, L_20, /*hidden argument*/NULL);
+		int32_t L_21 = __this->get_leftTarget_9();
+		bool L_22 = __this->get_fireButtonTarget_18();
+		G_B7_0 = L_21;
+		G_B7_1 = __this;
+		if (!L_22)
+		{
+			G_B8_0 = L_21;
+			G_B8_1 = __this;
+			goto IL_00ab;
+		}
+	}
+	{
+		int32_t L_23 = __this->get_nextButtonTarget_19();
+		int32_t L_24 = __this->get_leftTarget_9();
+		G_B9_0 = ((((int32_t)L_23) == ((int32_t)L_24))? 1 : 0);
+		G_B9_1 = G_B7_0;
+		G_B9_2 = G_B7_1;
+		goto IL_00ac;
+	}
+
+IL_00ab:
+	{
+		G_B9_0 = 0;
+		G_B9_1 = G_B8_0;
+		G_B9_2 = G_B8_1;
+	}
+
+IL_00ac:
+	{
+		uint64_t L_25 = ___updateTick0;
+		float L_26 = ___deltaTime1;
+		NullCheck(G_B9_2);
+		TouchControl_SubmitButtonState_m2178611439(G_B9_2, G_B9_1, (bool)G_B9_0, L_25, L_26, /*hidden argument*/NULL);
+		int32_t L_27 = __this->get_rightTarget_10();
+		bool L_28 = __this->get_fireButtonTarget_18();
+		G_B10_0 = L_27;
+		G_B10_1 = __this;
+		if (!L_28)
+		{
+			G_B11_0 = L_27;
+			G_B11_1 = __this;
+			goto IL_00d5;
+		}
+	}
+	{
+		int32_t L_29 = __this->get_nextButtonTarget_19();
+		int32_t L_30 = __this->get_rightTarget_10();
+		G_B12_0 = ((((int32_t)L_29) == ((int32_t)L_30))? 1 : 0);
+		G_B12_1 = G_B10_0;
+		G_B12_2 = G_B10_1;
+		goto IL_00d6;
+	}
+
+IL_00d5:
+	{
+		G_B12_0 = 0;
+		G_B12_1 = G_B11_0;
+		G_B12_2 = G_B11_1;
+	}
+
+IL_00d6:
+	{
+		uint64_t L_31 = ___updateTick0;
+		float L_32 = ___deltaTime1;
+		NullCheck(G_B12_2);
+		TouchControl_SubmitButtonState_m2178611439(G_B12_2, G_B12_1, (bool)G_B12_0, L_31, L_32, /*hidden argument*/NULL);
+		int32_t L_33 = __this->get_tapTarget_11();
+		bool L_34 = __this->get_fireButtonTarget_18();
+		G_B13_0 = L_33;
+		G_B13_1 = __this;
+		if (!L_34)
+		{
+			G_B14_0 = L_33;
+			G_B14_1 = __this;
+			goto IL_00ff;
+		}
+	}
+	{
+		int32_t L_35 = __this->get_nextButtonTarget_19();
+		int32_t L_36 = __this->get_tapTarget_11();
+		G_B15_0 = ((((int32_t)L_35) == ((int32_t)L_36))? 1 : 0);
+		G_B15_1 = G_B13_0;
+		G_B15_2 = G_B13_1;
+		goto IL_0100;
+	}
+
+IL_00ff:
+	{
+		G_B15_0 = 0;
+		G_B15_1 = G_B14_0;
+		G_B15_2 = G_B14_1;
+	}
+
+IL_0100:
+	{
+		uint64_t L_37 = ___updateTick0;
+		float L_38 = ___deltaTime1;
+		NullCheck(G_B15_2);
+		TouchControl_SubmitButtonState_m2178611439(G_B15_2, G_B15_1, (bool)G_B15_0, L_37, L_38, /*hidden argument*/NULL);
+		bool L_39 = __this->get_fireButtonTarget_18();
+		if (!L_39)
+		{
+			goto IL_013f;
+		}
+	}
+	{
+		int32_t L_40 = __this->get_nextButtonTarget_19();
+		if (!L_40)
+		{
+			goto IL_013f;
+		}
+	}
+	{
+		bool L_41 = __this->get_oneSwipePerTouch_12();
+		__this->set_fireButtonTarget_18((bool)((((int32_t)L_41) == ((int32_t)0))? 1 : 0));
+		int32_t L_42 = __this->get_nextButtonTarget_19();
+		__this->set_lastButtonTarget_20(L_42);
+		__this->set_nextButtonTarget_19(0);
+	}
+
+IL_013f:
+	{
+		return;
+	}
+}
+// System.Void InControl.TouchSwipeControl::CommitControlState(System.UInt64,System.Single)
+extern "C"  void TouchSwipeControl_CommitControlState_m1628245488 (TouchSwipeControl_t2766249140 * __this, uint64_t ___updateTick0, float ___deltaTime1, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = __this->get_target_5();
+		TouchControl_CommitAnalog_m4041284722(__this, L_0, /*hidden argument*/NULL);
+		int32_t L_1 = __this->get_upTarget_7();
+		TouchControl_CommitButton_m2261226222(__this, L_1, /*hidden argument*/NULL);
+		int32_t L_2 = __this->get_downTarget_8();
+		TouchControl_CommitButton_m2261226222(__this, L_2, /*hidden argument*/NULL);
+		int32_t L_3 = __this->get_leftTarget_9();
+		TouchControl_CommitButton_m2261226222(__this, L_3, /*hidden argument*/NULL);
+		int32_t L_4 = __this->get_rightTarget_10();
+		TouchControl_CommitButton_m2261226222(__this, L_4, /*hidden argument*/NULL);
+		int32_t L_5 = __this->get_tapTarget_11();
+		TouchControl_CommitButton_m2261226222(__this, L_5, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void InControl.TouchSwipeControl::TouchBegan(InControl.Touch)
+extern "C"  void TouchSwipeControl_TouchBegan_m1711918994 (TouchSwipeControl_t2766249140 * __this, Touch_t2333148497 * ___touch0, const MethodInfo* method)
+{
+	{
+		Touch_t2333148497 * L_0 = __this->get_currentTouch_17();
+		if (!L_0)
+		{
+			goto IL_000c;
+		}
+	}
+	{
+		return;
+	}
+
+IL_000c:
+	{
+		Touch_t2333148497 * L_1 = ___touch0;
+		NullCheck(L_1);
+		Vector2_t4282066565  L_2 = L_1->get_position_5();
+		Vector3_t4282066566  L_3 = TouchManager_ScreenToWorldPoint_m3854730446(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		__this->set_beganPosition_15(L_3);
+		Rect_t4241904616 * L_4 = __this->get_address_of_worldActiveArea_13();
+		Vector3_t4282066566  L_5 = __this->get_beganPosition_15();
+		bool L_6 = Rect_Contains_m3556594041(L_4, L_5, /*hidden argument*/NULL);
+		if (!L_6)
+		{
+			goto IL_006b;
+		}
+	}
+	{
+		Vector3_t4282066566  L_7 = __this->get_beganPosition_15();
+		__this->set_lastPosition_16(L_7);
+		Touch_t2333148497 * L_8 = ___touch0;
+		__this->set_currentTouch_17(L_8);
+		Vector2_t4282066565  L_9 = Vector2_get_zero_m199872368(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_10 = Vector2_op_Implicit_m482286037(NULL /*static, unused*/, L_9, /*hidden argument*/NULL);
+		__this->set_currentVector_14(L_10);
+		__this->set_fireButtonTarget_18((bool)1);
+		__this->set_nextButtonTarget_19(0);
+		__this->set_lastButtonTarget_20(0);
+	}
+
+IL_006b:
+	{
+		return;
+	}
+}
+// System.Void InControl.TouchSwipeControl::TouchMoved(InControl.Touch)
+extern "C"  void TouchSwipeControl_TouchMoved_m3342118096 (TouchSwipeControl_t2766249140 * __this, Touch_t2333148497 * ___touch0, const MethodInfo* method)
+{
+	Vector3_t4282066566  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector3_t4282066566  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	int32_t V_2 = 0;
+	{
+		Touch_t2333148497 * L_0 = __this->get_currentTouch_17();
+		Touch_t2333148497 * L_1 = ___touch0;
+		if ((((Il2CppObject*)(Touch_t2333148497 *)L_0) == ((Il2CppObject*)(Touch_t2333148497 *)L_1)))
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		return;
+	}
+
+IL_000d:
+	{
+		Touch_t2333148497 * L_2 = ___touch0;
+		NullCheck(L_2);
+		Vector2_t4282066565  L_3 = L_2->get_position_5();
+		Vector3_t4282066566  L_4 = TouchManager_ScreenToWorldPoint_m3854730446(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+		V_0 = L_4;
+		Vector3_t4282066566  L_5 = V_0;
+		Vector3_t4282066566  L_6 = __this->get_lastPosition_16();
+		Vector3_t4282066566  L_7 = Vector3_op_Subtraction_m2842958165(NULL /*static, unused*/, L_5, L_6, /*hidden argument*/NULL);
+		V_1 = L_7;
+		float L_8 = Vector3_get_magnitude_m989985786((&V_1), /*hidden argument*/NULL);
+		float L_9 = __this->get_sensitivity_4();
+		if ((!(((float)L_8) >= ((float)L_9))))
+		{
+			goto IL_007c;
+		}
+	}
+	{
+		Vector3_t4282066566  L_10 = V_0;
+		__this->set_lastPosition_16(L_10);
+		Vector3_t4282066566  L_11 = Vector3_get_normalized_m2650940353((&V_1), /*hidden argument*/NULL);
+		__this->set_currentVector_14(L_11);
+		bool L_12 = __this->get_fireButtonTarget_18();
+		if (!L_12)
+		{
+			goto IL_007c;
+		}
+	}
+	{
+		Vector3_t4282066566  L_13 = __this->get_currentVector_14();
+		Vector2_t4282066565  L_14 = Vector2_op_Implicit_m4083860659(NULL /*static, unused*/, L_13, /*hidden argument*/NULL);
+		int32_t L_15 = TouchSwipeControl_GetButtonTargetForVector_m3308386679(__this, L_14, /*hidden argument*/NULL);
+		V_2 = L_15;
+		int32_t L_16 = V_2;
+		int32_t L_17 = __this->get_lastButtonTarget_20();
+		if ((((int32_t)L_16) == ((int32_t)L_17)))
+		{
+			goto IL_007c;
+		}
+	}
+	{
+		int32_t L_18 = V_2;
+		__this->set_nextButtonTarget_19(L_18);
+	}
+
+IL_007c:
+	{
+		return;
+	}
+}
+// System.Void InControl.TouchSwipeControl::TouchEnded(InControl.Touch)
+extern "C"  void TouchSwipeControl_TouchEnded_m1024249769 (TouchSwipeControl_t2766249140 * __this, Touch_t2333148497 * ___touch0, const MethodInfo* method)
+{
+	Vector3_t4282066566  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector3_t4282066566  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		Touch_t2333148497 * L_0 = __this->get_currentTouch_17();
+		Touch_t2333148497 * L_1 = ___touch0;
+		if ((((Il2CppObject*)(Touch_t2333148497 *)L_0) == ((Il2CppObject*)(Touch_t2333148497 *)L_1)))
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		return;
+	}
+
+IL_000d:
+	{
+		__this->set_currentTouch_17((Touch_t2333148497 *)NULL);
+		Vector2_t4282066565  L_2 = Vector2_get_zero_m199872368(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_3 = Vector2_op_Implicit_m482286037(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		__this->set_currentVector_14(L_3);
+		Touch_t2333148497 * L_4 = ___touch0;
+		NullCheck(L_4);
+		Vector2_t4282066565  L_5 = L_4->get_position_5();
+		Vector3_t4282066566  L_6 = TouchManager_ScreenToWorldPoint_m3854730446(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		Vector3_t4282066566  L_7 = __this->get_beganPosition_15();
+		Vector3_t4282066566  L_8 = V_0;
+		Vector3_t4282066566  L_9 = Vector3_op_Subtraction_m2842958165(NULL /*static, unused*/, L_7, L_8, /*hidden argument*/NULL);
+		V_1 = L_9;
+		float L_10 = Vector3_get_magnitude_m989985786((&V_1), /*hidden argument*/NULL);
+		float L_11 = __this->get_sensitivity_4();
+		if ((!(((float)L_10) < ((float)L_11))))
+		{
+			goto IL_006a;
+		}
+	}
+	{
+		__this->set_fireButtonTarget_18((bool)1);
+		int32_t L_12 = __this->get_tapTarget_11();
+		__this->set_nextButtonTarget_19(L_12);
+		__this->set_lastButtonTarget_20(0);
+		return;
+	}
+
+IL_006a:
+	{
+		__this->set_fireButtonTarget_18((bool)0);
+		__this->set_nextButtonTarget_19(0);
+		__this->set_lastButtonTarget_20(0);
+		return;
+	}
+}
+// InControl.TouchControl/ButtonTarget InControl.TouchSwipeControl::GetButtonTargetForVector(UnityEngine.Vector2)
+extern "C"  int32_t TouchSwipeControl_GetButtonTargetForVector_m3308386679 (TouchSwipeControl_t2766249140 * __this, Vector2_t4282066565  ___vector0, const MethodInfo* method)
+{
+	Vector2_t4282066565  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Vector2_t4282066565  L_0 = ___vector0;
+		Vector3_t4282066566  L_1 = TouchControl_SnapTo_m3486725349(NULL /*static, unused*/, L_0, 4, /*hidden argument*/NULL);
+		Vector2_t4282066565  L_2 = Vector2_op_Implicit_m4083860659(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		Vector2_t4282066565  L_3 = V_0;
+		Vector2_t4282066565  L_4 = Vector2_get_up_m1197831267(NULL /*static, unused*/, /*hidden argument*/NULL);
+		bool L_5 = Vector2_op_Equality_m1927481448(NULL /*static, unused*/, L_3, L_4, /*hidden argument*/NULL);
+		if (!L_5)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		int32_t L_6 = __this->get_upTarget_7();
+		return L_6;
+	}
+
+IL_0024:
+	{
+		Vector2_t4282066565  L_7 = V_0;
+		Vector2_t4282066565  L_8 = Vector2_get_right_m3495203638(NULL /*static, unused*/, /*hidden argument*/NULL);
+		bool L_9 = Vector2_op_Equality_m1927481448(NULL /*static, unused*/, L_7, L_8, /*hidden argument*/NULL);
+		if (!L_9)
+		{
+			goto IL_003b;
+		}
+	}
+	{
+		int32_t L_10 = __this->get_rightTarget_10();
+		return L_10;
+	}
+
+IL_003b:
+	{
+		Vector2_t4282066565  L_11 = V_0;
+		Vector2_t4282066565  L_12 = Vector2_get_up_m1197831267(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Vector2_t4282066565  L_13 = Vector2_op_UnaryNegation_m1730705317(NULL /*static, unused*/, L_12, /*hidden argument*/NULL);
+		bool L_14 = Vector2_op_Equality_m1927481448(NULL /*static, unused*/, L_11, L_13, /*hidden argument*/NULL);
+		if (!L_14)
+		{
+			goto IL_0057;
+		}
+	}
+	{
+		int32_t L_15 = __this->get_downTarget_8();
+		return L_15;
+	}
+
+IL_0057:
+	{
+		Vector2_t4282066565  L_16 = V_0;
+		Vector2_t4282066565  L_17 = Vector2_get_right_m3495203638(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Vector2_t4282066565  L_18 = Vector2_op_UnaryNegation_m1730705317(NULL /*static, unused*/, L_17, /*hidden argument*/NULL);
+		bool L_19 = Vector2_op_Equality_m1927481448(NULL /*static, unused*/, L_16, L_18, /*hidden argument*/NULL);
+		if (!L_19)
+		{
+			goto IL_0073;
+		}
+	}
+	{
+		int32_t L_20 = __this->get_leftTarget_9();
+		return L_20;
+	}
+
+IL_0073:
+	{
+		return (int32_t)(0);
+	}
+}
+// UnityEngine.Rect InControl.TouchSwipeControl::get_ActiveArea()
+extern "C"  Rect_t4241904616  TouchSwipeControl_get_ActiveArea_m4099085023 (TouchSwipeControl_t2766249140 * __this, const MethodInfo* method)
+{
+	{
+		Rect_t4241904616  L_0 = __this->get_activeArea_3();
+		return L_0;
+	}
+}
+// System.Void InControl.TouchSwipeControl::set_ActiveArea(UnityEngine.Rect)
+extern "C"  void TouchSwipeControl_set_ActiveArea_m106476890 (TouchSwipeControl_t2766249140 * __this, Rect_t4241904616  ___value0, const MethodInfo* method)
+{
+	{
+		Rect_t4241904616  L_0 = __this->get_activeArea_3();
+		Rect_t4241904616  L_1 = ___value0;
+		bool L_2 = Rect_op_Inequality_m2236552616(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_001f;
+		}
+	}
+	{
+		Rect_t4241904616  L_3 = ___value0;
+		__this->set_activeArea_3(L_3);
+		__this->set_dirty_21((bool)1);
+	}
+
+IL_001f:
+	{
+		return;
+	}
+}
+// InControl.TouchUnitType InControl.TouchSwipeControl::get_AreaUnitType()
+extern "C"  int32_t TouchSwipeControl_get_AreaUnitType_m2385195597 (TouchSwipeControl_t2766249140 * __this, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = __this->get_areaUnitType_2();
+		return L_0;
+	}
+}
+// System.Void InControl.TouchSwipeControl::set_AreaUnitType(InControl.TouchUnitType)
+extern "C"  void TouchSwipeControl_set_AreaUnitType_m2372820862 (TouchSwipeControl_t2766249140 * __this, int32_t ___value0, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = __this->get_areaUnitType_2();
+		int32_t L_1 = ___value0;
+		if ((((int32_t)L_0) == ((int32_t)L_1)))
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		int32_t L_2 = ___value0;
+		__this->set_areaUnitType_2(L_2);
+		__this->set_dirty_21((bool)1);
+	}
+
+IL_001a:
+	{
+		return;
+	}
+}
 // System.Void InControl.TouchTrackControl::.ctor()
 extern "C"  void TouchTrackControl__ctor_m242005904 (TouchTrackControl_t161326467 * __this, const MethodInfo* method)
 {
@@ -16446,6 +18189,247 @@ extern "C"  float PlayerPrefsManager_GetMasterVolume_m1730672449 (Il2CppObject *
 	{
 		float L_0 = PlayerPrefs_GetFloat_m4179026766(NULL /*static, unused*/, _stringLiteral1048422295, /*hidden argument*/NULL);
 		return L_0;
+	}
+}
+// System.Void PreviewAndSave::.ctor()
+extern "C"  void PreviewAndSave__ctor_m4288512751 (PreviewAndSave_t2697337644 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void PreviewAndSave::Start()
+extern Il2CppClass* Object_t3071478659_il2cpp_TypeInfo_var;
+extern const MethodInfo* Object_FindObjectOfType_TisCaptureAndSave_t700313070_m449003263_MethodInfo_var;
+extern const uint32_t PreviewAndSave_Start_m3235650543_MetadataUsageId;
+extern "C"  void PreviewAndSave_Start_m3235650543 (PreviewAndSave_t2697337644 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PreviewAndSave_Start_m3235650543_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t3071478659_il2cpp_TypeInfo_var);
+		CaptureAndSave_t700313070 * L_0 = Object_FindObjectOfType_TisCaptureAndSave_t700313070_m449003263(NULL /*static, unused*/, /*hidden argument*/Object_FindObjectOfType_TisCaptureAndSave_t700313070_m449003263_MethodInfo_var);
+		__this->set_snapShot_3(L_0);
+		return;
+	}
+}
+// System.Void PreviewAndSave::OnEnable()
+extern Il2CppClass* OnError_t1516540506_il2cpp_TypeInfo_var;
+extern Il2CppClass* OnSuccess_t1013330901_il2cpp_TypeInfo_var;
+extern Il2CppClass* CaptureAndSaveEventListener_t2941400608_il2cpp_TypeInfo_var;
+extern Il2CppClass* OnScreenShot_t3427048564_il2cpp_TypeInfo_var;
+extern const MethodInfo* PreviewAndSave_OnError_m1603870860_MethodInfo_var;
+extern const MethodInfo* PreviewAndSave_OnSuccess_m1270180977_MethodInfo_var;
+extern const MethodInfo* PreviewAndSave_OnScreenShot_m3633310306_MethodInfo_var;
+extern const uint32_t PreviewAndSave_OnEnable_m3057756727_MetadataUsageId;
+extern "C"  void PreviewAndSave_OnEnable_m3057756727 (PreviewAndSave_t2697337644 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PreviewAndSave_OnEnable_m3057756727_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IntPtr_t L_0;
+		L_0.set_m_value_0((void*)(void*)PreviewAndSave_OnError_m1603870860_MethodInfo_var);
+		OnError_t1516540506 * L_1 = (OnError_t1516540506 *)il2cpp_codegen_object_new(OnError_t1516540506_il2cpp_TypeInfo_var);
+		OnError__ctor_m3869093594(L_1, __this, L_0, /*hidden argument*/NULL);
+		CaptureAndSaveEventListener_add_onError_m3586673325(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		IntPtr_t L_2;
+		L_2.set_m_value_0((void*)(void*)PreviewAndSave_OnSuccess_m1270180977_MethodInfo_var);
+		OnSuccess_t1013330901 * L_3 = (OnSuccess_t1013330901 *)il2cpp_codegen_object_new(OnSuccess_t1013330901_il2cpp_TypeInfo_var);
+		OnSuccess__ctor_m1594524309(L_3, __this, L_2, /*hidden argument*/NULL);
+		CaptureAndSaveEventListener_add_onSuccess_m31473463(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+		OnScreenShot_t3427048564 * L_4 = ((CaptureAndSaveEventListener_t2941400608_StaticFields*)CaptureAndSaveEventListener_t2941400608_il2cpp_TypeInfo_var->static_fields)->get_onScreenShotInvoker_2();
+		IntPtr_t L_5;
+		L_5.set_m_value_0((void*)(void*)PreviewAndSave_OnScreenShot_m3633310306_MethodInfo_var);
+		OnScreenShot_t3427048564 * L_6 = (OnScreenShot_t3427048564 *)il2cpp_codegen_object_new(OnScreenShot_t3427048564_il2cpp_TypeInfo_var);
+		OnScreenShot__ctor_m954799378(L_6, __this, L_5, /*hidden argument*/NULL);
+		Delegate_t3310234105 * L_7 = Delegate_Combine_m1842362874(NULL /*static, unused*/, L_4, L_6, /*hidden argument*/NULL);
+		((CaptureAndSaveEventListener_t2941400608_StaticFields*)CaptureAndSaveEventListener_t2941400608_il2cpp_TypeInfo_var->static_fields)->set_onScreenShotInvoker_2(((OnScreenShot_t3427048564 *)CastclassSealed(L_7, OnScreenShot_t3427048564_il2cpp_TypeInfo_var)));
+		return;
+	}
+}
+// System.Void PreviewAndSave::OnDisable()
+extern Il2CppClass* OnError_t1516540506_il2cpp_TypeInfo_var;
+extern Il2CppClass* OnSuccess_t1013330901_il2cpp_TypeInfo_var;
+extern Il2CppClass* CaptureAndSaveEventListener_t2941400608_il2cpp_TypeInfo_var;
+extern Il2CppClass* OnScreenShot_t3427048564_il2cpp_TypeInfo_var;
+extern const MethodInfo* PreviewAndSave_OnError_m1603870860_MethodInfo_var;
+extern const MethodInfo* PreviewAndSave_OnSuccess_m1270180977_MethodInfo_var;
+extern const MethodInfo* PreviewAndSave_OnScreenShot_m3633310306_MethodInfo_var;
+extern const uint32_t PreviewAndSave_OnDisable_m742115286_MetadataUsageId;
+extern "C"  void PreviewAndSave_OnDisable_m742115286 (PreviewAndSave_t2697337644 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PreviewAndSave_OnDisable_m742115286_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IntPtr_t L_0;
+		L_0.set_m_value_0((void*)(void*)PreviewAndSave_OnError_m1603870860_MethodInfo_var);
+		OnError_t1516540506 * L_1 = (OnError_t1516540506 *)il2cpp_codegen_object_new(OnError_t1516540506_il2cpp_TypeInfo_var);
+		OnError__ctor_m3869093594(L_1, __this, L_0, /*hidden argument*/NULL);
+		CaptureAndSaveEventListener_remove_onError_m2299742024(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		IntPtr_t L_2;
+		L_2.set_m_value_0((void*)(void*)PreviewAndSave_OnSuccess_m1270180977_MethodInfo_var);
+		OnSuccess_t1013330901 * L_3 = (OnSuccess_t1013330901 *)il2cpp_codegen_object_new(OnSuccess_t1013330901_il2cpp_TypeInfo_var);
+		OnSuccess__ctor_m1594524309(L_3, __this, L_2, /*hidden argument*/NULL);
+		CaptureAndSaveEventListener_remove_onSuccess_m3889526354(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+		OnScreenShot_t3427048564 * L_4 = ((CaptureAndSaveEventListener_t2941400608_StaticFields*)CaptureAndSaveEventListener_t2941400608_il2cpp_TypeInfo_var->static_fields)->get_onScreenShotInvoker_2();
+		IntPtr_t L_5;
+		L_5.set_m_value_0((void*)(void*)PreviewAndSave_OnScreenShot_m3633310306_MethodInfo_var);
+		OnScreenShot_t3427048564 * L_6 = (OnScreenShot_t3427048564 *)il2cpp_codegen_object_new(OnScreenShot_t3427048564_il2cpp_TypeInfo_var);
+		OnScreenShot__ctor_m954799378(L_6, __this, L_5, /*hidden argument*/NULL);
+		Delegate_t3310234105 * L_7 = Delegate_Remove_m3898886541(NULL /*static, unused*/, L_4, L_6, /*hidden argument*/NULL);
+		((CaptureAndSaveEventListener_t2941400608_StaticFields*)CaptureAndSaveEventListener_t2941400608_il2cpp_TypeInfo_var->static_fields)->set_onScreenShotInvoker_2(((OnScreenShot_t3427048564 *)CastclassSealed(L_7, OnScreenShot_t3427048564_il2cpp_TypeInfo_var)));
+		return;
+	}
+}
+// System.Void PreviewAndSave::OnError(System.String)
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t4195163081_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1460696158;
+extern const uint32_t PreviewAndSave_OnError_m1603870860_MetadataUsageId;
+extern "C"  void PreviewAndSave_OnError_m1603870860 (PreviewAndSave_t2697337644 * __this, String_t* ___error0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PreviewAndSave_OnError_m1603870860_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___error0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_1 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral1460696158, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t4195163081_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void PreviewAndSave::OnSuccess(System.String)
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t4195163081_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1259763843;
+extern const uint32_t PreviewAndSave_OnSuccess_m1270180977_MetadataUsageId;
+extern "C"  void PreviewAndSave_OnSuccess_m1270180977 (PreviewAndSave_t2697337644 * __this, String_t* ___msg0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PreviewAndSave_OnSuccess_m1270180977_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___msg0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_1 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral1259763843, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t4195163081_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void PreviewAndSave::OnScreenShot(UnityEngine.Texture2D)
+extern "C"  void PreviewAndSave_OnScreenShot_m3633310306 (PreviewAndSave_t2697337644 * __this, Texture2D_t3884108195 * ___tex2D0, const MethodInfo* method)
+{
+	{
+		Texture2D_t3884108195 * L_0 = ___tex2D0;
+		__this->set_tex_2(L_0);
+		return;
+	}
+}
+// System.Void PreviewAndSave::OnGUI()
+extern Il2CppClass* GUI_t3134605553_il2cpp_TypeInfo_var;
+extern Il2CppClass* Object_t3071478659_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral893985968;
+extern Il2CppCodeGenString* _stringLiteral2569629;
+extern const uint32_t PreviewAndSave_OnGUI_m3783911401_MetadataUsageId;
+extern "C"  void PreviewAndSave_OnGUI_m3783911401 (PreviewAndSave_t2697337644 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PreviewAndSave_OnGUI_m3783911401_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		Rect_t4241904616  L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		Rect__ctor_m3291325233(&L_0, (0.0f), (5.0f), (150.0f), (50.0f), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(GUI_t3134605553_il2cpp_TypeInfo_var);
+		bool L_1 = GUI_Button_m885093907(NULL /*static, unused*/, L_0, _stringLiteral893985968, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		CaptureAndSave_t700313070 * L_2 = __this->get_snapShot_3();
+		NullCheck(L_2);
+		CaptureAndSave_GetFullScreenShot_m2596668478(L_2, 0, /*hidden argument*/NULL);
+	}
+
+IL_0034:
+	{
+		Texture2D_t3884108195 * L_3 = __this->get_tex_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t3071478659_il2cpp_TypeInfo_var);
+		bool L_4 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_3, (Object_t3071478659 *)NULL, /*hidden argument*/NULL);
+		if (!L_4)
+		{
+			goto IL_007f;
+		}
+	}
+	{
+		Rect_t4241904616  L_5;
+		memset(&L_5, 0, sizeof(L_5));
+		Rect__ctor_m3291325233(&L_5, (160.0f), (5.0f), (150.0f), (50.0f), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(GUI_t3134605553_il2cpp_TypeInfo_var);
+		bool L_6 = GUI_Button_m885093907(NULL /*static, unused*/, L_5, _stringLiteral2569629, /*hidden argument*/NULL);
+		if (!L_6)
+		{
+			goto IL_007f;
+		}
+	}
+	{
+		CaptureAndSave_t700313070 * L_7 = __this->get_snapShot_3();
+		Texture2D_t3884108195 * L_8 = __this->get_tex_2();
+		NullCheck(L_7);
+		CaptureAndSave_SaveTextureToGallery_m1530839788(L_7, L_8, 0, /*hidden argument*/NULL);
+	}
+
+IL_007f:
+	{
+		Texture2D_t3884108195 * L_9 = __this->get_tex_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t3071478659_il2cpp_TypeInfo_var);
+		bool L_10 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_9, (Object_t3071478659 *)NULL, /*hidden argument*/NULL);
+		if (!L_10)
+		{
+			goto IL_00b6;
+		}
+	}
+	{
+		int32_t L_11 = Screen_get_width_m3080333084(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_12 = Screen_get_height_m1504859443(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Rect_t4241904616  L_13;
+		memset(&L_13, 0, sizeof(L_13));
+		Rect__ctor_m3291325233(&L_13, (0.0f), (60.0f), (((float)((float)L_11))), (((float)((float)L_12))), /*hidden argument*/NULL);
+		Texture2D_t3884108195 * L_14 = __this->get_tex_2();
+		IL2CPP_RUNTIME_CLASS_INIT(GUI_t3134605553_il2cpp_TypeInfo_var);
+		GUI_Label_m1245463549(NULL /*static, unused*/, L_13, L_14, /*hidden argument*/NULL);
+	}
+
+IL_00b6:
+	{
+		return;
 	}
 }
 // System.Void SFXManager::.ctor()

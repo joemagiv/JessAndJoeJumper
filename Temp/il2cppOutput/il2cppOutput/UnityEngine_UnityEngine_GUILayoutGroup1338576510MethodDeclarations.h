@@ -20,11 +20,14 @@ struct RectOffset_t3056157787;
 struct GUILayoutOptionU5BU5D_t2977405297;
 // UnityEngine.GUIStyle
 struct GUIStyle_t2990928826;
+// UnityEngine.GUILayoutEntry
+struct GUILayoutEntry_t1336615025;
 // System.String
 struct String_t;
 
 #include "codegen/il2cpp-codegen.h"
 #include "UnityEngine_UnityEngine_GUIStyle2990928826.h"
+#include "UnityEngine_UnityEngine_GUILayoutEntry1336615025.h"
 
 // System.Void UnityEngine.GUILayoutGroup::.ctor()
 extern "C"  void GUILayoutGroup__ctor_m3393996275 (GUILayoutGroup_t1338576510 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
@@ -36,6 +39,10 @@ extern "C"  void GUILayoutGroup_ApplyOptions_m743820812 (GUILayoutGroup_t1338576
 extern "C"  void GUILayoutGroup_ApplyStyleSettings_m1024249546 (GUILayoutGroup_t1338576510 * __this, GUIStyle_t2990928826 * ___style0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.GUILayoutGroup::ResetCursor()
 extern "C"  void GUILayoutGroup_ResetCursor_m982464342 (GUILayoutGroup_t1338576510 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.GUILayoutEntry UnityEngine.GUILayoutGroup::GetNext()
+extern "C"  GUILayoutEntry_t1336615025 * GUILayoutGroup_GetNext_m2526772879 (GUILayoutGroup_t1338576510 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.GUILayoutGroup::Add(UnityEngine.GUILayoutEntry)
+extern "C"  void GUILayoutGroup_Add_m4293497486 (GUILayoutGroup_t1338576510 * __this, GUILayoutEntry_t1336615025 * ___e0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.GUILayoutGroup::CalcWidth()
 extern "C"  void GUILayoutGroup_CalcWidth_m1234746178 (GUILayoutGroup_t1338576510 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.GUILayoutGroup::SetHorizontal(System.Single,System.Single)

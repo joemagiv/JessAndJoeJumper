@@ -13,6 +13,8 @@
 #include <limits>
 #include <assert.h>
 
+// InControl.MogaProWinProfile
+struct MogaProWinProfile_t3461265200;
 // InControl.MouseBindingSource
 struct MouseBindingSource_t3443008281;
 // InControl.InputDevice
@@ -225,22 +227,31 @@ struct PlayStation4MacProfile_t3242691060;
 struct PlayStation4WindowsNativeProfile_t517374185;
 // InControl.NativeProfile.PowerAAirflowControllerMacProfile
 struct PowerAAirflowControllerMacProfile_t2720730036;
-// InControl.NativeProfile.POWERAFUS1ONTournamentControllerMacProfile
-struct POWERAFUS1ONTournamentControllerMacProfile_t759321645;
-// InControl.NativeProfile.PowerAMiniControllerMacProfile
-struct PowerAMiniControllerMacProfile_t3098152879;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array1146569071.h"
+#include "AssemblyU2DCSharp_InControl_MogaProWinProfile3461265200.h"
+#include "AssemblyU2DCSharp_InControl_MogaProWinProfile3461265200MethodDeclarations.h"
+#include "mscorlib_System_Void2863195528.h"
+#include "AssemblyU2DCSharp_InControl_UnityInputDeviceProfil2501013168MethodDeclarations.h"
+#include "AssemblyU2DCSharp_InControl_InputDeviceProfile1889671047MethodDeclarations.h"
+#include "AssemblyU2DCSharp_InControl_InputControlMapping318255021MethodDeclarations.h"
+#include "AssemblyU2DCSharp_InControl_InputControlMapping318255021.h"
+#include "mscorlib_System_String7231557.h"
+#include "mscorlib_ArrayTypes.h"
+#include "AssemblyU2DCSharp_InControl_UnityInputDeviceProfil2501013168.h"
+#include "Assembly-CSharp_ArrayTypes.h"
+#include "AssemblyU2DCSharp_InControl_InputControlType2879927883.h"
+#include "AssemblyU2DCSharp_InControl_InputRange4284974673.h"
+#include "AssemblyU2DCSharp_InControl_InputRange4284974673MethodDeclarations.h"
+#include "AssemblyU2DCSharp_InControl_Mouse2326684343.h"
+#include "AssemblyU2DCSharp_InControl_Mouse2326684343MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InControl_MouseBindingSource3443008281.h"
 #include "AssemblyU2DCSharp_InControl_MouseBindingSource3443008281MethodDeclarations.h"
-#include "mscorlib_System_Void2863195528.h"
 #include "AssemblyU2DCSharp_InControl_BindingSource1899497234MethodDeclarations.h"
-#include "AssemblyU2DCSharp_InControl_Mouse2326684343.h"
 #include "mscorlib_System_Runtime_CompilerServices_RuntimeHe1593496111MethodDeclarations.h"
 #include "mscorlib_System_Single4291918972.h"
-#include "mscorlib_ArrayTypes.h"
 #include "mscorlib_System_Int321153838500.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3053238933.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3053238933MethodDeclarations.h"
@@ -251,7 +262,6 @@ struct PowerAMiniControllerMacProfile_t3098152879;
 #include "mscorlib_System_ArgumentException928607144.h"
 #include "AssemblyU2DCSharp_InControl_InputDevice4071704914.h"
 #include "UnityEngine_UnityEngine_Mathf4203372500MethodDeclarations.h"
-#include "mscorlib_System_String7231557.h"
 #include "AssemblyU2DCSharp_InControl_Utility3785960702MethodDeclarations.h"
 #include "mscorlib_System_Enum2862688501MethodDeclarations.h"
 #include "mscorlib_System_Enum2862688501.h"
@@ -268,13 +278,6 @@ struct PowerAMiniControllerMacProfile_t3098152879;
 #include "AssemblyU2DCSharp_InControl_BindingListenOptions2027175824.h"
 #include "AssemblyU2DCSharp_InControl_NatecGenesisP44Profile3844776544.h"
 #include "AssemblyU2DCSharp_InControl_NatecGenesisP44Profile3844776544MethodDeclarations.h"
-#include "AssemblyU2DCSharp_InControl_UnityInputDeviceProfil2501013168MethodDeclarations.h"
-#include "AssemblyU2DCSharp_InControl_InputDeviceProfile1889671047MethodDeclarations.h"
-#include "AssemblyU2DCSharp_InControl_InputControlMapping318255021MethodDeclarations.h"
-#include "AssemblyU2DCSharp_InControl_InputControlMapping318255021.h"
-#include "AssemblyU2DCSharp_InControl_UnityInputDeviceProfil2501013168.h"
-#include "Assembly-CSharp_ArrayTypes.h"
-#include "AssemblyU2DCSharp_InControl_InputControlType2879927883.h"
 #include "AssemblyU2DCSharp_InControl_Native3906781653.h"
 #include "AssemblyU2DCSharp_InControl_Native3906781653MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InControl_NativeInputOptions2078341609.h"
@@ -361,8 +364,6 @@ struct PowerAMiniControllerMacProfile_t3098152879;
 #include "mscorlib_System_Nullable_1_gen1209667075MethodDeclarations.h"
 #include "mscorlib_System_StringComparison4173268078.h"
 #include "System_System_Text_RegularExpressions_RegexOptions3066443743.h"
-#include "AssemblyU2DCSharp_InControl_InputRange4284974673.h"
-#include "AssemblyU2DCSharp_InControl_InputRange4284974673MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_ScriptableObject2970544072MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InControl_NativeInputOptions2078341609MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InControl_NativeProfile_Afterglo4009732902.h"
@@ -531,10 +532,6 @@ struct PowerAMiniControllerMacProfile_t3098152879;
 #include "AssemblyU2DCSharp_InControl_NativeProfile_PlayStati517374185MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InControl_NativeProfile_PowerAAi2720730036.h"
 #include "AssemblyU2DCSharp_InControl_NativeProfile_PowerAAi2720730036MethodDeclarations.h"
-#include "AssemblyU2DCSharp_InControl_NativeProfile_POWERAFUS759321645.h"
-#include "AssemblyU2DCSharp_InControl_NativeProfile_POWERAFUS759321645MethodDeclarations.h"
-#include "AssemblyU2DCSharp_InControl_NativeProfile_PowerAMi3098152879.h"
-#include "AssemblyU2DCSharp_InControl_NativeProfile_PowerAMi3098152879MethodDeclarations.h"
 
 // System.Void InControl.Utility::ArrayExpand<System.UInt32>(!!0[]&,System.Int32)
 extern "C"  void Utility_ArrayExpand_TisUInt32_t24667981_m4268619085_gshared (Il2CppObject * __this /* static, unused */, UInt32U5BU5D_t3230734560** p0, int32_t p1, const MethodInfo* method);
@@ -549,6 +546,389 @@ extern "C"  void InputManager_AddDeviceManager_TisIl2CppObject_m139399270_gshare
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void InControl.MogaProWinProfile::.ctor()
+extern Il2CppClass* UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var;
+extern Il2CppClass* StringU5BU5D_t4054002952_il2cpp_TypeInfo_var;
+extern Il2CppClass* InputControlMappingU5BU5D_t3278783232_il2cpp_TypeInfo_var;
+extern Il2CppClass* InputControlMapping_t318255021_il2cpp_TypeInfo_var;
+extern Il2CppClass* InputRange_t4284974673_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2594197939;
+extern Il2CppCodeGenString* _stringLiteral93167023;
+extern Il2CppCodeGenString* _stringLiteral3014146659;
+extern Il2CppCodeGenString* _stringLiteral1768063022;
+extern Il2CppCodeGenString* _stringLiteral65;
+extern Il2CppCodeGenString* _stringLiteral66;
+extern Il2CppCodeGenString* _stringLiteral88;
+extern Il2CppCodeGenString* _stringLiteral89;
+extern Il2CppCodeGenString* _stringLiteral3459677852;
+extern Il2CppCodeGenString* _stringLiteral874608423;
+extern Il2CppCodeGenString* _stringLiteral3846381659;
+extern Il2CppCodeGenString* _stringLiteral1981170854;
+extern Il2CppCodeGenString* _stringLiteral2062599;
+extern Il2CppCodeGenString* _stringLiteral80204866;
+extern Il2CppCodeGenString* _stringLiteral2876147359;
+extern Il2CppCodeGenString* _stringLiteral48406388;
+extern const uint32_t MogaProWinProfile__ctor_m4143986819_MetadataUsageId;
+extern "C"  void MogaProWinProfile__ctor_m4143986819 (MogaProWinProfile_t3461265200 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (MogaProWinProfile__ctor_m4143986819_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	InputControlMapping_t318255021 * V_0 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var);
+		UnityInputDeviceProfile__ctor_m3795264259(__this, /*hidden argument*/NULL);
+		InputDeviceProfile_set_Name_m2695980466(__this, _stringLiteral2594197939, /*hidden argument*/NULL);
+		InputDeviceProfile_set_Meta_m2477532920(__this, _stringLiteral93167023, /*hidden argument*/NULL);
+		StringU5BU5D_t4054002952* L_0 = ((StringU5BU5D_t4054002952*)SZArrayNew(StringU5BU5D_t4054002952_il2cpp_TypeInfo_var, (uint32_t)1));
+		NullCheck(L_0);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_0, 0);
+		ArrayElementTypeCheck (L_0, _stringLiteral3014146659);
+		(L_0)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral3014146659);
+		InputDeviceProfile_set_IncludePlatforms_m3382523363(__this, L_0, /*hidden argument*/NULL);
+		StringU5BU5D_t4054002952* L_1 = ((StringU5BU5D_t4054002952*)SZArrayNew(StringU5BU5D_t4054002952_il2cpp_TypeInfo_var, (uint32_t)1));
+		NullCheck(L_1);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_1, 0);
+		ArrayElementTypeCheck (L_1, _stringLiteral1768063022);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral1768063022);
+		((UnityInputDeviceProfile_t2501013168 *)__this)->set_JoystickNames_12(L_1);
+		InputControlMappingU5BU5D_t3278783232* L_2 = ((InputControlMappingU5BU5D_t3278783232*)SZArrayNew(InputControlMappingU5BU5D_t3278783232_il2cpp_TypeInfo_var, (uint32_t)((int32_t)10)));
+		InputControlMapping_t318255021 * L_3 = (InputControlMapping_t318255021 *)il2cpp_codegen_object_new(InputControlMapping_t318255021_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3931955878(L_3, /*hidden argument*/NULL);
+		V_0 = L_3;
+		InputControlMapping_t318255021 * L_4 = V_0;
+		NullCheck(L_4);
+		InputControlMapping_set_Handle_m1343148127(L_4, _stringLiteral65, /*hidden argument*/NULL);
+		InputControlMapping_t318255021 * L_5 = V_0;
+		NullCheck(L_5);
+		L_5->set_Target_1(((int32_t)19));
+		InputControlMapping_t318255021 * L_6 = V_0;
+		Il2CppObject * L_7 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Button0_15();
+		NullCheck(L_6);
+		L_6->set_Source_0(L_7);
+		InputControlMapping_t318255021 * L_8 = V_0;
+		NullCheck(L_2);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_2, 0);
+		ArrayElementTypeCheck (L_2, L_8);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (InputControlMapping_t318255021 *)L_8);
+		InputControlMappingU5BU5D_t3278783232* L_9 = L_2;
+		InputControlMapping_t318255021 * L_10 = (InputControlMapping_t318255021 *)il2cpp_codegen_object_new(InputControlMapping_t318255021_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3931955878(L_10, /*hidden argument*/NULL);
+		V_0 = L_10;
+		InputControlMapping_t318255021 * L_11 = V_0;
+		NullCheck(L_11);
+		InputControlMapping_set_Handle_m1343148127(L_11, _stringLiteral66, /*hidden argument*/NULL);
+		InputControlMapping_t318255021 * L_12 = V_0;
+		NullCheck(L_12);
+		L_12->set_Target_1(((int32_t)20));
+		InputControlMapping_t318255021 * L_13 = V_0;
+		Il2CppObject * L_14 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Button1_16();
+		NullCheck(L_13);
+		L_13->set_Source_0(L_14);
+		InputControlMapping_t318255021 * L_15 = V_0;
+		NullCheck(L_9);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_9, 1);
+		ArrayElementTypeCheck (L_9, L_15);
+		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(1), (InputControlMapping_t318255021 *)L_15);
+		InputControlMappingU5BU5D_t3278783232* L_16 = L_9;
+		InputControlMapping_t318255021 * L_17 = (InputControlMapping_t318255021 *)il2cpp_codegen_object_new(InputControlMapping_t318255021_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3931955878(L_17, /*hidden argument*/NULL);
+		V_0 = L_17;
+		InputControlMapping_t318255021 * L_18 = V_0;
+		NullCheck(L_18);
+		InputControlMapping_set_Handle_m1343148127(L_18, _stringLiteral88, /*hidden argument*/NULL);
+		InputControlMapping_t318255021 * L_19 = V_0;
+		NullCheck(L_19);
+		L_19->set_Target_1(((int32_t)21));
+		InputControlMapping_t318255021 * L_20 = V_0;
+		Il2CppObject * L_21 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Button2_17();
+		NullCheck(L_20);
+		L_20->set_Source_0(L_21);
+		InputControlMapping_t318255021 * L_22 = V_0;
+		NullCheck(L_16);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_16, 2);
+		ArrayElementTypeCheck (L_16, L_22);
+		(L_16)->SetAt(static_cast<il2cpp_array_size_t>(2), (InputControlMapping_t318255021 *)L_22);
+		InputControlMappingU5BU5D_t3278783232* L_23 = L_16;
+		InputControlMapping_t318255021 * L_24 = (InputControlMapping_t318255021 *)il2cpp_codegen_object_new(InputControlMapping_t318255021_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3931955878(L_24, /*hidden argument*/NULL);
+		V_0 = L_24;
+		InputControlMapping_t318255021 * L_25 = V_0;
+		NullCheck(L_25);
+		InputControlMapping_set_Handle_m1343148127(L_25, _stringLiteral89, /*hidden argument*/NULL);
+		InputControlMapping_t318255021 * L_26 = V_0;
+		NullCheck(L_26);
+		L_26->set_Target_1(((int32_t)22));
+		InputControlMapping_t318255021 * L_27 = V_0;
+		Il2CppObject * L_28 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Button3_18();
+		NullCheck(L_27);
+		L_27->set_Source_0(L_28);
+		InputControlMapping_t318255021 * L_29 = V_0;
+		NullCheck(L_23);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_23, 3);
+		ArrayElementTypeCheck (L_23, L_29);
+		(L_23)->SetAt(static_cast<il2cpp_array_size_t>(3), (InputControlMapping_t318255021 *)L_29);
+		InputControlMappingU5BU5D_t3278783232* L_30 = L_23;
+		InputControlMapping_t318255021 * L_31 = (InputControlMapping_t318255021 *)il2cpp_codegen_object_new(InputControlMapping_t318255021_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3931955878(L_31, /*hidden argument*/NULL);
+		V_0 = L_31;
+		InputControlMapping_t318255021 * L_32 = V_0;
+		NullCheck(L_32);
+		InputControlMapping_set_Handle_m1343148127(L_32, _stringLiteral3459677852, /*hidden argument*/NULL);
+		InputControlMapping_t318255021 * L_33 = V_0;
+		NullCheck(L_33);
+		L_33->set_Target_1(((int32_t)17));
+		InputControlMapping_t318255021 * L_34 = V_0;
+		Il2CppObject * L_35 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Button4_19();
+		NullCheck(L_34);
+		L_34->set_Source_0(L_35);
+		InputControlMapping_t318255021 * L_36 = V_0;
+		NullCheck(L_30);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_30, 4);
+		ArrayElementTypeCheck (L_30, L_36);
+		(L_30)->SetAt(static_cast<il2cpp_array_size_t>(4), (InputControlMapping_t318255021 *)L_36);
+		InputControlMappingU5BU5D_t3278783232* L_37 = L_30;
+		InputControlMapping_t318255021 * L_38 = (InputControlMapping_t318255021 *)il2cpp_codegen_object_new(InputControlMapping_t318255021_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3931955878(L_38, /*hidden argument*/NULL);
+		V_0 = L_38;
+		InputControlMapping_t318255021 * L_39 = V_0;
+		NullCheck(L_39);
+		InputControlMapping_set_Handle_m1343148127(L_39, _stringLiteral874608423, /*hidden argument*/NULL);
+		InputControlMapping_t318255021 * L_40 = V_0;
+		NullCheck(L_40);
+		L_40->set_Target_1(((int32_t)18));
+		InputControlMapping_t318255021 * L_41 = V_0;
+		Il2CppObject * L_42 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Button5_20();
+		NullCheck(L_41);
+		L_41->set_Source_0(L_42);
+		InputControlMapping_t318255021 * L_43 = V_0;
+		NullCheck(L_37);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_37, 5);
+		ArrayElementTypeCheck (L_37, L_43);
+		(L_37)->SetAt(static_cast<il2cpp_array_size_t>(5), (InputControlMapping_t318255021 *)L_43);
+		InputControlMappingU5BU5D_t3278783232* L_44 = L_37;
+		InputControlMapping_t318255021 * L_45 = (InputControlMapping_t318255021 *)il2cpp_codegen_object_new(InputControlMapping_t318255021_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3931955878(L_45, /*hidden argument*/NULL);
+		V_0 = L_45;
+		InputControlMapping_t318255021 * L_46 = V_0;
+		NullCheck(L_46);
+		InputControlMapping_set_Handle_m1343148127(L_46, _stringLiteral3846381659, /*hidden argument*/NULL);
+		InputControlMapping_t318255021 * L_47 = V_0;
+		NullCheck(L_47);
+		L_47->set_Target_1(5);
+		InputControlMapping_t318255021 * L_48 = V_0;
+		Il2CppObject * L_49 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Button8_23();
+		NullCheck(L_48);
+		L_48->set_Source_0(L_49);
+		InputControlMapping_t318255021 * L_50 = V_0;
+		NullCheck(L_44);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_44, 6);
+		ArrayElementTypeCheck (L_44, L_50);
+		(L_44)->SetAt(static_cast<il2cpp_array_size_t>(6), (InputControlMapping_t318255021 *)L_50);
+		InputControlMappingU5BU5D_t3278783232* L_51 = L_44;
+		InputControlMapping_t318255021 * L_52 = (InputControlMapping_t318255021 *)il2cpp_codegen_object_new(InputControlMapping_t318255021_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3931955878(L_52, /*hidden argument*/NULL);
+		V_0 = L_52;
+		InputControlMapping_t318255021 * L_53 = V_0;
+		NullCheck(L_53);
+		InputControlMapping_set_Handle_m1343148127(L_53, _stringLiteral1981170854, /*hidden argument*/NULL);
+		InputControlMapping_t318255021 * L_54 = V_0;
+		NullCheck(L_54);
+		L_54->set_Target_1(((int32_t)10));
+		InputControlMapping_t318255021 * L_55 = V_0;
+		Il2CppObject * L_56 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Button9_24();
+		NullCheck(L_55);
+		L_55->set_Source_0(L_56);
+		InputControlMapping_t318255021 * L_57 = V_0;
+		NullCheck(L_51);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_51, 7);
+		ArrayElementTypeCheck (L_51, L_57);
+		(L_51)->SetAt(static_cast<il2cpp_array_size_t>(7), (InputControlMapping_t318255021 *)L_57);
+		InputControlMappingU5BU5D_t3278783232* L_58 = L_51;
+		InputControlMapping_t318255021 * L_59 = (InputControlMapping_t318255021 *)il2cpp_codegen_object_new(InputControlMapping_t318255021_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3931955878(L_59, /*hidden argument*/NULL);
+		V_0 = L_59;
+		InputControlMapping_t318255021 * L_60 = V_0;
+		NullCheck(L_60);
+		InputControlMapping_set_Handle_m1343148127(L_60, _stringLiteral2062599, /*hidden argument*/NULL);
+		InputControlMapping_t318255021 * L_61 = V_0;
+		NullCheck(L_61);
+		L_61->set_Target_1(((int32_t)102));
+		InputControlMapping_t318255021 * L_62 = V_0;
+		Il2CppObject * L_63 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Button6_21();
+		NullCheck(L_62);
+		L_62->set_Source_0(L_63);
+		InputControlMapping_t318255021 * L_64 = V_0;
+		NullCheck(L_58);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_58, 8);
+		ArrayElementTypeCheck (L_58, L_64);
+		(L_58)->SetAt(static_cast<il2cpp_array_size_t>(8), (InputControlMapping_t318255021 *)L_64);
+		InputControlMappingU5BU5D_t3278783232* L_65 = L_58;
+		InputControlMapping_t318255021 * L_66 = (InputControlMapping_t318255021 *)il2cpp_codegen_object_new(InputControlMapping_t318255021_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3931955878(L_66, /*hidden argument*/NULL);
+		V_0 = L_66;
+		InputControlMapping_t318255021 * L_67 = V_0;
+		NullCheck(L_67);
+		InputControlMapping_set_Handle_m1343148127(L_67, _stringLiteral80204866, /*hidden argument*/NULL);
+		InputControlMapping_t318255021 * L_68 = V_0;
+		NullCheck(L_68);
+		L_68->set_Target_1(((int32_t)101));
+		InputControlMapping_t318255021 * L_69 = V_0;
+		Il2CppObject * L_70 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Button7_22();
+		NullCheck(L_69);
+		L_69->set_Source_0(L_70);
+		InputControlMapping_t318255021 * L_71 = V_0;
+		NullCheck(L_65);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_65, ((int32_t)9));
+		ArrayElementTypeCheck (L_65, L_71);
+		(L_65)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)9)), (InputControlMapping_t318255021 *)L_71);
+		InputDeviceProfile_set_ButtonMappings_m2451711183(__this, L_65, /*hidden argument*/NULL);
+		InputControlMappingU5BU5D_t3278783232* L_72 = ((InputControlMappingU5BU5D_t3278783232*)SZArrayNew(InputControlMappingU5BU5D_t3278783232_il2cpp_TypeInfo_var, (uint32_t)((int32_t)14)));
+		Il2CppObject * L_73 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog0_35();
+		InputControlMapping_t318255021 * L_74 = UnityInputDeviceProfile_LeftStickLeftMapping_m2685044781(NULL /*static, unused*/, L_73, /*hidden argument*/NULL);
+		NullCheck(L_72);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_72, 0);
+		ArrayElementTypeCheck (L_72, L_74);
+		(L_72)->SetAt(static_cast<il2cpp_array_size_t>(0), (InputControlMapping_t318255021 *)L_74);
+		InputControlMappingU5BU5D_t3278783232* L_75 = L_72;
+		Il2CppObject * L_76 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog0_35();
+		InputControlMapping_t318255021 * L_77 = UnityInputDeviceProfile_LeftStickRightMapping_m4184250566(NULL /*static, unused*/, L_76, /*hidden argument*/NULL);
+		NullCheck(L_75);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_75, 1);
+		ArrayElementTypeCheck (L_75, L_77);
+		(L_75)->SetAt(static_cast<il2cpp_array_size_t>(1), (InputControlMapping_t318255021 *)L_77);
+		InputControlMappingU5BU5D_t3278783232* L_78 = L_75;
+		Il2CppObject * L_79 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog1_36();
+		InputControlMapping_t318255021 * L_80 = UnityInputDeviceProfile_LeftStickUpMapping_m3005727833(NULL /*static, unused*/, L_79, /*hidden argument*/NULL);
+		NullCheck(L_78);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_78, 2);
+		ArrayElementTypeCheck (L_78, L_80);
+		(L_78)->SetAt(static_cast<il2cpp_array_size_t>(2), (InputControlMapping_t318255021 *)L_80);
+		InputControlMappingU5BU5D_t3278783232* L_81 = L_78;
+		Il2CppObject * L_82 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog1_36();
+		InputControlMapping_t318255021 * L_83 = UnityInputDeviceProfile_LeftStickDownMapping_m3008714866(NULL /*static, unused*/, L_82, /*hidden argument*/NULL);
+		NullCheck(L_81);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_81, 3);
+		ArrayElementTypeCheck (L_81, L_83);
+		(L_81)->SetAt(static_cast<il2cpp_array_size_t>(3), (InputControlMapping_t318255021 *)L_83);
+		InputControlMappingU5BU5D_t3278783232* L_84 = L_81;
+		Il2CppObject * L_85 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog2_37();
+		InputControlMapping_t318255021 * L_86 = UnityInputDeviceProfile_RightStickLeftMapping_m1922462366(NULL /*static, unused*/, L_85, /*hidden argument*/NULL);
+		NullCheck(L_84);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_84, 4);
+		ArrayElementTypeCheck (L_84, L_86);
+		(L_84)->SetAt(static_cast<il2cpp_array_size_t>(4), (InputControlMapping_t318255021 *)L_86);
+		InputControlMappingU5BU5D_t3278783232* L_87 = L_84;
+		Il2CppObject * L_88 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog2_37();
+		InputControlMapping_t318255021 * L_89 = UnityInputDeviceProfile_RightStickRightMapping_m2019032181(NULL /*static, unused*/, L_88, /*hidden argument*/NULL);
+		NullCheck(L_87);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_87, 5);
+		ArrayElementTypeCheck (L_87, L_89);
+		(L_87)->SetAt(static_cast<il2cpp_array_size_t>(5), (InputControlMapping_t318255021 *)L_89);
+		InputControlMappingU5BU5D_t3278783232* L_90 = L_87;
+		Il2CppObject * L_91 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog3_38();
+		InputControlMapping_t318255021 * L_92 = UnityInputDeviceProfile_RightStickUpMapping_m3688732426(NULL /*static, unused*/, L_91, /*hidden argument*/NULL);
+		NullCheck(L_90);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_90, 6);
+		ArrayElementTypeCheck (L_90, L_92);
+		(L_90)->SetAt(static_cast<il2cpp_array_size_t>(6), (InputControlMapping_t318255021 *)L_92);
+		InputControlMappingU5BU5D_t3278783232* L_93 = L_90;
+		Il2CppObject * L_94 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog3_38();
+		InputControlMapping_t318255021 * L_95 = UnityInputDeviceProfile_RightStickDownMapping_m2246132451(NULL /*static, unused*/, L_94, /*hidden argument*/NULL);
+		NullCheck(L_93);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_93, 7);
+		ArrayElementTypeCheck (L_93, L_95);
+		(L_93)->SetAt(static_cast<il2cpp_array_size_t>(7), (InputControlMapping_t318255021 *)L_95);
+		InputControlMappingU5BU5D_t3278783232* L_96 = L_93;
+		Il2CppObject * L_97 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog4_39();
+		InputControlMapping_t318255021 * L_98 = UnityInputDeviceProfile_DPadLeftMapping_m2981309891(NULL /*static, unused*/, L_97, /*hidden argument*/NULL);
+		NullCheck(L_96);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_96, 8);
+		ArrayElementTypeCheck (L_96, L_98);
+		(L_96)->SetAt(static_cast<il2cpp_array_size_t>(8), (InputControlMapping_t318255021 *)L_98);
+		InputControlMappingU5BU5D_t3278783232* L_99 = L_96;
+		Il2CppObject * L_100 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog4_39();
+		InputControlMapping_t318255021 * L_101 = UnityInputDeviceProfile_DPadRightMapping_m483567088(NULL /*static, unused*/, L_100, /*hidden argument*/NULL);
+		NullCheck(L_99);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_99, ((int32_t)9));
+		ArrayElementTypeCheck (L_99, L_101);
+		(L_99)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)9)), (InputControlMapping_t318255021 *)L_101);
+		InputControlMappingU5BU5D_t3278783232* L_102 = L_99;
+		Il2CppObject * L_103 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog5_40();
+		InputControlMapping_t318255021 * L_104 = UnityInputDeviceProfile_DPadUpMapping_m2831734639(NULL /*static, unused*/, L_103, /*hidden argument*/NULL);
+		NullCheck(L_102);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_102, ((int32_t)10));
+		ArrayElementTypeCheck (L_102, L_104);
+		(L_102)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)10)), (InputControlMapping_t318255021 *)L_104);
+		InputControlMappingU5BU5D_t3278783232* L_105 = L_102;
+		Il2CppObject * L_106 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog5_40();
+		InputControlMapping_t318255021 * L_107 = UnityInputDeviceProfile_DPadDownMapping_m3304979976(NULL /*static, unused*/, L_106, /*hidden argument*/NULL);
+		NullCheck(L_105);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_105, ((int32_t)11));
+		ArrayElementTypeCheck (L_105, L_107);
+		(L_105)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)11)), (InputControlMapping_t318255021 *)L_107);
+		InputControlMappingU5BU5D_t3278783232* L_108 = L_105;
+		InputControlMapping_t318255021 * L_109 = (InputControlMapping_t318255021 *)il2cpp_codegen_object_new(InputControlMapping_t318255021_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3931955878(L_109, /*hidden argument*/NULL);
+		V_0 = L_109;
+		InputControlMapping_t318255021 * L_110 = V_0;
+		NullCheck(L_110);
+		InputControlMapping_set_Handle_m1343148127(L_110, _stringLiteral2876147359, /*hidden argument*/NULL);
+		InputControlMapping_t318255021 * L_111 = V_0;
+		NullCheck(L_111);
+		L_111->set_Target_1(((int32_t)15));
+		InputControlMapping_t318255021 * L_112 = V_0;
+		Il2CppObject * L_113 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog9_44();
+		NullCheck(L_112);
+		L_112->set_Source_0(L_113);
+		InputControlMapping_t318255021 * L_114 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(InputRange_t4284974673_il2cpp_TypeInfo_var);
+		InputRange_t4284974673  L_115 = ((InputRange_t4284974673_StaticFields*)InputRange_t4284974673_il2cpp_TypeInfo_var->static_fields)->get_ZeroToOne_3();
+		NullCheck(L_114);
+		L_114->set_SourceRange_10(L_115);
+		InputControlMapping_t318255021 * L_116 = V_0;
+		InputRange_t4284974673  L_117 = ((InputRange_t4284974673_StaticFields*)InputRange_t4284974673_il2cpp_TypeInfo_var->static_fields)->get_ZeroToOne_3();
+		NullCheck(L_116);
+		L_116->set_TargetRange_11(L_117);
+		InputControlMapping_t318255021 * L_118 = V_0;
+		NullCheck(L_108);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_108, ((int32_t)12));
+		ArrayElementTypeCheck (L_108, L_118);
+		(L_108)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)12)), (InputControlMapping_t318255021 *)L_118);
+		InputControlMappingU5BU5D_t3278783232* L_119 = L_108;
+		InputControlMapping_t318255021 * L_120 = (InputControlMapping_t318255021 *)il2cpp_codegen_object_new(InputControlMapping_t318255021_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3931955878(L_120, /*hidden argument*/NULL);
+		V_0 = L_120;
+		InputControlMapping_t318255021 * L_121 = V_0;
+		NullCheck(L_121);
+		InputControlMapping_set_Handle_m1343148127(L_121, _stringLiteral48406388, /*hidden argument*/NULL);
+		InputControlMapping_t318255021 * L_122 = V_0;
+		NullCheck(L_122);
+		L_122->set_Target_1(((int32_t)16));
+		InputControlMapping_t318255021 * L_123 = V_0;
+		Il2CppObject * L_124 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog9_44();
+		NullCheck(L_123);
+		L_123->set_Source_0(L_124);
+		InputControlMapping_t318255021 * L_125 = V_0;
+		InputRange_t4284974673  L_126 = ((InputRange_t4284974673_StaticFields*)InputRange_t4284974673_il2cpp_TypeInfo_var->static_fields)->get_ZeroToMinusOne_4();
+		NullCheck(L_125);
+		L_125->set_SourceRange_10(L_126);
+		InputControlMapping_t318255021 * L_127 = V_0;
+		InputRange_t4284974673  L_128 = ((InputRange_t4284974673_StaticFields*)InputRange_t4284974673_il2cpp_TypeInfo_var->static_fields)->get_ZeroToOne_3();
+		NullCheck(L_127);
+		L_127->set_TargetRange_11(L_128);
+		InputControlMapping_t318255021 * L_129 = V_0;
+		NullCheck(L_119);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_119, ((int32_t)13));
+		ArrayElementTypeCheck (L_119, L_129);
+		(L_119)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)13)), (InputControlMapping_t318255021 *)L_129);
+		InputDeviceProfile_set_AnalogMappings_m1162670289(__this, L_119, /*hidden argument*/NULL);
+		return;
+	}
+}
 // System.Void InControl.MouseBindingSource::.ctor()
 extern "C"  void MouseBindingSource__ctor_m1241463274 (MouseBindingSource_t3443008281 * __this, const MethodInfo* method)
 {
@@ -18912,88 +19292,6 @@ extern "C"  void PowerAAirflowControllerMacProfile__ctor_m2962502251 (PowerAAirf
 		L_2->set_VendorID_0(L_3);
 		NativeInputDeviceMatcher_t1874950919 * L_4 = V_0;
 		Nullable_1_t108794446  L_5 = Nullable_1_op_Implicit_m1801723347(NULL /*static, unused*/, ((int32_t)16138), /*hidden argument*/Nullable_1_op_Implicit_m1801723347_MethodInfo_var);
-		NullCheck(L_4);
-		L_4->set_ProductID_1(L_5);
-		NativeInputDeviceMatcher_t1874950919 * L_6 = V_0;
-		NullCheck(L_0);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_0, 0);
-		ArrayElementTypeCheck (L_0, L_6);
-		(L_0)->SetAt(static_cast<il2cpp_array_size_t>(0), (NativeInputDeviceMatcher_t1874950919 *)L_6);
-		((NativeInputDeviceProfile_t724663166 *)__this)->set_Matchers_12(L_0);
-		return;
-	}
-}
-// System.Void InControl.NativeProfile.POWERAFUS1ONTournamentControllerMacProfile::.ctor()
-extern Il2CppClass* NativeInputDeviceMatcherU5BU5D_t4080315646_il2cpp_TypeInfo_var;
-extern Il2CppClass* NativeInputDeviceMatcher_t1874950919_il2cpp_TypeInfo_var;
-extern const MethodInfo* Nullable_1_op_Implicit_m1801723347_MethodInfo_var;
-extern Il2CppCodeGenString* _stringLiteral396464409;
-extern Il2CppCodeGenString* _stringLiteral1358288981;
-extern const uint32_t POWERAFUS1ONTournamentControllerMacProfile__ctor_m1729768770_MetadataUsageId;
-extern "C"  void POWERAFUS1ONTournamentControllerMacProfile__ctor_m1729768770 (POWERAFUS1ONTournamentControllerMacProfile_t759321645 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (POWERAFUS1ONTournamentControllerMacProfile__ctor_m1729768770_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	NativeInputDeviceMatcher_t1874950919 * V_0 = NULL;
-	{
-		Xbox360DriverMacProfile__ctor_m1429990817(__this, /*hidden argument*/NULL);
-		InputDeviceProfile_set_Name_m2695980466(__this, _stringLiteral396464409, /*hidden argument*/NULL);
-		InputDeviceProfile_set_Meta_m2477532920(__this, _stringLiteral1358288981, /*hidden argument*/NULL);
-		NativeInputDeviceMatcherU5BU5D_t4080315646* L_0 = ((NativeInputDeviceMatcherU5BU5D_t4080315646*)SZArrayNew(NativeInputDeviceMatcherU5BU5D_t4080315646_il2cpp_TypeInfo_var, (uint32_t)1));
-		NativeInputDeviceMatcher_t1874950919 * L_1 = (NativeInputDeviceMatcher_t1874950919 *)il2cpp_codegen_object_new(NativeInputDeviceMatcher_t1874950919_il2cpp_TypeInfo_var);
-		NativeInputDeviceMatcher__ctor_m2714827708(L_1, /*hidden argument*/NULL);
-		V_0 = L_1;
-		NativeInputDeviceMatcher_t1874950919 * L_2 = V_0;
-		Nullable_1_t108794446  L_3 = Nullable_1_op_Implicit_m1801723347(NULL /*static, unused*/, ((int32_t)9414), /*hidden argument*/Nullable_1_op_Implicit_m1801723347_MethodInfo_var);
-		NullCheck(L_2);
-		L_2->set_VendorID_0(L_3);
-		NativeInputDeviceMatcher_t1874950919 * L_4 = V_0;
-		Nullable_1_t108794446  L_5 = Nullable_1_op_Implicit_m1801723347(NULL /*static, unused*/, ((int32_t)21399), /*hidden argument*/Nullable_1_op_Implicit_m1801723347_MethodInfo_var);
-		NullCheck(L_4);
-		L_4->set_ProductID_1(L_5);
-		NativeInputDeviceMatcher_t1874950919 * L_6 = V_0;
-		NullCheck(L_0);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_0, 0);
-		ArrayElementTypeCheck (L_0, L_6);
-		(L_0)->SetAt(static_cast<il2cpp_array_size_t>(0), (NativeInputDeviceMatcher_t1874950919 *)L_6);
-		((NativeInputDeviceProfile_t724663166 *)__this)->set_Matchers_12(L_0);
-		return;
-	}
-}
-// System.Void InControl.NativeProfile.PowerAMiniControllerMacProfile::.ctor()
-extern Il2CppClass* NativeInputDeviceMatcherU5BU5D_t4080315646_il2cpp_TypeInfo_var;
-extern Il2CppClass* NativeInputDeviceMatcher_t1874950919_il2cpp_TypeInfo_var;
-extern const MethodInfo* Nullable_1_op_Implicit_m1801723347_MethodInfo_var;
-extern Il2CppCodeGenString* _stringLiteral258647777;
-extern Il2CppCodeGenString* _stringLiteral1436955021;
-extern const uint32_t PowerAMiniControllerMacProfile__ctor_m2160699392_MetadataUsageId;
-extern "C"  void PowerAMiniControllerMacProfile__ctor_m2160699392 (PowerAMiniControllerMacProfile_t3098152879 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (PowerAMiniControllerMacProfile__ctor_m2160699392_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	NativeInputDeviceMatcher_t1874950919 * V_0 = NULL;
-	{
-		Xbox360DriverMacProfile__ctor_m1429990817(__this, /*hidden argument*/NULL);
-		InputDeviceProfile_set_Name_m2695980466(__this, _stringLiteral258647777, /*hidden argument*/NULL);
-		InputDeviceProfile_set_Meta_m2477532920(__this, _stringLiteral1436955021, /*hidden argument*/NULL);
-		NativeInputDeviceMatcherU5BU5D_t4080315646* L_0 = ((NativeInputDeviceMatcherU5BU5D_t4080315646*)SZArrayNew(NativeInputDeviceMatcherU5BU5D_t4080315646_il2cpp_TypeInfo_var, (uint32_t)1));
-		NativeInputDeviceMatcher_t1874950919 * L_1 = (NativeInputDeviceMatcher_t1874950919 *)il2cpp_codegen_object_new(NativeInputDeviceMatcher_t1874950919_il2cpp_TypeInfo_var);
-		NativeInputDeviceMatcher__ctor_m2714827708(L_1, /*hidden argument*/NULL);
-		V_0 = L_1;
-		NativeInputDeviceMatcher_t1874950919 * L_2 = V_0;
-		Nullable_1_t108794446  L_3 = Nullable_1_op_Implicit_m1801723347(NULL /*static, unused*/, ((int32_t)9414), /*hidden argument*/Nullable_1_op_Implicit_m1801723347_MethodInfo_var);
-		NullCheck(L_2);
-		L_2->set_VendorID_0(L_3);
-		NativeInputDeviceMatcher_t1874950919 * L_4 = V_0;
-		Nullable_1_t108794446  L_5 = Nullable_1_op_Implicit_m1801723347(NULL /*static, unused*/, ((int32_t)21530), /*hidden argument*/Nullable_1_op_Implicit_m1801723347_MethodInfo_var);
 		NullCheck(L_4);
 		L_4->set_ProductID_1(L_5);
 		NativeInputDeviceMatcher_t1874950919 * L_6 = V_0;

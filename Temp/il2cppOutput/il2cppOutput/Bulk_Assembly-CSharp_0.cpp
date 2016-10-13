@@ -15,12 +15,20 @@
 
 // <PrivateImplementationDetails>
 struct U3CPrivateImplementationDetailsU3E_t3053238938;
+// CaptureAndSaveCamera
+struct CaptureAndSaveCamera_t4072796851;
+// CaptureAndSave
+struct CaptureAndSave_t700313070;
+// System.Object
+struct Il2CppObject;
+// System.String
+struct String_t;
+// CaptureAndSaveScreen
+struct CaptureAndSaveScreen_t237891578;
 // DeviceCamera
 struct DeviceCamera_t3055454523;
 // UnityEngine.Renderer
 struct Renderer_t3076687687;
-// System.Object
-struct Il2CppObject;
 // EndOfPlatform
 struct EndOfPlatform_t2860618373;
 // GameController
@@ -69,8 +77,6 @@ struct Collider2D_t1552025098;
 struct PlayerMovement_t2454334062;
 // InControl.CustomInputDeviceProfile
 struct CustomInputDeviceProfile_t1056134232;
-// System.String
-struct String_t;
 // InControl.InputControlSource
 struct InputControlSource_t4197400812;
 // UnityEngine.KeyCode[]
@@ -247,8 +253,6 @@ struct MogaProLinuxProfile_t1156334680;
 struct MogaProMacProfile_t715122269;
 // InControl.MogaProPowerAndroidProfile
 struct MogaProPowerAndroidProfile_t4165900428;
-// InControl.MogaProWinProfile
-struct MogaProWinProfile_t3461265200;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -261,51 +265,71 @@ struct MogaProWinProfile_t3461265200;
 #include "mscorlib_System_Object4170816371MethodDeclarations.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3379220505.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3379220505MethodDeclarations.h"
+#include "AssemblyU2DCSharp_CaptureAndSaveCamera4072796851.h"
+#include "AssemblyU2DCSharp_CaptureAndSaveCamera4072796851MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_MonoBehaviour667441552MethodDeclarations.h"
+#include "mscorlib_System_String7231557.h"
+#include "UnityEngine_UnityEngine_Object3071478659MethodDeclarations.h"
+#include "CaptureAndSaveLib_CaptureAndSave700313070.h"
+#include "UnityEngine_UnityEngine_Object3071478659.h"
+#include "CaptureAndSaveLib_CaptureAndSaveEventListener_OnEr1516540506MethodDeclarations.h"
+#include "CaptureAndSaveLib_CaptureAndSaveEventListener2941400608MethodDeclarations.h"
+#include "CaptureAndSaveLib_CaptureAndSaveEventListener_OnSu1013330901MethodDeclarations.h"
+#include "CaptureAndSaveLib_CaptureAndSaveEventListener_OnEr1516540506.h"
+#include "mscorlib_System_Object4170816371.h"
+#include "mscorlib_System_IntPtr4010401971.h"
+#include "CaptureAndSaveLib_CaptureAndSaveEventListener_OnSu1013330901.h"
+#include "mscorlib_System_String7231557MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Debug4195163081MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_GUILayout3864601915MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Screen3187157168MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_GUI3134605553MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Camera2727095145MethodDeclarations.h"
+#include "CaptureAndSaveLib_CaptureAndSave700313070MethodDeclarations.h"
+#include "UnityEngine_ArrayTypes.h"
+#include "UnityEngine_UnityEngine_GUILayoutOption331591504.h"
+#include "mscorlib_System_Int321153838500.h"
+#include "UnityEngine_UnityEngine_Rect4241904616.h"
+#include "UnityEngine_UnityEngine_Rect4241904616MethodDeclarations.h"
+#include "mscorlib_System_Single4291918972.h"
+#include "mscorlib_System_Boolean476798718.h"
+#include "UnityEngine_UnityEngine_Camera2727095145.h"
+#include "CaptureAndSaveLib_ImageType1125820181.h"
+#include "AssemblyU2DCSharp_CaptureAndSaveScreen237891578.h"
+#include "AssemblyU2DCSharp_CaptureAndSaveScreen237891578MethodDeclarations.h"
+#include "mscorlib_System_Int321153838500MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Texture2D3884108195.h"
+#include "UnityEngine_UnityEngine_Texture2526458961.h"
 #include "AssemblyU2DCSharp_DeviceCamera3055454523.h"
 #include "AssemblyU2DCSharp_DeviceCamera3055454523MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_MonoBehaviour667441552MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_WebCamTexture1290350902MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Component3501516275MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Renderer3076687687MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Material3870600107MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Renderer3076687687.h"
-#include "UnityEngine_ArrayTypes.h"
 #include "UnityEngine_UnityEngine_WebCamDevice3274004757.h"
 #include "UnityEngine_UnityEngine_WebCamDevice3274004757MethodDeclarations.h"
-#include "mscorlib_System_String7231557.h"
 #include "UnityEngine_UnityEngine_WebCamTexture1290350902.h"
 #include "UnityEngine_UnityEngine_Component3501516275.h"
 #include "UnityEngine_UnityEngine_Material3870600107.h"
-#include "UnityEngine_UnityEngine_Texture2526458961.h"
 #include "AssemblyU2DCSharp_EndOfPlatform2860618373.h"
 #include "AssemblyU2DCSharp_EndOfPlatform2860618373MethodDeclarations.h"
 #include "AssemblyU2DCSharp_GameController2782302542.h"
 #include "AssemblyU2DCSharp_GameController2782302542MethodDeclarations.h"
 #include "AssemblyU2DCSharp_PlayerPrefsManager567672958MethodDeclarations.h"
-#include "mscorlib_System_String7231557MethodDeclarations.h"
-#include "mscorlib_System_Int321153838500.h"
 #include "UnityEngine_UI_UnityEngine_UI_Text9039225.h"
-#include "mscorlib_System_Object4170816371.h"
 #include "UnityEngine_UI_UnityEngine_UI_Text9039225MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Time4241968337MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_GameObject3674682005MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Transform1659122786MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Vector34282066566.h"
-#include "mscorlib_System_Boolean476798718.h"
-#include "mscorlib_System_Single4291918972.h"
 #include "UnityEngine_UnityEngine_GameObject3674682005.h"
 #include "UnityEngine_UnityEngine_Transform1659122786.h"
 #include "mscorlib_System_Single4291918972MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Mathf4203372500MethodDeclarations.h"
 #include "AssemblyU2DCSharp_GameOverController722700354.h"
 #include "AssemblyU2DCSharp_GameOverController722700354MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Object3071478659MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Application2856536070MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Debug4195163081MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Object3071478659.h"
-#include "mscorlib_System_DateTime4283661327MethodDeclarations.h"
-#include "mscorlib_System_DateTime4283661327.h"
-#include "mscorlib_System_Int321153838500MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InControl_AirFloWiredPS3MacProfil381436744.h"
 #include "AssemblyU2DCSharp_InControl_AirFloWiredPS3MacProfil381436744MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InControl_UnityInputDeviceProfil2501013168MethodDeclarations.h"
@@ -433,7 +457,6 @@ struct MogaProWinProfile_t3461265200;
 #include "mscorlib_System_Threading_Thread1973216770MethodDeclarations.h"
 #include "mscorlib_System_Threading_Thread1973216770.h"
 #include "mscorlib_System_Threading_ThreadStart124146534.h"
-#include "mscorlib_System_IntPtr4010401971.h"
 #include "UnityEngine_UnityEngine_RuntimePlatform3050318497.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen1375417109MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InControl_Logger3862062926MethodDeclarations.h"
@@ -636,19 +659,19 @@ struct MogaProWinProfile_t3461265200;
 #include "AssemblyU2DCSharp_InControl_MogaProMacProfile715122269MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InControl_MogaProPowerAndroidPro4165900428.h"
 #include "AssemblyU2DCSharp_InControl_MogaProPowerAndroidPro4165900428MethodDeclarations.h"
-#include "AssemblyU2DCSharp_InControl_MogaProWinProfile3461265200.h"
-#include "AssemblyU2DCSharp_InControl_MogaProWinProfile3461265200MethodDeclarations.h"
-#include "AssemblyU2DCSharp_InControl_Mouse2326684343.h"
-#include "AssemblyU2DCSharp_InControl_Mouse2326684343MethodDeclarations.h"
 
+// !!0 UnityEngine.Object::FindObjectOfType<System.Object>()
+extern "C"  Il2CppObject * Object_FindObjectOfType_TisIl2CppObject_m2892359027_gshared (Il2CppObject * __this /* static, unused */, const MethodInfo* method);
+#define Object_FindObjectOfType_TisIl2CppObject_m2892359027(__this /* static, unused */, method) ((  Il2CppObject * (*) (Il2CppObject * /* static, unused */, const MethodInfo*))Object_FindObjectOfType_TisIl2CppObject_m2892359027_gshared)(__this /* static, unused */, method)
+// !!0 UnityEngine.Object::FindObjectOfType<CaptureAndSave>()
+#define Object_FindObjectOfType_TisCaptureAndSave_t700313070_m449003263(__this /* static, unused */, method) ((  CaptureAndSave_t700313070 * (*) (Il2CppObject * /* static, unused */, const MethodInfo*))Object_FindObjectOfType_TisIl2CppObject_m2892359027_gshared)(__this /* static, unused */, method)
 // !!0 UnityEngine.Component::GetComponent<System.Object>()
 extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m267839954_gshared (Component_t3501516275 * __this, const MethodInfo* method);
 #define Component_GetComponent_TisIl2CppObject_m267839954(__this, method) ((  Il2CppObject * (*) (Component_t3501516275 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.Renderer>()
 #define Component_GetComponent_TisRenderer_t3076687687_m500377675(__this, method) ((  Renderer_t3076687687 * (*) (Component_t3501516275 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
-// !!0 UnityEngine.Object::FindObjectOfType<System.Object>()
-extern "C"  Il2CppObject * Object_FindObjectOfType_TisIl2CppObject_m2892359027_gshared (Il2CppObject * __this /* static, unused */, const MethodInfo* method);
-#define Object_FindObjectOfType_TisIl2CppObject_m2892359027(__this /* static, unused */, method) ((  Il2CppObject * (*) (Il2CppObject * /* static, unused */, const MethodInfo*))Object_FindObjectOfType_TisIl2CppObject_m2892359027_gshared)(__this /* static, unused */, method)
+// !!0 UnityEngine.Component::GetComponent<CaptureAndSave>()
+#define Component_GetComponent_TisCaptureAndSave_t700313070_m1776538967(__this, method) ((  CaptureAndSave_t700313070 * (*) (Component_t3501516275 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.Object::FindObjectOfType<DeviceCamera>()
 #define Object_FindObjectOfType_TisDeviceCamera_t3055454523_m1261070354(__this /* static, unused */, method) ((  DeviceCamera_t3055454523 * (*) (Il2CppObject * /* static, unused */, const MethodInfo*))Object_FindObjectOfType_TisIl2CppObject_m2892359027_gshared)(__this /* static, unused */, method)
 // !!0 UnityEngine.Component::GetComponent<DeviceCamera>()
@@ -721,6 +744,535 @@ extern "C" void U24ArrayTypeU2464_t3379220507_marshal_com_back(const U24ArrayTyp
 // Conversion method for clean up from marshalling of: <PrivateImplementationDetails>/$ArrayType$64
 extern "C" void U24ArrayTypeU2464_t3379220507_marshal_com_cleanup(U24ArrayTypeU2464_t3379220507_marshaled_com& marshaled)
 {
+}
+// System.Void CaptureAndSaveCamera::.ctor()
+extern Il2CppCodeGenString* _stringLiteral73595188;
+extern const uint32_t CaptureAndSaveCamera__ctor_m3922772296_MetadataUsageId;
+extern "C"  void CaptureAndSaveCamera__ctor_m3922772296 (CaptureAndSaveCamera_t4072796851 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (CaptureAndSaveCamera__ctor_m3922772296_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		__this->set_log_3(_stringLiteral73595188);
+		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void CaptureAndSaveCamera::Start()
+extern Il2CppClass* Object_t3071478659_il2cpp_TypeInfo_var;
+extern const MethodInfo* Object_FindObjectOfType_TisCaptureAndSave_t700313070_m449003263_MethodInfo_var;
+extern const uint32_t CaptureAndSaveCamera_Start_m2869910088_MetadataUsageId;
+extern "C"  void CaptureAndSaveCamera_Start_m2869910088 (CaptureAndSaveCamera_t4072796851 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (CaptureAndSaveCamera_Start_m2869910088_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t3071478659_il2cpp_TypeInfo_var);
+		CaptureAndSave_t700313070 * L_0 = Object_FindObjectOfType_TisCaptureAndSave_t700313070_m449003263(NULL /*static, unused*/, /*hidden argument*/Object_FindObjectOfType_TisCaptureAndSave_t700313070_m449003263_MethodInfo_var);
+		__this->set_snapShot_2(L_0);
+		return;
+	}
+}
+// System.Void CaptureAndSaveCamera::OnEnable()
+extern Il2CppClass* OnError_t1516540506_il2cpp_TypeInfo_var;
+extern Il2CppClass* OnSuccess_t1013330901_il2cpp_TypeInfo_var;
+extern const MethodInfo* CaptureAndSaveCamera_OnError_m678970643_MethodInfo_var;
+extern const MethodInfo* CaptureAndSaveCamera_OnSuccess_m1499302712_MethodInfo_var;
+extern const uint32_t CaptureAndSaveCamera_OnEnable_m3615891774_MetadataUsageId;
+extern "C"  void CaptureAndSaveCamera_OnEnable_m3615891774 (CaptureAndSaveCamera_t4072796851 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (CaptureAndSaveCamera_OnEnable_m3615891774_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IntPtr_t L_0;
+		L_0.set_m_value_0((void*)(void*)CaptureAndSaveCamera_OnError_m678970643_MethodInfo_var);
+		OnError_t1516540506 * L_1 = (OnError_t1516540506 *)il2cpp_codegen_object_new(OnError_t1516540506_il2cpp_TypeInfo_var);
+		OnError__ctor_m3869093594(L_1, __this, L_0, /*hidden argument*/NULL);
+		CaptureAndSaveEventListener_add_onError_m3586673325(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		IntPtr_t L_2;
+		L_2.set_m_value_0((void*)(void*)CaptureAndSaveCamera_OnSuccess_m1499302712_MethodInfo_var);
+		OnSuccess_t1013330901 * L_3 = (OnSuccess_t1013330901 *)il2cpp_codegen_object_new(OnSuccess_t1013330901_il2cpp_TypeInfo_var);
+		OnSuccess__ctor_m1594524309(L_3, __this, L_2, /*hidden argument*/NULL);
+		CaptureAndSaveEventListener_add_onSuccess_m31473463(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void CaptureAndSaveCamera::OnDisable()
+extern Il2CppClass* OnError_t1516540506_il2cpp_TypeInfo_var;
+extern Il2CppClass* OnSuccess_t1013330901_il2cpp_TypeInfo_var;
+extern const MethodInfo* CaptureAndSaveCamera_OnError_m678970643_MethodInfo_var;
+extern const MethodInfo* CaptureAndSaveCamera_OnSuccess_m1499302712_MethodInfo_var;
+extern const uint32_t CaptureAndSaveCamera_OnDisable_m864432559_MetadataUsageId;
+extern "C"  void CaptureAndSaveCamera_OnDisable_m864432559 (CaptureAndSaveCamera_t4072796851 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (CaptureAndSaveCamera_OnDisable_m864432559_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IntPtr_t L_0;
+		L_0.set_m_value_0((void*)(void*)CaptureAndSaveCamera_OnError_m678970643_MethodInfo_var);
+		OnError_t1516540506 * L_1 = (OnError_t1516540506 *)il2cpp_codegen_object_new(OnError_t1516540506_il2cpp_TypeInfo_var);
+		OnError__ctor_m3869093594(L_1, __this, L_0, /*hidden argument*/NULL);
+		CaptureAndSaveEventListener_add_onError_m3586673325(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		IntPtr_t L_2;
+		L_2.set_m_value_0((void*)(void*)CaptureAndSaveCamera_OnSuccess_m1499302712_MethodInfo_var);
+		OnSuccess_t1013330901 * L_3 = (OnSuccess_t1013330901 *)il2cpp_codegen_object_new(OnSuccess_t1013330901_il2cpp_TypeInfo_var);
+		OnSuccess__ctor_m1594524309(L_3, __this, L_2, /*hidden argument*/NULL);
+		CaptureAndSaveEventListener_add_onSuccess_m31473463(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void CaptureAndSaveCamera::OnError(System.String)
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t4195163081_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral10;
+extern Il2CppCodeGenString* _stringLiteral1460696158;
+extern const uint32_t CaptureAndSaveCamera_OnError_m678970643_MetadataUsageId;
+extern "C"  void CaptureAndSaveCamera_OnError_m678970643 (CaptureAndSaveCamera_t4072796851 * __this, String_t* ___error0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (CaptureAndSaveCamera_OnError_m678970643_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = __this->get_log_3();
+		String_t* L_1 = ___error0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_2 = String_Concat_m1825781833(NULL /*static, unused*/, L_0, _stringLiteral10, L_1, /*hidden argument*/NULL);
+		__this->set_log_3(L_2);
+		String_t* L_3 = ___error0;
+		String_t* L_4 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral1460696158, L_3, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t4195163081_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void CaptureAndSaveCamera::OnSuccess(System.String)
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t4195163081_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral10;
+extern Il2CppCodeGenString* _stringLiteral1259763843;
+extern const uint32_t CaptureAndSaveCamera_OnSuccess_m1499302712_MetadataUsageId;
+extern "C"  void CaptureAndSaveCamera_OnSuccess_m1499302712 (CaptureAndSaveCamera_t4072796851 * __this, String_t* ___msg0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (CaptureAndSaveCamera_OnSuccess_m1499302712_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = __this->get_log_3();
+		String_t* L_1 = ___msg0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_2 = String_Concat_m1825781833(NULL /*static, unused*/, L_0, _stringLiteral10, L_1, /*hidden argument*/NULL);
+		__this->set_log_3(L_2);
+		String_t* L_3 = ___msg0;
+		String_t* L_4 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral1259763843, L_3, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t4195163081_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void CaptureAndSaveCamera::OnGUI()
+extern Il2CppClass* GUILayoutOptionU5BU5D_t2977405297_il2cpp_TypeInfo_var;
+extern Il2CppClass* GUI_t3134605553_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3794712771;
+extern const uint32_t CaptureAndSaveCamera_OnGUI_m3418170946_MetadataUsageId;
+extern "C"  void CaptureAndSaveCamera_OnGUI_m3418170946 (CaptureAndSaveCamera_t4072796851 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (CaptureAndSaveCamera_OnGUI_m3418170946_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = __this->get_log_3();
+		GUILayout_Label_m925445731(NULL /*static, unused*/, L_0, ((GUILayoutOptionU5BU5D_t2977405297*)SZArrayNew(GUILayoutOptionU5BU5D_t2977405297_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		int32_t L_1 = Screen_get_width_m3080333084(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_2 = Screen_get_height_m1504859443(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Rect_t4241904616  L_3;
+		memset(&L_3, 0, sizeof(L_3));
+		Rect__ctor_m3291325233(&L_3, (((float)((float)((int32_t)((int32_t)((int32_t)((int32_t)L_1/(int32_t)2))-(int32_t)((int32_t)120)))))), (((float)((float)((int32_t)((int32_t)L_2-(int32_t)((int32_t)120)))))), (240.0f), (120.0f), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(GUI_t3134605553_il2cpp_TypeInfo_var);
+		bool L_4 = GUI_Button_m885093907(NULL /*static, unused*/, L_3, _stringLiteral3794712771, /*hidden argument*/NULL);
+		if (!L_4)
+		{
+			goto IL_0062;
+		}
+	}
+	{
+		CaptureAndSave_t700313070 * L_5 = __this->get_snapShot_2();
+		int32_t L_6 = Screen_get_width_m3080333084(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_7 = Screen_get_height_m1504859443(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Camera_t2727095145 * L_8 = Camera_get_main_m671815697(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_5);
+		CaptureAndSave_CaptureAndSaveToAlbum_m1006194421(L_5, ((int32_t)((int32_t)L_6*(int32_t)2)), ((int32_t)((int32_t)L_7*(int32_t)2)), L_8, 0, /*hidden argument*/NULL);
+	}
+
+IL_0062:
+	{
+		return;
+	}
+}
+// System.Void CaptureAndSaveScreen::.ctor()
+extern Il2CppCodeGenString* _stringLiteral48;
+extern Il2CppCodeGenString* _stringLiteral76580;
+extern const uint32_t CaptureAndSaveScreen__ctor_m3421488097_MetadataUsageId;
+extern "C"  void CaptureAndSaveScreen__ctor_m3421488097 (CaptureAndSaveScreen_t237891578 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (CaptureAndSaveScreen__ctor_m3421488097_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		__this->set_x_2(_stringLiteral48);
+		__this->set_y_3(_stringLiteral48);
+		__this->set_width_4(_stringLiteral48);
+		__this->set_height_5(_stringLiteral48);
+		__this->set_log_8(_stringLiteral76580);
+		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void CaptureAndSaveScreen::Start()
+extern Il2CppClass* Object_t3071478659_il2cpp_TypeInfo_var;
+extern const MethodInfo* Object_FindObjectOfType_TisCaptureAndSave_t700313070_m449003263_MethodInfo_var;
+extern const uint32_t CaptureAndSaveScreen_Start_m2368625889_MetadataUsageId;
+extern "C"  void CaptureAndSaveScreen_Start_m2368625889 (CaptureAndSaveScreen_t237891578 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (CaptureAndSaveScreen_Start_m2368625889_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t3071478659_il2cpp_TypeInfo_var);
+		CaptureAndSave_t700313070 * L_0 = Object_FindObjectOfType_TisCaptureAndSave_t700313070_m449003263(NULL /*static, unused*/, /*hidden argument*/Object_FindObjectOfType_TisCaptureAndSave_t700313070_m449003263_MethodInfo_var);
+		__this->set_snapShot_7(L_0);
+		return;
+	}
+}
+// System.Void CaptureAndSaveScreen::OnEnable()
+extern Il2CppClass* OnError_t1516540506_il2cpp_TypeInfo_var;
+extern Il2CppClass* OnSuccess_t1013330901_il2cpp_TypeInfo_var;
+extern const MethodInfo* CaptureAndSaveScreen_OnError_m3630341466_MethodInfo_var;
+extern const MethodInfo* CaptureAndSaveScreen_OnSuccess_m3088248255_MethodInfo_var;
+extern const uint32_t CaptureAndSaveScreen_OnEnable_m3459607557_MetadataUsageId;
+extern "C"  void CaptureAndSaveScreen_OnEnable_m3459607557 (CaptureAndSaveScreen_t237891578 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (CaptureAndSaveScreen_OnEnable_m3459607557_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IntPtr_t L_0;
+		L_0.set_m_value_0((void*)(void*)CaptureAndSaveScreen_OnError_m3630341466_MethodInfo_var);
+		OnError_t1516540506 * L_1 = (OnError_t1516540506 *)il2cpp_codegen_object_new(OnError_t1516540506_il2cpp_TypeInfo_var);
+		OnError__ctor_m3869093594(L_1, __this, L_0, /*hidden argument*/NULL);
+		CaptureAndSaveEventListener_add_onError_m3586673325(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		IntPtr_t L_2;
+		L_2.set_m_value_0((void*)(void*)CaptureAndSaveScreen_OnSuccess_m3088248255_MethodInfo_var);
+		OnSuccess_t1013330901 * L_3 = (OnSuccess_t1013330901 *)il2cpp_codegen_object_new(OnSuccess_t1013330901_il2cpp_TypeInfo_var);
+		OnSuccess__ctor_m1594524309(L_3, __this, L_2, /*hidden argument*/NULL);
+		CaptureAndSaveEventListener_add_onSuccess_m31473463(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void CaptureAndSaveScreen::OnDisable()
+extern Il2CppClass* OnError_t1516540506_il2cpp_TypeInfo_var;
+extern Il2CppClass* OnSuccess_t1013330901_il2cpp_TypeInfo_var;
+extern const MethodInfo* CaptureAndSaveScreen_OnError_m3630341466_MethodInfo_var;
+extern const MethodInfo* CaptureAndSaveScreen_OnSuccess_m3088248255_MethodInfo_var;
+extern const uint32_t CaptureAndSaveScreen_OnDisable_m314589128_MetadataUsageId;
+extern "C"  void CaptureAndSaveScreen_OnDisable_m314589128 (CaptureAndSaveScreen_t237891578 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (CaptureAndSaveScreen_OnDisable_m314589128_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IntPtr_t L_0;
+		L_0.set_m_value_0((void*)(void*)CaptureAndSaveScreen_OnError_m3630341466_MethodInfo_var);
+		OnError_t1516540506 * L_1 = (OnError_t1516540506 *)il2cpp_codegen_object_new(OnError_t1516540506_il2cpp_TypeInfo_var);
+		OnError__ctor_m3869093594(L_1, __this, L_0, /*hidden argument*/NULL);
+		CaptureAndSaveEventListener_add_onError_m3586673325(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		IntPtr_t L_2;
+		L_2.set_m_value_0((void*)(void*)CaptureAndSaveScreen_OnSuccess_m3088248255_MethodInfo_var);
+		OnSuccess_t1013330901 * L_3 = (OnSuccess_t1013330901 *)il2cpp_codegen_object_new(OnSuccess_t1013330901_il2cpp_TypeInfo_var);
+		OnSuccess__ctor_m1594524309(L_3, __this, L_2, /*hidden argument*/NULL);
+		CaptureAndSaveEventListener_add_onSuccess_m31473463(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void CaptureAndSaveScreen::OnError(System.String)
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t4195163081_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral10;
+extern Il2CppCodeGenString* _stringLiteral1460696158;
+extern const uint32_t CaptureAndSaveScreen_OnError_m3630341466_MetadataUsageId;
+extern "C"  void CaptureAndSaveScreen_OnError_m3630341466 (CaptureAndSaveScreen_t237891578 * __this, String_t* ___error0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (CaptureAndSaveScreen_OnError_m3630341466_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = __this->get_log_8();
+		String_t* L_1 = ___error0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_2 = String_Concat_m1825781833(NULL /*static, unused*/, L_0, _stringLiteral10, L_1, /*hidden argument*/NULL);
+		__this->set_log_8(L_2);
+		String_t* L_3 = ___error0;
+		String_t* L_4 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral1460696158, L_3, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t4195163081_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void CaptureAndSaveScreen::OnSuccess(System.String)
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t4195163081_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral10;
+extern Il2CppCodeGenString* _stringLiteral1259763843;
+extern const uint32_t CaptureAndSaveScreen_OnSuccess_m3088248255_MetadataUsageId;
+extern "C"  void CaptureAndSaveScreen_OnSuccess_m3088248255 (CaptureAndSaveScreen_t237891578 * __this, String_t* ___msg0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (CaptureAndSaveScreen_OnSuccess_m3088248255_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = __this->get_log_8();
+		String_t* L_1 = ___msg0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_2 = String_Concat_m1825781833(NULL /*static, unused*/, L_0, _stringLiteral10, L_1, /*hidden argument*/NULL);
+		__this->set_log_8(L_2);
+		String_t* L_3 = ___msg0;
+		String_t* L_4 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral1259763843, L_3, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t4195163081_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void CaptureAndSaveScreen::OnGUI()
+extern Il2CppClass* GUILayoutOptionU5BU5D_t2977405297_il2cpp_TypeInfo_var;
+extern Il2CppClass* GUI_t3134605553_il2cpp_TypeInfo_var;
+extern Il2CppClass* Object_t3071478659_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1184418074;
+extern Il2CppCodeGenString* _stringLiteral3794712771;
+extern Il2CppCodeGenString* _stringLiteral747862624;
+extern Il2CppCodeGenString* _stringLiteral2654190;
+extern Il2CppCodeGenString* _stringLiteral2683981;
+extern Il2CppCodeGenString* _stringLiteral2972424160;
+extern Il2CppCodeGenString* _stringLiteral389425311;
+extern Il2CppCodeGenString* _stringLiteral390520078;
+extern Il2CppCodeGenString* _stringLiteral2721634387;
+extern const uint32_t CaptureAndSaveScreen_OnGUI_m2916886747_MetadataUsageId;
+extern "C"  void CaptureAndSaveScreen_OnGUI_m2916886747 (CaptureAndSaveScreen_t237891578 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (CaptureAndSaveScreen_OnGUI_m2916886747_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = __this->get_log_8();
+		GUILayout_Label_m925445731(NULL /*static, unused*/, L_0, ((GUILayoutOptionU5BU5D_t2977405297*)SZArrayNew(GUILayoutOptionU5BU5D_t2977405297_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		Rect_t4241904616  L_1;
+		memset(&L_1, 0, sizeof(L_1));
+		Rect__ctor_m3291325233(&L_1, (20.0f), (20.0f), (150.0f), (50.0f), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(GUI_t3134605553_il2cpp_TypeInfo_var);
+		bool L_2 = GUI_Button_m885093907(NULL /*static, unused*/, L_1, _stringLiteral1184418074, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_0045;
+		}
+	}
+	{
+		CaptureAndSave_t700313070 * L_3 = __this->get_snapShot_7();
+		NullCheck(L_3);
+		CaptureAndSave_CaptureAndSaveToAlbum_m3265519171(L_3, 0, /*hidden argument*/NULL);
+	}
+
+IL_0045:
+	{
+		Rect_t4241904616  L_4;
+		memset(&L_4, 0, sizeof(L_4));
+		Rect__ctor_m3291325233(&L_4, (200.0f), (20.0f), (170.0f), (50.0f), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(GUI_t3134605553_il2cpp_TypeInfo_var);
+		bool L_5 = GUI_Button_m885093907(NULL /*static, unused*/, L_4, _stringLiteral3794712771, /*hidden argument*/NULL);
+		if (!L_5)
+		{
+			goto IL_008c;
+		}
+	}
+	{
+		CaptureAndSave_t700313070 * L_6 = __this->get_snapShot_7();
+		int32_t L_7 = Screen_get_width_m3080333084(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_8 = Screen_get_height_m1504859443(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Camera_t2727095145 * L_9 = Camera_get_main_m671815697(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_6);
+		CaptureAndSave_CaptureAndSaveToAlbum_m1006194421(L_6, ((int32_t)((int32_t)L_7*(int32_t)2)), ((int32_t)((int32_t)L_8*(int32_t)2)), L_9, 0, /*hidden argument*/NULL);
+	}
+
+IL_008c:
+	{
+		Rect_t4241904616  L_10;
+		memset(&L_10, 0, sizeof(L_10));
+		Rect__ctor_m3291325233(&L_10, (20.0f), (70.0f), (500.0f), (20.0f), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(GUI_t3134605553_il2cpp_TypeInfo_var);
+		GUI_Label_m1483857617(NULL /*static, unused*/, L_10, _stringLiteral747862624, /*hidden argument*/NULL);
+		Rect_t4241904616  L_11;
+		memset(&L_11, 0, sizeof(L_11));
+		Rect__ctor_m3291325233(&L_11, (20.0f), (100.0f), (50.0f), (20.0f), /*hidden argument*/NULL);
+		GUI_Label_m1483857617(NULL /*static, unused*/, L_11, _stringLiteral2654190, /*hidden argument*/NULL);
+		Rect_t4241904616  L_12;
+		memset(&L_12, 0, sizeof(L_12));
+		Rect__ctor_m3291325233(&L_12, (80.0f), (100.0f), (50.0f), (20.0f), /*hidden argument*/NULL);
+		String_t* L_13 = __this->get_x_2();
+		String_t* L_14 = GUI_TextField_m3177770189(NULL /*static, unused*/, L_12, L_13, /*hidden argument*/NULL);
+		__this->set_x_2(L_14);
+		Rect_t4241904616  L_15;
+		memset(&L_15, 0, sizeof(L_15));
+		Rect__ctor_m3291325233(&L_15, (160.0f), (100.0f), (50.0f), (20.0f), /*hidden argument*/NULL);
+		GUI_Label_m1483857617(NULL /*static, unused*/, L_15, _stringLiteral2683981, /*hidden argument*/NULL);
+		Rect_t4241904616  L_16;
+		memset(&L_16, 0, sizeof(L_16));
+		Rect__ctor_m3291325233(&L_16, (200.0f), (100.0f), (50.0f), (20.0f), /*hidden argument*/NULL);
+		String_t* L_17 = __this->get_y_3();
+		String_t* L_18 = GUI_TextField_m3177770189(NULL /*static, unused*/, L_16, L_17, /*hidden argument*/NULL);
+		__this->set_y_3(L_18);
+		Rect_t4241904616  L_19;
+		memset(&L_19, 0, sizeof(L_19));
+		Rect__ctor_m3291325233(&L_19, (20.0f), (130.0f), (50.0f), (20.0f), /*hidden argument*/NULL);
+		GUI_Label_m1483857617(NULL /*static, unused*/, L_19, _stringLiteral2972424160, /*hidden argument*/NULL);
+		Rect_t4241904616  L_20;
+		memset(&L_20, 0, sizeof(L_20));
+		Rect__ctor_m3291325233(&L_20, (80.0f), (130.0f), (50.0f), (20.0f), /*hidden argument*/NULL);
+		String_t* L_21 = __this->get_width_4();
+		String_t* L_22 = GUI_TextField_m3177770189(NULL /*static, unused*/, L_20, L_21, /*hidden argument*/NULL);
+		__this->set_width_4(L_22);
+		Rect_t4241904616  L_23;
+		memset(&L_23, 0, sizeof(L_23));
+		Rect__ctor_m3291325233(&L_23, (150.0f), (130.0f), (50.0f), (20.0f), /*hidden argument*/NULL);
+		GUI_Label_m1483857617(NULL /*static, unused*/, L_23, _stringLiteral389425311, /*hidden argument*/NULL);
+		Rect_t4241904616  L_24;
+		memset(&L_24, 0, sizeof(L_24));
+		Rect__ctor_m3291325233(&L_24, (200.0f), (130.0f), (50.0f), (20.0f), /*hidden argument*/NULL);
+		String_t* L_25 = __this->get_height_5();
+		String_t* L_26 = GUI_TextField_m3177770189(NULL /*static, unused*/, L_24, L_25, /*hidden argument*/NULL);
+		__this->set_height_5(L_26);
+		Rect_t4241904616  L_27;
+		memset(&L_27, 0, sizeof(L_27));
+		Rect__ctor_m3291325233(&L_27, (20.0f), (160.0f), (150.0f), (50.0f), /*hidden argument*/NULL);
+		bool L_28 = GUI_Button_m885093907(NULL /*static, unused*/, L_27, _stringLiteral390520078, /*hidden argument*/NULL);
+		if (!L_28)
+		{
+			goto IL_0265;
+		}
+	}
+	{
+		String_t* L_29 = __this->get_width_4();
+		int32_t L_30 = Int32_Parse_m3837759498(NULL /*static, unused*/, L_29, /*hidden argument*/NULL);
+		if ((((int32_t)L_30) <= ((int32_t)0)))
+		{
+			goto IL_0265;
+		}
+	}
+	{
+		String_t* L_31 = __this->get_height_5();
+		int32_t L_32 = Int32_Parse_m3837759498(NULL /*static, unused*/, L_31, /*hidden argument*/NULL);
+		if ((((int32_t)L_32) <= ((int32_t)0)))
+		{
+			goto IL_0265;
+		}
+	}
+	{
+		CaptureAndSave_t700313070 * L_33 = __this->get_snapShot_7();
+		String_t* L_34 = __this->get_x_2();
+		int32_t L_35 = Int32_Parse_m3837759498(NULL /*static, unused*/, L_34, /*hidden argument*/NULL);
+		String_t* L_36 = __this->get_y_3();
+		int32_t L_37 = Int32_Parse_m3837759498(NULL /*static, unused*/, L_36, /*hidden argument*/NULL);
+		String_t* L_38 = __this->get_width_4();
+		int32_t L_39 = Int32_Parse_m3837759498(NULL /*static, unused*/, L_38, /*hidden argument*/NULL);
+		String_t* L_40 = __this->get_height_5();
+		int32_t L_41 = Int32_Parse_m3837759498(NULL /*static, unused*/, L_40, /*hidden argument*/NULL);
+		NullCheck(L_33);
+		CaptureAndSave_CaptureAndSaveToAlbum_m390648579(L_33, L_35, L_37, L_39, L_41, 0, /*hidden argument*/NULL);
+	}
+
+IL_0265:
+	{
+		Rect_t4241904616  L_42;
+		memset(&L_42, 0, sizeof(L_42));
+		Rect__ctor_m3291325233(&L_42, (20.0f), (230.0f), (500.0f), (20.0f), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(GUI_t3134605553_il2cpp_TypeInfo_var);
+		GUI_Label_m1483857617(NULL /*static, unused*/, L_42, _stringLiteral747862624, /*hidden argument*/NULL);
+		Rect_t4241904616  L_43;
+		memset(&L_43, 0, sizeof(L_43));
+		Rect__ctor_m3291325233(&L_43, (70.0f), (250.0f), (200.0f), (50.0f), /*hidden argument*/NULL);
+		GUI_Label_m1483857617(NULL /*static, unused*/, L_43, _stringLiteral2721634387, /*hidden argument*/NULL);
+		Rect_t4241904616  L_44;
+		memset(&L_44, 0, sizeof(L_44));
+		Rect__ctor_m3291325233(&L_44, (50.0f), (270.0f), (200.0f), (200.0f), /*hidden argument*/NULL);
+		Texture2D_t3884108195 * L_45 = __this->get_tex_6();
+		bool L_46 = GUI_Button_m3751403967(NULL /*static, unused*/, L_44, L_45, /*hidden argument*/NULL);
+		if (!L_46)
+		{
+			goto IL_02f7;
+		}
+	}
+	{
+		Texture2D_t3884108195 * L_47 = __this->get_tex_6();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t3071478659_il2cpp_TypeInfo_var);
+		bool L_48 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_47, (Object_t3071478659 *)NULL, /*hidden argument*/NULL);
+		if (!L_48)
+		{
+			goto IL_02f7;
+		}
+	}
+	{
+		CaptureAndSave_t700313070 * L_49 = __this->get_snapShot_7();
+		Texture2D_t3884108195 * L_50 = __this->get_tex_6();
+		NullCheck(L_49);
+		CaptureAndSave_SaveTextureToGallery_m1530839788(L_49, L_50, 0, /*hidden argument*/NULL);
+	}
+
+IL_02f7:
+	{
+		return;
+	}
 }
 // System.Void DeviceCamera::.ctor()
 extern "C"  void DeviceCamera__ctor_m1843436480 (DeviceCamera_t3055454523 * __this, const MethodInfo* method)
@@ -940,6 +1492,8 @@ extern "C"  void GameOverController__ctor_m1903862425 (GameOverController_t72270
 // System.Void GameOverController::Start()
 extern Il2CppClass* Object_t3071478659_il2cpp_TypeInfo_var;
 extern Il2CppClass* Debug_t4195163081_il2cpp_TypeInfo_var;
+extern const MethodInfo* Object_FindObjectOfType_TisCaptureAndSave_t700313070_m449003263_MethodInfo_var;
+extern const MethodInfo* Component_GetComponent_TisCaptureAndSave_t700313070_m1776538967_MethodInfo_var;
 extern const MethodInfo* Object_FindObjectOfType_TisDeviceCamera_t3055454523_m1261070354_MethodInfo_var;
 extern const MethodInfo* Component_GetComponent_TisDeviceCamera_t3055454523_m833401962_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral73635346;
@@ -954,21 +1508,25 @@ extern "C"  void GameOverController_Start_m851000217 (GameOverController_t722700
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t3071478659_il2cpp_TypeInfo_var);
-		DeviceCamera_t3055454523 * L_0 = Object_FindObjectOfType_TisDeviceCamera_t3055454523_m1261070354(NULL /*static, unused*/, /*hidden argument*/Object_FindObjectOfType_TisDeviceCamera_t3055454523_m1261070354_MethodInfo_var);
+		CaptureAndSave_t700313070 * L_0 = Object_FindObjectOfType_TisCaptureAndSave_t700313070_m449003263(NULL /*static, unused*/, /*hidden argument*/Object_FindObjectOfType_TisCaptureAndSave_t700313070_m449003263_MethodInfo_var);
 		NullCheck(L_0);
-		DeviceCamera_t3055454523 * L_1 = Component_GetComponent_TisDeviceCamera_t3055454523_m833401962(L_0, /*hidden argument*/Component_GetComponent_TisDeviceCamera_t3055454523_m833401962_MethodInfo_var);
-		__this->set_deviceCamera_5(L_1);
-		String_t* L_2 = Application_get_persistentDataPath_m2554537447(NULL /*static, unused*/, /*hidden argument*/NULL);
+		CaptureAndSave_t700313070 * L_1 = Component_GetComponent_TisCaptureAndSave_t700313070_m1776538967(L_0, /*hidden argument*/Component_GetComponent_TisCaptureAndSave_t700313070_m1776538967_MethodInfo_var);
+		__this->set_capture_4(L_1);
+		DeviceCamera_t3055454523 * L_2 = Object_FindObjectOfType_TisDeviceCamera_t3055454523_m1261070354(NULL /*static, unused*/, /*hidden argument*/Object_FindObjectOfType_TisDeviceCamera_t3055454523_m1261070354_MethodInfo_var);
+		NullCheck(L_2);
+		DeviceCamera_t3055454523 * L_3 = Component_GetComponent_TisDeviceCamera_t3055454523_m833401962(L_2, /*hidden argument*/Component_GetComponent_TisDeviceCamera_t3055454523_m833401962_MethodInfo_var);
+		__this->set_deviceCamera_6(L_3);
+		String_t* L_4 = Application_get_persistentDataPath_m2554537447(NULL /*static, unused*/, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t4195163081_il2cpp_TypeInfo_var);
-		Debug_Log_m1731103628(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		Text_t9039225 * L_3 = __this->get_scoreText_3();
-		NullCheck(L_3);
-		GameObject_t3674682005 * L_4 = Component_get_gameObject_m1170635899(L_3, /*hidden argument*/NULL);
-		NullCheck(L_4);
-		GameObject_SetActive_m3538205401(L_4, (bool)0, /*hidden argument*/NULL);
-		GameObject_t3674682005 * L_5 = __this->get_playAgainButton_4();
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		Text_t9039225 * L_5 = __this->get_scoreText_3();
 		NullCheck(L_5);
-		GameObject_SetActive_m3538205401(L_5, (bool)0, /*hidden argument*/NULL);
+		GameObject_t3674682005 * L_6 = Component_get_gameObject_m1170635899(L_5, /*hidden argument*/NULL);
+		NullCheck(L_6);
+		GameObject_SetActive_m3538205401(L_6, (bool)0, /*hidden argument*/NULL);
+		GameObject_t3674682005 * L_7 = __this->get_playAgainButton_5();
+		NullCheck(L_7);
+		GameObject_SetActive_m3538205401(L_7, (bool)0, /*hidden argument*/NULL);
 		MonoBehaviour_Invoke_m2825545578(__this, _stringLiteral73635346, (1.0f), /*hidden argument*/NULL);
 		return;
 	}
@@ -1075,12 +1633,8 @@ extern "C"  void GameOverController_CountdownSmile_m4062042274 (GameOverControll
 }
 // System.Void GameOverController::TakePicture()
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
-extern Il2CppClass* DateTime_t4283661327_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral3588653336;
 extern Il2CppCodeGenString* _stringLiteral32;
-extern Il2CppCodeGenString* _stringLiteral1577017734;
-extern Il2CppCodeGenString* _stringLiteral3076833536;
-extern Il2CppCodeGenString* _stringLiteral1481531;
 extern Il2CppCodeGenString* _stringLiteral1898455698;
 extern const uint32_t GameOverController_TakePicture_m1175506926_MetadataUsageId;
 extern "C"  void GameOverController_TakePicture_m1175506926 (GameOverController_t722700354 * __this, const MethodInfo* method)
@@ -1092,8 +1646,6 @@ extern "C"  void GameOverController_TakePicture_m1175506926 (GameOverController_
 		s_Il2CppMethodIntialized = true;
 	}
 	int32_t V_0 = 0;
-	DateTime_t4283661327  V_1;
-	memset(&V_1, 0, sizeof(V_1));
 	{
 		Text_t9039225 * L_0 = __this->get_text_2();
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
@@ -1115,16 +1667,12 @@ extern "C"  void GameOverController_TakePicture_m1175506926 (GameOverController_
 		String_t* L_9 = String_Concat_m2933632197(NULL /*static, unused*/, _stringLiteral3588653336, L_6, _stringLiteral32, L_8, /*hidden argument*/NULL);
 		NullCheck(L_4);
 		VirtActionInvoker1< String_t* >::Invoke(74 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_4, L_9);
-		DeviceCamera_t3055454523 * L_10 = __this->get_deviceCamera_5();
+		DeviceCamera_t3055454523 * L_10 = __this->get_deviceCamera_6();
 		NullCheck(L_10);
 		DeviceCamera_Pause_m1897562452(L_10, /*hidden argument*/NULL);
-		String_t* L_11 = Application_get_persistentDataPath_m2554537447(NULL /*static, unused*/, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t4283661327_il2cpp_TypeInfo_var);
-		DateTime_t4283661327  L_12 = DateTime_get_Now_m1812131422(NULL /*static, unused*/, /*hidden argument*/NULL);
-		V_1 = L_12;
-		String_t* L_13 = DateTime_ToString_m3415116655((&V_1), _stringLiteral3076833536, /*hidden argument*/NULL);
-		String_t* L_14 = String_Concat_m2933632197(NULL /*static, unused*/, L_11, _stringLiteral1577017734, L_13, _stringLiteral1481531, /*hidden argument*/NULL);
-		Application_CaptureScreenshot_m1449096047(NULL /*static, unused*/, L_14, /*hidden argument*/NULL);
+		CaptureAndSave_t700313070 * L_11 = __this->get_capture_4();
+		NullCheck(L_11);
+		CaptureAndSave_CaptureAndSaveToAlbum_m3265519171(L_11, 0, /*hidden argument*/NULL);
 		MonoBehaviour_Invoke_m2825545578(__this, _stringLiteral1898455698, (2.0f), /*hidden argument*/NULL);
 		return;
 	}
@@ -1133,7 +1681,7 @@ extern "C"  void GameOverController_TakePicture_m1175506926 (GameOverController_
 extern "C"  void GameOverController_PlayAgainActive_m993010281 (GameOverController_t722700354 * __this, const MethodInfo* method)
 {
 	{
-		GameObject_t3674682005 * L_0 = __this->get_playAgainButton_4();
+		GameObject_t3674682005 * L_0 = __this->get_playAgainButton_5();
 		NullCheck(L_0);
 		GameObject_SetActive_m3538205401(L_0, (bool)1, /*hidden argument*/NULL);
 		return;
@@ -33344,389 +33892,6 @@ extern "C"  void MogaProPowerAndroidProfile__ctor_m1458216407 (MogaProPowerAndro
 		InputRange_t4284974673  L_114 = ((InputRange_t4284974673_StaticFields*)InputRange_t4284974673_il2cpp_TypeInfo_var->static_fields)->get_ZeroToOne_3();
 		NullCheck(L_113);
 		L_113->set_SourceRange_10(L_114);
-		return;
-	}
-}
-// System.Void InControl.MogaProWinProfile::.ctor()
-extern Il2CppClass* UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var;
-extern Il2CppClass* StringU5BU5D_t4054002952_il2cpp_TypeInfo_var;
-extern Il2CppClass* InputControlMappingU5BU5D_t3278783232_il2cpp_TypeInfo_var;
-extern Il2CppClass* InputControlMapping_t318255021_il2cpp_TypeInfo_var;
-extern Il2CppClass* InputRange_t4284974673_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral2594197939;
-extern Il2CppCodeGenString* _stringLiteral93167023;
-extern Il2CppCodeGenString* _stringLiteral3014146659;
-extern Il2CppCodeGenString* _stringLiteral1768063022;
-extern Il2CppCodeGenString* _stringLiteral65;
-extern Il2CppCodeGenString* _stringLiteral66;
-extern Il2CppCodeGenString* _stringLiteral88;
-extern Il2CppCodeGenString* _stringLiteral89;
-extern Il2CppCodeGenString* _stringLiteral3459677852;
-extern Il2CppCodeGenString* _stringLiteral874608423;
-extern Il2CppCodeGenString* _stringLiteral3846381659;
-extern Il2CppCodeGenString* _stringLiteral1981170854;
-extern Il2CppCodeGenString* _stringLiteral2062599;
-extern Il2CppCodeGenString* _stringLiteral80204866;
-extern Il2CppCodeGenString* _stringLiteral2876147359;
-extern Il2CppCodeGenString* _stringLiteral48406388;
-extern const uint32_t MogaProWinProfile__ctor_m4143986819_MetadataUsageId;
-extern "C"  void MogaProWinProfile__ctor_m4143986819 (MogaProWinProfile_t3461265200 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (MogaProWinProfile__ctor_m4143986819_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	InputControlMapping_t318255021 * V_0 = NULL;
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var);
-		UnityInputDeviceProfile__ctor_m3795264259(__this, /*hidden argument*/NULL);
-		InputDeviceProfile_set_Name_m2695980466(__this, _stringLiteral2594197939, /*hidden argument*/NULL);
-		InputDeviceProfile_set_Meta_m2477532920(__this, _stringLiteral93167023, /*hidden argument*/NULL);
-		StringU5BU5D_t4054002952* L_0 = ((StringU5BU5D_t4054002952*)SZArrayNew(StringU5BU5D_t4054002952_il2cpp_TypeInfo_var, (uint32_t)1));
-		NullCheck(L_0);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_0, 0);
-		ArrayElementTypeCheck (L_0, _stringLiteral3014146659);
-		(L_0)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral3014146659);
-		InputDeviceProfile_set_IncludePlatforms_m3382523363(__this, L_0, /*hidden argument*/NULL);
-		StringU5BU5D_t4054002952* L_1 = ((StringU5BU5D_t4054002952*)SZArrayNew(StringU5BU5D_t4054002952_il2cpp_TypeInfo_var, (uint32_t)1));
-		NullCheck(L_1);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_1, 0);
-		ArrayElementTypeCheck (L_1, _stringLiteral1768063022);
-		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral1768063022);
-		((UnityInputDeviceProfile_t2501013168 *)__this)->set_JoystickNames_12(L_1);
-		InputControlMappingU5BU5D_t3278783232* L_2 = ((InputControlMappingU5BU5D_t3278783232*)SZArrayNew(InputControlMappingU5BU5D_t3278783232_il2cpp_TypeInfo_var, (uint32_t)((int32_t)10)));
-		InputControlMapping_t318255021 * L_3 = (InputControlMapping_t318255021 *)il2cpp_codegen_object_new(InputControlMapping_t318255021_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3931955878(L_3, /*hidden argument*/NULL);
-		V_0 = L_3;
-		InputControlMapping_t318255021 * L_4 = V_0;
-		NullCheck(L_4);
-		InputControlMapping_set_Handle_m1343148127(L_4, _stringLiteral65, /*hidden argument*/NULL);
-		InputControlMapping_t318255021 * L_5 = V_0;
-		NullCheck(L_5);
-		L_5->set_Target_1(((int32_t)19));
-		InputControlMapping_t318255021 * L_6 = V_0;
-		Il2CppObject * L_7 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Button0_15();
-		NullCheck(L_6);
-		L_6->set_Source_0(L_7);
-		InputControlMapping_t318255021 * L_8 = V_0;
-		NullCheck(L_2);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_2, 0);
-		ArrayElementTypeCheck (L_2, L_8);
-		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (InputControlMapping_t318255021 *)L_8);
-		InputControlMappingU5BU5D_t3278783232* L_9 = L_2;
-		InputControlMapping_t318255021 * L_10 = (InputControlMapping_t318255021 *)il2cpp_codegen_object_new(InputControlMapping_t318255021_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3931955878(L_10, /*hidden argument*/NULL);
-		V_0 = L_10;
-		InputControlMapping_t318255021 * L_11 = V_0;
-		NullCheck(L_11);
-		InputControlMapping_set_Handle_m1343148127(L_11, _stringLiteral66, /*hidden argument*/NULL);
-		InputControlMapping_t318255021 * L_12 = V_0;
-		NullCheck(L_12);
-		L_12->set_Target_1(((int32_t)20));
-		InputControlMapping_t318255021 * L_13 = V_0;
-		Il2CppObject * L_14 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Button1_16();
-		NullCheck(L_13);
-		L_13->set_Source_0(L_14);
-		InputControlMapping_t318255021 * L_15 = V_0;
-		NullCheck(L_9);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_9, 1);
-		ArrayElementTypeCheck (L_9, L_15);
-		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(1), (InputControlMapping_t318255021 *)L_15);
-		InputControlMappingU5BU5D_t3278783232* L_16 = L_9;
-		InputControlMapping_t318255021 * L_17 = (InputControlMapping_t318255021 *)il2cpp_codegen_object_new(InputControlMapping_t318255021_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3931955878(L_17, /*hidden argument*/NULL);
-		V_0 = L_17;
-		InputControlMapping_t318255021 * L_18 = V_0;
-		NullCheck(L_18);
-		InputControlMapping_set_Handle_m1343148127(L_18, _stringLiteral88, /*hidden argument*/NULL);
-		InputControlMapping_t318255021 * L_19 = V_0;
-		NullCheck(L_19);
-		L_19->set_Target_1(((int32_t)21));
-		InputControlMapping_t318255021 * L_20 = V_0;
-		Il2CppObject * L_21 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Button2_17();
-		NullCheck(L_20);
-		L_20->set_Source_0(L_21);
-		InputControlMapping_t318255021 * L_22 = V_0;
-		NullCheck(L_16);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_16, 2);
-		ArrayElementTypeCheck (L_16, L_22);
-		(L_16)->SetAt(static_cast<il2cpp_array_size_t>(2), (InputControlMapping_t318255021 *)L_22);
-		InputControlMappingU5BU5D_t3278783232* L_23 = L_16;
-		InputControlMapping_t318255021 * L_24 = (InputControlMapping_t318255021 *)il2cpp_codegen_object_new(InputControlMapping_t318255021_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3931955878(L_24, /*hidden argument*/NULL);
-		V_0 = L_24;
-		InputControlMapping_t318255021 * L_25 = V_0;
-		NullCheck(L_25);
-		InputControlMapping_set_Handle_m1343148127(L_25, _stringLiteral89, /*hidden argument*/NULL);
-		InputControlMapping_t318255021 * L_26 = V_0;
-		NullCheck(L_26);
-		L_26->set_Target_1(((int32_t)22));
-		InputControlMapping_t318255021 * L_27 = V_0;
-		Il2CppObject * L_28 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Button3_18();
-		NullCheck(L_27);
-		L_27->set_Source_0(L_28);
-		InputControlMapping_t318255021 * L_29 = V_0;
-		NullCheck(L_23);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_23, 3);
-		ArrayElementTypeCheck (L_23, L_29);
-		(L_23)->SetAt(static_cast<il2cpp_array_size_t>(3), (InputControlMapping_t318255021 *)L_29);
-		InputControlMappingU5BU5D_t3278783232* L_30 = L_23;
-		InputControlMapping_t318255021 * L_31 = (InputControlMapping_t318255021 *)il2cpp_codegen_object_new(InputControlMapping_t318255021_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3931955878(L_31, /*hidden argument*/NULL);
-		V_0 = L_31;
-		InputControlMapping_t318255021 * L_32 = V_0;
-		NullCheck(L_32);
-		InputControlMapping_set_Handle_m1343148127(L_32, _stringLiteral3459677852, /*hidden argument*/NULL);
-		InputControlMapping_t318255021 * L_33 = V_0;
-		NullCheck(L_33);
-		L_33->set_Target_1(((int32_t)17));
-		InputControlMapping_t318255021 * L_34 = V_0;
-		Il2CppObject * L_35 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Button4_19();
-		NullCheck(L_34);
-		L_34->set_Source_0(L_35);
-		InputControlMapping_t318255021 * L_36 = V_0;
-		NullCheck(L_30);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_30, 4);
-		ArrayElementTypeCheck (L_30, L_36);
-		(L_30)->SetAt(static_cast<il2cpp_array_size_t>(4), (InputControlMapping_t318255021 *)L_36);
-		InputControlMappingU5BU5D_t3278783232* L_37 = L_30;
-		InputControlMapping_t318255021 * L_38 = (InputControlMapping_t318255021 *)il2cpp_codegen_object_new(InputControlMapping_t318255021_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3931955878(L_38, /*hidden argument*/NULL);
-		V_0 = L_38;
-		InputControlMapping_t318255021 * L_39 = V_0;
-		NullCheck(L_39);
-		InputControlMapping_set_Handle_m1343148127(L_39, _stringLiteral874608423, /*hidden argument*/NULL);
-		InputControlMapping_t318255021 * L_40 = V_0;
-		NullCheck(L_40);
-		L_40->set_Target_1(((int32_t)18));
-		InputControlMapping_t318255021 * L_41 = V_0;
-		Il2CppObject * L_42 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Button5_20();
-		NullCheck(L_41);
-		L_41->set_Source_0(L_42);
-		InputControlMapping_t318255021 * L_43 = V_0;
-		NullCheck(L_37);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_37, 5);
-		ArrayElementTypeCheck (L_37, L_43);
-		(L_37)->SetAt(static_cast<il2cpp_array_size_t>(5), (InputControlMapping_t318255021 *)L_43);
-		InputControlMappingU5BU5D_t3278783232* L_44 = L_37;
-		InputControlMapping_t318255021 * L_45 = (InputControlMapping_t318255021 *)il2cpp_codegen_object_new(InputControlMapping_t318255021_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3931955878(L_45, /*hidden argument*/NULL);
-		V_0 = L_45;
-		InputControlMapping_t318255021 * L_46 = V_0;
-		NullCheck(L_46);
-		InputControlMapping_set_Handle_m1343148127(L_46, _stringLiteral3846381659, /*hidden argument*/NULL);
-		InputControlMapping_t318255021 * L_47 = V_0;
-		NullCheck(L_47);
-		L_47->set_Target_1(5);
-		InputControlMapping_t318255021 * L_48 = V_0;
-		Il2CppObject * L_49 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Button8_23();
-		NullCheck(L_48);
-		L_48->set_Source_0(L_49);
-		InputControlMapping_t318255021 * L_50 = V_0;
-		NullCheck(L_44);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_44, 6);
-		ArrayElementTypeCheck (L_44, L_50);
-		(L_44)->SetAt(static_cast<il2cpp_array_size_t>(6), (InputControlMapping_t318255021 *)L_50);
-		InputControlMappingU5BU5D_t3278783232* L_51 = L_44;
-		InputControlMapping_t318255021 * L_52 = (InputControlMapping_t318255021 *)il2cpp_codegen_object_new(InputControlMapping_t318255021_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3931955878(L_52, /*hidden argument*/NULL);
-		V_0 = L_52;
-		InputControlMapping_t318255021 * L_53 = V_0;
-		NullCheck(L_53);
-		InputControlMapping_set_Handle_m1343148127(L_53, _stringLiteral1981170854, /*hidden argument*/NULL);
-		InputControlMapping_t318255021 * L_54 = V_0;
-		NullCheck(L_54);
-		L_54->set_Target_1(((int32_t)10));
-		InputControlMapping_t318255021 * L_55 = V_0;
-		Il2CppObject * L_56 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Button9_24();
-		NullCheck(L_55);
-		L_55->set_Source_0(L_56);
-		InputControlMapping_t318255021 * L_57 = V_0;
-		NullCheck(L_51);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_51, 7);
-		ArrayElementTypeCheck (L_51, L_57);
-		(L_51)->SetAt(static_cast<il2cpp_array_size_t>(7), (InputControlMapping_t318255021 *)L_57);
-		InputControlMappingU5BU5D_t3278783232* L_58 = L_51;
-		InputControlMapping_t318255021 * L_59 = (InputControlMapping_t318255021 *)il2cpp_codegen_object_new(InputControlMapping_t318255021_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3931955878(L_59, /*hidden argument*/NULL);
-		V_0 = L_59;
-		InputControlMapping_t318255021 * L_60 = V_0;
-		NullCheck(L_60);
-		InputControlMapping_set_Handle_m1343148127(L_60, _stringLiteral2062599, /*hidden argument*/NULL);
-		InputControlMapping_t318255021 * L_61 = V_0;
-		NullCheck(L_61);
-		L_61->set_Target_1(((int32_t)102));
-		InputControlMapping_t318255021 * L_62 = V_0;
-		Il2CppObject * L_63 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Button6_21();
-		NullCheck(L_62);
-		L_62->set_Source_0(L_63);
-		InputControlMapping_t318255021 * L_64 = V_0;
-		NullCheck(L_58);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_58, 8);
-		ArrayElementTypeCheck (L_58, L_64);
-		(L_58)->SetAt(static_cast<il2cpp_array_size_t>(8), (InputControlMapping_t318255021 *)L_64);
-		InputControlMappingU5BU5D_t3278783232* L_65 = L_58;
-		InputControlMapping_t318255021 * L_66 = (InputControlMapping_t318255021 *)il2cpp_codegen_object_new(InputControlMapping_t318255021_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3931955878(L_66, /*hidden argument*/NULL);
-		V_0 = L_66;
-		InputControlMapping_t318255021 * L_67 = V_0;
-		NullCheck(L_67);
-		InputControlMapping_set_Handle_m1343148127(L_67, _stringLiteral80204866, /*hidden argument*/NULL);
-		InputControlMapping_t318255021 * L_68 = V_0;
-		NullCheck(L_68);
-		L_68->set_Target_1(((int32_t)101));
-		InputControlMapping_t318255021 * L_69 = V_0;
-		Il2CppObject * L_70 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Button7_22();
-		NullCheck(L_69);
-		L_69->set_Source_0(L_70);
-		InputControlMapping_t318255021 * L_71 = V_0;
-		NullCheck(L_65);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_65, ((int32_t)9));
-		ArrayElementTypeCheck (L_65, L_71);
-		(L_65)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)9)), (InputControlMapping_t318255021 *)L_71);
-		InputDeviceProfile_set_ButtonMappings_m2451711183(__this, L_65, /*hidden argument*/NULL);
-		InputControlMappingU5BU5D_t3278783232* L_72 = ((InputControlMappingU5BU5D_t3278783232*)SZArrayNew(InputControlMappingU5BU5D_t3278783232_il2cpp_TypeInfo_var, (uint32_t)((int32_t)14)));
-		Il2CppObject * L_73 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog0_35();
-		InputControlMapping_t318255021 * L_74 = UnityInputDeviceProfile_LeftStickLeftMapping_m2685044781(NULL /*static, unused*/, L_73, /*hidden argument*/NULL);
-		NullCheck(L_72);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_72, 0);
-		ArrayElementTypeCheck (L_72, L_74);
-		(L_72)->SetAt(static_cast<il2cpp_array_size_t>(0), (InputControlMapping_t318255021 *)L_74);
-		InputControlMappingU5BU5D_t3278783232* L_75 = L_72;
-		Il2CppObject * L_76 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog0_35();
-		InputControlMapping_t318255021 * L_77 = UnityInputDeviceProfile_LeftStickRightMapping_m4184250566(NULL /*static, unused*/, L_76, /*hidden argument*/NULL);
-		NullCheck(L_75);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_75, 1);
-		ArrayElementTypeCheck (L_75, L_77);
-		(L_75)->SetAt(static_cast<il2cpp_array_size_t>(1), (InputControlMapping_t318255021 *)L_77);
-		InputControlMappingU5BU5D_t3278783232* L_78 = L_75;
-		Il2CppObject * L_79 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog1_36();
-		InputControlMapping_t318255021 * L_80 = UnityInputDeviceProfile_LeftStickUpMapping_m3005727833(NULL /*static, unused*/, L_79, /*hidden argument*/NULL);
-		NullCheck(L_78);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_78, 2);
-		ArrayElementTypeCheck (L_78, L_80);
-		(L_78)->SetAt(static_cast<il2cpp_array_size_t>(2), (InputControlMapping_t318255021 *)L_80);
-		InputControlMappingU5BU5D_t3278783232* L_81 = L_78;
-		Il2CppObject * L_82 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog1_36();
-		InputControlMapping_t318255021 * L_83 = UnityInputDeviceProfile_LeftStickDownMapping_m3008714866(NULL /*static, unused*/, L_82, /*hidden argument*/NULL);
-		NullCheck(L_81);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_81, 3);
-		ArrayElementTypeCheck (L_81, L_83);
-		(L_81)->SetAt(static_cast<il2cpp_array_size_t>(3), (InputControlMapping_t318255021 *)L_83);
-		InputControlMappingU5BU5D_t3278783232* L_84 = L_81;
-		Il2CppObject * L_85 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog2_37();
-		InputControlMapping_t318255021 * L_86 = UnityInputDeviceProfile_RightStickLeftMapping_m1922462366(NULL /*static, unused*/, L_85, /*hidden argument*/NULL);
-		NullCheck(L_84);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_84, 4);
-		ArrayElementTypeCheck (L_84, L_86);
-		(L_84)->SetAt(static_cast<il2cpp_array_size_t>(4), (InputControlMapping_t318255021 *)L_86);
-		InputControlMappingU5BU5D_t3278783232* L_87 = L_84;
-		Il2CppObject * L_88 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog2_37();
-		InputControlMapping_t318255021 * L_89 = UnityInputDeviceProfile_RightStickRightMapping_m2019032181(NULL /*static, unused*/, L_88, /*hidden argument*/NULL);
-		NullCheck(L_87);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_87, 5);
-		ArrayElementTypeCheck (L_87, L_89);
-		(L_87)->SetAt(static_cast<il2cpp_array_size_t>(5), (InputControlMapping_t318255021 *)L_89);
-		InputControlMappingU5BU5D_t3278783232* L_90 = L_87;
-		Il2CppObject * L_91 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog3_38();
-		InputControlMapping_t318255021 * L_92 = UnityInputDeviceProfile_RightStickUpMapping_m3688732426(NULL /*static, unused*/, L_91, /*hidden argument*/NULL);
-		NullCheck(L_90);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_90, 6);
-		ArrayElementTypeCheck (L_90, L_92);
-		(L_90)->SetAt(static_cast<il2cpp_array_size_t>(6), (InputControlMapping_t318255021 *)L_92);
-		InputControlMappingU5BU5D_t3278783232* L_93 = L_90;
-		Il2CppObject * L_94 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog3_38();
-		InputControlMapping_t318255021 * L_95 = UnityInputDeviceProfile_RightStickDownMapping_m2246132451(NULL /*static, unused*/, L_94, /*hidden argument*/NULL);
-		NullCheck(L_93);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_93, 7);
-		ArrayElementTypeCheck (L_93, L_95);
-		(L_93)->SetAt(static_cast<il2cpp_array_size_t>(7), (InputControlMapping_t318255021 *)L_95);
-		InputControlMappingU5BU5D_t3278783232* L_96 = L_93;
-		Il2CppObject * L_97 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog4_39();
-		InputControlMapping_t318255021 * L_98 = UnityInputDeviceProfile_DPadLeftMapping_m2981309891(NULL /*static, unused*/, L_97, /*hidden argument*/NULL);
-		NullCheck(L_96);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_96, 8);
-		ArrayElementTypeCheck (L_96, L_98);
-		(L_96)->SetAt(static_cast<il2cpp_array_size_t>(8), (InputControlMapping_t318255021 *)L_98);
-		InputControlMappingU5BU5D_t3278783232* L_99 = L_96;
-		Il2CppObject * L_100 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog4_39();
-		InputControlMapping_t318255021 * L_101 = UnityInputDeviceProfile_DPadRightMapping_m483567088(NULL /*static, unused*/, L_100, /*hidden argument*/NULL);
-		NullCheck(L_99);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_99, ((int32_t)9));
-		ArrayElementTypeCheck (L_99, L_101);
-		(L_99)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)9)), (InputControlMapping_t318255021 *)L_101);
-		InputControlMappingU5BU5D_t3278783232* L_102 = L_99;
-		Il2CppObject * L_103 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog5_40();
-		InputControlMapping_t318255021 * L_104 = UnityInputDeviceProfile_DPadUpMapping_m2831734639(NULL /*static, unused*/, L_103, /*hidden argument*/NULL);
-		NullCheck(L_102);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_102, ((int32_t)10));
-		ArrayElementTypeCheck (L_102, L_104);
-		(L_102)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)10)), (InputControlMapping_t318255021 *)L_104);
-		InputControlMappingU5BU5D_t3278783232* L_105 = L_102;
-		Il2CppObject * L_106 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog5_40();
-		InputControlMapping_t318255021 * L_107 = UnityInputDeviceProfile_DPadDownMapping_m3304979976(NULL /*static, unused*/, L_106, /*hidden argument*/NULL);
-		NullCheck(L_105);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_105, ((int32_t)11));
-		ArrayElementTypeCheck (L_105, L_107);
-		(L_105)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)11)), (InputControlMapping_t318255021 *)L_107);
-		InputControlMappingU5BU5D_t3278783232* L_108 = L_105;
-		InputControlMapping_t318255021 * L_109 = (InputControlMapping_t318255021 *)il2cpp_codegen_object_new(InputControlMapping_t318255021_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3931955878(L_109, /*hidden argument*/NULL);
-		V_0 = L_109;
-		InputControlMapping_t318255021 * L_110 = V_0;
-		NullCheck(L_110);
-		InputControlMapping_set_Handle_m1343148127(L_110, _stringLiteral2876147359, /*hidden argument*/NULL);
-		InputControlMapping_t318255021 * L_111 = V_0;
-		NullCheck(L_111);
-		L_111->set_Target_1(((int32_t)15));
-		InputControlMapping_t318255021 * L_112 = V_0;
-		Il2CppObject * L_113 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog9_44();
-		NullCheck(L_112);
-		L_112->set_Source_0(L_113);
-		InputControlMapping_t318255021 * L_114 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(InputRange_t4284974673_il2cpp_TypeInfo_var);
-		InputRange_t4284974673  L_115 = ((InputRange_t4284974673_StaticFields*)InputRange_t4284974673_il2cpp_TypeInfo_var->static_fields)->get_ZeroToOne_3();
-		NullCheck(L_114);
-		L_114->set_SourceRange_10(L_115);
-		InputControlMapping_t318255021 * L_116 = V_0;
-		InputRange_t4284974673  L_117 = ((InputRange_t4284974673_StaticFields*)InputRange_t4284974673_il2cpp_TypeInfo_var->static_fields)->get_ZeroToOne_3();
-		NullCheck(L_116);
-		L_116->set_TargetRange_11(L_117);
-		InputControlMapping_t318255021 * L_118 = V_0;
-		NullCheck(L_108);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_108, ((int32_t)12));
-		ArrayElementTypeCheck (L_108, L_118);
-		(L_108)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)12)), (InputControlMapping_t318255021 *)L_118);
-		InputControlMappingU5BU5D_t3278783232* L_119 = L_108;
-		InputControlMapping_t318255021 * L_120 = (InputControlMapping_t318255021 *)il2cpp_codegen_object_new(InputControlMapping_t318255021_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3931955878(L_120, /*hidden argument*/NULL);
-		V_0 = L_120;
-		InputControlMapping_t318255021 * L_121 = V_0;
-		NullCheck(L_121);
-		InputControlMapping_set_Handle_m1343148127(L_121, _stringLiteral48406388, /*hidden argument*/NULL);
-		InputControlMapping_t318255021 * L_122 = V_0;
-		NullCheck(L_122);
-		L_122->set_Target_1(((int32_t)16));
-		InputControlMapping_t318255021 * L_123 = V_0;
-		Il2CppObject * L_124 = ((UnityInputDeviceProfile_t2501013168_StaticFields*)UnityInputDeviceProfile_t2501013168_il2cpp_TypeInfo_var->static_fields)->get_Analog9_44();
-		NullCheck(L_123);
-		L_123->set_Source_0(L_124);
-		InputControlMapping_t318255021 * L_125 = V_0;
-		InputRange_t4284974673  L_126 = ((InputRange_t4284974673_StaticFields*)InputRange_t4284974673_il2cpp_TypeInfo_var->static_fields)->get_ZeroToMinusOne_4();
-		NullCheck(L_125);
-		L_125->set_SourceRange_10(L_126);
-		InputControlMapping_t318255021 * L_127 = V_0;
-		InputRange_t4284974673  L_128 = ((InputRange_t4284974673_StaticFields*)InputRange_t4284974673_il2cpp_TypeInfo_var->static_fields)->get_ZeroToOne_3();
-		NullCheck(L_127);
-		L_127->set_TargetRange_11(L_128);
-		InputControlMapping_t318255021 * L_129 = V_0;
-		NullCheck(L_119);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_119, ((int32_t)13));
-		ArrayElementTypeCheck (L_119, L_129);
-		(L_119)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)13)), (InputControlMapping_t318255021 *)L_129);
-		InputDeviceProfile_set_AnalogMappings_m1162670289(__this, L_119, /*hidden argument*/NULL);
 		return;
 	}
 }
