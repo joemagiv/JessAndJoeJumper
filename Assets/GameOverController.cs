@@ -35,25 +35,25 @@ public class GameOverController : MonoBehaviour {
 	
 	void Countdown3(){
 		text.text = "3";
-		Invoke("Countdown2",1f);
+		Invoke("Countdown2",0.5f);
 		
 	}
 	
 	void Countdown2(){
 		text.text = "2";
-		Invoke("Countdown1",1f);
-		
+		Invoke("Countdown1",0.5f);
+
 	}
 	
 	void Countdown1(){
 		text.text = "1";
-		Invoke("CountdownSmile",1f);
+		Invoke("CountdownSmile",0.5f);
 		
 	}
 	
 	void CountdownSmile(){
 		text.text = "Smile!";
-		Invoke("TakePicture",1f);
+		Invoke("TakePicture",2f);
 		
 	}
 	
@@ -69,8 +69,8 @@ public class GameOverController : MonoBehaviour {
 
 	private string CheckForHighScore(){
 
-		if (PlayerPrefsManager.GetCurrentScore() == PlayerPrefsManager.GetHighScore()) {
-			return "High Score!\n";
+		if (PlayerPrefsManager.GetCurrentScore() >= PlayerPrefsManager.GetHighScore()) {
+			return "HIGH SCORE!\n";
 		} else {
 			return "";
 		}

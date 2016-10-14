@@ -28,7 +28,7 @@ public class GameController : MonoBehaviour {
 		highScoreText.text = "High Score: " + PlayerPrefsManager.GetHighScore();
 	
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		if (gameHasStarted) {
@@ -41,7 +41,7 @@ public class GameController : MonoBehaviour {
 
 		}
 
-		score = camera.transform.position.y;
+		score = camera.transform.position.y * 1.5f;
 		scoreText.text = "Score: " + score.ToString ("0");
 
 	}
