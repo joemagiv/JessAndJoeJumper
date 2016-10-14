@@ -3,6 +3,7 @@ UnityEngine.AnimationCurve::Cleanup
 UnityEngine.AnimationCurve::Init
 UnityEngine.Animator::StringToHash
 UnityEngine.Animator::ResetTriggerString
+UnityEngine.Animator::SetBoolString
 UnityEngine.Animator::SetTriggerString
 UnityEngine.Animator::get_runtimeAnimatorController
 UnityEngine.Application::HasUserAuthorization

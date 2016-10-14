@@ -13551,6 +13551,7 @@ extern const Il2CppType AnimatorTransitionInfo_t2817229998_1_0_0 = { (void*)1347
 
 extern const Il2CppType Animator_t2776330603_0_0_0 = { (void*)1348, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType Animator_t2776330603_1_0_0 = { (void*)1348, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType Animator_t2776330603_0_0_1 = { (void*)1348, 1, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 
 extern const Il2CppType RuntimeAnimatorController_t274649809_0_0_0 = { (void*)1352, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType RuntimeAnimatorController_t274649809_1_0_0 = { (void*)1352, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
@@ -14815,6 +14816,10 @@ extern const Il2CppType DeviceCamera_t3055454523_0_0_1 = { (void*)1710, 1, IL2CP
 extern const Il2CppType GameOverController_t722700354_0_0_0 = { (void*)1711, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType GameOverController_t722700354_1_0_0 = { (void*)1711, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
+extern const Il2CppType LevelController_t812318240_0_0_1 = { (void*)1717, 1, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType LevelController_t812318240_0_0_0 = { (void*)1717, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType LevelController_t812318240_1_0_0 = { (void*)1717, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+
 extern const Il2CppType TestInputManager_t3892280435_0_0_0 = { (void*)1712, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType TestInputManager_t3892280435_1_0_0 = { (void*)1712, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
@@ -14830,9 +14835,6 @@ extern const Il2CppType EndOfPlatform_t2860618373_1_0_0 = { (void*)1715, 0, IL2C
 extern const Il2CppType GameController_t2782302542_0_0_0 = { (void*)1716, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType GameController_t2782302542_1_0_0 = { (void*)1716, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 extern const Il2CppType GameController_t2782302542_0_0_1 = { (void*)1716, 1, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-
-extern const Il2CppType LevelController_t812318240_0_0_0 = { (void*)1717, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType LevelController_t812318240_1_0_0 = { (void*)1717, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
 extern const Il2CppType MusicManager_t2870594024_0_0_1 = { (void*)1718, 1, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType MusicManager_t2870594024_0_0_0 = { (void*)1718, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
@@ -15999,7 +16001,7 @@ extern const Il2CppType ColorU5BU5D_t2441545636_0_0_0 = { (void*)&Color_t4194546
 
 extern const Il2CppType ITrackingHandler_t2228500544_0_0_0;
 extern const Il2CppType ITrackingHandlerU5BU5D_t3684998849_0_0_0 = { (void*)&ITrackingHandler_t2228500544_0_0_0, 0, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
-extern const Il2CppType* const  g_Il2CppTypeTable[8495] = 
+extern const Il2CppType* const  g_Il2CppTypeTable[8497] = 
 {
 	&IEnumerator_1_t1787714124_0_0_0,
 	&Il2CppObject_0_0_0,
@@ -23556,6 +23558,7 @@ extern const Il2CppType* const  g_Il2CppTypeTable[8495] =
 	&GameOverController_t722700354_1_0_0,
 	&Text_t9039225_0_0_6,
 	&DeviceCamera_t3055454523_0_0_1,
+	&LevelController_t812318240_0_0_1,
 	&TestInputManager_t3892280435_0_0_0,
 	&TestInputManager_t3892280435_1_0_0,
 	&List_1_t3211895217_0_0_1,
@@ -23585,6 +23588,7 @@ extern const Il2CppType* const  g_Il2CppTypeTable[8495] =
 	&PlayerMovement_t2454334062_1_0_0,
 	&Rigidbody2D_t1743771669_0_0_1,
 	&SFXManager_t149887880_0_0_1,
+	&Animator_t2776330603_0_0_1,
 	&SFXManager_t149887880_0_0_0,
 	&SFXManager_t149887880_1_0_0,
 	&Shredder_t4090516629_0_0_0,

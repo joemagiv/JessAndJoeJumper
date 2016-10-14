@@ -1669,6 +1669,9 @@ extern const Il2CppGenericInst GenInst_Renderer_t3076687687_0_0_0 = { 1, GenInst
 extern const Il2CppType DeviceCamera_t3055454523_0_0_0;
 static const Il2CppType* GenInst_DeviceCamera_t3055454523_0_0_0_Types[] = { &DeviceCamera_t3055454523_0_0_0 };
 extern const Il2CppGenericInst GenInst_DeviceCamera_t3055454523_0_0_0 = { 1, GenInst_DeviceCamera_t3055454523_0_0_0_Types };
+extern const Il2CppType LevelController_t812318240_0_0_0;
+static const Il2CppType* GenInst_LevelController_t812318240_0_0_0_Types[] = { &LevelController_t812318240_0_0_0 };
+extern const Il2CppGenericInst GenInst_LevelController_t812318240_0_0_0 = { 1, GenInst_LevelController_t812318240_0_0_0_Types };
 extern const Il2CppType PlayerMovement_t2454334062_0_0_0;
 static const Il2CppType* GenInst_PlayerMovement_t2454334062_0_0_0_Types[] = { &PlayerMovement_t2454334062_0_0_0 };
 extern const Il2CppGenericInst GenInst_PlayerMovement_t2454334062_0_0_0 = { 1, GenInst_PlayerMovement_t2454334062_0_0_0_Types };
@@ -1764,7 +1767,7 @@ static const Il2CppType* GenInst_KeyValuePair_2_t3009942004_0_0_0_KeyValuePair_2
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t3009942004_0_0_0_KeyValuePair_2_t3009942004_0_0_0 = { 2, GenInst_KeyValuePair_2_t3009942004_0_0_0_KeyValuePair_2_t3009942004_0_0_0_Types };
 static const Il2CppType* GenInst_KeyValuePair_2_t3009942004_0_0_0_Il2CppObject_0_0_0_Types[] = { &KeyValuePair_2_t3009942004_0_0_0, &Il2CppObject_0_0_0 };
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t3009942004_0_0_0_Il2CppObject_0_0_0 = { 2, GenInst_KeyValuePair_2_t3009942004_0_0_0_Il2CppObject_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[617] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[618] = 
 {
 	&GenInst_Il2CppObject_0_0_0,
 	&GenInst_Int32_t1153838500_0_0_0,
@@ -2341,6 +2344,7 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[617] =
 	&GenInst_CaptureAndSave_t700313070_0_0_0,
 	&GenInst_Renderer_t3076687687_0_0_0,
 	&GenInst_DeviceCamera_t3055454523_0_0_0,
+	&GenInst_LevelController_t812318240_0_0_0,
 	&GenInst_PlayerMovement_t2454334062_0_0_0,
 	&GenInst_ICadeDeviceManager_t3174528173_0_0_0,
 	&GenInst_UnityInputDeviceManager_t3645699252_0_0_0,

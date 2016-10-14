@@ -6,10 +6,10 @@ public class SplashScreen : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Invoke ("NextLevel", 2f);
+		
 	}
 
-	void NextLevel(){
+	public void NextLevel(){
 		SceneManager.LoadScene ("scene01");
 	}
 	

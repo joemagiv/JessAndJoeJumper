@@ -30,5 +30,7 @@ extern "C"  void LevelController_PlayAgain_m2949497845 (LevelController_t8123182
 extern "C"  void LevelController_OnTriggerEnter2D_m2859763597 (LevelController_t812318240 * __this, Collider2D_t1552025098 * ___other0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void LevelController::GameOver()
 extern "C"  void LevelController_GameOver_m1216966911 (LevelController_t812318240 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void LevelController::ReturnToSplash()
+extern "C"  void LevelController_ReturnToSplash_m3824737835 (LevelController_t812318240 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void LevelController::Update()
 extern "C"  void LevelController_Update_m2476396322 (LevelController_t812318240 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

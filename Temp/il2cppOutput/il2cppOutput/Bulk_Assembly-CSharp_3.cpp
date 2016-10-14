@@ -17864,6 +17864,22 @@ extern "C"  void LevelController_GameOver_m1216966911 (LevelController_t81231824
 		return;
 	}
 }
+// System.Void LevelController::ReturnToSplash()
+extern Il2CppCodeGenString* _stringLiteral3579298668;
+extern const uint32_t LevelController_ReturnToSplash_m3824737835_MetadataUsageId;
+extern "C"  void LevelController_ReturnToSplash_m3824737835 (LevelController_t812318240 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (LevelController_ReturnToSplash_m3824737835_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		SceneManager_LoadScene_m2167814033(NULL /*static, unused*/, _stringLiteral3579298668, /*hidden argument*/NULL);
+		return;
+	}
+}
 // System.Void LevelController::Update()
 extern "C"  void LevelController_Update_m2476396322 (LevelController_t812318240 * __this, const MethodInfo* method)
 {
@@ -18631,18 +18647,9 @@ extern "C"  void SplashScreen__ctor_m2198261288 (SplashScreen_t2592768467 * __th
 	}
 }
 // System.Void SplashScreen::Start()
-extern Il2CppCodeGenString* _stringLiteral3203211313;
-extern const uint32_t SplashScreen_Start_m1145399080_MetadataUsageId;
 extern "C"  void SplashScreen_Start_m1145399080 (SplashScreen_t2592768467 * __this, const MethodInfo* method)
 {
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (SplashScreen_Start_m1145399080_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		MonoBehaviour_Invoke_m2825545578(__this, _stringLiteral3203211313, (2.0f), /*hidden argument*/NULL);
 		return;
 	}
 }

@@ -35,6 +35,8 @@ struct EndOfPlatform_t2860618373;
 struct GameController_t2782302542;
 // GameOverController
 struct GameOverController_t722700354;
+// LevelController
+struct LevelController_t812318240;
 // InControl.AirFloWiredPS3MacProfile
 struct AirFloWiredPS3MacProfile_t381436744;
 // InControl.AirFloWiredPS3ProfileWin
@@ -330,6 +332,8 @@ struct MogaProPowerAndroidProfile_t4165900428;
 #include "AssemblyU2DCSharp_GameOverController722700354.h"
 #include "AssemblyU2DCSharp_GameOverController722700354MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Application2856536070MethodDeclarations.h"
+#include "AssemblyU2DCSharp_LevelController812318240.h"
+#include "AssemblyU2DCSharp_LevelController812318240MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InControl_AirFloWiredPS3MacProfil381436744.h"
 #include "AssemblyU2DCSharp_InControl_AirFloWiredPS3MacProfil381436744MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InControl_UnityInputDeviceProfil2501013168MethodDeclarations.h"
@@ -676,6 +680,10 @@ extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m267839954_gsh
 #define Object_FindObjectOfType_TisDeviceCamera_t3055454523_m1261070354(__this /* static, unused */, method) ((  DeviceCamera_t3055454523 * (*) (Il2CppObject * /* static, unused */, const MethodInfo*))Object_FindObjectOfType_TisIl2CppObject_m2892359027_gshared)(__this /* static, unused */, method)
 // !!0 UnityEngine.Component::GetComponent<DeviceCamera>()
 #define Component_GetComponent_TisDeviceCamera_t3055454523_m833401962(__this, method) ((  DeviceCamera_t3055454523 * (*) (Component_t3501516275 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
+// !!0 UnityEngine.Object::FindObjectOfType<LevelController>()
+#define Object_FindObjectOfType_TisLevelController_t812318240_m2487896945(__this /* static, unused */, method) ((  LevelController_t812318240 * (*) (Il2CppObject * /* static, unused */, const MethodInfo*))Object_FindObjectOfType_TisIl2CppObject_m2892359027_gshared)(__this /* static, unused */, method)
+// !!0 UnityEngine.Component::GetComponent<LevelController>()
+#define Component_GetComponent_TisLevelController_t812318240_m691830809(__this, method) ((  LevelController_t812318240 * (*) (Component_t3501516275 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<InControl.PlayerMovement>()
 #define Component_GetComponent_TisPlayerMovement_t2454334062_m123841951(__this, method) ((  PlayerMovement_t2454334062 * (*) (Component_t3501516275 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 InControl.InputManager::GetDeviceManager<System.Object>()
@@ -1300,8 +1308,8 @@ extern "C"  void DeviceCamera_Start_m790574272 (DeviceCamera_t3055454523 * __thi
 		__this->set_devices_2(L_0);
 		WebCamDeviceU5BU5D_t3721690872* L_1 = __this->get_devices_2();
 		NullCheck(L_1);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_1, 1);
-		String_t* L_2 = WebCamDevice_get_name_m2875559007(((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(1))), /*hidden argument*/NULL);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_1, 0);
+		String_t* L_2 = WebCamDevice_get_name_m2875559007(((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(0))), /*hidden argument*/NULL);
 		__this->set_frontCamName_4(L_2);
 		String_t* L_3 = __this->get_frontCamName_4();
 		WebCamTexture_t1290350902 * L_4 = (WebCamTexture_t1290350902 *)il2cpp_codegen_object_new(WebCamTexture_t1290350902_il2cpp_TypeInfo_var);
@@ -1496,6 +1504,8 @@ extern const MethodInfo* Object_FindObjectOfType_TisCaptureAndSave_t700313070_m4
 extern const MethodInfo* Component_GetComponent_TisCaptureAndSave_t700313070_m1776538967_MethodInfo_var;
 extern const MethodInfo* Object_FindObjectOfType_TisDeviceCamera_t3055454523_m1261070354_MethodInfo_var;
 extern const MethodInfo* Component_GetComponent_TisDeviceCamera_t3055454523_m833401962_MethodInfo_var;
+extern const MethodInfo* Object_FindObjectOfType_TisLevelController_t812318240_m2487896945_MethodInfo_var;
+extern const MethodInfo* Component_GetComponent_TisLevelController_t812318240_m691830809_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral73635346;
 extern const uint32_t GameOverController_Start_m851000217_MetadataUsageId;
 extern "C"  void GameOverController_Start_m851000217 (GameOverController_t722700354 * __this, const MethodInfo* method)
@@ -1516,17 +1526,21 @@ extern "C"  void GameOverController_Start_m851000217 (GameOverController_t722700
 		NullCheck(L_2);
 		DeviceCamera_t3055454523 * L_3 = Component_GetComponent_TisDeviceCamera_t3055454523_m833401962(L_2, /*hidden argument*/Component_GetComponent_TisDeviceCamera_t3055454523_m833401962_MethodInfo_var);
 		__this->set_deviceCamera_6(L_3);
-		String_t* L_4 = Application_get_persistentDataPath_m2554537447(NULL /*static, unused*/, /*hidden argument*/NULL);
+		LevelController_t812318240 * L_4 = Object_FindObjectOfType_TisLevelController_t812318240_m2487896945(NULL /*static, unused*/, /*hidden argument*/Object_FindObjectOfType_TisLevelController_t812318240_m2487896945_MethodInfo_var);
+		NullCheck(L_4);
+		LevelController_t812318240 * L_5 = Component_GetComponent_TisLevelController_t812318240_m691830809(L_4, /*hidden argument*/Component_GetComponent_TisLevelController_t812318240_m691830809_MethodInfo_var);
+		__this->set_levelController_7(L_5);
+		String_t* L_6 = Application_get_persistentDataPath_m2554537447(NULL /*static, unused*/, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t4195163081_il2cpp_TypeInfo_var);
-		Debug_Log_m1731103628(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
-		Text_t9039225 * L_5 = __this->get_scoreText_3();
-		NullCheck(L_5);
-		GameObject_t3674682005 * L_6 = Component_get_gameObject_m1170635899(L_5, /*hidden argument*/NULL);
-		NullCheck(L_6);
-		GameObject_SetActive_m3538205401(L_6, (bool)0, /*hidden argument*/NULL);
-		GameObject_t3674682005 * L_7 = __this->get_playAgainButton_5();
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_6, /*hidden argument*/NULL);
+		Text_t9039225 * L_7 = __this->get_scoreText_3();
 		NullCheck(L_7);
-		GameObject_SetActive_m3538205401(L_7, (bool)0, /*hidden argument*/NULL);
+		GameObject_t3674682005 * L_8 = Component_get_gameObject_m1170635899(L_7, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		GameObject_SetActive_m3538205401(L_8, (bool)0, /*hidden argument*/NULL);
+		GameObject_t3674682005 * L_9 = __this->get_playAgainButton_5();
+		NullCheck(L_9);
+		GameObject_SetActive_m3538205401(L_9, (bool)0, /*hidden argument*/NULL);
 		MonoBehaviour_Invoke_m2825545578(__this, _stringLiteral73635346, (1.0f), /*hidden argument*/NULL);
 		return;
 	}
@@ -1634,7 +1648,6 @@ extern "C"  void GameOverController_CountdownSmile_m4062042274 (GameOverControll
 // System.Void GameOverController::TakePicture()
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral3588653336;
-extern Il2CppCodeGenString* _stringLiteral32;
 extern Il2CppCodeGenString* _stringLiteral1898455698;
 extern const uint32_t GameOverController_TakePicture_m1175506926_MetadataUsageId;
 extern "C"  void GameOverController_TakePicture_m1175506926 (GameOverController_t722700354 * __this, const MethodInfo* method)
@@ -1658,32 +1671,80 @@ extern "C"  void GameOverController_TakePicture_m1175506926 (GameOverController_
 		NullCheck(L_3);
 		GameObject_SetActive_m3538205401(L_3, (bool)1, /*hidden argument*/NULL);
 		Text_t9039225 * L_4 = __this->get_scoreText_3();
-		int32_t L_5 = PlayerPrefsManager_GetCurrentScore_m107229308(NULL /*static, unused*/, /*hidden argument*/NULL);
-		V_0 = L_5;
-		String_t* L_6 = Int32_ToString_m1286526384((&V_0), /*hidden argument*/NULL);
-		String_t* L_7 = Application_get_persistentDataPath_m2554537447(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_7);
-		String_t* L_8 = String_ToString_m1382284457(L_7, /*hidden argument*/NULL);
-		String_t* L_9 = String_Concat_m2933632197(NULL /*static, unused*/, _stringLiteral3588653336, L_6, _stringLiteral32, L_8, /*hidden argument*/NULL);
+		String_t* L_5 = GameOverController_CheckForHighScore_m400339939(__this, /*hidden argument*/NULL);
+		int32_t L_6 = PlayerPrefsManager_GetCurrentScore_m107229308(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_0 = L_6;
+		String_t* L_7 = Int32_ToString_m1286526384((&V_0), /*hidden argument*/NULL);
+		String_t* L_8 = String_Concat_m1825781833(NULL /*static, unused*/, L_5, _stringLiteral3588653336, L_7, /*hidden argument*/NULL);
 		NullCheck(L_4);
-		VirtActionInvoker1< String_t* >::Invoke(74 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_4, L_9);
-		DeviceCamera_t3055454523 * L_10 = __this->get_deviceCamera_6();
+		VirtActionInvoker1< String_t* >::Invoke(74 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_4, L_8);
+		DeviceCamera_t3055454523 * L_9 = __this->get_deviceCamera_6();
+		NullCheck(L_9);
+		DeviceCamera_Pause_m1897562452(L_9, /*hidden argument*/NULL);
+		CaptureAndSave_t700313070 * L_10 = __this->get_capture_4();
 		NullCheck(L_10);
-		DeviceCamera_Pause_m1897562452(L_10, /*hidden argument*/NULL);
-		CaptureAndSave_t700313070 * L_11 = __this->get_capture_4();
-		NullCheck(L_11);
-		CaptureAndSave_CaptureAndSaveToAlbum_m3265519171(L_11, 0, /*hidden argument*/NULL);
+		CaptureAndSave_CaptureAndSaveToAlbum_m3265519171(L_10, 0, /*hidden argument*/NULL);
 		MonoBehaviour_Invoke_m2825545578(__this, _stringLiteral1898455698, (2.0f), /*hidden argument*/NULL);
 		return;
 	}
 }
+// System.String GameOverController::CheckForHighScore()
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2468972957;
+extern const uint32_t GameOverController_CheckForHighScore_m400339939_MetadataUsageId;
+extern "C"  String_t* GameOverController_CheckForHighScore_m400339939 (GameOverController_t722700354 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameOverController_CheckForHighScore_m400339939_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		int32_t L_0 = PlayerPrefsManager_GetCurrentScore_m107229308(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_1 = PlayerPrefsManager_GetHighScore_m2984309039(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) == ((uint32_t)L_1))))
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		return _stringLiteral2468972957;
+	}
+
+IL_0015:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_2 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		return L_2;
+	}
+}
 // System.Void GameOverController::PlayAgainActive()
+extern Il2CppCodeGenString* _stringLiteral2865437525;
+extern const uint32_t GameOverController_PlayAgainActive_m993010281_MetadataUsageId;
 extern "C"  void GameOverController_PlayAgainActive_m993010281 (GameOverController_t722700354 * __this, const MethodInfo* method)
 {
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameOverController_PlayAgainActive_m993010281_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
 	{
 		GameObject_t3674682005 * L_0 = __this->get_playAgainButton_5();
 		NullCheck(L_0);
 		GameObject_SetActive_m3538205401(L_0, (bool)1, /*hidden argument*/NULL);
+		MonoBehaviour_Invoke_m2825545578(__this, _stringLiteral2865437525, (15.0f), /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void GameOverController::PlayAgainTimeout()
+extern "C"  void GameOverController_PlayAgainTimeout_m565588608 (GameOverController_t722700354 * __this, const MethodInfo* method)
+{
+	{
+		LevelController_t812318240 * L_0 = __this->get_levelController_7();
+		NullCheck(L_0);
+		LevelController_ReturnToSplash_m3824737835(L_0, /*hidden argument*/NULL);
 		return;
 	}
 }

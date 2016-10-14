@@ -7417,10 +7417,12 @@ extern "C" void AnimationEvent_get_animationState_m2712753230 ();
 extern "C" void AnimationEvent_get_animatorStateInfo_m194903218 ();
 extern "C" void AnimationEvent_get_animatorClipInfo_m493861262 ();
 extern "C" void AnimationEvent_GetHash_m2586883417 ();
+extern "C" void Animator_SetBool_m2336836203 ();
 extern "C" void Animator_SetTrigger_m514363822 ();
 extern "C" void Animator_ResetTrigger_m4152421915 ();
 extern "C" void Animator_get_runtimeAnimatorController_m1822082727 ();
 extern "C" void Animator_StringToHash_m4020897098 ();
+extern "C" void Animator_SetBoolString_m275475356 ();
 extern "C" void Animator_SetTriggerString_m1378271133 ();
 extern "C" void Animator_ResetTriggerString_m1817269834 ();
 extern "C" void AnimatorStateInfo_IsName_m1653922768_AdjustorThunk ();
@@ -11132,7 +11134,9 @@ extern "C" void GameOverController_Countdown2_m2435526636 ();
 extern "C" void GameOverController_Countdown1_m2435525675 ();
 extern "C" void GameOverController_CountdownSmile_m4062042274 ();
 extern "C" void GameOverController_TakePicture_m1175506926 ();
+extern "C" void GameOverController_CheckForHighScore_m400339939 ();
 extern "C" void GameOverController_PlayAgainActive_m993010281 ();
+extern "C" void GameOverController_PlayAgainTimeout_m565588608 ();
 extern "C" void GameOverController_Update_m617055124 ();
 extern "C" void AirFloWiredPS3MacProfile__ctor_m2602364059 ();
 extern "C" void AirFloWiredPS3ProfileWin__ctor_m3437342882 ();
@@ -12526,6 +12530,7 @@ extern "C" void LevelController_Start_m2712094283 ();
 extern "C" void LevelController_PlayAgain_m2949497845 ();
 extern "C" void LevelController_OnTriggerEnter2D_m2859763597 ();
 extern "C" void LevelController_GameOver_m1216966911 ();
+extern "C" void LevelController_ReturnToSplash_m3824737835 ();
 extern "C" void LevelController_Update_m2476396322 ();
 extern "C" void MusicManager__ctor_m1429130675 ();
 extern "C" void MusicManager_Start_m376268467 ();
@@ -12580,7 +12585,7 @@ extern "C" void U3CStartU3Ec__Iterator1_Dispose_m1704581516 ();
 extern "C" void U3CStartU3Ec__Iterator1_Reset_m3091881916 ();
 extern "C" void ICadePluginPath__ctor_m1869789357 ();
 extern "C" void RefreshGalleryWrapper__ctor_m248395323 ();
-extern const Il2CppMethodPointer g_MethodPointers[12569] = 
+extern const Il2CppMethodPointer g_MethodPointers[12574] = 
 {
 	Locale_GetText_m2389348044,
 	Locale_GetText_m2218462520,
@@ -19988,10 +19993,12 @@ extern const Il2CppMethodPointer g_MethodPointers[12569] =
 	AnimationEvent_get_animatorStateInfo_m194903218,
 	AnimationEvent_get_animatorClipInfo_m493861262,
 	AnimationEvent_GetHash_m2586883417,
+	Animator_SetBool_m2336836203,
 	Animator_SetTrigger_m514363822,
 	Animator_ResetTrigger_m4152421915,
 	Animator_get_runtimeAnimatorController_m1822082727,
 	Animator_StringToHash_m4020897098,
+	Animator_SetBoolString_m275475356,
 	Animator_SetTriggerString_m1378271133,
 	Animator_ResetTriggerString_m1817269834,
 	AnimatorStateInfo_IsName_m1653922768_AdjustorThunk,
@@ -23703,7 +23710,9 @@ extern const Il2CppMethodPointer g_MethodPointers[12569] =
 	GameOverController_Countdown1_m2435525675,
 	GameOverController_CountdownSmile_m4062042274,
 	GameOverController_TakePicture_m1175506926,
+	GameOverController_CheckForHighScore_m400339939,
 	GameOverController_PlayAgainActive_m993010281,
+	GameOverController_PlayAgainTimeout_m565588608,
 	GameOverController_Update_m617055124,
 	AirFloWiredPS3MacProfile__ctor_m2602364059,
 	AirFloWiredPS3ProfileWin__ctor_m3437342882,
@@ -25097,6 +25106,7 @@ extern const Il2CppMethodPointer g_MethodPointers[12569] =
 	LevelController_PlayAgain_m2949497845,
 	LevelController_OnTriggerEnter2D_m2859763597,
 	LevelController_GameOver_m1216966911,
+	LevelController_ReturnToSplash_m3824737835,
 	LevelController_Update_m2476396322,
 	MusicManager__ctor_m1429130675,
 	MusicManager_Start_m376268467,

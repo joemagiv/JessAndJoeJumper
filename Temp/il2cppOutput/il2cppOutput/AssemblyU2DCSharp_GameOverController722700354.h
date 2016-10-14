@@ -18,6 +18,8 @@ struct CaptureAndSave_t700313070;
 struct GameObject_t3674682005;
 // DeviceCamera
 struct DeviceCamera_t3055454523;
+// LevelController
+struct LevelController_t812318240;
 
 #include "UnityEngine_UnityEngine_MonoBehaviour667441552.h"
 
@@ -41,6 +43,8 @@ public:
 	GameObject_t3674682005 * ___playAgainButton_5;
 	// DeviceCamera GameOverController::deviceCamera
 	DeviceCamera_t3055454523 * ___deviceCamera_6;
+	// LevelController GameOverController::levelController
+	LevelController_t812318240 * ___levelController_7;
 
 public:
 	inline static int32_t get_offset_of_text_2() { return static_cast<int32_t>(offsetof(GameOverController_t722700354, ___text_2)); }
@@ -86,6 +90,15 @@ public:
 	{
 		___deviceCamera_6 = value;
 		Il2CppCodeGenWriteBarrier(&___deviceCamera_6, value);
+	}
+
+	inline static int32_t get_offset_of_levelController_7() { return static_cast<int32_t>(offsetof(GameOverController_t722700354, ___levelController_7)); }
+	inline LevelController_t812318240 * get_levelController_7() const { return ___levelController_7; }
+	inline LevelController_t812318240 ** get_address_of_levelController_7() { return &___levelController_7; }
+	inline void set_levelController_7(LevelController_t812318240 * value)
+	{
+		___levelController_7 = value;
+		Il2CppCodeGenWriteBarrier(&___levelController_7, value);
 	}
 };
 

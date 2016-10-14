@@ -36,6 +36,11 @@ public class LevelController : MonoBehaviour {
 		
 		
 	}
+
+	public void ReturnToSplash(){
+		SceneManager.LoadScene ("Scene00");
+
+	}
 	
 	// Update is called once per frame
 	void Update () {

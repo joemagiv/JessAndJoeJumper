@@ -170,13 +170,14 @@ extern const int32_t g_FieldOffsetTable1710[3] =
 	DeviceCamera_t3055454523::get_offset_of_frontCamName_4(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1711 = { sizeof (GameOverController_t722700354), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1711[5] = 
+extern const int32_t g_FieldOffsetTable1711[6] = 
 {
 	GameOverController_t722700354::get_offset_of_text_2(),
 	GameOverController_t722700354::get_offset_of_scoreText_3(),
 	GameOverController_t722700354::get_offset_of_capture_4(),
 	GameOverController_t722700354::get_offset_of_playAgainButton_5(),
 	GameOverController_t722700354::get_offset_of_deviceCamera_6(),
+	GameOverController_t722700354::get_offset_of_levelController_7(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1712 = { sizeof (TestInputManager_t3892280435), -1, sizeof(TestInputManager_t3892280435_StaticFields), 0 };
 extern const int32_t g_FieldOffsetTable1712[7] = 
@@ -239,7 +240,7 @@ extern const int32_t g_FieldOffsetTable1720[1] =
 	PlatformSpawner_t2783583573::get_offset_of_platformGroups_2(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1721 = { sizeof (PlayerMovement_t2454334062), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1721[11] = 
+extern const int32_t g_FieldOffsetTable1721[12] = 
 {
 	PlayerMovement_t2454334062::get_offset_of_movementSpeed_2(),
 	PlayerMovement_t2454334062::get_offset_of_canMoveToRight_3(),
@@ -247,11 +248,12 @@ extern const int32_t g_FieldOffsetTable1721[11] =
 	PlayerMovement_t2454334062::get_offset_of_jumpSound_5(),
 	PlayerMovement_t2454334062::get_offset_of_rigidBody_6(),
 	PlayerMovement_t2454334062::get_offset_of_sfxManager_7(),
-	PlayerMovement_t2454334062::get_offset_of_jumpingForce_8(),
-	PlayerMovement_t2454334062::get_offset_of_isJumping_9(),
-	PlayerMovement_t2454334062::get_offset_of_gameController_10(),
-	PlayerMovement_t2454334062::get_offset_of_movingLeft_11(),
-	PlayerMovement_t2454334062::get_offset_of_movingRight_12(),
+	PlayerMovement_t2454334062::get_offset_of_anim_8(),
+	PlayerMovement_t2454334062::get_offset_of_jumpingForce_9(),
+	PlayerMovement_t2454334062::get_offset_of_isJumping_10(),
+	PlayerMovement_t2454334062::get_offset_of_gameController_11(),
+	PlayerMovement_t2454334062::get_offset_of_movingLeft_12(),
+	PlayerMovement_t2454334062::get_offset_of_movingRight_13(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1722 = { sizeof (SFXManager_t149887880), -1, 0, 0 };
 extern const int32_t g_FieldOffsetTable1722[1] = 

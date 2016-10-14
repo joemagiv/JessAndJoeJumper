@@ -14,11 +14,13 @@ public class GameOverController : MonoBehaviour {
 	//public float textDelay;
 	public GameObject playAgainButton;
 	private DeviceCamera deviceCamera;
+	private LevelController levelController;
 	
 	// Use this for initialization
 	void Start () {
 		capture = FindObjectOfType<CaptureAndSave> ().GetComponent<CaptureAndSave> ();
 		deviceCamera = FindObjectOfType<DeviceCamera>().GetComponent<DeviceCamera>();
+		levelController = FindObjectOfType<LevelController> ().GetComponent<LevelController> ();
 		Debug.Log(Application.persistentDataPath);
 		scoreText.gameObject.SetActive(false);
 		playAgainButton.SetActive(false);
@@ -58,16 +60,29 @@ public class GameOverController : MonoBehaviour {
 	public void TakePicture(){
 		text.text = "";
 		scoreText.gameObject.SetActive(true);
-		scoreText.text = "Score: " + PlayerPrefsManager.GetCurrentScore().ToString() + " " + Application.persistentDataPath.ToString();
+		scoreText.text = CheckForHighScore() + "Score: " + PlayerPrefsManager.GetCurrentScore().ToString();
 		deviceCamera.Pause();
 		capture.CaptureAndSaveToAlbum (ImageType.JPG);
 		//Application.CaptureScreenshot(Application.persistentDataPath + "Screenshot" + System.DateTime.Now.ToString("hhmmss") + ".png");
 		Invoke("PlayAgainActive", 2f);
 	}
+
+	private string CheckForHighScore(){
+
+		if (PlayerPrefsManager.GetCurrentScore() == PlayerPrefsManager.GetHighScore()) {
+			return "High Score!\n";
+		} else {
+			return "";
+		}
+	}
 	
 	public void PlayAgainActive(){
 		playAgainButton.SetActive(true);
-		
+		Invoke ("PlayAgainTimeout", 15f);
+	}
+
+	public void PlayAgainTimeout(){
+		levelController.ReturnToSplash ();
 	}
 	
 	// Update is called once per frame

@@ -16,6 +16,8 @@ struct AudioClip_t794140988;
 struct Rigidbody2D_t1743771669;
 // SFXManager
 struct SFXManager_t149887880;
+// UnityEngine.Animator
+struct Animator_t2776330603;
 // GameController
 struct GameController_t2782302542;
 
@@ -44,16 +46,18 @@ public:
 	Rigidbody2D_t1743771669 * ___rigidBody_6;
 	// SFXManager InControl.PlayerMovement::sfxManager
 	SFXManager_t149887880 * ___sfxManager_7;
+	// UnityEngine.Animator InControl.PlayerMovement::anim
+	Animator_t2776330603 * ___anim_8;
 	// UnityEngine.Vector2 InControl.PlayerMovement::jumpingForce
-	Vector2_t4282066565  ___jumpingForce_8;
+	Vector2_t4282066565  ___jumpingForce_9;
 	// System.Boolean InControl.PlayerMovement::isJumping
-	bool ___isJumping_9;
+	bool ___isJumping_10;
 	// GameController InControl.PlayerMovement::gameController
-	GameController_t2782302542 * ___gameController_10;
+	GameController_t2782302542 * ___gameController_11;
 	// System.Boolean InControl.PlayerMovement::movingLeft
-	bool ___movingLeft_11;
+	bool ___movingLeft_12;
 	// System.Boolean InControl.PlayerMovement::movingRight
-	bool ___movingRight_12;
+	bool ___movingRight_13;
 
 public:
 	inline static int32_t get_offset_of_movementSpeed_2() { return static_cast<int32_t>(offsetof(PlayerMovement_t2454334062, ___movementSpeed_2)); }
@@ -107,45 +111,54 @@ public:
 		Il2CppCodeGenWriteBarrier(&___sfxManager_7, value);
 	}
 
-	inline static int32_t get_offset_of_jumpingForce_8() { return static_cast<int32_t>(offsetof(PlayerMovement_t2454334062, ___jumpingForce_8)); }
-	inline Vector2_t4282066565  get_jumpingForce_8() const { return ___jumpingForce_8; }
-	inline Vector2_t4282066565 * get_address_of_jumpingForce_8() { return &___jumpingForce_8; }
-	inline void set_jumpingForce_8(Vector2_t4282066565  value)
+	inline static int32_t get_offset_of_anim_8() { return static_cast<int32_t>(offsetof(PlayerMovement_t2454334062, ___anim_8)); }
+	inline Animator_t2776330603 * get_anim_8() const { return ___anim_8; }
+	inline Animator_t2776330603 ** get_address_of_anim_8() { return &___anim_8; }
+	inline void set_anim_8(Animator_t2776330603 * value)
 	{
-		___jumpingForce_8 = value;
+		___anim_8 = value;
+		Il2CppCodeGenWriteBarrier(&___anim_8, value);
 	}
 
-	inline static int32_t get_offset_of_isJumping_9() { return static_cast<int32_t>(offsetof(PlayerMovement_t2454334062, ___isJumping_9)); }
-	inline bool get_isJumping_9() const { return ___isJumping_9; }
-	inline bool* get_address_of_isJumping_9() { return &___isJumping_9; }
-	inline void set_isJumping_9(bool value)
+	inline static int32_t get_offset_of_jumpingForce_9() { return static_cast<int32_t>(offsetof(PlayerMovement_t2454334062, ___jumpingForce_9)); }
+	inline Vector2_t4282066565  get_jumpingForce_9() const { return ___jumpingForce_9; }
+	inline Vector2_t4282066565 * get_address_of_jumpingForce_9() { return &___jumpingForce_9; }
+	inline void set_jumpingForce_9(Vector2_t4282066565  value)
 	{
-		___isJumping_9 = value;
+		___jumpingForce_9 = value;
 	}
 
-	inline static int32_t get_offset_of_gameController_10() { return static_cast<int32_t>(offsetof(PlayerMovement_t2454334062, ___gameController_10)); }
-	inline GameController_t2782302542 * get_gameController_10() const { return ___gameController_10; }
-	inline GameController_t2782302542 ** get_address_of_gameController_10() { return &___gameController_10; }
-	inline void set_gameController_10(GameController_t2782302542 * value)
+	inline static int32_t get_offset_of_isJumping_10() { return static_cast<int32_t>(offsetof(PlayerMovement_t2454334062, ___isJumping_10)); }
+	inline bool get_isJumping_10() const { return ___isJumping_10; }
+	inline bool* get_address_of_isJumping_10() { return &___isJumping_10; }
+	inline void set_isJumping_10(bool value)
 	{
-		___gameController_10 = value;
-		Il2CppCodeGenWriteBarrier(&___gameController_10, value);
+		___isJumping_10 = value;
 	}
 
-	inline static int32_t get_offset_of_movingLeft_11() { return static_cast<int32_t>(offsetof(PlayerMovement_t2454334062, ___movingLeft_11)); }
-	inline bool get_movingLeft_11() const { return ___movingLeft_11; }
-	inline bool* get_address_of_movingLeft_11() { return &___movingLeft_11; }
-	inline void set_movingLeft_11(bool value)
+	inline static int32_t get_offset_of_gameController_11() { return static_cast<int32_t>(offsetof(PlayerMovement_t2454334062, ___gameController_11)); }
+	inline GameController_t2782302542 * get_gameController_11() const { return ___gameController_11; }
+	inline GameController_t2782302542 ** get_address_of_gameController_11() { return &___gameController_11; }
+	inline void set_gameController_11(GameController_t2782302542 * value)
 	{
-		___movingLeft_11 = value;
+		___gameController_11 = value;
+		Il2CppCodeGenWriteBarrier(&___gameController_11, value);
 	}
 
-	inline static int32_t get_offset_of_movingRight_12() { return static_cast<int32_t>(offsetof(PlayerMovement_t2454334062, ___movingRight_12)); }
-	inline bool get_movingRight_12() const { return ___movingRight_12; }
-	inline bool* get_address_of_movingRight_12() { return &___movingRight_12; }
-	inline void set_movingRight_12(bool value)
+	inline static int32_t get_offset_of_movingLeft_12() { return static_cast<int32_t>(offsetof(PlayerMovement_t2454334062, ___movingLeft_12)); }
+	inline bool get_movingLeft_12() const { return ___movingLeft_12; }
+	inline bool* get_address_of_movingLeft_12() { return &___movingLeft_12; }
+	inline void set_movingLeft_12(bool value)
 	{
-		___movingRight_12 = value;
+		___movingLeft_12 = value;
+	}
+
+	inline static int32_t get_offset_of_movingRight_13() { return static_cast<int32_t>(offsetof(PlayerMovement_t2454334062, ___movingRight_13)); }
+	inline bool get_movingRight_13() const { return ___movingRight_13; }
+	inline bool* get_address_of_movingRight_13() { return &___movingRight_13; }
+	inline void set_movingRight_13(bool value)
+	{
+		___movingRight_13 = value;
 	}
 };
 

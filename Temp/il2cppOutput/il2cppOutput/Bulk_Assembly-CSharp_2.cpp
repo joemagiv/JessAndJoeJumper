@@ -147,6 +147,8 @@ struct PlayerTwoAxisAction_t1043663828;
 struct BindingListenOptions_t2027175824;
 // InControl.PlayerMovement
 struct PlayerMovement_t2454334062;
+// UnityEngine.Animator
+struct Animator_t2776330603;
 // UnityEngine.Rigidbody2D
 struct Rigidbody2D_t1743771669;
 // GameController
@@ -490,11 +492,13 @@ struct Sprite_t3199167241;
 #include "UnityEngine_UnityEngine_Component3501516275MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Object3071478659MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InControl_ICadeDeviceManager3174528173MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Rigidbody2D1743771669.h"
+#include "UnityEngine_UnityEngine_Animator2776330603.h"
 #include "UnityEngine_UnityEngine_Component3501516275.h"
+#include "UnityEngine_UnityEngine_Rigidbody2D1743771669.h"
 #include "AssemblyU2DCSharp_GameController2782302542.h"
 #include "UnityEngine_UnityEngine_Object3071478659.h"
 #include "AssemblyU2DCSharp_SFXManager149887880.h"
+#include "UnityEngine_UnityEngine_Animator2776330603MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Transform1659122786MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Vector34282066566.h"
 #include "UnityEngine_UnityEngine_Vector34282066566MethodDeclarations.h"
@@ -679,6 +683,8 @@ struct Sprite_t3199167241;
 // !!0 UnityEngine.Component::GetComponent<System.Object>()
 extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m267839954_gshared (Component_t3501516275 * __this, const MethodInfo* method);
 #define Component_GetComponent_TisIl2CppObject_m267839954(__this, method) ((  Il2CppObject * (*) (Component_t3501516275 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
+// !!0 UnityEngine.Component::GetComponent<UnityEngine.Animator>()
+#define Component_GetComponent_TisAnimator_t2776330603_m4147395588(__this, method) ((  Animator_t2776330603 * (*) (Component_t3501516275 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.Rigidbody2D>()
 #define Component_GetComponent_TisRigidbody2D_t1743771669_m2201104241(__this, method) ((  Rigidbody2D_t1743771669 * (*) (Component_t3501516275 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.Object::FindObjectOfType<System.Object>()
@@ -18284,6 +18290,7 @@ extern "C"  void PlayerMovement__ctor_m2772987445 (PlayerMovement_t2454334062 * 
 }
 // System.Void InControl.PlayerMovement::Start()
 extern Il2CppClass* Object_t3071478659_il2cpp_TypeInfo_var;
+extern const MethodInfo* Component_GetComponent_TisAnimator_t2776330603_m4147395588_MethodInfo_var;
 extern const MethodInfo* Component_GetComponent_TisRigidbody2D_t1743771669_m2201104241_MethodInfo_var;
 extern const MethodInfo* Object_FindObjectOfType_TisGameController_t2782302542_m1374642079_MethodInfo_var;
 extern const MethodInfo* Component_GetComponent_TisGameController_t2782302542_m2702177783_MethodInfo_var;
@@ -18299,24 +18306,34 @@ extern "C"  void PlayerMovement_Start_m1720125237 (PlayerMovement_t2454334062 * 
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		Rigidbody2D_t1743771669 * L_0 = Component_GetComponent_TisRigidbody2D_t1743771669_m2201104241(__this, /*hidden argument*/Component_GetComponent_TisRigidbody2D_t1743771669_m2201104241_MethodInfo_var);
-		__this->set_rigidBody_6(L_0);
+		Animator_t2776330603 * L_0 = Component_GetComponent_TisAnimator_t2776330603_m4147395588(__this, /*hidden argument*/Component_GetComponent_TisAnimator_t2776330603_m4147395588_MethodInfo_var);
+		__this->set_anim_8(L_0);
+		Rigidbody2D_t1743771669 * L_1 = Component_GetComponent_TisRigidbody2D_t1743771669_m2201104241(__this, /*hidden argument*/Component_GetComponent_TisRigidbody2D_t1743771669_m2201104241_MethodInfo_var);
+		__this->set_rigidBody_6(L_1);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t3071478659_il2cpp_TypeInfo_var);
-		GameController_t2782302542 * L_1 = Object_FindObjectOfType_TisGameController_t2782302542_m1374642079(NULL /*static, unused*/, /*hidden argument*/Object_FindObjectOfType_TisGameController_t2782302542_m1374642079_MethodInfo_var);
-		NullCheck(L_1);
-		GameController_t2782302542 * L_2 = Component_GetComponent_TisGameController_t2782302542_m2702177783(L_1, /*hidden argument*/Component_GetComponent_TisGameController_t2782302542_m2702177783_MethodInfo_var);
-		__this->set_gameController_10(L_2);
-		SFXManager_t149887880 * L_3 = Object_FindObjectOfType_TisSFXManager_t149887880_m4116519461(NULL /*static, unused*/, /*hidden argument*/Object_FindObjectOfType_TisSFXManager_t149887880_m4116519461_MethodInfo_var);
-		NullCheck(L_3);
-		SFXManager_t149887880 * L_4 = Component_GetComponent_TisSFXManager_t149887880_m741776509(L_3, /*hidden argument*/Component_GetComponent_TisSFXManager_t149887880_m741776509_MethodInfo_var);
-		__this->set_sfxManager_7(L_4);
+		GameController_t2782302542 * L_2 = Object_FindObjectOfType_TisGameController_t2782302542_m1374642079(NULL /*static, unused*/, /*hidden argument*/Object_FindObjectOfType_TisGameController_t2782302542_m1374642079_MethodInfo_var);
+		NullCheck(L_2);
+		GameController_t2782302542 * L_3 = Component_GetComponent_TisGameController_t2782302542_m2702177783(L_2, /*hidden argument*/Component_GetComponent_TisGameController_t2782302542_m2702177783_MethodInfo_var);
+		__this->set_gameController_11(L_3);
+		SFXManager_t149887880 * L_4 = Object_FindObjectOfType_TisSFXManager_t149887880_m4116519461(NULL /*static, unused*/, /*hidden argument*/Object_FindObjectOfType_TisSFXManager_t149887880_m4116519461_MethodInfo_var);
+		NullCheck(L_4);
+		SFXManager_t149887880 * L_5 = Component_GetComponent_TisSFXManager_t149887880_m741776509(L_4, /*hidden argument*/Component_GetComponent_TisSFXManager_t149887880_m741776509_MethodInfo_var);
+		__this->set_sfxManager_7(L_5);
 		ICadeDeviceManager_set_Active_m4004276840(NULL /*static, unused*/, (bool)1, /*hidden argument*/NULL);
 		return;
 	}
 }
 // System.Void InControl.PlayerMovement::moveToRight()
+extern Il2CppCodeGenString* _stringLiteral2783468889;
+extern const uint32_t PlayerMovement_moveToRight_m3208429891_MetadataUsageId;
 extern "C"  void PlayerMovement_moveToRight_m3208429891 (PlayerMovement_t2454334062 * __this, const MethodInfo* method)
 {
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PlayerMovement_moveToRight_m3208429891_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
 	Vector3_t4282066566  V_0;
 	memset(&V_0, 0, sizeof(V_0));
 	Vector3_t4282066566  V_1;
@@ -18331,46 +18348,57 @@ extern "C"  void PlayerMovement_moveToRight_m3208429891 (PlayerMovement_t2454334
 		bool L_0 = __this->get_canMoveToRight_3();
 		if (!L_0)
 		{
-			goto IL_0087;
+			goto IL_0098;
 		}
 	}
 	{
-		Vector3__ctor_m2926210380((&V_0), (1.0f), (1.0f), (1.0f), /*hidden argument*/NULL);
-		Transform_t1659122786 * L_1 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		Vector3_t4282066566  L_2 = V_0;
+		Animator_t2776330603 * L_1 = __this->get_anim_8();
 		NullCheck(L_1);
-		Transform_set_localScale_m310756934(L_1, L_2, /*hidden argument*/NULL);
-		Transform_t1659122786 * L_3 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		NullCheck(L_3);
-		Vector3_t4282066566  L_4 = Transform_get_position_m2211398607(L_3, /*hidden argument*/NULL);
-		V_2 = L_4;
-		float L_5 = (&V_2)->get_x_1();
-		float L_6 = __this->get_movementSpeed_2();
-		Transform_t1659122786 * L_7 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		NullCheck(L_7);
-		Vector3_t4282066566  L_8 = Transform_get_position_m2211398607(L_7, /*hidden argument*/NULL);
-		V_3 = L_8;
-		float L_9 = (&V_3)->get_y_2();
-		Transform_t1659122786 * L_10 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		NullCheck(L_10);
-		Vector3_t4282066566  L_11 = Transform_get_position_m2211398607(L_10, /*hidden argument*/NULL);
-		V_4 = L_11;
-		float L_12 = (&V_4)->get_z_3();
-		Vector3__ctor_m2926210380((&V_1), ((float)((float)L_5+(float)((float)((float)L_6*(float)(2.0f))))), L_9, L_12, /*hidden argument*/NULL);
-		Transform_t1659122786 * L_13 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		Vector3_t4282066566  L_14 = V_1;
-		NullCheck(L_13);
-		Transform_set_position_m3111394108(L_13, L_14, /*hidden argument*/NULL);
+		Animator_SetBool_m2336836203(L_1, _stringLiteral2783468889, (bool)1, /*hidden argument*/NULL);
+		Vector3__ctor_m2926210380((&V_0), (-1.0f), (1.0f), (1.0f), /*hidden argument*/NULL);
+		Transform_t1659122786 * L_2 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_3 = V_0;
+		NullCheck(L_2);
+		Transform_set_localScale_m310756934(L_2, L_3, /*hidden argument*/NULL);
+		Transform_t1659122786 * L_4 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		Vector3_t4282066566  L_5 = Transform_get_position_m2211398607(L_4, /*hidden argument*/NULL);
+		V_2 = L_5;
+		float L_6 = (&V_2)->get_x_1();
+		float L_7 = __this->get_movementSpeed_2();
+		Transform_t1659122786 * L_8 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		Vector3_t4282066566  L_9 = Transform_get_position_m2211398607(L_8, /*hidden argument*/NULL);
+		V_3 = L_9;
+		float L_10 = (&V_3)->get_y_2();
+		Transform_t1659122786 * L_11 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		NullCheck(L_11);
+		Vector3_t4282066566  L_12 = Transform_get_position_m2211398607(L_11, /*hidden argument*/NULL);
+		V_4 = L_12;
+		float L_13 = (&V_4)->get_z_3();
+		Vector3__ctor_m2926210380((&V_1), ((float)((float)L_6+(float)((float)((float)L_7*(float)(2.0f))))), L_10, L_13, /*hidden argument*/NULL);
+		Transform_t1659122786 * L_14 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_15 = V_1;
+		NullCheck(L_14);
+		Transform_set_position_m3111394108(L_14, L_15, /*hidden argument*/NULL);
 	}
 
-IL_0087:
+IL_0098:
 	{
 		return;
 	}
 }
 // System.Void InControl.PlayerMovement::moveToLeft()
+extern Il2CppCodeGenString* _stringLiteral2783468889;
+extern const uint32_t PlayerMovement_moveToLeft_m897839458_MetadataUsageId;
 extern "C"  void PlayerMovement_moveToLeft_m897839458 (PlayerMovement_t2454334062 * __this, const MethodInfo* method)
 {
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PlayerMovement_moveToLeft_m897839458_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
 	Vector3_t4282066566  V_0;
 	memset(&V_0, 0, sizeof(V_0));
 	Vector3_t4282066566  V_1;
@@ -18385,55 +18413,69 @@ extern "C"  void PlayerMovement_moveToLeft_m897839458 (PlayerMovement_t245433406
 		bool L_0 = __this->get_canMoveToLeft_4();
 		if (!L_0)
 		{
-			goto IL_0087;
+			goto IL_0098;
 		}
 	}
 	{
-		Vector3__ctor_m2926210380((&V_0), (-1.0f), (1.0f), (1.0f), /*hidden argument*/NULL);
-		Transform_t1659122786 * L_1 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		Vector3_t4282066566  L_2 = V_0;
+		Animator_t2776330603 * L_1 = __this->get_anim_8();
 		NullCheck(L_1);
-		Transform_set_localScale_m310756934(L_1, L_2, /*hidden argument*/NULL);
-		Transform_t1659122786 * L_3 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		NullCheck(L_3);
-		Vector3_t4282066566  L_4 = Transform_get_position_m2211398607(L_3, /*hidden argument*/NULL);
-		V_2 = L_4;
-		float L_5 = (&V_2)->get_x_1();
-		float L_6 = __this->get_movementSpeed_2();
-		Transform_t1659122786 * L_7 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		NullCheck(L_7);
-		Vector3_t4282066566  L_8 = Transform_get_position_m2211398607(L_7, /*hidden argument*/NULL);
-		V_3 = L_8;
-		float L_9 = (&V_3)->get_y_2();
-		Transform_t1659122786 * L_10 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		NullCheck(L_10);
-		Vector3_t4282066566  L_11 = Transform_get_position_m2211398607(L_10, /*hidden argument*/NULL);
-		V_4 = L_11;
-		float L_12 = (&V_4)->get_z_3();
-		Vector3__ctor_m2926210380((&V_1), ((float)((float)L_5-(float)((float)((float)L_6*(float)(2.0f))))), L_9, L_12, /*hidden argument*/NULL);
-		Transform_t1659122786 * L_13 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		Vector3_t4282066566  L_14 = V_1;
-		NullCheck(L_13);
-		Transform_set_position_m3111394108(L_13, L_14, /*hidden argument*/NULL);
+		Animator_SetBool_m2336836203(L_1, _stringLiteral2783468889, (bool)1, /*hidden argument*/NULL);
+		Vector3__ctor_m2926210380((&V_0), (1.0f), (1.0f), (1.0f), /*hidden argument*/NULL);
+		Transform_t1659122786 * L_2 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_3 = V_0;
+		NullCheck(L_2);
+		Transform_set_localScale_m310756934(L_2, L_3, /*hidden argument*/NULL);
+		Transform_t1659122786 * L_4 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		Vector3_t4282066566  L_5 = Transform_get_position_m2211398607(L_4, /*hidden argument*/NULL);
+		V_2 = L_5;
+		float L_6 = (&V_2)->get_x_1();
+		float L_7 = __this->get_movementSpeed_2();
+		Transform_t1659122786 * L_8 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		Vector3_t4282066566  L_9 = Transform_get_position_m2211398607(L_8, /*hidden argument*/NULL);
+		V_3 = L_9;
+		float L_10 = (&V_3)->get_y_2();
+		Transform_t1659122786 * L_11 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		NullCheck(L_11);
+		Vector3_t4282066566  L_12 = Transform_get_position_m2211398607(L_11, /*hidden argument*/NULL);
+		V_4 = L_12;
+		float L_13 = (&V_4)->get_z_3();
+		Vector3__ctor_m2926210380((&V_1), ((float)((float)L_6-(float)((float)((float)L_7*(float)(2.0f))))), L_10, L_13, /*hidden argument*/NULL);
+		Transform_t1659122786 * L_14 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		Vector3_t4282066566  L_15 = V_1;
+		NullCheck(L_14);
+		Transform_set_position_m3111394108(L_14, L_15, /*hidden argument*/NULL);
 	}
 
-IL_0087:
+IL_0098:
 	{
 		return;
 	}
 }
 // System.Void InControl.PlayerMovement::Jump()
+extern Il2CppCodeGenString* _stringLiteral409511124;
+extern const uint32_t PlayerMovement_Jump_m2431501597_MetadataUsageId;
 extern "C"  void PlayerMovement_Jump_m2431501597 (PlayerMovement_t2454334062 * __this, const MethodInfo* method)
 {
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
 	{
-		Rigidbody2D_t1743771669 * L_0 = __this->get_rigidBody_6();
-		Vector2_t4282066565  L_1 = __this->get_jumpingForce_8();
+		il2cpp_codegen_initialize_method (PlayerMovement_Jump_m2431501597_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		Animator_t2776330603 * L_0 = __this->get_anim_8();
 		NullCheck(L_0);
-		Rigidbody2D_AddForce_m312397382(L_0, L_1, /*hidden argument*/NULL);
-		SFXManager_t149887880 * L_2 = __this->get_sfxManager_7();
-		AudioClip_t794140988 * L_3 = __this->get_jumpSound_5();
-		NullCheck(L_2);
-		SFXManager_playSound_m2806337111(L_2, L_3, /*hidden argument*/NULL);
+		Animator_SetBool_m2336836203(L_0, _stringLiteral409511124, (bool)1, /*hidden argument*/NULL);
+		Rigidbody2D_t1743771669 * L_1 = __this->get_rigidBody_6();
+		Vector2_t4282066565  L_2 = __this->get_jumpingForce_9();
+		NullCheck(L_1);
+		Rigidbody2D_AddForce_m312397382(L_1, L_2, /*hidden argument*/NULL);
+		SFXManager_t149887880 * L_3 = __this->get_sfxManager_7();
+		AudioClip_t794140988 * L_4 = __this->get_jumpSound_5();
+		NullCheck(L_3);
+		SFXManager_playSound_m2806337111(L_3, L_4, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -18455,8 +18497,9 @@ extern "C"  void PlayerMovement_OnTriggerExit2D_m2434805855 (PlayerMovement_t245
 extern Il2CppClass* InputManager_t1427642817_il2cpp_TypeInfo_var;
 extern Il2CppClass* Input_t4200062272_il2cpp_TypeInfo_var;
 extern Il2CppClass* Debug_t4195163081_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral3381094468;
 extern Il2CppCodeGenString* _stringLiteral409511124;
+extern Il2CppCodeGenString* _stringLiteral2783468889;
+extern Il2CppCodeGenString* _stringLiteral3381094468;
 extern Il2CppCodeGenString* _stringLiteral2320462;
 extern const uint32_t PlayerMovement_Update_m1790126968_MetadataUsageId;
 extern "C"  void PlayerMovement_Update_m1790126968 (PlayerMovement_t2454334062 * __this, const MethodInfo* method)
@@ -18469,11 +18512,13 @@ extern "C"  void PlayerMovement_Update_m1790126968 (PlayerMovement_t2454334062 *
 	}
 	Vector2_t4282066565  V_0;
 	memset(&V_0, 0, sizeof(V_0));
+	Vector2_t4282066565  V_1;
+	memset(&V_1, 0, sizeof(V_1));
 	{
-		bool L_0 = __this->get_isJumping_9();
+		bool L_0 = __this->get_isJumping_10();
 		if (!L_0)
 		{
-			goto IL_002f;
+			goto IL_0040;
 		}
 	}
 	{
@@ -18484,217 +18529,238 @@ extern "C"  void PlayerMovement_Update_m1790126968 (PlayerMovement_t2454334062 *
 		float L_3 = (&V_0)->get_y_2();
 		if ((!(((float)L_3) == ((float)(0.0f)))))
 		{
-			goto IL_002f;
+			goto IL_0040;
 		}
 	}
 	{
-		__this->set_isJumping_9((bool)0);
-	}
-
-IL_002f:
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(InputManager_t1427642817_il2cpp_TypeInfo_var);
-		InputDevice_t4071704914 * L_4 = InputManager_get_ActiveDevice_m1073383696(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_isJumping_10((bool)0);
+		Animator_t2776330603 * L_4 = __this->get_anim_8();
 		NullCheck(L_4);
-		InputControl_t1543925617 * L_5 = InputDevice_get_DPadLeft_m2447760718(L_4, /*hidden argument*/NULL);
+		Animator_SetBool_m2336836203(L_4, _stringLiteral409511124, (bool)0, /*hidden argument*/NULL);
+	}
+
+IL_0040:
+	{
+		Rigidbody2D_t1743771669 * L_5 = __this->get_rigidBody_6();
 		NullCheck(L_5);
-		bool L_6 = OneAxisInputControl_get_IsPressed_m3536767144(L_5, /*hidden argument*/NULL);
-		if (!L_6)
+		Vector2_t4282066565  L_6 = Rigidbody2D_get_velocity_m416159605(L_5, /*hidden argument*/NULL);
+		V_1 = L_6;
+		float L_7 = (&V_1)->get_x_1();
+		if ((!(((float)L_7) == ((float)(0.0f)))))
 		{
-			goto IL_0049;
+			goto IL_006e;
 		}
 	}
 	{
-		PlayerMovement_moveToLeft_m897839458(__this, /*hidden argument*/NULL);
-	}
-
-IL_0049:
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(InputManager_t1427642817_il2cpp_TypeInfo_var);
-		InputDevice_t4071704914 * L_7 = InputManager_get_ActiveDevice_m1073383696(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_7);
-		InputControl_t1543925617 * L_8 = InputDevice_get_DPadRight_m4011348695(L_7, /*hidden argument*/NULL);
+		Animator_t2776330603 * L_8 = __this->get_anim_8();
 		NullCheck(L_8);
-		bool L_9 = OneAxisInputControl_get_IsPressed_m3536767144(L_8, /*hidden argument*/NULL);
-		if (!L_9)
-		{
-			goto IL_0063;
-		}
-	}
-	{
-		PlayerMovement_moveToRight_m3208429891(__this, /*hidden argument*/NULL);
+		Animator_SetBool_m2336836203(L_8, _stringLiteral2783468889, (bool)0, /*hidden argument*/NULL);
 	}
 
-IL_0063:
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Input_t4200062272_il2cpp_TypeInfo_var);
-		float L_10 = Input_GetAxis_m2027668530(NULL /*static, unused*/, _stringLiteral3381094468, /*hidden argument*/NULL);
-		if ((!(((float)L_10) > ((float)(0.0f)))))
-		{
-			goto IL_007d;
-		}
-	}
-	{
-		PlayerMovement_moveToRight_m3208429891(__this, /*hidden argument*/NULL);
-	}
-
-IL_007d:
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Input_t4200062272_il2cpp_TypeInfo_var);
-		float L_11 = Input_GetAxis_m2027668530(NULL /*static, unused*/, _stringLiteral3381094468, /*hidden argument*/NULL);
-		if ((!(((float)L_11) < ((float)(0.0f)))))
-		{
-			goto IL_0097;
-		}
-	}
-	{
-		PlayerMovement_moveToLeft_m897839458(__this, /*hidden argument*/NULL);
-	}
-
-IL_0097:
-	{
-		bool L_12 = __this->get_movingLeft_11();
-		if (!L_12)
-		{
-			goto IL_00a8;
-		}
-	}
-	{
-		PlayerMovement_moveToLeft_m897839458(__this, /*hidden argument*/NULL);
-	}
-
-IL_00a8:
-	{
-		bool L_13 = __this->get_movingRight_12();
-		if (!L_13)
-		{
-			goto IL_00b9;
-		}
-	}
-	{
-		PlayerMovement_moveToRight_m3208429891(__this, /*hidden argument*/NULL);
-	}
-
-IL_00b9:
+IL_006e:
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(InputManager_t1427642817_il2cpp_TypeInfo_var);
-		InputDevice_t4071704914 * L_14 = InputManager_get_ActiveDevice_m1073383696(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_14);
-		InputControl_t1543925617 * L_15 = InputDevice_get_Action1_m1065324677(L_14, /*hidden argument*/NULL);
-		NullCheck(L_15);
-		bool L_16 = OneAxisInputControl_get_IsPressed_m3536767144(L_15, /*hidden argument*/NULL);
-		if (!L_16)
+		InputDevice_t4071704914 * L_9 = InputManager_get_ActiveDevice_m1073383696(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_9);
+		InputControl_t1543925617 * L_10 = InputDevice_get_DPadLeft_m2447760718(L_9, /*hidden argument*/NULL);
+		NullCheck(L_10);
+		bool L_11 = OneAxisInputControl_get_IsPressed_m3536767144(L_10, /*hidden argument*/NULL);
+		if (!L_11)
 		{
-			goto IL_010b;
+			goto IL_0088;
 		}
 	}
 	{
-		bool L_17 = __this->get_isJumping_9();
-		if (L_17)
-		{
-			goto IL_010b;
-		}
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t4195163081_il2cpp_TypeInfo_var);
-		Debug_Log_m1731103628(NULL /*static, unused*/, _stringLiteral409511124, /*hidden argument*/NULL);
-		__this->set_isJumping_9((bool)1);
-		PlayerMovement_Jump_m2431501597(__this, /*hidden argument*/NULL);
-		GameController_t2782302542 * L_18 = __this->get_gameController_10();
-		NullCheck(L_18);
-		bool L_19 = L_18->get_gameHasStarted_3();
-		if (L_19)
-		{
-			goto IL_010b;
-		}
-	}
-	{
-		GameController_t2782302542 * L_20 = __this->get_gameController_10();
-		NullCheck(L_20);
-		L_20->set_gameHasStarted_3((bool)1);
+		PlayerMovement_moveToLeft_m897839458(__this, /*hidden argument*/NULL);
 	}
 
-IL_010b:
+IL_0088:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(InputManager_t1427642817_il2cpp_TypeInfo_var);
+		InputDevice_t4071704914 * L_12 = InputManager_get_ActiveDevice_m1073383696(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_12);
+		InputControl_t1543925617 * L_13 = InputDevice_get_DPadRight_m4011348695(L_12, /*hidden argument*/NULL);
+		NullCheck(L_13);
+		bool L_14 = OneAxisInputControl_get_IsPressed_m3536767144(L_13, /*hidden argument*/NULL);
+		if (!L_14)
+		{
+			goto IL_00a2;
+		}
+	}
+	{
+		PlayerMovement_moveToRight_m3208429891(__this, /*hidden argument*/NULL);
+	}
+
+IL_00a2:
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t4200062272_il2cpp_TypeInfo_var);
-		bool L_21 = Input_GetKeyDown_m2928824675(NULL /*static, unused*/, ((int32_t)121), /*hidden argument*/NULL);
+		float L_15 = Input_GetAxis_m2027668530(NULL /*static, unused*/, _stringLiteral3381094468, /*hidden argument*/NULL);
+		if ((!(((float)L_15) > ((float)(0.0f)))))
+		{
+			goto IL_00bc;
+		}
+	}
+	{
+		PlayerMovement_moveToRight_m3208429891(__this, /*hidden argument*/NULL);
+	}
+
+IL_00bc:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t4200062272_il2cpp_TypeInfo_var);
+		float L_16 = Input_GetAxis_m2027668530(NULL /*static, unused*/, _stringLiteral3381094468, /*hidden argument*/NULL);
+		if ((!(((float)L_16) < ((float)(0.0f)))))
+		{
+			goto IL_00d6;
+		}
+	}
+	{
+		PlayerMovement_moveToLeft_m897839458(__this, /*hidden argument*/NULL);
+	}
+
+IL_00d6:
+	{
+		bool L_17 = __this->get_movingLeft_12();
+		if (!L_17)
+		{
+			goto IL_00e7;
+		}
+	}
+	{
+		PlayerMovement_moveToLeft_m897839458(__this, /*hidden argument*/NULL);
+	}
+
+IL_00e7:
+	{
+		bool L_18 = __this->get_movingRight_13();
+		if (!L_18)
+		{
+			goto IL_00f8;
+		}
+	}
+	{
+		PlayerMovement_moveToRight_m3208429891(__this, /*hidden argument*/NULL);
+	}
+
+IL_00f8:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(InputManager_t1427642817_il2cpp_TypeInfo_var);
+		InputDevice_t4071704914 * L_19 = InputManager_get_ActiveDevice_m1073383696(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_19);
+		InputControl_t1543925617 * L_20 = InputDevice_get_Action1_m1065324677(L_19, /*hidden argument*/NULL);
+		NullCheck(L_20);
+		bool L_21 = OneAxisInputControl_get_IsPressed_m3536767144(L_20, /*hidden argument*/NULL);
 		if (!L_21)
 		{
-			goto IL_0155;
+			goto IL_014a;
 		}
 	}
 	{
-		bool L_22 = __this->get_isJumping_9();
+		bool L_22 = __this->get_isJumping_10();
 		if (L_22)
 		{
-			goto IL_0155;
+			goto IL_014a;
 		}
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t4195163081_il2cpp_TypeInfo_var);
 		Debug_Log_m1731103628(NULL /*static, unused*/, _stringLiteral409511124, /*hidden argument*/NULL);
-		__this->set_isJumping_9((bool)1);
+		__this->set_isJumping_10((bool)1);
 		PlayerMovement_Jump_m2431501597(__this, /*hidden argument*/NULL);
-		GameController_t2782302542 * L_23 = __this->get_gameController_10();
+		GameController_t2782302542 * L_23 = __this->get_gameController_11();
 		NullCheck(L_23);
 		bool L_24 = L_23->get_gameHasStarted_3();
 		if (L_24)
 		{
-			goto IL_0155;
+			goto IL_014a;
 		}
 	}
 	{
-		GameController_t2782302542 * L_25 = __this->get_gameController_10();
+		GameController_t2782302542 * L_25 = __this->get_gameController_11();
 		NullCheck(L_25);
 		L_25->set_gameHasStarted_3((bool)1);
 	}
 
-IL_0155:
+IL_014a:
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t4200062272_il2cpp_TypeInfo_var);
-		float L_26 = Input_GetAxis_m2027668530(NULL /*static, unused*/, _stringLiteral3381094468, /*hidden argument*/NULL);
-		if ((!(((float)L_26) == ((float)(0.0f)))))
+		bool L_26 = Input_GetKeyDown_m2928824675(NULL /*static, unused*/, ((int32_t)121), /*hidden argument*/NULL);
+		if (!L_26)
 		{
-			goto IL_0169;
-		}
-	}
-
-IL_0169:
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Input_t4200062272_il2cpp_TypeInfo_var);
-		bool L_27 = Input_GetButtonDown_m1879002085(NULL /*static, unused*/, _stringLiteral2320462, /*hidden argument*/NULL);
-		if (!L_27)
-		{
-			goto IL_01b6;
+			goto IL_0194;
 		}
 	}
 	{
-		bool L_28 = __this->get_isJumping_9();
-		if (L_28)
+		bool L_27 = __this->get_isJumping_10();
+		if (L_27)
 		{
-			goto IL_01b6;
+			goto IL_0194;
 		}
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t4195163081_il2cpp_TypeInfo_var);
 		Debug_Log_m1731103628(NULL /*static, unused*/, _stringLiteral409511124, /*hidden argument*/NULL);
-		__this->set_isJumping_9((bool)1);
+		__this->set_isJumping_10((bool)1);
 		PlayerMovement_Jump_m2431501597(__this, /*hidden argument*/NULL);
-		GameController_t2782302542 * L_29 = __this->get_gameController_10();
-		NullCheck(L_29);
-		bool L_30 = L_29->get_gameHasStarted_3();
-		if (L_30)
+		GameController_t2782302542 * L_28 = __this->get_gameController_11();
+		NullCheck(L_28);
+		bool L_29 = L_28->get_gameHasStarted_3();
+		if (L_29)
 		{
-			goto IL_01b6;
+			goto IL_0194;
 		}
 	}
 	{
-		GameController_t2782302542 * L_31 = __this->get_gameController_10();
-		NullCheck(L_31);
-		L_31->set_gameHasStarted_3((bool)1);
+		GameController_t2782302542 * L_30 = __this->get_gameController_11();
+		NullCheck(L_30);
+		L_30->set_gameHasStarted_3((bool)1);
 	}
 
-IL_01b6:
+IL_0194:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t4200062272_il2cpp_TypeInfo_var);
+		float L_31 = Input_GetAxis_m2027668530(NULL /*static, unused*/, _stringLiteral3381094468, /*hidden argument*/NULL);
+		if ((!(((float)L_31) == ((float)(0.0f)))))
+		{
+			goto IL_01a8;
+		}
+	}
+
+IL_01a8:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t4200062272_il2cpp_TypeInfo_var);
+		bool L_32 = Input_GetButtonDown_m1879002085(NULL /*static, unused*/, _stringLiteral2320462, /*hidden argument*/NULL);
+		if (!L_32)
+		{
+			goto IL_01f5;
+		}
+	}
+	{
+		bool L_33 = __this->get_isJumping_10();
+		if (L_33)
+		{
+			goto IL_01f5;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t4195163081_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, _stringLiteral409511124, /*hidden argument*/NULL);
+		__this->set_isJumping_10((bool)1);
+		PlayerMovement_Jump_m2431501597(__this, /*hidden argument*/NULL);
+		GameController_t2782302542 * L_34 = __this->get_gameController_11();
+		NullCheck(L_34);
+		bool L_35 = L_34->get_gameHasStarted_3();
+		if (L_35)
+		{
+			goto IL_01f5;
+		}
+	}
+	{
+		GameController_t2782302542 * L_36 = __this->get_gameController_11();
+		NullCheck(L_36);
+		L_36->set_gameHasStarted_3((bool)1);
+	}
+
+IL_01f5:
 	{
 		return;
 	}

@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour {
 	private Rigidbody2D rigidBody;
 	private SFXManager sfxManager;
 
-	//private Animator anim;
+	private Animator anim;
 
 	public Vector2 jumpingForce;
 
@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-	//	anim = GetComponent<Animator> ();
+		anim = GetComponent<Animator> ();
 
 		rigidBody = GetComponent<Rigidbody2D> ();
 		gameController = FindObjectOfType<GameController> ().GetComponent<GameController> ();
@@ -36,7 +36,9 @@ public class PlayerMovement : MonoBehaviour {
 
 	public void moveToRight(){
 		if (canMoveToRight) {
-				Vector3 newScale = new Vector3 (1, 1, 1);
+				anim.SetBool ("Walking", true);
+
+				Vector3 newScale = new Vector3 (-1, 1, 1);
 				transform.localScale = newScale;
 				Vector3 newPosition = new Vector3 (transform.position.x + (movementSpeed * 2), transform.position.y, transform.position.z);
 				transform.position = newPosition;
@@ -45,7 +47,9 @@ public class PlayerMovement : MonoBehaviour {
 
 	public void moveToLeft(){
 		if (canMoveToLeft) {
-				Vector3 newScale = new Vector3 (-1, 1, 1);
+				anim.SetBool ("Walking", true);
+
+				Vector3 newScale = new Vector3 (1, 1, 1);
 				transform.localScale = newScale;
 				Vector3 newPosition = new Vector3 (transform.position.x - (movementSpeed*2), transform.position.y, transform.position.z);
 				transform.position = newPosition;
@@ -54,6 +58,8 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	public void Jump(){
+		anim.SetBool ("Jumping", true);
+
 		rigidBody.AddForce (jumpingForce);
 		sfxManager.playSound(jumpSound);
 	}
@@ -80,13 +86,20 @@ public class PlayerMovement : MonoBehaviour {
 		if (isJumping) {
 			if (rigidBody.velocity.y == 0) {
 				isJumping = false;
+				anim.SetBool ("Jumping", false);
+
 			} 
 		}
+			if (rigidBody.velocity.x == 0) {
+				anim.SetBool ("Walking", false);
+
+			}
 		
 		if (InputManager.ActiveDevice.DPadLeft.IsPressed) {
 				moveToLeft ();
 
 		}
+
 
 			if (InputManager.ActiveDevice.DPadRight.IsPressed) {
 				moveToRight ();

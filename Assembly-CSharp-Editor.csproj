@@ -106,6 +106,9 @@
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity 5.4.1/Unity541.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
+ <Reference Include="CaptureAndSaveLib">
+ <HintPath>/Users/joemag/JessJoeJumper/Assets/Plugins/CaptureAndSaveLib.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Applications/Unity 5.4.1/Unity541.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
@@ -117,9 +120,6 @@
  </Reference>
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>/Applications/Unity 5.4.1/Unity541.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="CaptureAndSaveLib">
- <HintPath>/Users/joemag/JessJoeJumper/Assets/Plugins/CaptureAndSaveLib.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -43,7 +43,7 @@ void RegisterStaticallyLinkedModulesGranular()
 
 void RegisterAllClasses()
 {
-	//Total: 73 classes
+	//Total: 76 classes
 	//0. QualitySettings
 	void RegisterClass_QualitySettings();
 	RegisterClass_QualitySettings();
@@ -260,79 +260,91 @@ void RegisterAllClasses()
 	void RegisterClass_MeshCollider();
 	RegisterClass_MeshCollider();
 
-	//54. TagManager
+	//54. AnimationClip
+	void RegisterClass_AnimationClip();
+	RegisterClass_AnimationClip();
+
+	//55. Motion
+	void RegisterClass_Motion();
+	RegisterClass_Motion();
+
+	//56. TagManager
 	void RegisterClass_TagManager();
 	RegisterClass_TagManager();
 
-	//55. AudioListener
+	//57. AudioListener
 	void RegisterClass_AudioListener();
 	RegisterClass_AudioListener();
 
-	//56. ScriptMapper
+	//58. AnimatorController
+	void RegisterClass_AnimatorController();
+	RegisterClass_AnimatorController();
+
+	//59. ScriptMapper
 	void RegisterClass_ScriptMapper();
 	RegisterClass_ScriptMapper();
 
-	//57. DelayedCallManager
+	//60. DelayedCallManager
 	void RegisterClass_DelayedCallManager();
 	RegisterClass_DelayedCallManager();
 
-	//58. RenderSettings
+	//61. RenderSettings
 	void RegisterClass_RenderSettings();
 	RegisterClass_RenderSettings();
 
-	//59. Light
+	//62. Light
 	void RegisterClass_Light();
 	RegisterClass_Light();
 
-	//60. MonoScript
+	//63. MonoScript
 	void RegisterClass_MonoScript();
 	RegisterClass_MonoScript();
 
-	//61. MonoManager
+	//64. MonoManager
 	void RegisterClass_MonoManager();
 	RegisterClass_MonoManager();
 
-	//62. FlareLayer
+	//65. FlareLayer
 	void RegisterClass_FlareLayer();
 	RegisterClass_FlareLayer();
 
-	//63. PlayerSettings
+	//66. PlayerSettings
 	void RegisterClass_PlayerSettings();
 	RegisterClass_PlayerSettings();
 
-	//64. BuildSettings
+	//67. BuildSettings
 	void RegisterClass_BuildSettings();
 	RegisterClass_BuildSettings();
 
-	//65. ResourceManager
+	//68. ResourceManager
 	void RegisterClass_ResourceManager();
 	RegisterClass_ResourceManager();
 
-	//66. NetworkManager
+	//69. NetworkManager
 	void RegisterClass_NetworkManager();
 	RegisterClass_NetworkManager();
 
-	//67. MasterServerInterface
+	//70. MasterServerInterface
 	void RegisterClass_MasterServerInterface();
 	RegisterClass_MasterServerInterface();
 
-	//68. LightmapSettings
+	//71. LightmapSettings
 	void RegisterClass_LightmapSettings();
 	RegisterClass_LightmapSettings();
 
-	//69. RuntimeInitializeOnLoadManager
+	//72. RuntimeInitializeOnLoadManager
 	void RegisterClass_RuntimeInitializeOnLoadManager();
 	RegisterClass_RuntimeInitializeOnLoadManager();
 
-	//70. CloudWebServicesManager
+	//73. CloudWebServicesManager
 	void RegisterClass_CloudWebServicesManager();
 	RegisterClass_CloudWebServicesManager();
 
-	//71. UnityAnalyticsManager
+	//74. UnityAnalyticsManager
 	void RegisterClass_UnityAnalyticsManager();
 	RegisterClass_UnityAnalyticsManager();
 
-	//72. UnityConnectSettings
+	//75. UnityConnectSettings
 	void RegisterClass_UnityConnectSettings();
 	RegisterClass_UnityConnectSettings();
 

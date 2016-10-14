@@ -14,6 +14,8 @@
 
 // GameOverController
 struct GameOverController_t722700354;
+// System.String
+struct String_t;
 
 #include "codegen/il2cpp-codegen.h"
 
@@ -33,7 +35,11 @@ extern "C"  void GameOverController_Countdown1_m2435525675 (GameOverController_t
 extern "C"  void GameOverController_CountdownSmile_m4062042274 (GameOverController_t722700354 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void GameOverController::TakePicture()
 extern "C"  void GameOverController_TakePicture_m1175506926 (GameOverController_t722700354 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String GameOverController::CheckForHighScore()
+extern "C"  String_t* GameOverController_CheckForHighScore_m400339939 (GameOverController_t722700354 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void GameOverController::PlayAgainActive()
 extern "C"  void GameOverController_PlayAgainActive_m993010281 (GameOverController_t722700354 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void GameOverController::PlayAgainTimeout()
+extern "C"  void GameOverController_PlayAgainTimeout_m565588608 (GameOverController_t722700354 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void GameOverController::Update()
 extern "C"  void GameOverController_Update_m617055124 (GameOverController_t722700354 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
