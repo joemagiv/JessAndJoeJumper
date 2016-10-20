@@ -124,7 +124,10 @@ public class PlayerMovement : MonoBehaviour {
 		
 		
 		
-			if (InputManager.ActiveDevice.Action1.IsPressed){
+			if (InputManager.ActiveDevice.Action1.IsPressed||
+				InputManager.ActiveDevice.Action2.IsPressed||
+				InputManager.ActiveDevice.Action3.IsPressed||
+				InputManager.ActiveDevice.Action4.IsPressed){
 			if (!isJumping) {
 				Debug.Log ("Jumping");
 				isJumping = true;

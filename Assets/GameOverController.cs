@@ -10,17 +10,23 @@ public class GameOverController : MonoBehaviour {
 	public Text scoreText;
 
 	private CaptureAndSave capture;
+
+	private SFXManager sfxManager;
 	
 	//public float textDelay;
 	public GameObject playAgainButton;
 	private DeviceCamera deviceCamera;
 	private LevelController levelController;
+
+	public AudioClip beep;
+	public AudioClip cameraSound;
 	
 	// Use this for initialization
 	void Start () {
 		capture = FindObjectOfType<CaptureAndSave> ().GetComponent<CaptureAndSave> ();
 		deviceCamera = FindObjectOfType<DeviceCamera>().GetComponent<DeviceCamera>();
 		levelController = FindObjectOfType<LevelController> ().GetComponent<LevelController> ();
+		sfxManager = FindObjectOfType<SFXManager> ().GetComponent<SFXManager> ();
 		Debug.Log(Application.persistentDataPath);
 		scoreText.gameObject.SetActive(false);
 		playAgainButton.SetActive(false);
@@ -34,18 +40,24 @@ public class GameOverController : MonoBehaviour {
 	}
 	
 	void Countdown3(){
+		sfxManager.playSound (beep);
+
 		text.text = "3";
 		Invoke("Countdown2",0.5f);
 		
 	}
 	
 	void Countdown2(){
+		sfxManager.playSound (beep);
+
 		text.text = "2";
 		Invoke("Countdown1",0.5f);
 
 	}
 	
 	void Countdown1(){
+		sfxManager.playSound (beep);
+
 		text.text = "1";
 		Invoke("CountdownSmile",0.5f);
 		
@@ -53,6 +65,8 @@ public class GameOverController : MonoBehaviour {
 	
 	void CountdownSmile(){
 		text.text = "Smile!";
+		sfxManager.playSound (cameraSound);
+
 		Invoke("TakePicture",2f);
 		
 	}

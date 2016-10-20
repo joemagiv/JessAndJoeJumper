@@ -11,7 +11,7 @@ public class DeviceCamera : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		devices = WebCamTexture.devices;
-		frontCamName = devices[0].name;
+		frontCamName = devices[1].name;
 		webcamTexture = new WebCamTexture(frontCamName);
 		Renderer renderer = GetComponent<Renderer>();
 		renderer.material.mainTexture = webcamTexture;

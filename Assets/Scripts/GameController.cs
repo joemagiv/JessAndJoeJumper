@@ -16,6 +16,8 @@ public class GameController : MonoBehaviour {
 	public float gameTimer;
 
 	public float timeToNextLevel;
+
+	public GameObject instructionsObject;
 	
 	
 	
@@ -33,6 +35,7 @@ public class GameController : MonoBehaviour {
 	void Update () {
 		if (gameHasStarted) {
 			gameTimer += Time.deltaTime;
+			instructionsObject.SetActive (false);
 		}
 
 		if (gameTimer > timeToNextLevel) {
